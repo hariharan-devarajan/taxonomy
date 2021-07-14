@@ -1,3 +1,24 @@
 [submodule "apps/ewa/code"]
 	path = apps/ewa/code
 	url = https://github.com/eracah/hur-detect
+[submodule "apps/fastpm/code"]
+	path = apps/fastpm/code
+	url = https://github.com/fastpm/fastpm
+[submodule "apps/cosmic_gan/code"]
+	path = apps/cosmic_gan/code
+	url = https://github.com/RichardFeder/gan-work
+[submodule "apps/ocean/code"]
+	path = apps/ocean/code
+	url = https://github.com/CrayLabs/NCAR_ML_EKE
+[submodule "apps/hep_cnn/hep"]
+	path = apps/hep_cnn/hep
+	url = https://github.com/NERSC/hep_cnn_benchmark
+[submodule "apps/climate_dl/code"]
+	path = apps/climate_dl/code
+	url = https://github.com/azrael417/ClimDeepLearn
+[submodule "apps/cosmoflow/code"]
+	path = apps/cosmoflow/code
+	url = https://github.com/sparticlesteve/cosmoflow-benchmark
+[submodule "apps/deepmd/code"]
+	path = apps/deepmd/code
+	url = https://github.com/deepmodeling/deepmd-kit
