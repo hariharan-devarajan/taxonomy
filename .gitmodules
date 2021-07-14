@@ -1,0 +1,3 @@
+[submodule "apps/ewa/code"]
+	path = apps/ewa/code
+	url = https://github.com/eracah/hur-detect
