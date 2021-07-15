@@ -1,9 +1,10 @@
-#!/bin/bash --login
+#!/bin/bash
 
-#set -exo pipefail
+set -exo pipefail
 
-data_folder=data
-rows=$((1024))
+data_folder=data/1M
+mkdir -p $data_folder
+rows=$((1024*1024))
 #box.raw
 cols=6
 file=$data_folder/force.raw
