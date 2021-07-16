@@ -16,9 +16,6 @@
 [submodule "apps/cosmoflow/code"]
 	path = apps/cosmoflow/code
 	url = https://github.com/sparticlesteve/cosmoflow-benchmark
-[submodule "apps/deepmd/code"]
-	path = apps/deepmd/code
-	url = https://github.com/deepmodeling/deepmd-kit
 [submodule "apps/hoomd/code"]
 	path = apps/hoomd/code
 	url = https://github.com/glotzerlab/hoomd-blue
