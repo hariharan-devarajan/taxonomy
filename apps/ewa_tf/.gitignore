@@ -1,0 +1,6 @@
+data/
+env/
+output/
+*.out
+logs/
+debug_logs/

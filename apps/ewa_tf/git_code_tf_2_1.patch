@@ -1,0 +1,341 @@
+diff --git a/dotpy_src/box_processing/encode.py b/dotpy_src/box_processing/encode.py
+index b68a6fc..afe4ce6 100644
+--- a/dotpy_src/box_processing/encode.py
++++ b/dotpy_src/box_processing/encode.py
+@@ -33,7 +33,7 @@ def encode(bboxes, labels):
+     
+     encoded_boxes_dict = {}
+     encoded_labels_dict = {}
+-    for fmap_shape, anchors in anchors_map.iteritems():
++    for fmap_shape, anchors in anchors_map.items():
+         encoded_boxes_dict[fmap_shape] = _encode_boxes(bboxes, anchors)
+         encoded_labels_dict[fmap_shape] = _encode_labels(labels, anchors)
+         
+@@ -88,13 +88,13 @@ if __name__ == "__main__":
+     ymin = encode(bbox_coords, labels)
+     
+     with tf.Session() as sess:
+-        print sess.run(ymin)
++        print(sess.run(ymin))
+         assert False
+         loc_tens = sess.run(btens)
+         lab_tens = sess.run(ltens)
+-        for k, v in loc_tens.iteritems():
+-            print k
+-            print v
++        for k, v in loc_tens.items():
++            print(k)
++            print(v)
+ 
+ 
+ 
+diff --git a/dotpy_src/box_processing/match.py b/dotpy_src/box_processing/match.py
+index a981ab8..6bdeed2 100644
+--- a/dotpy_src/box_processing/match.py
++++ b/dotpy_src/box_processing/match.py
+@@ -27,7 +27,7 @@ def match_boxes(bboxes):
+     #dictionary mapping fmap shape to anchors for that fmap shape
+     anchors_map = dict(zip(fmap_shapes,all_anchors))
+     mask_dict={}
+-    for fmap_shape, anchors in anchors_map.iteritems():
++    for fmap_shape, anchors in anchors_map.items():
+         x_mask, tp_mask, num_matches = _match_boxes(bboxes,anchors, actual_gt_box_mask)
+         mask_dict[fmap_shape] = (x_mask, tp_mask, num_matches)
+     return mask_dict,actual_gt_box_mask
+@@ -89,5 +89,5 @@ if __name__ == "__main__":
+     x,am= match_boxes(bbox)
+     
+     with tf.Session() as sess:
+-        print sess.run(x[(96,144)]).shape
++        print(sess.run(x[(96,144)]).shape)
+ 
+diff --git a/dotpy_src/box_processing/tf_box_util.py b/dotpy_src/box_processing/tf_box_util.py
+index 0d3f7df..b514629 100644
+--- a/dotpy_src/box_processing/tf_box_util.py
++++ b/dotpy_src/box_processing/tf_box_util.py
+@@ -4,7 +4,9 @@
+ import sys
+ if __name__ == "__main__":
+     sys.path.append("../../")
+-import tensorflow as tf
++import tensorflow.compat.v1 as tf
++tf.disable_v2_behavior()
++
+ from dotpy_src.configs import configs
+ 
+ 
+diff --git a/dotpy_src/box_processing/unpack.py b/dotpy_src/box_processing/unpack.py
+index e0f0265..2fbaad9 100644
+--- a/dotpy_src/box_processing/unpack.py
++++ b/dotpy_src/box_processing/unpack.py
+@@ -1,7 +1,8 @@
+ 
+ 
+-
+-import tensorflow as tf
++import tensorflow.compat.v1 as tf
++tf.disable_v2_behavior()
++import tf_slim as slim
+ import sys
+ 
+ if __name__ == "__main__":
+@@ -47,7 +48,7 @@ def _unpack_net_output(pred_tensor, feat_shape):
+ 
+     logits = reshape_logits(logits, num_boxes, num_classes,cutoff_axis)
+     
+-    predictions = tf.contrib.slim.softmax(logits)
++    predictions = slim.softmax(logits)
+     
+     
+                                
+diff --git a/dotpy_src/configs/__init__.py b/dotpy_src/configs/__init__.py
+index 65e0164..30b3619 100644
+--- a/dotpy_src/configs/__init__.py
++++ b/dotpy_src/configs/__init__.py
+@@ -41,7 +41,7 @@ def _parse_cla(configs):
+     if "ipykernel" in sys.argv[0]:
+         sys.argv = sys.argv[3:] if len(sys.argv) > 3 else [sys.argv[0]]
+     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+-    for k,v in configs.iteritems():
++    for k,v in configs.items():
+         
+         if k is not "variables":
+             if type(v) is list:
+diff --git a/dotpy_src/configs/load_data_configs.py b/dotpy_src/configs/load_data_configs.py
+index 70d00d6..f448357 100644
+--- a/dotpy_src/configs/load_data_configs.py
++++ b/dotpy_src/configs/load_data_configs.py
+@@ -10,7 +10,7 @@ kwargs_dict = dict(data_format_args = {'raw_input_shape': (16,768,1152), "input_
+                                        
+                                        
+ 
+-                label_kwargs = {"tf_format":True, "num_classes": 4, "num_max_boxes":15},
++                label_kwargs = {"tf_format":False,"num_classes": 4, "num_max_boxes":15},
+ 
+                 tr_val_test_args = {'batch_size' : 4,
+                                     "num_tr_ims": 8,
+diff --git a/dotpy_src/fit/tf_fit.py b/dotpy_src/fit/tf_fit.py
+index 0c0b8cd..1a0e4ae 100644
+--- a/dotpy_src/fit/tf_fit.py
++++ b/dotpy_src/fit/tf_fit.py
+@@ -2,7 +2,9 @@
+ 
+ 
+ import sys
+-import tensorflow as tf
++import tensorflow.compat.v1 as tf
++tf.disable_v2_behavior()
++
+ import numpy as np
+ from os.path import join
+ if __name__ == "__main__":
+@@ -16,7 +18,7 @@ import time
+ def fit(model, generator, val_generator,num_epochs, loss_func, opt):
+     with tf.Session() as sess:
+ 
+-        tr_steps_per_epoch= generator.num_ims / generator.batch_size
++        tr_steps_per_epoch= int(generator.num_ims / generator.batch_size)
+         val_steps_per_epoch = val_generator.num_ims / val_generator.batch_size
+         
+ 
+@@ -54,7 +56,7 @@ def fit(model, generator, val_generator,num_epochs, loss_func, opt):
+         sess.run(tf.global_variables_initializer())
+         tr_global_step_counter = 0
+         val_global_step_counter = 0
+-        print "beginning training"
++        print("beginning training epochs", num_epochs)
+         
+         for epoch in range(num_epochs):
+             t0 = time.time()
+@@ -70,7 +72,7 @@ def fit(model, generator, val_generator,num_epochs, loss_func, opt):
+             
+             t1 = time.time()
+             epoch_time = t1-t0
+-            print "epoch time: ", epoch_time
++            print("epoch time: ", epoch_time)
+             write_summary(epoch_time, "epoch_time", train_epoch_writer, epoch)
+             val_global_step_counter = run_loss_loop(type_="val", epoch=epoch, steps_per_epoch=val_steps_per_epoch, 
+                                                     step_writer=val_writer, epoch_writer=val_epoch_writer, generator=val_generator, 
+@@ -109,19 +111,20 @@ def run_loss_loop(type_, epoch, steps_per_epoch, step_writer, epoch_writer, gene
+         sess_list = [loss_tensor,loss_tensor, summary_op]
+     
+     loss_sum = 0.0
+-    for step in range(steps_per_epoch):
++    print("epoch ", epoch, " steps ", steps_per_epoch)
++    for step in range(int(steps_per_epoch)):
+         im, boxes = generator.next()
+ 
+         _, cur_loss, summary = sess.run(sess_list,feed_dict={input_:im, 
+                                                             y_true:boxes})
+-        print cur_loss
++        print(cur_loss)
+         loss_sum += cur_loss
+ 
+ 
+         step_writer.add_summary(summary,global_step)
+         global_step += 1
+     average_loss = loss_sum / float(steps_per_epoch)
+-    print "at epoch %i, the loss for %s is %8.4f" %(epoch,type_, average_loss)
++    print("at epoch %i, the loss for %s is %8.4f", epoch,type_, average_loss)
+     write_summary(average_loss,"running_average_loss", epoch_writer, epoch)
+     return global_step
+ 
+diff --git a/dotpy_src/load_data/datasets/climate/get_data.py b/dotpy_src/load_data/datasets/climate/get_data.py
+index a2cea2c..fd55b43 100644
+--- a/dotpy_src/load_data/datasets/climate/get_data.py
++++ b/dotpy_src/load_data/datasets/climate/get_data.py
+@@ -56,5 +56,5 @@ if __name__ == "__main__":
+     test = np.concatenate((np.ones((5,5)),np.zeros((10,5))))
+     test= np.expand_dims(test,axis=0)
+     ntest = np.concatenate((test,test,test))
+-    print convert_box_tensor_to_box_lists(ntest)
++    print(convert_box_tensor_to_box_lists(ntest))
+ 
+diff --git a/dotpy_src/losses/ssd/ssd.py b/dotpy_src/losses/ssd/ssd.py
+index 70d67b9..5be96e2 100644
+--- a/dotpy_src/losses/ssd/ssd.py
++++ b/dotpy_src/losses/ssd/ssd.py
+@@ -2,9 +2,11 @@
+ 
+ 
+ import sys
+-import tensorflow as tf
++import tensorflow.compat.v1 as tf
++tf.disable_v2_behavior()
+ import numpy as np
+-slim=tf.contrib.slim
++import tf_slim as slim
++#slim=tf.contrib.slim
+ if __name__ == "__main__":
+     sys.path.append("../../../")
+ from dotpy_src.losses.utils import abs_smooth as smooth_L1
+@@ -180,7 +182,7 @@ if __name__ == "__main__":
+         merged = tf.summary.merge_all()
+         writer = tf.summary.FileWriter("/home/evan/hur-detect/src/debug_logs/try1", sess.graph)
+         loss_, summary = sess.run([da_loss,merged], feed_dict={y_true:box})
+-        print loss_
++        print(loss_)
+         writer.add_summary(summary,0)
+         writer.close()
+         
+@@ -193,7 +195,7 @@ with tf.Session() as sess:
+         a = tf.constant(0)
+         tf.summary.scalar("a", a)
+     merged = tf.summary.merge_all()
+-    writer = tf.summary.FileWriter("/home/evan/hur-detect/src/debug_logs/try2")
++    writer = tf.summary.FileWriter("./debug_logs/try2")
+     summary = sess.run(merged)
+     writer.add_summary(summary,0)
+     
+diff --git a/dotpy_src/models/base/get_base_model.py b/dotpy_src/models/base/get_base_model.py
+index 66d2dea..4a4aec2 100644
+--- a/dotpy_src/models/base/get_base_model.py
++++ b/dotpy_src/models/base/get_base_model.py
+@@ -11,7 +11,7 @@ import importlib
+ 
+ def get_base_model_layers(name=None):
+     base_model_name = name if name is not None else configs["base_model"]
+-    print base_model_name
++    print(base_model_name)
+     base_module = importlib.import_module("dotpy_src.models.base." + base_model_name)
+     return base_module.get_base_layers()
+ 
+diff --git a/dotpy_src/models/base/resnet-50.py b/dotpy_src/models/base/resnet-50.py
+index 073a5c9..80ecfc0 100644
+--- a/dotpy_src/models/base/resnet-50.py
++++ b/dotpy_src/models/base/resnet-50.py
+@@ -54,14 +54,14 @@ def ResNet50(inp_shape):
+     x = conv_block(x, 3, [64, 64, 256], stage=2, block='a', strides=(1, 1))
+     x = identity_block(x, 3, [64, 64, 256], stage=2, block='b')
+     x = identity_block(x, 3, [64, 64, 256], stage=2, block='c')
+-    layers["conv2_x"] = x
++    layers["conv2_3"] = x
+ 
+ 
+     x = conv_block(x, 3, [128, 128, 512], stage=3, block='a', strides=(2,2))
+     x = identity_block(x, 3, [128, 128, 512], stage=3, block='b')
+     x = identity_block(x, 3, [128, 128, 512], stage=3, block='c')
+     x = identity_block(x, 3, [128, 128, 512], stage=3, block='d')
+-    layers["conv3_x"] = x
++    layers["conv3_3"] = x
+ 
+     x = conv_block(x, 3, [256, 256, 1024], stage=4, block='a',strides=(2,2))
+     x = identity_block(x, 3, [256, 256, 1024], stage=4, block='b')
+@@ -69,13 +69,13 @@ def ResNet50(inp_shape):
+     x = identity_block(x, 3, [256, 256, 1024], stage=4, block='d')
+     x = identity_block(x, 3, [256, 256, 1024], stage=4, block='e')
+     x = identity_block(x, 3, [256, 256, 1024], stage=4, block='f')
+-    layers["conv4_x"] = x
++    layers["conv4_3"] = x
+ 
+     x = conv_block(x, 3, [512, 512, 2048], stage=5, block='a', strides=(2,2))
+     x = identity_block(x, 3, [512, 512, 2048], stage=5, block='b')
+     x = identity_block(x, 3, [512, 512, 2048], stage=5, block='c')
+-    layers["conv5_x"] = x
+-    layers["last"]
++    layers["conv5_3"] = x
++    #layers["last"]
+ 
+     return layers
+ 
+@@ -94,7 +94,7 @@ get_base_layers()
+ 
+ 
+ from IPython.display import Image
+-Image(filename='./../resnet_table.png') 
++#Image(filename='./../resnet_table.png') 
+ 
+ 
+ 
+diff --git a/dotpy_src/models/base/vgg16.py b/dotpy_src/models/base/vgg16.py
+index 42d3c5b..755090f 100644
+--- a/dotpy_src/models/base/vgg16.py
++++ b/dotpy_src/models/base/vgg16.py
+@@ -73,7 +73,7 @@ def VGG16(inp_shape, batch_size=None):
+                                    activation='relu',
+                                    padding='same',
+                                    name='conv4_2')(layers['conv4_1'])
+-    layers['conv4_3'] = Conv2D(512, (3, 3),
++    layers['conv4_3'] = Conv2D(96, (3, 3),
+                                    activation='relu',
+                                    padding='same',
+                                    name='conv4_3')(layers['conv4_2'])
+diff --git a/dotpy_src/models/util.py b/dotpy_src/models/util.py
+index 1597b22..3478106 100644
+--- a/dotpy_src/models/util.py
++++ b/dotpy_src/models/util.py
+@@ -10,8 +10,8 @@ import keras.backend as K
+ from keras.engine.topology import InputSpec
+ from keras.engine.topology import Layer
+ import numpy as np
+-import tensorflow as tf
+-
++import tensorflow.compat.v1 as tf
++tf.disable_v2_behavior()
+ 
+ class Normalize(Layer):
+     """Normalization layer as described in ParseNet paper.
+@@ -29,7 +29,7 @@ class Normalize(Layer):
+         Add possibility to have one scale for all features.
+     """
+     def __init__(self, scale, **kwargs):
+-        if K.image_dim_ordering() == 'tf':
++        if K.image_data_format() == 'tf':
+             self.axis = 3
+         else:
+             self.axis = 1
+diff --git a/dotpy_src/optimizers/get_opt.py b/dotpy_src/optimizers/get_opt.py
+index ed0c9c8..47c174a 100644
+--- a/dotpy_src/optimizers/get_opt.py
++++ b/dotpy_src/optimizers/get_opt.py
+@@ -5,8 +5,8 @@
+ 
+ 
+ 
+-import tensorflow as tf
+-
++import tensorflow.compat.v1 as tf
++tf.disable_v2_behavior()
+ 
+ 
+ adam = tf.train.AdamOptimizer

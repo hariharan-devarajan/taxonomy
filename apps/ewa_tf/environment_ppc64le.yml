@@ -1,0 +1,19 @@
+name: cosmoflow 
+
+channels:
+  - https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/
+  - conda-forge
+  - defaults
+
+dependencies:
+  - horovod==0.19.0
+  - tensorflow-gpu==2.1
+  - matplotlib
+  - pandas
+  - keras
+  - scikit-learn
+  - h5py
+  - matplotlib
+  - netCDF4
+  - ipython
+  - tf_slim
