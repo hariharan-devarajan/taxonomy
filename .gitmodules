@@ -28,3 +28,6 @@
 [submodule "apps/sannp/code"]
 	path = apps/sannp/code
 	url = https://gitlab.com/yufeng.huang/sannp
+[submodule "apps/tomogan/code"]
+	path = apps/tomogan/code
+	url = https://github.com/lzhengchun/TomoGAN

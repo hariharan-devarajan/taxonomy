@@ -21,51 +21,29 @@ index d06db36..212a6e8 100644
 \ No newline at end of file
 +                sys.stdout.flush()
 diff --git a/run/run.sh b/run/run.sh
-index 0293469..dd10059 100644
+index 0293469..06249b0 100644
 --- a/run/run.sh
 +++ b/run/run.sh
-@@ -1,7 +1,7 @@
- #!/bin/bash
- 
- #export PATH=/net/hulk/PMD/yufeng/miniconda3-py36-tf-gpu/bin:$PATH
--iGPU=1
-+iGPU=0
- 
- initial_set="../Data/MOVEMENT.train.first100"
- training_set="../Data/MOVEMENT.train"
 @@ -11,18 +11,18 @@ test_set="../Data/MOVEMENT.test"
  echo "STARTING..." `date`
  
  echo STEP 1 `date`
 -python ../main.py $initial_set --task -1 --validationSet $validation_set --testSet $test_set --iGPU $iGPU --dcut 6.2 --Rcut 1.9 --n2bBasis 16 --n3bBasis 4
-+python ../main.py $initial_set --task -1 --validationSet $validation_set --testSet $test_set --iGPU $iGPU --dcut 6.2 --Rcut 1.9 --n2bBasis 16 --n3bBasis 4 --epoch 1
++#python ../main.py $initial_set --task -1 --validationSet $validation_set --testSet $test_set --iGPU $iGPU --dcut 6.2 --Rcut 1.9 --n2bBasis 16 --n3bBasis 4
  
  echo STEP 2 `date`
--python ../main.py $initial_set --task -2 --validate 100 --test 0 --chunkSize 0 --epoch 500 --iGPU $iGPU --dcut 6.2 --Rcut 1.9 --learningRate 0.0001 --n2bBasis 16 --n3bBasis 4 --nL1Nodes 40 --nL2Nodes 40
-+python ../main.py $initial_set --task -2 --validate 100 --test 0 --chunkSize 0 --epoch 1 --iGPU $iGPU --dcut 6.2 --Rcut 1.9 --learningRate 0.0001 --n2bBasis 16 --n3bBasis 4 --nL1Nodes 40 --nL2Nodes 40
+ python ../main.py $initial_set --task -2 --validate 100 --test 0 --chunkSize 0 --epoch 500 --iGPU $iGPU --dcut 6.2 --Rcut 1.9 --learningRate 0.0001 --n2bBasis 16 --n3bBasis 4 --nL1Nodes 40 --nL2Nodes 40
  
  echo STEP 3 `date`
 -python ../main.py $training_set --task -1 --restart --iGPU $iGPU
-+python ../main.py $training_set --task -1 --restart --iGPU $iGPU  --epoch 1
++#python ../main.py $training_set --task -1 --restart --iGPU $iGPU
  
  echo STEP 4 `date`
 -python ../main.py $training_set --task -2 --restart --validate 10 --test 10 --epoch 50 --chunkSize 10000 --iGPU $iGPU
-+python ../main.py $training_set --task -2 --restart --validate 10 --test 10 --epoch 1 --chunkSize 10000 --iGPU $iGPU
++#python ../main.py $training_set --task -2 --restart --validate 10 --test 10 --epoch 50 --chunkSize 10000 --iGPU $iGPU
  
  echo STEP 5 `date`
 -python ../main.py $training_set --task -3 --restart --validate 1 --test 1 --epoch 25 --testSet $test_set --validationSet $validation_set --iGPU $iGPU --feRatio 1.0 --Rcut 1.9
-+python ../main.py $training_set --task -3 --restart --validate 1 --test 1 --epoch 1 --testSet $test_set --validationSet $validation_set --iGPU $iGPU --feRatio 1.0 --Rcut 1.9
++#python ../main.py $training_set --task -3 --restart --validate 1 --test 1 --epoch 25 --testSet $test_set --validationSet $validation_set --iGPU $iGPU --feRatio 1.0 --Rcut 1.9
  
  echo "FINISHED! " `date`
-diff --git a/tf_func.py b/tf_func.py
-index b1904f9..98a77e6 100644
---- a/tf_func.py
-+++ b/tf_func.py
-@@ -5,7 +5,6 @@
- @author: Yufeng Huang
- 
- """
--
- import tensorflow as tf
- import numpy as np
- 
