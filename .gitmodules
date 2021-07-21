@@ -22,3 +22,6 @@
 [submodule "apps/ewa_tf/code"]
 	path = apps/ewa_tf/code
 	url = https://github.com/eracah/hur-detect.git
+[submodule "benchmarks/aibench/code"]
+	path = benchmarks/aibench/code
+	url = https://github.com/BenchCouncil/AIBench_Training_Component

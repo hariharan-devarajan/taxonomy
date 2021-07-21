@@ -1,0 +1,5 @@
+- install python env.
+- install netcdf-fortran and netcdf-c using spack.
+- copy the env file to MOM6/build/env
+- install SmartRedis. source the setup.sh to set the env variables. instructions on main code repo.
+- install Mom6 

@@ -1,0 +1,15 @@
+module list
+
+module --force purge
+module use /g/g92/haridev/software/spack/share/spack/modules/linux-rhel7-power9le/
+export CFLAGS="-I/p/gpfs1/haridev/project/taxonomy/apps/ocean/software/smartredis/build $CFLAGS"
+export CXXFLAGS="-I/p/gpfs1/haridev/project/taxonomy/apps/ocean/software/smartredis/build $CXXFLAGS"
+export LDFLAGS="-L/p/gpfs1/haridev/project/taxonomy/apps/ocean/software/smartredis/build -L/g/g92/haridev/software/spack/opt/spack/linux-rhel7-power9le/gcc-8.3.1/netcdf-fortran-4.5.3-mu2veptfwvo3rbqqbe77c6jbtsvdxvpx/lib/ -lnetcdff $LDFLAGS"
+module load netcdf-fortran-4.5.3-gcc-8.3.1-mu2vept
+module load netcdf-c-4.8.0-gcc-8.3.1-sjh6qig
+module load openmpi-4.1.1-gcc-8.3.1-sy3bobp
+#module load gcc/4.9.3
+#module load spectrum-mpi/2019.06.24
+#module load netcdf/4.7.0
+#alias ftn="mpifort"
+
