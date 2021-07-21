@@ -10,4 +10,4 @@ source $PWD/setup_image_generation.sh
 #jsrun --np 1 \
 
 cd code/TensorFlow/Image_generation/
-python train.py --model DCGAN -D LSUN 
+python train.py --model DCGAN -D LSUN --num_epochs 160 
