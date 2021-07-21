@@ -25,3 +25,6 @@
 [submodule "benchmarks/aibench/code"]
 	path = benchmarks/aibench/code
 	url = https://github.com/BenchCouncil/AIBench_Training_Component
+[submodule "apps/sannp/code"]
+	path = apps/sannp/code
+	url = https://gitlab.com/yufeng.huang/sannp
