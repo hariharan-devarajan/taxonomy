@@ -1,0 +1,167 @@
+diff --git a/TensorFlow/Image_generation/config.pyc b/TensorFlow/Image_generation/config.pyc
+index 5707d78..e2e7da1 100644
+Binary files a/TensorFlow/Image_generation/config.pyc and b/TensorFlow/Image_generation/config.pyc differ
+diff --git a/TensorFlow/Image_generation/inputpipe.py b/TensorFlow/Image_generation/inputpipe.py
+index b9e6e50..cd6080a 100644
+--- a/TensorFlow/Image_generation/inputpipe.py
++++ b/TensorFlow/Image_generation/inputpipe.py
+@@ -47,6 +47,7 @@ def get_batch(tfrecords_list, batch_size, shuffle=False, num_threads=1, min_afte
+ 
+ def get_batch_join(tfrecords_list, batch_size, shuffle=False, num_threads=1, min_after_dequeue=None, num_epochs=None):
+     name = "batch_join" if not shuffle else "shuffle_batch_join"
++    print(tfrecords_list)
+     with tf.variable_scope(name):
+         filename_queue = tf.train.string_input_producer(tfrecords_list, shuffle=shuffle, num_epochs=num_epochs)
+         example_list = [read_parse_preproc(filename_queue) for _ in range(num_threads)]
+diff --git a/TensorFlow/Image_generation/inputpipe.pyc b/TensorFlow/Image_generation/inputpipe.pyc
+index 8bdf6ef..60be950 100644
+Binary files a/TensorFlow/Image_generation/inputpipe.pyc and b/TensorFlow/Image_generation/inputpipe.pyc differ
+diff --git a/TensorFlow/Image_generation/models/__init__.pyc b/TensorFlow/Image_generation/models/__init__.pyc
+index 4893be4..ee23451 100644
+Binary files a/TensorFlow/Image_generation/models/__init__.pyc and b/TensorFlow/Image_generation/models/__init__.pyc differ
+diff --git a/TensorFlow/Image_generation/models/basemodel.pyc b/TensorFlow/Image_generation/models/basemodel.pyc
+index f0cb71f..11b1821 100644
+Binary files a/TensorFlow/Image_generation/models/basemodel.pyc and b/TensorFlow/Image_generation/models/basemodel.pyc differ
+diff --git a/TensorFlow/Image_generation/models/began.pyc b/TensorFlow/Image_generation/models/began.pyc
+index 10c3046..1fc49b9 100644
+Binary files a/TensorFlow/Image_generation/models/began.pyc and b/TensorFlow/Image_generation/models/began.pyc differ
+diff --git a/TensorFlow/Image_generation/models/coulombgan.pyc b/TensorFlow/Image_generation/models/coulombgan.pyc
+index a6bf006..431be3c 100644
+Binary files a/TensorFlow/Image_generation/models/coulombgan.pyc and b/TensorFlow/Image_generation/models/coulombgan.pyc differ
+diff --git a/TensorFlow/Image_generation/models/dcgan.pyc b/TensorFlow/Image_generation/models/dcgan.pyc
+index 54d3875..06c2230 100644
+Binary files a/TensorFlow/Image_generation/models/dcgan.pyc and b/TensorFlow/Image_generation/models/dcgan.pyc differ
+diff --git a/TensorFlow/Image_generation/models/dragan.pyc b/TensorFlow/Image_generation/models/dragan.pyc
+index 76d806c..486191c 100644
+Binary files a/TensorFlow/Image_generation/models/dragan.pyc and b/TensorFlow/Image_generation/models/dragan.pyc differ
+diff --git a/TensorFlow/Image_generation/models/ebgan.pyc b/TensorFlow/Image_generation/models/ebgan.pyc
+index 3abc88f..380d228 100644
+Binary files a/TensorFlow/Image_generation/models/ebgan.pyc and b/TensorFlow/Image_generation/models/ebgan.pyc differ
+diff --git a/TensorFlow/Image_generation/models/lsgan.pyc b/TensorFlow/Image_generation/models/lsgan.pyc
+index 31812c9..128d442 100644
+Binary files a/TensorFlow/Image_generation/models/lsgan.pyc and b/TensorFlow/Image_generation/models/lsgan.pyc differ
+diff --git a/TensorFlow/Image_generation/models/wgan.pyc b/TensorFlow/Image_generation/models/wgan.pyc
+index af5733d..d0124a2 100644
+Binary files a/TensorFlow/Image_generation/models/wgan.pyc and b/TensorFlow/Image_generation/models/wgan.pyc differ
+diff --git a/TensorFlow/Image_generation/models/wgan_gp.pyc b/TensorFlow/Image_generation/models/wgan_gp.pyc
+index 714f865..389459b 100644
+Binary files a/TensorFlow/Image_generation/models/wgan_gp.pyc and b/TensorFlow/Image_generation/models/wgan_gp.pyc differ
+diff --git a/TensorFlow/Image_generation/ops.pyc b/TensorFlow/Image_generation/ops.pyc
+index 09390fc..954ab69 100644
+Binary files a/TensorFlow/Image_generation/ops.pyc and b/TensorFlow/Image_generation/ops.pyc differ
+diff --git a/TensorFlow/Image_generation/utils.pyc b/TensorFlow/Image_generation/utils.pyc
+index b89f8a2..9fb3c3c 100644
+Binary files a/TensorFlow/Image_generation/utils.pyc and b/TensorFlow/Image_generation/utils.pyc differ
+diff --git a/TensorFlow/Image_to_Image/CycleGAN/configs/1 b/TensorFlow/Image_to_Image/CycleGAN/configs/1
+index d0f1f79..5b0fe30 100644
+--- a/TensorFlow/Image_to_Image/CycleGAN/configs/1
++++ b/TensorFlow/Image_to_Image/CycleGAN/configs/1
+@@ -3,8 +3,8 @@
+   "pool_size": 50,
+   "base_lr":0.0002,
+   "max_step": 2000,
+-  "network_version": "T",
+-  "dataset_name": "horse2zebra_train",
++  "network_version": "tensorflow",
++  "dataset_name": "maps_train",
+   "do_flipping": 1,
+   "_LAMBDA_A": 10,
+   "_LAMBDA_B": 10
+diff --git a/TensorFlow/Image_to_Image/CycleGAN/configs/exp_01.json b/TensorFlow/Image_to_Image/CycleGAN/configs/exp_01.json
+index c8fd9a8..4a3e12a 100644
+--- a/TensorFlow/Image_to_Image/CycleGAN/configs/exp_01.json
++++ b/TensorFlow/Image_to_Image/CycleGAN/configs/exp_01.json
+@@ -3,8 +3,8 @@
+   "pool_size": 50,
+   "base_lr":0.0002,
+   "max_step": 200,
+-  "network_version": "pytorch",
+-  "dataset_name": "cityscapes_train",
++  "network_version": "tensorflow",
++  "dataset_name": "maps_train",
+   "do_flipping": 1,
+   "_LAMBDA_A": 10,
+   "_LAMBDA_B": 10
+diff --git a/TensorFlow/Image_to_Image/CycleGAN/cyclegan_datasets.py b/TensorFlow/Image_to_Image/CycleGAN/cyclegan_datasets.py
+index 437bb5d..7602628 100644
+--- a/TensorFlow/Image_to_Image/CycleGAN/cyclegan_datasets.py
++++ b/TensorFlow/Image_to_Image/CycleGAN/cyclegan_datasets.py
+@@ -3,18 +3,18 @@
+ """The size of each dataset. Usually it is the maximum number of images from
+ each domain."""
+ DATASET_TO_SIZES = {
+-    'cityscapes_train': 2975,
+-    'cityscapes_test': 500
++    'maps_train': 1096,
++    'maps_test': 1099
+ }
+ 
+ """The image types of each dataset. Currently only supports .jpg or .png"""
+ DATASET_TO_IMAGETYPE = {
+-    'cityscapes_train': '.jpg',
+-    'cityscapes_test': '.jpg',
++    'maps_train': '.jpg',
++    'maps_test': '.jpg',
+ }
+ 
+ """The path to the output csv file."""
+ PATH_TO_CSV = {
+-    'cityscapes_train': './input/cityscapes/cityscapes_train.csv',
+-    'cityscapes_test': './input/cityscapes/cityscapes_test.csv',
++    'maps_train': './input/maps/maps_train.csv',
++    'maps_test': './input/maps/maps_test.csv',
+ }
+diff --git a/TensorFlow/Image_to_Image/CycleGAN/data_loader.py b/TensorFlow/Image_to_Image/CycleGAN/data_loader.py
+index 4b56702..06ea0f2 100644
+--- a/TensorFlow/Image_to_Image/CycleGAN/data_loader.py
++++ b/TensorFlow/Image_to_Image/CycleGAN/data_loader.py
+@@ -7,7 +7,7 @@ import model
+ def _load_samples(csv_name, image_type):
+     filename_queue = tf.train.string_input_producer(
+         [csv_name])
+-
++    print(filename_queue)
+     reader = tf.TextLineReader()
+     _, csv_filename = reader.read(filename_queue)
+ 
+@@ -51,7 +51,7 @@ def load_data(dataset_name, image_size_before_crop,
+ 
+     image_i, image_j = _load_samples(
+         csv_name, cyclegan_datasets.DATASET_TO_IMAGETYPE[dataset_name])
+-
++    print(image_i, image_j)
+     # Preprocessing:
+     image_i = tf.image.resize_images(
+         image_i, [image_size_before_crop, image_size_before_crop])
+@@ -73,7 +73,7 @@ def load_data(dataset_name, image_size_before_crop,
+     # Batch
+     if do_shuffle is True:
+         images_i, images_j = tf.train.shuffle_batch(
+-            [image_i, image_j], 1, 5000, 100)
++            [image_i, image_j], 1, 1000, 100)
+     else:
+         images_i, images_j = tf.train.batch(
+             [image_i, image_j], 1)
+diff --git a/TensorFlow/Image_to_Image/CycleGAN/main.py b/TensorFlow/Image_to_Image/CycleGAN/main.py
+index 351ca33..4014208 100644
+--- a/TensorFlow/Image_to_Image/CycleGAN/main.py
++++ b/TensorFlow/Image_to_Image/CycleGAN/main.py
+@@ -4,8 +4,7 @@ import json
+ import numpy as np
+ import os
+ import random
+-from scipy.misc import imsave
+-
++import imageio
+ import click
+ import tensorflow as tf
+ 
+@@ -213,7 +212,7 @@ class CycleGAN:
+ 
+                 for name, tensor in zip(names, tensors):
+                     image_name = name + str(epoch) + "_" + str(i) + ".jpg"
+-                    imsave(os.path.join(self._images_dir, image_name),
++                    imageio.imwrite(os.path.join(self._images_dir, image_name),
+                            ((tensor[0] + 1) * 127.5).astype(np.uint8)
+                            )
+                     v_html.write(
