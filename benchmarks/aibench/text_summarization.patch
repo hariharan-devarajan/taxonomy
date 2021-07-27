@@ -1,0 +1,29 @@
+diff --git a/TensorFlow/Text_summarization/batch_reader.py b/TensorFlow/Text_summarization/batch_reader.py
+index 918551b..1818c74 100644
+--- a/TensorFlow/Text_summarization/batch_reader.py
++++ b/TensorFlow/Text_summarization/batch_reader.py
+@@ -136,9 +136,9 @@ class Batcher(object):
+     while True:
+       (article, abstract) = six.next(input_gen)
+       article_sentences = [sent.strip() for sent in
+-                           data.ToSentences(article, include_token=False)]
++                           data.ToSentences(str(article), include_token=False)]
+       abstract_sentences = [sent.strip() for sent in
+-                            data.ToSentences(abstract, include_token=False)]
++                            data.ToSentences(str(abstract), include_token=False)]
+ 
+       enc_inputs = []
+       # Use the <s> as the <GO> symbol for decoder inputs.
+diff --git a/TensorFlow/Text_summarization/data.py b/TensorFlow/Text_summarization/data.py
+index 2baad0a..73b3240 100644
+--- a/TensorFlow/Text_summarization/data.py
++++ b/TensorFlow/Text_summarization/data.py
+@@ -186,7 +186,7 @@ def SnippetGen(text, start_tok, end_tok, inclusive=True):
+   cur = 0
+   while True:
+     try:
+-      start_p = text.index(start_tok, cur)
++      start_p = text.index(start_tok , cur)
+       end_p = text.index(end_tok, start_p + 1)
+       cur = end_p + len(end_tok)
+       if inclusive:

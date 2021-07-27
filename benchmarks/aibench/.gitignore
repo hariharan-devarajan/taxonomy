@@ -5,3 +5,4 @@ output/
 env_image_generation_env/
 env_cycle_gan_env/
 env_object_detection_env/
+env_text_summarization_env/

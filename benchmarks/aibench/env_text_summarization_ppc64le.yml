@@ -1,0 +1,9 @@
+name: cosmoflow 
+
+channels:
+  - https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/
+  - conda-forge
+  - defaults
+
+dependencies:
+  - tensorflow-gpu=1.13.1
