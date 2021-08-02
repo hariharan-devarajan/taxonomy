@@ -1,33 +1,27 @@
-[submodule "apps/ewa/code"]
-	path = apps/ewa/code
-	url = https://github.com/eracah/hur-detect
-[submodule "apps/fastpm/code"]
-	path = apps/fastpm/code
+[submodule "apps/not_working/fastpm/code"]
+	path = apps/not_working/fastpm/code
 	url = https://github.com/fastpm/fastpm
-[submodule "apps/ocean/code"]
-	path = apps/ocean/code
+[submodule "apps/not_working/ocean/code"]
+	path = apps/not_working/ocean/code
 	url = https://github.com/CrayLabs/NCAR_ML_EKE
-[submodule "apps/hep_cnn/hep"]
-	path = apps/hep_cnn/hep
+[submodule "apps/not_working/hep_cnn/hep"]
+	path = apps/not_working/hep_cnn/hep
 	url = https://github.com/NERSC/hep_cnn_benchmark
-[submodule "apps/climate_dl/code"]
-	path = apps/climate_dl/code
-	url = https://github.com/azrael417/ClimDeepLearn
-[submodule "apps/cosmoflow/code"]
+[submodule "apps/working/cosmoflow/code"]
 	path = apps/cosmoflow/code
 	url = https://github.com/sparticlesteve/cosmoflow-benchmark
-[submodule "apps/hoomd/code"]
-	path = apps/hoomd/code
+[submodule "apps/not_working/hoomd/code"]
+	path = apps/not_working/hoomd/code
 	url = https://github.com/glotzerlab/hoomd-blue
-[submodule "apps/ewa_tf/code"]
+[submodule "apps/working/ewa_tf/code"]
 	path = apps/ewa_tf/code
 	url = https://github.com/eracah/hur-detect.git
 [submodule "benchmarks/aibench/code"]
 	path = benchmarks/aibench/code
 	url = https://github.com/BenchCouncil/AIBench_Training_Component
-[submodule "apps/sannp/code"]
+[submodule "apps/working/sannp/code"]
 	path = apps/sannp/code
 	url = https://gitlab.com/yufeng.huang/sannp
-[submodule "apps/tomogan/code"]
+[submodule "apps/working/tomogan/code"]
 	path = apps/tomogan/code
 	url = https://github.com/lzhengchun/TomoGAN
