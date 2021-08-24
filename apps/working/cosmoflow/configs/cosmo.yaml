@@ -10,14 +10,14 @@ data:
     name: cosmo
     data_dir: data/output
     compression: GZIP
-    n_train: 960 
+    n_train: 1024 
     n_valid: 256
     sample_shape: [128, 128, 128, 4]
     batch_size: 1
     n_epochs: 1
     shard: True
     apply_log: True
-    prefetch: 4
+    prefetch: 32
 
 model:
     name: cosmoflow

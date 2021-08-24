@@ -7,9 +7,6 @@
 [submodule "apps/not_working/hep_cnn/hep"]
 	path = apps/not_working/hep_cnn/hep
 	url = https://github.com/NERSC/hep_cnn_benchmark
-[submodule "apps/working/cosmoflow/code"]
-	path = apps/cosmoflow/code
-	url = https://github.com/sparticlesteve/cosmoflow-benchmark
 [submodule "apps/not_working/hoomd/code"]
 	path = apps/not_working/hoomd/code
 	url = https://github.com/glotzerlab/hoomd-blue
@@ -25,3 +22,6 @@
 [submodule "apps/working/tomogan/code"]
 	path = apps/tomogan/code
 	url = https://github.com/lzhengchun/TomoGAN
+[submodule "apps/working/cosmoflow/code"]
+	path = apps/working/cosmoflow/code
+	url = https://github.com/sparticlesteve/cosmoflow-benchmark

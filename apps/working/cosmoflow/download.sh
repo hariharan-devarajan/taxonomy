@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd data
-wget --spider -r --accept "*.hdf5" --no-parent https://portal.nersc.gov/project/m3363/cosmoUniverse_2019_05_4parE/ | grep hdf5
+wget -r -np -l 5 -A hdf5 -nd https://portal.nersc.gov/project/m3363/cosmoUniverse_2019_05_4parE/
 exit
 
 #rm -rf final
