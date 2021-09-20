@@ -130,3 +130,4 @@ dmypy.json
 data/
 .idea/
 /analysis/notebooks/recorder/dask-worker-space/
+*.out
