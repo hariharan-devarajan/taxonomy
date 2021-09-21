@@ -1,0 +1,1239 @@
+diff --git a/Makefile b/Makefile
+index e979748..c2c7991 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,4 +1,4 @@
+-all:
++ll:
+ 	mkdir -p bin
+ 	mkdir -p lib/include
+ 	if test -d lib/src;    then (cd lib/src;    make); fi
+diff --git a/Montage/Makefile.LINUX b/Montage/Makefile.LINUX
+index 57ea4eb..b4e2918 100644
+--- a/Montage/Makefile.LINUX
++++ b/Montage/Makefile.LINUX
+@@ -48,8 +48,8 @@
+ 
+ CC     =	gcc
+ MPICC  =
+-CFLAGS =	-g -I. -I../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99
+-LIBS   =	-L../lib -lwcs -lcfitsio -lcoord -lmtbl -lsvc \
++CFLAGS =	-finstrument-functions -g -I. -I../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99
++LIBS   =	-rdynamic -L../lib -lwcs -lcfitsio -lcoord -lmtbl -lsvc \
+ 		   -lwww -lboundaries -lpixbounds -ltwoplane -lnsl -lm
+ 
+ SBINS  =  mConvert mFlattenExec mHdrCheck mHdrtbl mTblSort mTileHdr mTileImage
+diff --git a/MontageLib/Add/Makefile b/MontageLib/Add/Makefile
+index 9f8c7b9..e4030a6 100644
+--- a/MontageLib/Add/Makefile
++++ b/MontageLib/Add/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Add/Makefile.LINUX b/MontageLib/Add/Makefile.LINUX
+index 9f8c7b9..e4030a6 100644
+--- a/MontageLib/Add/Makefile.LINUX
++++ b/MontageLib/Add/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/AddCube/Makefile b/MontageLib/AddCube/Makefile
+index d9d798a..84eb5ee 100644
+--- a/MontageLib/AddCube/Makefile
++++ b/MontageLib/AddCube/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/AddCube/Makefile.LINUX b/MontageLib/AddCube/Makefile.LINUX
+index d9d798a..84eb5ee 100644
+--- a/MontageLib/AddCube/Makefile.LINUX
++++ b/MontageLib/AddCube/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ArchiveExec/Makefile b/MontageLib/ArchiveExec/Makefile
+index 8c230b0..2df904c 100644
+--- a/MontageLib/ArchiveExec/Makefile
++++ b/MontageLib/ArchiveExec/Makefile
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I.. -I../../lib/include -fPIC
+-LIBS   =	-L../../lib -lwcs -lmtbl -lbz2
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -fPIC
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lbz2
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ArchiveGet/Makefile b/MontageLib/ArchiveGet/Makefile
+index d3eb260..0c43c03 100644
+--- a/MontageLib/ArchiveGet/Makefile
++++ b/MontageLib/ArchiveGet/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -fPIC
+-LIBS   =	 -L../../lib -lbz2
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -fPIC
++LIBS   =	-rdynamic -L../../lib -lbz2
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ArchiveList/Makefile.LINUX b/MontageLib/ArchiveList/Makefile.LINUX
+index 7b29ad0..e41e239 100644
+--- a/MontageLib/ArchiveList/Makefile.LINUX
++++ b/MontageLib/ArchiveList/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	cc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I.. -I../../lib/include -fPIC
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lcoord -lmtbl -lsvc \
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -fPIC
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lcoord -lmtbl -lsvc \
+ 		-lboundaries -lnsl -lm
+ 
+ .c.o:
+diff --git a/MontageLib/Background/Makefile b/MontageLib/Background/Makefile
+index b78a451..d895eec 100644
+--- a/MontageLib/Background/Makefile
++++ b/MontageLib/Background/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lmtbl -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lmtbl -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Background/Makefile.LINUX b/MontageLib/Background/Makefile.LINUX
+index b78a451..d895eec 100644
+--- a/MontageLib/Background/Makefile.LINUX
++++ b/MontageLib/Background/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lmtbl -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lmtbl -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/BestImage/Makefile b/MontageLib/BestImage/Makefile
+index 6dc3433..08e585b 100644
+--- a/MontageLib/BestImage/Makefile
++++ b/MontageLib/BestImage/Makefile
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I.. -I../../lib/include -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/BgExec/Makefile b/MontageLib/BgExec/Makefile
+index 406c211..a45e5b7 100644
+--- a/MontageLib/BgExec/Makefile
++++ b/MontageLib/BgExec/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/BgModel/Makefile b/MontageLib/BgModel/Makefile
+index 860bbf2..4d399f9 100644
+--- a/MontageLib/BgModel/Makefile
++++ b/MontageLib/BgModel/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lmtbl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lmtbl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/CoverageCheck/Makefile b/MontageLib/CoverageCheck/Makefile
+index 5259317..fcfb349 100644
+--- a/MontageLib/CoverageCheck/Makefile
++++ b/MontageLib/CoverageCheck/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lboundaries -lmtbl -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lboundaries -lmtbl -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/CoverageCheck/Makefile.LINUX b/MontageLib/CoverageCheck/Makefile.LINUX
+index 5259317..fcfb349 100644
+--- a/MontageLib/CoverageCheck/Makefile.LINUX
++++ b/MontageLib/CoverageCheck/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lboundaries -lmtbl -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lboundaries -lmtbl -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Diff/Makefile b/MontageLib/Diff/Makefile
+index e537af4..26ee413 100644
+--- a/MontageLib/Diff/Makefile
++++ b/MontageLib/Diff/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Diff/Makefile.LINUX b/MontageLib/Diff/Makefile.LINUX
+index e537af4..26ee413 100644
+--- a/MontageLib/Diff/Makefile.LINUX
++++ b/MontageLib/Diff/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/DiffExec/Makefile b/MontageLib/DiffExec/Makefile
+index 144f945..a7b5b6e 100644
+--- a/MontageLib/DiffExec/Makefile
++++ b/MontageLib/DiffExec/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/DiffFitExec/Makefile b/MontageLib/DiffFitExec/Makefile
+index 48bab6e..c312f71 100644
+--- a/MontageLib/DiffFitExec/Makefile
++++ b/MontageLib/DiffFitExec/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lpixbounds -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lpixbounds -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Examine/Makefile b/MontageLib/Examine/Makefile
+index 8757d58..dd3297a 100644
+--- a/MontageLib/Examine/Makefile
++++ b/MontageLib/Examine/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -std=c99 -fPIC -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99
+-CFLAGS =	-g -I. -I.. -I../../lib/include -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lcoord -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lcoord -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Examine/Makefile.LINUX b/MontageLib/Examine/Makefile.LINUX
+index 8757d58..dd3297a 100644
+--- a/MontageLib/Examine/Makefile.LINUX
++++ b/MontageLib/Examine/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -std=c99 -fPIC -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99
+-CFLAGS =	-g -I. -I.. -I../../lib/include -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lcoord -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lcoord -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/FitExec/Makefile b/MontageLib/FitExec/Makefile
+index 0c204a7..fc99d7b 100644
+--- a/MontageLib/FitExec/Makefile
++++ b/MontageLib/FitExec/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lpixbounds -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lpixbounds -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Fitplane/Makefile b/MontageLib/Fitplane/Makefile
+index 6c3f81c..47bf5fa 100644
+--- a/MontageLib/Fitplane/Makefile
++++ b/MontageLib/Fitplane/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lpixbounds -lwcs -lmtbl -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lpixbounds -lwcs -lmtbl -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/FixNaN/Makefile.LINUX b/MontageLib/FixNaN/Makefile.LINUX
+index 13ef71f..8c0e221 100644
+--- a/MontageLib/FixNaN/Makefile.LINUX
++++ b/MontageLib/FixNaN/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -std=c99 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I.. -I../../lib/include -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/GetHdr/Makefile b/MontageLib/GetHdr/Makefile
+index 4910571..dde9ec0 100644
+--- a/MontageLib/GetHdr/Makefile
++++ b/MontageLib/GetHdr/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwww -lwcs -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwww -lwcs -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Hdr/Makefile b/MontageLib/Hdr/Makefile
+index 07e5fef..625d86f 100644
+--- a/MontageLib/Hdr/Makefile
++++ b/MontageLib/Hdr/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	cc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC
+-CFLAGS =	-g -I. -I.. -I../../lib/include -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lcoord -lmtbl \
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lcoord -lmtbl \
+ 		-lboundaries -lnsl -lm
+ 
+ .c.o:
+diff --git a/MontageLib/Hdr/Makefile.LINUX b/MontageLib/Hdr/Makefile.LINUX
+index 07e5fef..625d86f 100644
+--- a/MontageLib/Hdr/Makefile.LINUX
++++ b/MontageLib/Hdr/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	cc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC
+-CFLAGS =	-g -I. -I.. -I../../lib/include -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lcoord -lmtbl \
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lcoord -lmtbl \
+ 		-lboundaries -lnsl -lm
+ 
+ .c.o:
+diff --git a/MontageLib/Histogram/Makefile b/MontageLib/Histogram/Makefile
+index b7916ef..69ea0b8 100644
+--- a/MontageLib/Histogram/Makefile
++++ b/MontageLib/Histogram/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Imgtbl/Makefile b/MontageLib/Imgtbl/Makefile
+index 2f826f0..ab14f8a 100644
+--- a/MontageLib/Imgtbl/Makefile
++++ b/MontageLib/Imgtbl/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcoord -lmtbl -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcoord -lmtbl -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Imgtbl/Makefile.LINUX b/MontageLib/Imgtbl/Makefile.LINUX
+index 2f826f0..ab14f8a 100644
+--- a/MontageLib/Imgtbl/Makefile.LINUX
++++ b/MontageLib/Imgtbl/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcoord -lmtbl -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcoord -lmtbl -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/MakeHdr/Makefile b/MontageLib/MakeHdr/Makefile
+index c7cab41..1f5fb05 100644
+--- a/MontageLib/MakeHdr/Makefile
++++ b/MontageLib/MakeHdr/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lboundaries -lmtbl -lcoord -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lboundaries -lmtbl -lcoord -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/MakeHdr/Makefile.LINUX b/MontageLib/MakeHdr/Makefile.LINUX
+index c7cab41..1f5fb05 100644
+--- a/MontageLib/MakeHdr/Makefile.LINUX
++++ b/MontageLib/MakeHdr/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lboundaries -lmtbl -lcoord -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lboundaries -lmtbl -lcoord -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/MakeImg/Makefile.LINUX b/MontageLib/MakeImg/Makefile.LINUX
+index 3734057..8aadc10 100644
+--- a/MontageLib/MakeImg/Makefile.LINUX
++++ b/MontageLib/MakeImg/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcmd -lmtbl -ljson -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcmd -lmtbl -ljson -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Overlaps/Makefile b/MontageLib/Overlaps/Makefile
+index 7fdcd7d..340d074 100644
+--- a/MontageLib/Overlaps/Makefile
++++ b/MontageLib/Overlaps/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lmtbl -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lmtbl -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Overlaps/Makefile.LINUX b/MontageLib/Overlaps/Makefile.LINUX
+index 7fdcd7d..340d074 100644
+--- a/MontageLib/Overlaps/Makefile.LINUX
++++ b/MontageLib/Overlaps/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lmtbl -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lmtbl -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ProjExec/Makefile b/MontageLib/ProjExec/Makefile
+index b16bc77..1c80327 100644
+--- a/MontageLib/ProjExec/Makefile
++++ b/MontageLib/ProjExec/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lwww -lcoord -ltwoplane -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lwww -lcoord -ltwoplane -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Project/Makefile b/MontageLib/Project/Makefile
+index 41d36db..90ec939 100644
+--- a/MontageLib/Project/Makefile
++++ b/MontageLib/Project/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Project/Makefile.LINUX b/MontageLib/Project/Makefile.LINUX
+index 41d36db..90ec939 100644
+--- a/MontageLib/Project/Makefile.LINUX
++++ b/MontageLib/Project/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ProjectCube/Makefile b/MontageLib/ProjectCube/Makefile
+index 66c5fb7..afec509 100644
+--- a/MontageLib/ProjectCube/Makefile
++++ b/MontageLib/ProjectCube/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ProjectCube/Makefile.LINUX b/MontageLib/ProjectCube/Makefile.LINUX
+index 66c5fb7..afec509 100644
+--- a/MontageLib/ProjectCube/Makefile.LINUX
++++ b/MontageLib/ProjectCube/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ProjectPP/Makefile b/MontageLib/ProjectPP/Makefile
+index fe17433..c71ef0e 100644
+--- a/MontageLib/ProjectPP/Makefile
++++ b/MontageLib/ProjectPP/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -ltwoplane -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -ltwoplane -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ProjectPP/Makefile.LINUX b/MontageLib/ProjectPP/Makefile.LINUX
+index fe17433..c71ef0e 100644
+--- a/MontageLib/ProjectPP/Makefile.LINUX
++++ b/MontageLib/ProjectPP/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -ltwoplane -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -ltwoplane -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ProjectQL/Makefile b/MontageLib/ProjectQL/Makefile
+index 08a1014..1302845 100644
+--- a/MontageLib/ProjectQL/Makefile
++++ b/MontageLib/ProjectQL/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ProjectQL/Makefile.LINUX b/MontageLib/ProjectQL/Makefile.LINUX
+index 08a1014..1302845 100644
+--- a/MontageLib/ProjectQL/Makefile.LINUX
++++ b/MontageLib/ProjectQL/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/PutHdr/Makefile b/MontageLib/PutHdr/Makefile
+index 83c0858..ba32319 100644
+--- a/MontageLib/PutHdr/Makefile
++++ b/MontageLib/PutHdr/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Shrink/Makefile b/MontageLib/Shrink/Makefile
+index 61bfebc..56453d0 100644
+--- a/MontageLib/Shrink/Makefile
++++ b/MontageLib/Shrink/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/ShrinkCube/Makefile b/MontageLib/ShrinkCube/Makefile
+index 03f2c04..bb51868 100644
+--- a/MontageLib/ShrinkCube/Makefile
++++ b/MontageLib/ShrinkCube/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/SubCube/Makefile b/MontageLib/SubCube/Makefile
+index 856b0c5..97077b7 100644
+--- a/MontageLib/SubCube/Makefile
++++ b/MontageLib/SubCube/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/SubCube/Makefile.LINUX b/MontageLib/SubCube/Makefile.LINUX
+index 856b0c5..97077b7 100644
+--- a/MontageLib/SubCube/Makefile.LINUX
++++ b/MontageLib/SubCube/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Subimage/Makefile b/MontageLib/Subimage/Makefile
+index 9395849..90f9ae9 100644
+--- a/MontageLib/Subimage/Makefile
++++ b/MontageLib/Subimage/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Subimage/Makefile.LINUX b/MontageLib/Subimage/Makefile.LINUX
+index 9395849..90f9ae9 100644
+--- a/MontageLib/Subimage/Makefile.LINUX
++++ b/MontageLib/Subimage/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Subset/Makefile.LINUX b/MontageLib/Subset/Makefile.LINUX
+index eed94b3..92cfa8a 100644
+--- a/MontageLib/Subset/Makefile.LINUX
++++ b/MontageLib/Subset/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lcoord -lmtbl -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lcoord -lmtbl -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/TANHdr/Makefile b/MontageLib/TANHdr/Makefile
+index c35aad9..29c3bd5 100644
+--- a/MontageLib/TANHdr/Makefile
++++ b/MontageLib/TANHdr/Makefile
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lmtbl -lcfitsio -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lmtbl -lcfitsio -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Transpose/Makefile.LINUX b/MontageLib/Transpose/Makefile.LINUX
+index 69f21a9..9573a2a 100644
+--- a/MontageLib/Transpose/Makefile.LINUX
++++ b/MontageLib/Transpose/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I.. -I../../lib/include -std=c99 -fPIC -Wall
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lcoord -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -std=c99 -fPIC -Wall
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lcoord -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/Viewer/Makefile.LINUX b/MontageLib/Viewer/Makefile.LINUX
+index e13fa06..48de986 100644
+--- a/MontageLib/Viewer/Makefile.LINUX
++++ b/MontageLib/Viewer/Makefile.LINUX
+@@ -11,9 +11,9 @@ DATA_DIR = $(shell cd ../../data; pwd)
+ 
+ CC     =        gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC \
+                 -DFONT_DIR='"$(DATA_DIR)/fonts/"'
+-CFLAGS =	-g -I. -I.. -I../../lib/include -I../../lib/freetype/include \
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -I../../lib/freetype/include \
+ 		-I../../lib/freetype/include/freetype2 -I../../Montage -Wall
+-LIBS   =        -L../../lib -lwcs -lcoord -lcfitsio -ljpeg -llodepng -lmtbl -ljson -lcmd \
++LIBS   =        -rdynamic -L../../lib -lwcs -lcoord -lcfitsio -ljpeg -llodepng -lmtbl -ljson -lcmd \
+                 -L../../lib/freetype/lib -lfreetype -lnsl -lm
+ 
+ .c.o:
+diff --git a/MontageLib/WWT/Makefile.LINUX b/MontageLib/WWT/Makefile.LINUX
+index a3b0acf..5896c3b 100644
+--- a/MontageLib/WWT/Makefile.LINUX
++++ b/MontageLib/WWT/Makefile.LINUX
+@@ -2,8 +2,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC
+-CFLAGS =	-g -I. -I.. -I../../lib/include -Wall
+-LIBS   =	-L../../lib -lsvc -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -Wall
++LIBS   =	-rdynamic -L../../lib -lsvc -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/MontageLib/util/Makefile b/MontageLib/util/Makefile
+index 4e53fa9..9d1372a 100644
+--- a/MontageLib/util/Makefile
++++ b/MontageLib/util/Makefile
+@@ -3,10 +3,10 @@
+ 
+ CC     =	gcc
+ MPICC  =
+-CFLAGS =	-g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
+-
++CFLAGS =	-finstrument-functions -g -I. -I.. -I../../lib/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99 -fPIC -Wall
++LIBS   =        -rdynamic
+ .c.o:
+-		$(CC) $(CFLAGS)  -c  $*.c
++		$(CC) $(CFLAGS)  -c  $*.c ${LIBS}
+ 
+ all:		filePath.o debugCheck.o checkFile.o checkHdr.o checkWCS.o version.o
+ 
+diff --git a/ancillary/Makefile b/ancillary/Makefile
+index 7eaa394..a2b48b6 100644
+--- a/ancillary/Makefile
++++ b/ancillary/Makefile
+@@ -1,8 +1,8 @@
+ HPXcvt:		HPXcvt.o
+-				gcc -std=gnu99 -o HPXcvt HPXcvt.o -L../lib -lcfitsio -lm
++				gcc -std=gnu99 -finstrument-functions -o HPXcvt HPXcvt.o -L../lib -lcfitsio -lm -rdynamic
+ 
+ HPXcvt.o:	HPXcvt.c
+-				gcc -std=gnu99 -g -O2 -I../lib/include -c -o HPXcvt.o HPXcvt.c
++				gcc -std=gnu99 -finstrument-functions -g -O2 -I../lib/include -c -o HPXcvt.o HPXcvt.c -rdynamic
+ 
+ install:
+ 				cp HPXcvt ../bin
+diff --git a/grid/Globus/ExecTG/Makefile.LINUX b/grid/Globus/ExecTG/Makefile.LINUX
+index 95734b6..d331496 100644
+--- a/grid/Globus/ExecTG/Makefile.LINUX
++++ b/grid/Globus/ExecTG/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I../../../lib/include -I../../../Montage
+-LIBS   =	-L../../../lib -lsvc -lmtbl -lwcs -lcfitsio -lcoord -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../../lib/include -I../../../Montage
++LIBS   =	-rdynamic -L../../../lib -lsvc -lmtbl -lwcs -lcfitsio -lcoord -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/grid/Globus/NotifyTG/Makefile.LINUX b/grid/Globus/NotifyTG/Makefile.LINUX
+index 987db41..63b4eff 100644
+--- a/grid/Globus/NotifyTG/Makefile.LINUX
++++ b/grid/Globus/NotifyTG/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I../../../lib/include -I../../../Montage
+-LIBS   =	-L../../../lib -lsvc -lmtbl -lwcs -lcfitsio -lcoord -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../../lib/include -I../../../Montage
++LIBS   =	-rdynamic -L../../../lib -lsvc -lmtbl -lwcs -lcfitsio -lcoord -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/grid/Pegasus/Makefile.LINUX b/grid/Pegasus/Makefile.LINUX
+index 8d03ee2..323e829 100644
+--- a/grid/Pegasus/Makefile.LINUX
++++ b/grid/Pegasus/Makefile.LINUX
+@@ -15,8 +15,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I../../Montage -I../../lib/include
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lcoord -lmtbl -lsvc \
++CFLAGS =	-finstrument-functions -g -I. -I../../Montage -I../../lib/include
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lcoord -lmtbl -lsvc \
+ 		-lboundaries -lnsl -lm
+ 
+ .c.o:
+diff --git a/lib/src/Makefile b/lib/src/Makefile
+index bdd6044..ae71cf9 100644
+--- a/lib/src/Makefile
++++ b/lib/src/Makefile
+@@ -1,19 +1,19 @@
+ all:
+-	(cd bzip2-1.0.6; make; cp libbz2.a ../..; cp bzlib.h ../../include)
+-	(cd cfitsio-3.25; ./configure; make; cp libcfitsio.a ../..; cp *.h ../../include)
+-	(cd cmd; make; make install)
+-	(cd coord; make; make install)
+-	(cd mtbl; make; make install)
+-	(cd svc; make; make install)
+-	(cd json; make; make install)
+-	(cd boundaries; make; make install)
+-	(cd pixbounds; make; make install)
+-	(cd www; make; make install)
+-	(cd wcssubs3.9.0_montage; make; cp libwcs.a ../..; cp *.h ../../include)
+-	(cd two_plane_v1.1; make; make install)
+-	(cd lodepng_20140823; make; make install)
+-	(cd jpeg-8b; ./configure --with-pic; make; cp .libs/libjpeg.a ../..; cp jpeglib.h jconfig.h jmorecfg.h ../../include)
+-	(cd freetype-2.9.1; ./configure --prefix=`pwd`/../../freetype --without-png --without-zlib; make; make install)
++	(cd bzip2-1.0.6; make CFLAGS=-finstrument-functions CXXFLAGS=-finstrument-functions LDFLAGS=-rdynamic; cp libbz2.a ../..; cp bzlib.h ../../include)
++	(cd cfitsio-3.25; ./configure CFLAGS=-finstrument-functions CXXFLAGS=-finstrument-functions LDFLAGS=-rdynamic; make; cp libcfitsio.a ../..; cp *.h ../../include)
++	(cd cmd; make LDFLAGS=-rdynamic; make install)
++	(cd coord; make LDFLAGS=-rdynamic; make install)
++	(cd mtbl; make LDFLAGS=-rdynamic; make install)
++	(cd svc; make LDFLAGS=-rdynamic; make install)
++	(cd json; make LDFLAGS=-rdynamic; make install)
++	(cd boundaries; make LDFLAGS=-rdynamic; make install)
++	(cd pixbounds; make LDFLAGS=-rdynamic; make install)
++	(cd www; make LDFLAGS=-rdynamic; make install)
++	(cd wcssubs3.9.0_montage; make LDFLAGS=-rdynamic; cp libwcs.a ../..; cp *.h ../../include)
++	(cd two_plane_v1.1 ; make LDFLAGS=-rdynamic; make install)
++	(cd lodepng_20140823; make LDFLAGS=-rdynamic; make install)
++	(cd jpeg-8b; ./configure --with-pic CFLAGS=-finstrument-functions CXXFLAGS=-finstrument-functions LDFLAGS=-rdynamic; make; cp .libs/libjpeg.a ../..; cp jpeglib.h jconfig.h jmorecfg.h ../../include)
++	(cd freetype-2.9.1; ./configure --prefix=`pwd`/../../freetype --without-png --without-zlib CFLAGS=-finstrument-functions CXXFLAGS=-finstrument-functions LDFLAGS=-rdynamic; make; make install)
+ 	(cd ..; ranlib *.a)
+ 	chmod 644 ../include/*.h
+ 
+diff --git a/lib/src/boundaries/Makefile b/lib/src/boundaries/Makefile
+index abc614d..444f1b1 100644
+--- a/lib/src/boundaries/Makefile
++++ b/lib/src/boundaries/Makefile
+@@ -1,5 +1,5 @@
+ CC      =		gcc
+-CFLAGS  =		-c -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CFLAGS  =		-finstrument-functions -c -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ LIBNAME =		libboundaries.a
+ 
+ SRCS    =		boundaries.c
+diff --git a/lib/src/cmd/Makefile b/lib/src/cmd/Makefile
+index 25202b3..79bd7cc 100644
+--- a/lib/src/cmd/Makefile
++++ b/lib/src/cmd/Makefile
+@@ -1,5 +1,5 @@
+ CC      =		gcc
+-CFLAGS  =		-c -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CFLAGS  =		-finstrument-functions -c -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ LIBNAME =		libcmd.a
+ 
+ SRCS    =		cmd.c
+diff --git a/lib/src/json/Makefile b/lib/src/json/Makefile
+index 964bd2d..e27e77d 100644
+--- a/lib/src/json/Makefile
++++ b/lib/src/json/Makefile
+@@ -1,4 +1,4 @@
+-CC =		 gcc -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CC =		 gcc -finstrument-functions -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ 
+ libjson.a:	jsonlib.o
+ 		ar rv libjson.a jsonlib.o
+diff --git a/lib/src/lodepng_20140823/Makefile b/lib/src/lodepng_20140823/Makefile
+index 6cf4954..ceb4431 100644
+--- a/lib/src/lodepng_20140823/Makefile
++++ b/lib/src/lodepng_20140823/Makefile
+@@ -1,5 +1,5 @@
+ CC      =   gcc
+-CFLAGS  =   -c -ansi -Wall -fPIC -g -I. -I../../include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CFLAGS  =   -finstrument-functions -c -ansi -Wall -fPIC -g -I. -I../../include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ 
+ liblodepng.a:	lodepng.o 
+ 				ar rv liblodepng.a lodepng.o 
+diff --git a/lib/src/mtbl/Makefile b/lib/src/mtbl/Makefile
+index bf4aa48..dbcf273 100644
+--- a/lib/src/mtbl/Makefile
++++ b/lib/src/mtbl/Makefile
+@@ -1,4 +1,4 @@
+-CC = gcc -g -fPIC -I . -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CC = gcc -finstrument-functions -g -fPIC -I . -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ 
+ libmtbl.a:	mtbl.c
+ 		$(CC) -c mtbl.c
+diff --git a/lib/src/pixbounds/Makefile b/lib/src/pixbounds/Makefile
+index 97530b3..8c234a3 100644
+--- a/lib/src/pixbounds/Makefile
++++ b/lib/src/pixbounds/Makefile
+@@ -1,5 +1,5 @@
+ CC      =               gcc 
+-CFLAGS  =               -c -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CFLAGS  =               -finstrument-functions -c -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ LIBNAME =               libpixbounds.a
+ 
+ SRCS    =               pixbounds.c
+diff --git a/lib/src/svc/Makefile b/lib/src/svc/Makefile
+index 4944722..df77c1f 100644
+--- a/lib/src/svc/Makefile
++++ b/lib/src/svc/Makefile
+@@ -1,4 +1,4 @@
+-CC =		 gcc -g -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CC =		 gcc -finstrument-functions -g -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ 
+ libsvc.a:	svclib.o structlib.o
+ 		ar rv libsvc.a svclib.o structlib.o
+diff --git a/lib/src/two_plane_v1.1/Makefile b/lib/src/two_plane_v1.1/Makefile
+index 511c032..397abc5 100644
+--- a/lib/src/two_plane_v1.1/Makefile
++++ b/lib/src/two_plane_v1.1/Makefile
+@@ -1,5 +1,5 @@
+ CC      =       gcc
+-CFLAGS  =       -c -ansi -Wall -fPIC -g -I. -I../../include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CFLAGS  =       -finstrument-functions -c -ansi -Wall -fPIC -g -I. -I../../include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ 
+ libtwoplane.a:	two_plane.o distort.o initdistdata.o \
+ 		undistort.o redefine_pointing.o
+diff --git a/lib/src/wcssubs3.9.0_montage/Makefile b/lib/src/wcssubs3.9.0_montage/Makefile
+index ef67b4a..f17941d 100644
+--- a/lib/src/wcssubs3.9.0_montage/Makefile
++++ b/lib/src/wcssubs3.9.0_montage/Makefile
+@@ -1,4 +1,4 @@
+-CC = gcc -fPIC
++CC = gcc -fPIC -finstrument-functions
+ 
+ OBJS =	wcsinit.o wcs.o wcscon.o fitsfile.o imhfile.o \
+ 			hget.o hput.o iget.o imio.o worldpos.o platepos.o \
+diff --git a/lib/src/www/Makefile b/lib/src/www/Makefile
+index e57b319..f44e883 100644
+--- a/lib/src/www/Makefile
++++ b/lib/src/www/Makefile
+@@ -1,5 +1,5 @@
+ CC      =		gcc
+-CFLAGS  =		-c -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
++CFLAGS  =		-finstrument-functions -c -g -fPIC -I. -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+ LIBNAME =		libwww.a
+ 
+ SRCS    =		www.c
+diff --git a/util/Calibrate/Makefile b/util/Calibrate/Makefile
+index 55a2c32..85dbd68 100644
+--- a/util/Calibrate/Makefile
++++ b/util/Calibrate/Makefile
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lmtbl -lsvc -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lmtbl -lsvc -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/util/CatMap/Makefile.LINUX b/util/CatMap/Makefile.LINUX
+index 9a41477..287f168 100644
+--- a/util/CatMap/Makefile.LINUX
++++ b/util/CatMap/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lmtbl -lcoord -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lmtbl -lcoord -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/util/CatSearch/Makefile b/util/CatSearch/Makefile
+index 2ed12de..6dd2ad7 100644
+--- a/util/CatSearch/Makefile
++++ b/util/CatSearch/Makefile
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lsvc -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lsvc -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/util/Exec/Makefile.LINUX b/util/Exec/Makefile.LINUX
+index d318acf..228a4ab 100644
+--- a/util/Exec/Makefile.LINUX
++++ b/util/Exec/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lsvc -lmtbl -lwcs -lcfitsio -lcoord -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lsvc -lmtbl -lwcs -lcfitsio -lcoord -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/util/MovingTarget/Makefile.LINUX b/util/MovingTarget/Makefile.LINUX
+index 540709c..df3f4a2 100644
+--- a/util/MovingTarget/Makefile.LINUX
++++ b/util/MovingTarget/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I./rtree -I../../lib/include -I../../Montage
+-LIBS   =	-Lrtree -lrtree \
++CFLAGS =	-finstrument-functions -g -I. -I./rtree -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -Lrtree -lrtree \
+ 		-L../../lib -lcmd -lwcs -lcoord -lmtbl -lcfitsio -lnsl -lm
+ 
+ .c.o:
+diff --git a/util/Pad/Makefile.LINUX b/util/Pad/Makefile.LINUX
+index acf4c25..61e7351 100644
+--- a/util/Pad/Makefile.LINUX
++++ b/util/Pad/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/util/Pix2Coord/Makefile.LINUX b/util/Pix2Coord/Makefile.LINUX
+index 4c6d394..211103b 100644
+--- a/util/Pix2Coord/Makefile.LINUX
++++ b/util/Pix2Coord/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lwcs -lcoord -lcfitsio -ljpeg -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lwcs -lcoord -lcfitsio -ljpeg -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/util/Rotate/Makefile.LINUX b/util/Rotate/Makefile.LINUX
+index 1475c3c..71d9c7e 100644
+--- a/util/Rotate/Makefile.LINUX
++++ b/util/Rotate/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -std=c99 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -std=c99
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lwcs -lcfitsio -lcoord -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lwcs -lcfitsio -lcoord -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/util/Search/Makefile.LINUX b/util/Search/Makefile.LINUX
+index 7941efb..535d1dd 100644
+--- a/util/Search/Makefile.LINUX
++++ b/util/Search/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I./rtree -I../../lib/include -I../../Montage
+-LIBS   =	-Lrtree -lrtree \
++CFLAGS =	-finstrument-functions -g -I. -I./rtree -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -Lrtree -lrtree \
+ 		-L../../lib -lcmd -lwcs -lcoord -lmtbl -lcfitsio -lnsl -lm
+ 
+ .c.o:
+diff --git a/util/ShrinkHdr/Makefile.LINUX b/util/ShrinkHdr/Makefile.LINUX
+index 5b8ee6e..74409dc 100644
+--- a/util/ShrinkHdr/Makefile.LINUX
++++ b/util/ShrinkHdr/Makefile.LINUX
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lwcs -lcoord -lcfitsio -ljpeg -lnsl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lwcs -lcoord -lcfitsio -ljpeg -lnsl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
+diff --git a/util/TblExec/Makefile b/util/TblExec/Makefile
+index 58eb224..fa5b1d9 100644
+--- a/util/TblExec/Makefile
++++ b/util/TblExec/Makefile
+@@ -8,8 +8,8 @@
+ .SUFFIXES: .c .o
+ 
+ CC     =	gcc -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+-CFLAGS =	-g -I. -I../../lib/include -I../../Montage
+-LIBS   =	-L../../lib -lsvc -lmtbl -lm
++CFLAGS =	-finstrument-functions -g -I. -I../../lib/include -I../../Montage
++LIBS   =	-rdynamic -L../../lib -lsvc -lmtbl -lm
+ 
+ .c.o:
+ 		$(CC) $(CFLAGS)  -c  $*.c
