@@ -1,0 +1,13 @@
+name: analysis 
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - dask
+  - distributed
+  - dask-jobqueue
+  - matplotlib
+  - tqdm
+  - pyarrow
