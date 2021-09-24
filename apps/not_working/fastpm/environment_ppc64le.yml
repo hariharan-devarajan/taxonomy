@@ -1,9 +1,0 @@
-name: fastpm 
-
-channels:
-  - bccp
-  - conda-forge
-  - defaults
-
-dependencies:
-  - nbodykit
