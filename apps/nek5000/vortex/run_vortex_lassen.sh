@@ -1,11 +1,11 @@
 #!/bin/bash
 ### LSF syntax
-#BSUB -nnodes 32          #number of nodes
+#BSUB -nnodes 4         #number of nodes
 #BSUB -W 15                 #walltime in minutes
 #BSUB -G asccasc           #account
 #BSUB -J nek500_vortex     #name of job
 #BSUB -q pbatch             #queue to use
-NUM_NODES=32
+NUM_NODES=4
 
 source ~/.profile
 source iopp-init
@@ -16,9 +16,11 @@ BIN_DIR=$APP_DIR/bin
 cd $CASE_DIR
 
 CASE_NAME=r1854a
-PROCS_PER_NODE=40
-TOTAL_PROCS=$((NUM_NODES*PROCS_PER_NODE))
-echo $CASE_NAME  >  SESSION.NAME
-echo `pwd`'/' >>  SESSION.NAME
+PROCS_PER_NODE=35
 
-srun -N $NUM_NODES --ntasks-per-node $PROCS_PER_NODE -n $TOTAL_PROCS ./nek5000
+export RECORDER_TRACES_DIR=/p/gpfs1/haridev/iopp/recorder_logs
+
+echo $CASE_NAME  >  SESSION.NAME
+echo $CASE_DIR/ >>  SESSION.NAME
+
+lrun -N$NUM_NODES -T$PROCS_PER_NODE --env "LD_PRELOAD=$tracer_lib_path" $CASE_DIR/nek5000
