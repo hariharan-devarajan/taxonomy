@@ -16,8 +16,6 @@ cd $CASE_DIR
 CASE_NAME=expansion
 tracer_lib_path=/usr/workspace/iopp/software/Recorder/install/lib/librecorder.so
 
-export RECORDER_TRACES_DIR=/p/gpfs1/haridev/iopp/recorder_logs
-
 echo $CASE_NAME  >  SESSION.NAME
 echo $CASE_DIR/ >>  SESSION.NAME
 

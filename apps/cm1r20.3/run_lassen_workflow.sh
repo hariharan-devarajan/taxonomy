@@ -5,6 +5,7 @@
 #BSUB -G asccasc           #account
 #BSUB -J cm1  #name of job
 #BSUB -q pbatch             #queue to use
+workflow_index=WINDEX
 NUM_NODES=32
 
 # Usage: bsub run_lassen_per_workflow.sh <workflow index> 
@@ -46,7 +47,6 @@ tracer_lib_path=$recorder_lib_path
 
 cp -r $cm1_executable_path/* $run_dir
 
-workflow_index=$1
 
 pushd $run_dir
 
@@ -70,4 +70,3 @@ pushd $workflow_dir
 lrun -N $NUM_NODES -T $tasks_per_node --env "LD_PRELOAD=$tracer_lib_path" ./cm1.exe  > $CWD/cm1_${workflow_index}_${LSB_JOBID}_recorder.log
 popd
 popd
-

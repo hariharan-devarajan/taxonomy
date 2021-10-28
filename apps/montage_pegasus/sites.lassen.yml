@@ -1,0 +1,36 @@
+x-pegasus:
+  apiLang: python
+  createdBy: haridev
+  createdOn: 10-03-21T11:09:31Z
+pegasus: '5.0'
+sites:
+- name: local
+  directories:
+  - type: localStorage
+    path: /p/gpfs1/iopp/temp/montage-workflow/output
+    fileServers:
+    - url: file:///p/gpfs1/iopp/temp/montage-workflow/output
+      operation: all
+  profiles:
+    pegasus:
+      stagein.clusters: 1
+- name: condorpool
+  directories:
+  - type: sharedScratch
+    path: /p/gpfs1/iopp/temp/montage-workflow/scratch
+    fileServers:
+    - url: file:///p/gpfs1/iopp/temp/montage-workflow/scratch
+      operation: all 
+  profiles:
+    pegasus:
+      style: condor
+      stagein.clusters: 1
+      data.configuration: sharedfs
+      auxillary.local: "true"
+    condor:
+      universe: vanilla
+    env:
+      RECORDER_NO_MPI: 1
+      LD_PRELOAD: /usr/workspace/iopp/software/Recorder/install/lib/librecorder.so 
+      RECORDER_TRACES_DIR: /p/gpfs1/iopp/recorder_logs/montage_pegasus_${USER}_${LSB_JOBID}
+      PEGASUS_HOME: /usr/WS2/iopp/software/pegasus/install

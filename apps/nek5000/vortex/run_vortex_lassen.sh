@@ -1,6 +1,6 @@
 #!/bin/bash
 ### LSF syntax
-#BSUB -nnodes 4         #number of nodes
+#BSUB -nnodes 4        #number of nodes
 #BSUB -W 15                 #walltime in minutes
 #BSUB -G asccasc           #account
 #BSUB -J nek500_vortex     #name of job
@@ -18,8 +18,7 @@ cd $CASE_DIR
 CASE_NAME=r1854a
 PROCS_PER_NODE=35
 
-export RECORDER_TRACES_DIR=/p/gpfs1/haridev/iopp/recorder_logs
-
+tracer_lib_path=/usr/workspace/iopp/software/Recorder/install/lib/librecorder.so
 echo $CASE_NAME  >  SESSION.NAME
 echo $CASE_DIR/ >>  SESSION.NAME
 

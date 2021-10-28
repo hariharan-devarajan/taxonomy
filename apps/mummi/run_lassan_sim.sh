@@ -6,19 +6,25 @@
 #BSUB -J mummi             #name of job
 #BSUB -q pbatch            #queue to use
 
+SCRIPT_DIR=$PWD
+mkdir -p $LSB_JOBID 
+cd $LSB_JOBID
 CURR_DIR=$PWD
+cd $SCRIPT_DIR
 ulimit -m 28 10485760
 echo "date:" `date`
 echo "host:" `hostname`
 echo "pwd: " `pwd`
 echo "uri:  " $FLUX_URI
-source $PWD/load_ddcmd.sh
+source $PWD/load_ddcmd_mummi.sh
 parent_outpath=$pfs/temp/$LSB_JOBID
 rm -r $parent_outpath 
 
-simname=mu-6-1ras1raf-instance3_000000001169
-#for simname in mu-6-1ras1raf-instance3_000000001169; do 
+IFS=$'\r\n' GLOBIGNORE='*' command eval 'PATCHES=($(cat $SCRIPT_DIR/simlist))'
 
+count=1
+for simname in "${PATCHES[@]}"
+do
   echo "--- Starting $simname ---"
   srcpath=$iopp/applications/mummi/sims-cg/$simname
   outpath=$pfs/temp/$LSB_JOBID/sims-cg/$simname
@@ -27,7 +33,7 @@ simname=mu-6-1ras1raf-instance3_000000001169
   locpath=/var/tmp/$USER/cg/${simname}_$LSB_JOBID
   echo $outpath " " $locpath
   mkdir -p $locpath; 
-  pushd $locpath
+  cd $locpath
 
   cp $outpath/ConsAtom.data                         $locpath/
   cp $outpath/martini.data                          $locpath/
@@ -47,11 +53,12 @@ simname=mu-6-1ras1raf-instance3_000000001169
   snum=$(echo "${sname//[!0-9]/}")
   [[ ! -z "$snum" ]] && cframe=`expr $snum + 25000` || cframe=25000
 
-  pushd $outpath
+  cd $outpath
   # 4 tasks on 4 resources on 1 CPU and 4 GPUs per node
-  jsrun -n 1 -a 1 -c 1 -g 1 -r 1 ddcMD_GPU -o object.data molecule.data #  >> $CURR_DIR/${LSB_JOBID}.log
-  popd
-  popd
-#done
+  jsrun -n 1 -a 1 -c 1 -g 1 -r 1 ddcMD_GPU -o object.data molecule.data  >> $CURR_DIR/${count}.log & 
+  echo "executed $simname"
+  count=$((count +1))
+done
 echo "Waiting..."
 wait
+echo "All simulations done"

@@ -1,0 +1,1626 @@
+data_reader {
+  reader {
+    name: "python"
+    role: "train"
+    shuffle: true
+    validation_percent: 0.2
+    percent_of_data_to_use: 1.0
+    python {
+      module: "dataset3D"
+      module_dir: "/usr/WS2/iopp/applications/lbann/applications/physics/cosmology/ExaGAN"
+      sample_function: "get_sample"
+      num_samples_function: "num_samples"
+      sample_dims_function: "sample_dims"
+    }
+  }
+}
+model {
+  objective_function {
+    layer_term {
+      scale_factor: 1.0
+      layer: "d1_real_bce"
+    }
+    layer_term {
+      scale_factor: 1.0
+      layer: "d1_fake_bce"
+    }
+    layer_term {
+      scale_factor: 1.0
+      layer: "d_adv_bce"
+    }
+  }
+  metric {
+    layer_metric {
+      layer: "d_adv_bce"
+      name: "d_adv_bce"
+    }
+  }
+  metric {
+    layer_metric {
+      layer: "d1_real_bce"
+      name: "d1_real_bce"
+    }
+  }
+  metric {
+    layer_metric {
+      layer: "d1_fake_bce"
+      name: "d1_fake_bce"
+    }
+  }
+  num_epochs: 2
+  layer {
+    name: "noise_vec"
+    children: "noise_vec_reshape"
+    device_allocation: "GPU"
+    gaussian {
+      stdev: 1.0
+      neuron_dims: "64"
+    }
+  }
+  layer {
+    name: "noise_vec_reshape"
+    parents: "noise_vec"
+    children: "layer25"
+    device_allocation: "GPU"
+    reshape {
+      dims: "1 64"
+    }
+  }
+  layer {
+    name: "layer25"
+    parents: "noise_vec_reshape"
+    children: "gen_zin_reshape"
+    device_allocation: "GPU"
+    fully_connected {
+      num_neurons: 262144
+      has_bias: true
+    }
+  }
+  layer {
+    name: "gen_zin_reshape"
+    parents: "layer25"
+    children: "Exa3DGAN0_gen0_instance1"
+    device_allocation: "GPU"
+    reshape {
+      dims: "512 8 8 8"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_gen0_instance1"
+    parents: "gen_zin_reshape"
+    children: "g_relu0"
+    weights: "weights37 Exa3DGAN0_gen0_bias"
+    deconvolution {
+      num_dims: 3
+      num_output_channels: 256
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "2 2 2"
+      conv_pads: "0 0 0"
+      conv_strides: "2 2 2"
+      conv_dilations: "1 1 1"
+      has_bias: true
+    }
+  }
+  layer {
+    name: "g_relu0"
+    parents: "Exa3DGAN0_gen0_instance1"
+    children: "Exa3DGAN0_gen1_instance1"
+    device_allocation: "GPU"
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_gen1_instance1"
+    parents: "g_relu0"
+    children: "g_relu1"
+    weights: "weights39 Exa3DGAN0_gen1_bias"
+    deconvolution {
+      num_dims: 3
+      num_output_channels: 128
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "2 2 2"
+      conv_pads: "0 0 0"
+      conv_strides: "2 2 2"
+      conv_dilations: "1 1 1"
+      has_bias: true
+    }
+  }
+  layer {
+    name: "g_relu1"
+    parents: "Exa3DGAN0_gen1_instance1"
+    children: "Exa3DGAN0_gen2_instance1"
+    device_allocation: "GPU"
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_gen2_instance1"
+    parents: "g_relu1"
+    children: "g_relu2"
+    weights: "weights41 Exa3DGAN0_gen2_bias"
+    deconvolution {
+      num_dims: 3
+      num_output_channels: 64
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "2 2 2"
+      conv_pads: "0 0 0"
+      conv_strides: "2 2 2"
+      conv_dilations: "1 1 1"
+      has_bias: true
+    }
+  }
+  layer {
+    name: "g_relu2"
+    parents: "Exa3DGAN0_gen2_instance1"
+    children: "gen_img_instance1_deconv"
+    device_allocation: "GPU"
+    relu {
+    }
+  }
+  layer {
+    name: "gen_img_instance1_deconv"
+    parents: "g_relu2"
+    children: "gen_img_instance1_activation"
+    weights: "weights43 gen_img_bias"
+    deconvolution {
+      num_dims: 3
+      num_output_channels: 1
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "2 2 2"
+      conv_pads: "0 0 0"
+      conv_strides: "2 2 2"
+      conv_dilations: "1 1 1"
+      has_bias: true
+    }
+  }
+  layer {
+    name: "gen_img_instance1_activation"
+    parents: "gen_img_instance1_deconv"
+    children: "stop_gradient Exa3DGAN0_disc2_conv0_conv_instance1"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.TanhOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv0_conv_instance1"
+    parents: "gen_img_instance1_activation"
+    children: "Exa3DGAN0_disc2_conv0_bn_instance1"
+    weights: "weights19 Exa3DGAN0_disc2_conv0_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 64
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv0_bn_instance1"
+    parents: "Exa3DGAN0_disc2_conv0_conv_instance1"
+    children: "Exa3DGAN0_disc2_conv0_pool_instance1"
+    weights: "Exa3DGAN0_disc2_conv0_bn_scale Exa3DGAN0_disc2_conv0_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv0_pool_instance1"
+    parents: "Exa3DGAN0_disc2_conv0_bn_instance1"
+    children: "Exa3DGAN0_disc2_conv0_activation_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv0_activation_instance1"
+    parents: "Exa3DGAN0_disc2_conv0_pool_instance1"
+    children: "Exa3DGAN0_disc2_conv1_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv1_conv_instance1"
+    parents: "Exa3DGAN0_disc2_conv0_activation_instance1"
+    children: "Exa3DGAN0_disc2_conv1_bn_instance1"
+    weights: "weights23 Exa3DGAN0_disc2_conv1_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 128
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv1_bn_instance1"
+    parents: "Exa3DGAN0_disc2_conv1_conv_instance1"
+    children: "Exa3DGAN0_disc2_conv1_pool_instance1"
+    weights: "Exa3DGAN0_disc2_conv1_bn_scale Exa3DGAN0_disc2_conv1_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv1_pool_instance1"
+    parents: "Exa3DGAN0_disc2_conv1_bn_instance1"
+    children: "Exa3DGAN0_disc2_conv1_activation_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv1_activation_instance1"
+    parents: "Exa3DGAN0_disc2_conv1_pool_instance1"
+    children: "Exa3DGAN0_disc2_conv2_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv2_conv_instance1"
+    parents: "Exa3DGAN0_disc2_conv1_activation_instance1"
+    children: "Exa3DGAN0_disc2_conv2_bn_instance1"
+    weights: "weights27 Exa3DGAN0_disc2_conv2_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 256
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv2_bn_instance1"
+    parents: "Exa3DGAN0_disc2_conv2_conv_instance1"
+    children: "Exa3DGAN0_disc2_conv2_pool_instance1"
+    weights: "Exa3DGAN0_disc2_conv2_bn_scale Exa3DGAN0_disc2_conv2_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv2_pool_instance1"
+    parents: "Exa3DGAN0_disc2_conv2_bn_instance1"
+    children: "Exa3DGAN0_disc2_conv2_activation_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv2_activation_instance1"
+    parents: "Exa3DGAN0_disc2_conv2_pool_instance1"
+    children: "Exa3DGAN0_disc2_conv3_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv3_conv_instance1"
+    parents: "Exa3DGAN0_disc2_conv2_activation_instance1"
+    children: "Exa3DGAN0_disc2_conv3_bn_instance1"
+    weights: "weights31 Exa3DGAN0_disc2_conv3_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 512
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv3_bn_instance1"
+    parents: "Exa3DGAN0_disc2_conv3_conv_instance1"
+    children: "Exa3DGAN0_disc2_conv3_pool_instance1"
+    weights: "Exa3DGAN0_disc2_conv3_bn_scale Exa3DGAN0_disc2_conv3_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv3_pool_instance1"
+    parents: "Exa3DGAN0_disc2_conv3_bn_instance1"
+    children: "Exa3DGAN0_disc2_conv3_activation_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_conv3_activation_instance1"
+    parents: "Exa3DGAN0_disc2_conv3_pool_instance1"
+    children: "Exa3DGAN0_disc2_fc_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc2_fc_instance1"
+    parents: "Exa3DGAN0_disc2_conv3_activation_instance1"
+    children: "d_adv_bce"
+    data_layout: "data_parallel"
+    weights: "weights35 Exa3DGAN0_disc2_fc_bias"
+    fully_connected {
+      num_neurons: 1
+      has_bias: true
+    }
+  }
+  layer {
+    name: "stop_gradient"
+    parents: "gen_img_instance1_activation"
+    children: "Exa3DGAN0_disc1_conv0_conv_instance2"
+    stop_gradient {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv0_conv_instance2"
+    parents: "stop_gradient"
+    children: "Exa3DGAN0_disc1_conv0_bn_instance2"
+    weights: "weights1 Exa3DGAN0_disc1_conv0_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 64
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv0_bn_instance2"
+    parents: "Exa3DGAN0_disc1_conv0_conv_instance2"
+    children: "Exa3DGAN0_disc1_conv0_pool_instance2"
+    weights: "Exa3DGAN0_disc1_conv0_bn_scale Exa3DGAN0_disc1_conv0_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv0_pool_instance2"
+    parents: "Exa3DGAN0_disc1_conv0_bn_instance2"
+    children: "Exa3DGAN0_disc1_conv0_activation_instance2"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv0_activation_instance2"
+    parents: "Exa3DGAN0_disc1_conv0_pool_instance2"
+    children: "Exa3DGAN0_disc1_conv1_conv_instance2"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv1_conv_instance2"
+    parents: "Exa3DGAN0_disc1_conv0_activation_instance2"
+    children: "Exa3DGAN0_disc1_conv1_bn_instance2"
+    weights: "weights5 Exa3DGAN0_disc1_conv1_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 128
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv1_bn_instance2"
+    parents: "Exa3DGAN0_disc1_conv1_conv_instance2"
+    children: "Exa3DGAN0_disc1_conv1_pool_instance2"
+    weights: "Exa3DGAN0_disc1_conv1_bn_scale Exa3DGAN0_disc1_conv1_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv1_pool_instance2"
+    parents: "Exa3DGAN0_disc1_conv1_bn_instance2"
+    children: "Exa3DGAN0_disc1_conv1_activation_instance2"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv1_activation_instance2"
+    parents: "Exa3DGAN0_disc1_conv1_pool_instance2"
+    children: "Exa3DGAN0_disc1_conv2_conv_instance2"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv2_conv_instance2"
+    parents: "Exa3DGAN0_disc1_conv1_activation_instance2"
+    children: "Exa3DGAN0_disc1_conv2_bn_instance2"
+    weights: "weights9 Exa3DGAN0_disc1_conv2_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 256
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv2_bn_instance2"
+    parents: "Exa3DGAN0_disc1_conv2_conv_instance2"
+    children: "Exa3DGAN0_disc1_conv2_pool_instance2"
+    weights: "Exa3DGAN0_disc1_conv2_bn_scale Exa3DGAN0_disc1_conv2_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv2_pool_instance2"
+    parents: "Exa3DGAN0_disc1_conv2_bn_instance2"
+    children: "Exa3DGAN0_disc1_conv2_activation_instance2"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv2_activation_instance2"
+    parents: "Exa3DGAN0_disc1_conv2_pool_instance2"
+    children: "Exa3DGAN0_disc1_conv3_conv_instance2"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv3_conv_instance2"
+    parents: "Exa3DGAN0_disc1_conv2_activation_instance2"
+    children: "Exa3DGAN0_disc1_conv3_bn_instance2"
+    weights: "weights13 Exa3DGAN0_disc1_conv3_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 512
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv3_bn_instance2"
+    parents: "Exa3DGAN0_disc1_conv3_conv_instance2"
+    children: "Exa3DGAN0_disc1_conv3_pool_instance2"
+    weights: "Exa3DGAN0_disc1_conv3_bn_scale Exa3DGAN0_disc1_conv3_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv3_pool_instance2"
+    parents: "Exa3DGAN0_disc1_conv3_bn_instance2"
+    children: "Exa3DGAN0_disc1_conv3_activation_instance2"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv3_activation_instance2"
+    parents: "Exa3DGAN0_disc1_conv3_pool_instance2"
+    children: "Exa3DGAN0_disc1_fc_instance2"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_fc_instance2"
+    parents: "Exa3DGAN0_disc1_conv3_activation_instance2"
+    children: "d1_fake_bce"
+    data_layout: "data_parallel"
+    weights: "weights17 Exa3DGAN0_disc1_fc_bias"
+    fully_connected {
+      num_neurons: 1
+      has_bias: true
+    }
+  }
+  layer {
+    name: "input"
+    children: "in_reshape"
+    device_allocation: "GPU"
+    input {
+    }
+  }
+  layer {
+    name: "in_reshape"
+    parents: "input"
+    children: "x1"
+    device_allocation: "GPU"
+    reshape {
+      dims: "1 128 128 128"
+    }
+  }
+  layer {
+    name: "x1"
+    parents: "in_reshape"
+    children: "Exa3DGAN0_disc1_conv0_conv_instance1"
+    identity {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv0_conv_instance1"
+    parents: "x1"
+    children: "Exa3DGAN0_disc1_conv0_bn_instance1"
+    weights: "weights1 Exa3DGAN0_disc1_conv0_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 64
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv0_bn_instance1"
+    parents: "Exa3DGAN0_disc1_conv0_conv_instance1"
+    children: "Exa3DGAN0_disc1_conv0_pool_instance1"
+    weights: "Exa3DGAN0_disc1_conv0_bn_scale Exa3DGAN0_disc1_conv0_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv0_pool_instance1"
+    parents: "Exa3DGAN0_disc1_conv0_bn_instance1"
+    children: "Exa3DGAN0_disc1_conv0_activation_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv0_activation_instance1"
+    parents: "Exa3DGAN0_disc1_conv0_pool_instance1"
+    children: "Exa3DGAN0_disc1_conv1_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv1_conv_instance1"
+    parents: "Exa3DGAN0_disc1_conv0_activation_instance1"
+    children: "Exa3DGAN0_disc1_conv1_bn_instance1"
+    weights: "weights5 Exa3DGAN0_disc1_conv1_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 128
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv1_bn_instance1"
+    parents: "Exa3DGAN0_disc1_conv1_conv_instance1"
+    children: "Exa3DGAN0_disc1_conv1_pool_instance1"
+    weights: "Exa3DGAN0_disc1_conv1_bn_scale Exa3DGAN0_disc1_conv1_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv1_pool_instance1"
+    parents: "Exa3DGAN0_disc1_conv1_bn_instance1"
+    children: "Exa3DGAN0_disc1_conv1_activation_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv1_activation_instance1"
+    parents: "Exa3DGAN0_disc1_conv1_pool_instance1"
+    children: "Exa3DGAN0_disc1_conv2_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv2_conv_instance1"
+    parents: "Exa3DGAN0_disc1_conv1_activation_instance1"
+    children: "Exa3DGAN0_disc1_conv2_bn_instance1"
+    weights: "weights9 Exa3DGAN0_disc1_conv2_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 256
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv2_bn_instance1"
+    parents: "Exa3DGAN0_disc1_conv2_conv_instance1"
+    children: "Exa3DGAN0_disc1_conv2_pool_instance1"
+    weights: "Exa3DGAN0_disc1_conv2_bn_scale Exa3DGAN0_disc1_conv2_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv2_pool_instance1"
+    parents: "Exa3DGAN0_disc1_conv2_bn_instance1"
+    children: "Exa3DGAN0_disc1_conv2_activation_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv2_activation_instance1"
+    parents: "Exa3DGAN0_disc1_conv2_pool_instance1"
+    children: "Exa3DGAN0_disc1_conv3_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv3_conv_instance1"
+    parents: "Exa3DGAN0_disc1_conv2_activation_instance1"
+    children: "Exa3DGAN0_disc1_conv3_bn_instance1"
+    weights: "weights13 Exa3DGAN0_disc1_conv3_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 512
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "5 5 5"
+      conv_pads: "2 2 2"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv3_bn_instance1"
+    parents: "Exa3DGAN0_disc1_conv3_conv_instance1"
+    children: "Exa3DGAN0_disc1_conv3_pool_instance1"
+    weights: "Exa3DGAN0_disc1_conv3_bn_scale Exa3DGAN0_disc1_conv3_bn_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    batch_normalization {
+      decay: 0.999
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv3_pool_instance1"
+    parents: "Exa3DGAN0_disc1_conv3_bn_instance1"
+    children: "Exa3DGAN0_disc1_conv3_activation_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 2
+      pool_strides_i: 2
+      pool_mode: "max"
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_conv3_activation_instance1"
+    parents: "Exa3DGAN0_disc1_conv3_pool_instance1"
+    children: "Exa3DGAN0_disc1_fc_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    relu {
+    }
+  }
+  layer {
+    name: "Exa3DGAN0_disc1_fc_instance1"
+    parents: "Exa3DGAN0_disc1_conv3_activation_instance1"
+    children: "d1_real_bce"
+    data_layout: "data_parallel"
+    weights: "weights17 Exa3DGAN0_disc1_fc_bias"
+    fully_connected {
+      num_neurons: 1
+      has_bias: true
+    }
+  }
+  layer {
+    name: "one"
+    children: "d1_real_bce d_adv_bce"
+    device_allocation: "GPU"
+    constant {
+      value: 1.0
+      num_neurons: "1"
+    }
+  }
+  layer {
+    name: "d_adv_bce"
+    parents: "Exa3DGAN0_disc2_fc_instance1 one"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.SigmoidBinaryCrossEntropyOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "d1_real_bce"
+    parents: "Exa3DGAN0_disc1_fc_instance1 one"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.SigmoidBinaryCrossEntropyOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "zero"
+    children: "d1_fake_bce"
+    device_allocation: "GPU"
+    constant {
+      num_neurons: "1"
+    }
+  }
+  layer {
+    name: "d1_fake_bce"
+    parents: "Exa3DGAN0_disc1_fc_instance2 zero"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.SigmoidBinaryCrossEntropyOperator] {
+          }
+        }
+      }
+    }
+  }
+  weights {
+    name: "weights5"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "weights39"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv0_bn_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights23"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_gen1_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv1_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights41"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv1_bn_scale"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv1_conv_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv1_bn_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_gen2_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv1_bn_scale"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights9"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "weights43"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv1_bn_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights27"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "gen_img_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv2_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv2_bn_scale"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv2_conv_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv2_bn_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv2_bn_scale"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights13"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv2_bn_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights31"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv3_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv3_bn_scale"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv3_conv_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv3_bn_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv3_bn_scale"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights17"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "weights1"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_fc_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv3_bn_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights35"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "weights19"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv0_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_fc_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights37"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv0_conv_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_gen0_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv0_bn_scale"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv0_bn_scale"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv0_bn_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  callback {
+    print {
+    }
+  }
+  callback {
+    timer {
+    }
+  }
+  callback {
+    gpu_memory_usage {
+    }
+  }
+}
+optimizer {
+  adam {
+    learn_rate: 0.0002
+    beta1: 0.5
+    beta2: 0.99
+    eps: 1e-08
+  }
+}
+trainer {
+  mini_batch_size: 32
+}

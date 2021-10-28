@@ -15,38 +15,28 @@ else
     WORLD_SIZE=$OMPI_COMM_WORLD_SIZE
 fi
 
-PROC_WORLD_SIZE=$((WORLD_SIZE * MAXPROCESSES))
 nrun=0
 inum=0
+mkdir -p ${LSB_JOBID}
 for PATCHDIR in "${PATCHES[@]}"
 do
-    my_rank=$((WORLD_RANK*MAXPROCESSES + inum))
-    modulo=$(( $my_rank % ${PROC_WORLD_SIZE} ))
-    echo "rank $my_rank modulo $modulo"
-    if [[ "$modulo" = "$my_rank" ]]
+    modulo=$(( $inum % ${WORLD_SIZE} ))
+    echo "rank $WORLD_RANK modulo $modulo"
+    if [[ "$modulo" = "$WORLD_RANK" ]]
     then
-        echo "[`date +%x_%H:%M:%S:%N`] RANK ${my_rank} WORLD $PROC_WORLD_SIZE | nrun ${nrun} | ${PATCHDIR}]" 
+        echo "[`date +%x_%H:%M:%S:%N`] RANK ${WORLD_RANK} WORLD $WORLD_SIZE | nrun ${nrun} | ${PATCHDIR}]" 
         {
-            echo "[`date +%x_%H:%M:%S:%N`] PWD for rank $my_rank >>>>>>>> `pwd`"
-            $SCRIPT $PATCHDIR $my_rank > ${LSB_JOBID}/${LSB_JOBID}_${my_rank}.log &
-            pids[${nrun}]=$!
-            pid=${pids[nrun]}
-        } 
+            echo "[`date +%x_%H:%M:%S:%N`] PWD for rank $WORLD_RANK >>>>>>>> `pwd`"
+            $SCRIPT $PATCHDIR $WORLD_RANK > ${LSB_JOBID}/${LSB_JOBID}_${WORLD_RANK}.log
+        } & 
+        
         let nrun++
-        echo "[`date +%x_%H:%M:%S:%N`] $pid Returning to `pwd` from ${p}"
+        echo "[`date +%x_%H:%M:%S:%N`] Returning to `pwd` $WORLD_RANK from ${p}"
     fi
     let inum++
     if ((nrun>=MAXPROCESSES)); then
         echo "[`date +%x_%H:%M:%S:%N`] Max Processes Reached: Waiting"
-        # wait for all pids
-        for pid in ${pids[*]}; do
-            echo " waiting $pid"
-            wait $pid
-            echo "done $pid"
-        done
+        wait
         nrun=0
     fi
 done
-
-wait
-

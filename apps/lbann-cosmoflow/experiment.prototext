@@ -1,0 +1,709 @@
+data_reader {
+  reader {
+    name: "hdf5"
+    role: "train"
+    shuffle: true
+    percent_of_data_to_use: 1.0
+    disable_labels: true
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/train/*.hdf5"
+    scaling_factor_int16: 1.0
+    hdf5_key_data: "full"
+    hdf5_key_responses: "unitPar"
+    num_responses: 4
+  }
+  reader {
+    name: "hdf5"
+    role: "validate"
+    shuffle: true
+    percent_of_data_to_use: 1.0
+    disable_labels: true
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/val/*.hdf5"
+    scaling_factor_int16: 1.0
+    hdf5_key_data: "full"
+    hdf5_key_responses: "unitPar"
+    num_responses: 4
+  }
+  reader {
+    name: "hdf5"
+    role: "test"
+    percent_of_data_to_use: 1.0
+    disable_labels: true
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/test/*.hdf5"
+    scaling_factor_int16: 1.0
+    hdf5_key_data: "full"
+    hdf5_key_responses: "unitPar"
+    num_responses: 4
+  }
+}
+model {
+  objective_function {
+    layer_term {
+      scale_factor: 1.0
+      layer: "layer30"
+    }
+  }
+  metric {
+    layer_metric {
+      layer: "layer30"
+      name: "MSE"
+    }
+  }
+  num_epochs: 2
+  layer {
+    name: "layer1"
+    children: "cosmoflow_module1_conv1_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    input {
+      data_field: "samples"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv1_conv_instance1"
+    parents: "layer1"
+    children: "cosmoflow_module1_conv1_activation_instance1"
+    weights: "weights1 cosmoflow_module1_conv1_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 16
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "3 3 3"
+      conv_pads: "1 1 1"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv1_activation_instance1"
+    parents: "cosmoflow_module1_conv1_conv_instance1"
+    children: "cosmoflow_module1_pool1_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_pool1_instance1"
+    parents: "cosmoflow_module1_conv1_activation_instance1"
+    children: "cosmoflow_module1_conv2_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 3
+      pool_pads_i: 1
+      pool_strides_i: 2
+      pool_mode: "average"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv2_conv_instance1"
+    parents: "cosmoflow_module1_pool1_instance1"
+    children: "cosmoflow_module1_conv2_activation_instance1"
+    weights: "weights3 cosmoflow_module1_conv2_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 32
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "3 3 3"
+      conv_pads: "1 1 1"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv2_activation_instance1"
+    parents: "cosmoflow_module1_conv2_conv_instance1"
+    children: "cosmoflow_module1_pool2_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_pool2_instance1"
+    parents: "cosmoflow_module1_conv2_activation_instance1"
+    children: "cosmoflow_module1_conv3_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 3
+      pool_pads_i: 1
+      pool_strides_i: 2
+      pool_mode: "average"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv3_conv_instance1"
+    parents: "cosmoflow_module1_pool2_instance1"
+    children: "cosmoflow_module1_conv3_activation_instance1"
+    weights: "weights5 cosmoflow_module1_conv3_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 64
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "3 3 3"
+      conv_pads: "1 1 1"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv3_activation_instance1"
+    parents: "cosmoflow_module1_conv3_conv_instance1"
+    children: "cosmoflow_module1_pool3_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_pool3_instance1"
+    parents: "cosmoflow_module1_conv3_activation_instance1"
+    children: "cosmoflow_module1_conv4_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 3
+      pool_pads_i: 1
+      pool_strides_i: 2
+      pool_mode: "average"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv4_conv_instance1"
+    parents: "cosmoflow_module1_pool3_instance1"
+    children: "cosmoflow_module1_conv4_activation_instance1"
+    weights: "weights7 cosmoflow_module1_conv4_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 128
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "3 3 3"
+      conv_pads: "1 1 1"
+      conv_strides: "2 2 2"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv4_activation_instance1"
+    parents: "cosmoflow_module1_conv4_conv_instance1"
+    children: "cosmoflow_module1_pool4_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_pool4_instance1"
+    parents: "cosmoflow_module1_conv4_activation_instance1"
+    children: "cosmoflow_module1_conv5_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 3
+      pool_pads_i: 1
+      pool_strides_i: 2
+      pool_mode: "average"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv5_conv_instance1"
+    parents: "cosmoflow_module1_pool4_instance1"
+    children: "cosmoflow_module1_conv5_activation_instance1"
+    weights: "weights9 cosmoflow_module1_conv5_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 256
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "3 3 3"
+      conv_pads: "1 1 1"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv5_activation_instance1"
+    parents: "cosmoflow_module1_conv5_conv_instance1"
+    children: "cosmoflow_module1_pool5_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+    }
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_pool5_instance1"
+    parents: "cosmoflow_module1_conv5_activation_instance1"
+    children: "cosmoflow_module1_conv6_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+      depth_splits: 1
+    }
+    pooling {
+      num_dims: 3
+      pool_dims_i: 3
+      pool_pads_i: 1
+      pool_strides_i: 2
+      pool_mode: "average"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv6_conv_instance1"
+    parents: "cosmoflow_module1_pool5_instance1"
+    children: "cosmoflow_module1_conv6_activation_instance1"
+    weights: "weights11 cosmoflow_module1_conv6_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+      depth_splits: 1
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 256
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "3 3 3"
+      conv_pads: "1 1 1"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv6_activation_instance1"
+    parents: "cosmoflow_module1_conv6_conv_instance1"
+    children: "cosmoflow_module1_conv7_conv_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+      depth_splits: 1
+    }
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv7_conv_instance1"
+    parents: "cosmoflow_module1_conv6_activation_instance1"
+    children: "cosmoflow_module1_conv7_activation_instance1"
+    weights: "weights13 cosmoflow_module1_conv7_conv_bias"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+      depth_splits: 1
+    }
+    convolution {
+      num_dims: 3
+      num_output_channels: 256
+      num_groups: 1
+      has_vectors: true
+      conv_dims: "3 3 3"
+      conv_pads: "1 1 1"
+      conv_strides: "1 1 1"
+      conv_dilations: "1 1 1"
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_conv7_activation_instance1"
+    parents: "cosmoflow_module1_conv7_conv_instance1"
+    children: "cosmoflow_module1_drop1_instance1"
+    parallel_strategy {
+      sample_groups: 32
+      height_groups: 1
+      width_groups: 1
+      channel_groups: 1
+      filter_groups: 1
+      depth_groups: 4
+      depth_splits: 1
+    }
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_drop1_instance1"
+    parents: "cosmoflow_module1_conv7_activation_instance1"
+    children: "cosmoflow_module1_fc1_instance1_fc"
+    dropout {
+      keep_prob: 0.8
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_fc1_instance1_fc"
+    parents: "cosmoflow_module1_drop1_instance1"
+    children: "cosmoflow_module1_fc1_instance1_activation"
+    data_layout: "data_parallel"
+    weights: "weights15 weights16"
+    fully_connected {
+      num_neurons: 2048
+      has_bias: true
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_fc1_instance1_activation"
+    parents: "cosmoflow_module1_fc1_instance1_fc"
+    children: "cosmoflow_module1_drop2_instance1"
+    data_layout: "data_parallel"
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_drop2_instance1"
+    parents: "cosmoflow_module1_fc1_instance1_activation"
+    children: "cosmoflow_module1_fc2_instance1_fc"
+    dropout {
+      keep_prob: 0.8
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_fc2_instance1_fc"
+    parents: "cosmoflow_module1_drop2_instance1"
+    children: "cosmoflow_module1_fc2_instance1_activation"
+    data_layout: "data_parallel"
+    weights: "weights17 weights18"
+    fully_connected {
+      num_neurons: 256
+      has_bias: true
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_fc2_instance1_activation"
+    parents: "cosmoflow_module1_fc2_instance1_fc"
+    children: "cosmoflow_module1_drop3_instance1"
+    data_layout: "data_parallel"
+    leaky_relu {
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_drop3_instance1"
+    parents: "cosmoflow_module1_fc2_instance1_activation"
+    children: "cosmoflow_module1_fc3_instance1"
+    dropout {
+      keep_prob: 0.8
+    }
+  }
+  layer {
+    name: "cosmoflow_module1_fc3_instance1"
+    parents: "cosmoflow_module1_drop3_instance1"
+    children: "layer30"
+    data_layout: "data_parallel"
+    weights: "weights19 weights20"
+    fully_connected {
+      num_neurons: 4
+      has_bias: true
+    }
+  }
+  layer {
+    name: "layer2"
+    children: "layer30"
+    input {
+      data_field: "responses"
+    }
+  }
+  layer {
+    name: "layer30"
+    parents: "cosmoflow_module1_fc3_instance1 layer2"
+    mean_squared_error {
+    }
+  }
+  weights {
+    name: "weights13"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv1_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights3"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv6_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights20"
+    initializer {
+      constant_initializer {
+        value: 0.1
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv2_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights5"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights11"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv5_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv3_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights19"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights7"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights18"
+    initializer {
+      constant_initializer {
+        value: 0.1
+      }
+    }
+  }
+  weights {
+    name: "weights17"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv4_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights9"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights16"
+    initializer {
+      constant_initializer {
+        value: 0.1
+      }
+    }
+  }
+  weights {
+    name: "weights15"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights1"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv7_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  callback {
+    print {
+    }
+  }
+  callback {
+    timer {
+    }
+  }
+  callback {
+    gpu_memory_usage {
+    }
+  }
+  callback {
+    dump_outputs {
+      layers: "cosmoflow_module1_fc3_instance1 layer2"
+      execution_modes: "test"
+      directory: "dump_acts/"
+    }
+  }
+  callback {
+    profiler {
+      skip_init: true
+    }
+  }
+}
+optimizer {
+  adam {
+    learn_rate: 0.001
+    beta1: 0.9
+    beta2: 0.99
+    eps: 1e-08
+  }
+}
+trainer {
+  mini_batch_size: 32
+}
