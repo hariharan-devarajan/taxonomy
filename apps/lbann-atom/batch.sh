@@ -12,6 +12,11 @@ export MAX_SEQ_LEN=57
 export DATA_PATH=/p/gpfs1/brainusr/datasets/zinc/moses_zinc_train250K.npy
 export DATA_CONFIG=/usr/workspace/iopp/applications/lbann/applications/ATOM/zinc_data_config.json 
 
+source /usr/workspace/iopp/install_scripts/bin/iopp-init
+source /usr/workspace/iopp/install_scripts/bin/spack-init
+
+spack env activate -p lbann-atom-power9le
+module load spectrum-mpi/2020.08.19
 
 export MV2_USE_RDMA_CM=0
 export AL_PROGRESS_RANKS_PER_NUMA_NODE=2
