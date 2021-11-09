@@ -3,7 +3,7 @@
 #BSUB -o /usr/WS2/iopp/software/iopp/apps/lbann-exagan/out.log
 #BSUB -e /usr/WS2/iopp/software/iopp/apps/lbann-exagan/err.log
 #BSUB -nnodes 32
-#BSUB -W 8:00
+#BSUB -W 12:00
 #BSUB -J lbann_cosmo3DGAN
 #BSUB -q pbatch
 #BSUB -G asccasc

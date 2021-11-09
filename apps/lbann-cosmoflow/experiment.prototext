@@ -5,7 +5,7 @@ data_reader {
     shuffle: true
     percent_of_data_to_use: 1.0
     disable_labels: true
-    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/train/*.hdf5"
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/train/univ_ics_2019-03_a1038*.hdf5"
     scaling_factor_int16: 1.0
     hdf5_key_data: "full"
     hdf5_key_responses: "unitPar"
@@ -17,7 +17,7 @@ data_reader {
     shuffle: true
     percent_of_data_to_use: 1.0
     disable_labels: true
-    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/val/*.hdf5"
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/val/univ_ics_2019-03_a7335*.hdf5"
     scaling_factor_int16: 1.0
     hdf5_key_data: "full"
     hdf5_key_responses: "unitPar"
@@ -28,7 +28,7 @@ data_reader {
     role: "test"
     percent_of_data_to_use: 1.0
     disable_labels: true
-    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/test/*.hdf5"
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/test/univ_ics_2019-03_a8847*.hdf5"
     scaling_factor_int16: 1.0
     hdf5_key_data: "full"
     hdf5_key_responses: "unitPar"
@@ -48,7 +48,7 @@ model {
       name: "MSE"
     }
   }
-  num_epochs: 2
+  num_epochs: 1
   layer {
     name: "layer1"
     children: "cosmoflow_module1_conv1_conv_instance1"
@@ -529,106 +529,6 @@ model {
     }
   }
   weights {
-    name: "weights13"
-    initializer {
-      glorot_uniform_initializer {
-      }
-    }
-  }
-  weights {
-    name: "cosmoflow_module1_conv1_conv_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights3"
-    initializer {
-      glorot_uniform_initializer {
-      }
-    }
-  }
-  weights {
-    name: "cosmoflow_module1_conv6_conv_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights20"
-    initializer {
-      constant_initializer {
-        value: 0.1
-      }
-    }
-  }
-  weights {
-    name: "cosmoflow_module1_conv2_conv_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights5"
-    initializer {
-      glorot_uniform_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights11"
-    initializer {
-      glorot_uniform_initializer {
-      }
-    }
-  }
-  weights {
-    name: "cosmoflow_module1_conv5_conv_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "cosmoflow_module1_conv3_conv_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights19"
-    initializer {
-      glorot_uniform_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights7"
-    initializer {
-      glorot_uniform_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights18"
-    initializer {
-      constant_initializer {
-        value: 0.1
-      }
-    }
-  }
-  weights {
-    name: "weights17"
-    initializer {
-      glorot_uniform_initializer {
-      }
-    }
-  }
-  weights {
     name: "cosmoflow_module1_conv4_conv_bias"
     initializer {
       constant_initializer {
@@ -643,15 +543,14 @@ model {
     }
   }
   weights {
-    name: "weights16"
+    name: "cosmoflow_module1_conv5_conv_bias"
     initializer {
       constant_initializer {
-        value: 0.1
       }
     }
   }
   weights {
-    name: "weights15"
+    name: "weights11"
     initializer {
       glorot_uniform_initializer {
       }
@@ -665,9 +564,110 @@ model {
     }
   }
   weights {
+    name: "cosmoflow_module1_conv6_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights13"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv1_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
     name: "cosmoflow_module1_conv7_conv_bias"
     initializer {
       constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights3"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights15"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights16"
+    initializer {
+      constant_initializer {
+        value: 0.1
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv2_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights17"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights5"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights18"
+    initializer {
+      constant_initializer {
+        value: 0.1
+      }
+    }
+  }
+  weights {
+    name: "weights19"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "cosmoflow_module1_conv3_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights7"
+    initializer {
+      glorot_uniform_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights20"
+    initializer {
+      constant_initializer {
+        value: 0.1
       }
     }
   }

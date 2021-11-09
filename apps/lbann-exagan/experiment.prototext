@@ -47,7 +47,7 @@ model {
       name: "d1_fake_bce"
     }
   }
-  num_epochs: 2
+  num_epochs: 1
   layer {
     name: "noise_vec"
     children: "noise_vec_reshape"
@@ -822,8 +822,8 @@ model {
   layer {
     name: "input"
     children: "in_reshape"
-    device_allocation: "GPU"
     input {
+      data_field: "samples"
     }
   }
   layer {
@@ -1207,14 +1207,6 @@ model {
     }
   }
   weights {
-    name: "weights5"
-    initializer {
-      normal_initializer {
-        standard_deviation: 0.02
-      }
-    }
-  }
-  weights {
     name: "weights39"
     initializer {
       normal_initializer {
@@ -1246,24 +1238,9 @@ model {
     }
   }
   weights {
-    name: "Exa3DGAN0_gen1_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
     name: "Exa3DGAN0_disc1_conv1_conv_bias"
     initializer {
       constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights41"
-    initializer {
-      normal_initializer {
-        standard_deviation: 0.02
       }
     }
   }
@@ -1275,36 +1252,7 @@ model {
     }
   }
   weights {
-    name: "Exa3DGAN0_disc2_conv1_conv_bias"
-    optimizer {
-      no_optimizer {
-      }
-    }
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
     name: "Exa3DGAN0_disc1_conv1_bn_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_gen2_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc2_conv1_bn_scale"
-    optimizer {
-      no_optimizer {
-      }
-    }
     initializer {
       constant_initializer {
       }
@@ -1319,38 +1267,11 @@ model {
     }
   }
   weights {
-    name: "weights43"
-    initializer {
-      normal_initializer {
-        standard_deviation: 0.02
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc2_conv1_bn_bias"
+    name: "Exa3DGAN0_disc2_conv3_conv_bias"
     optimizer {
       no_optimizer {
       }
     }
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights27"
-    optimizer {
-      no_optimizer {
-      }
-    }
-    initializer {
-      normal_initializer {
-        standard_deviation: 0.02
-      }
-    }
-  }
-  weights {
-    name: "gen_img_bias"
     initializer {
       constant_initializer {
       }
@@ -1364,6 +1285,18 @@ model {
     }
   }
   weights {
+    name: "weights31"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
     name: "Exa3DGAN0_disc1_conv2_bn_scale"
     initializer {
       constant_initializer {
@@ -1371,7 +1304,7 @@ model {
     }
   }
   weights {
-    name: "Exa3DGAN0_disc2_conv2_conv_bias"
+    name: "Exa3DGAN0_disc2_conv3_bn_scale"
     optimizer {
       no_optimizer {
       }
@@ -1383,17 +1316,6 @@ model {
   }
   weights {
     name: "Exa3DGAN0_disc1_conv2_bn_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc2_conv2_bn_scale"
-    optimizer {
-      no_optimizer {
-      }
-    }
     initializer {
       constant_initializer {
       }
@@ -1419,89 +1341,29 @@ model {
     }
   }
   weights {
-    name: "weights31"
-    optimizer {
-      no_optimizer {
-      }
-    }
-    initializer {
-      normal_initializer {
-        standard_deviation: 0.02
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc1_conv3_conv_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc1_conv3_bn_scale"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc2_conv3_conv_bias"
-    optimizer {
-      no_optimizer {
-      }
-    }
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc1_conv3_bn_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc2_conv3_bn_scale"
-    optimizer {
-      no_optimizer {
-      }
-    }
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
-    name: "weights17"
-    initializer {
-      normal_initializer {
-        standard_deviation: 0.02
-      }
-    }
-  }
-  weights {
-    name: "weights1"
-    initializer {
-      normal_initializer {
-        standard_deviation: 0.02
-      }
-    }
-  }
-  weights {
-    name: "Exa3DGAN0_disc1_fc_bias"
-    initializer {
-      constant_initializer {
-      }
-    }
-  }
-  weights {
     name: "Exa3DGAN0_disc2_conv3_bn_bias"
     optimizer {
       no_optimizer {
       }
     }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv2_bn_scale"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv3_conv_bias"
     initializer {
       constant_initializer {
       }
@@ -1520,11 +1382,46 @@ model {
     }
   }
   weights {
-    name: "weights19"
+    name: "gen_img_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv3_bn_scale"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv2_conv_bias"
     optimizer {
       no_optimizer {
       }
     }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_gen2_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv3_bn_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights1"
     initializer {
       normal_initializer {
         standard_deviation: 0.02
@@ -1532,9 +1429,18 @@ model {
     }
   }
   weights {
-    name: "Exa3DGAN0_disc1_conv0_conv_bias"
+    name: "weights43"
     initializer {
-      constant_initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "weights17"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
       }
     }
   }
@@ -1550,10 +1456,99 @@ model {
     }
   }
   weights {
+    name: "Exa3DGAN0_disc1_fc_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv0_conv_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv1_bn_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_gen1_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights19"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "weights27"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "weights41"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv0_bn_scale"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
     name: "weights37"
     initializer {
       normal_initializer {
         standard_deviation: 0.02
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc2_conv1_bn_scale"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "Exa3DGAN0_disc1_conv0_bn_bias"
+    initializer {
+      constant_initializer {
       }
     }
   }
@@ -1569,14 +1564,19 @@ model {
     }
   }
   weights {
-    name: "Exa3DGAN0_gen0_bias"
+    name: "weights5"
     initializer {
-      constant_initializer {
+      normal_initializer {
+        standard_deviation: 0.02
       }
     }
   }
   weights {
-    name: "Exa3DGAN0_disc1_conv0_bn_scale"
+    name: "Exa3DGAN0_disc2_conv1_conv_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
     initializer {
       constant_initializer {
       }
@@ -1594,7 +1594,7 @@ model {
     }
   }
   weights {
-    name: "Exa3DGAN0_disc1_conv0_bn_bias"
+    name: "Exa3DGAN0_gen0_bias"
     initializer {
       constant_initializer {
       }
