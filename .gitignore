@@ -132,3 +132,4 @@ data/
 /analysis/notebooks/recorder/dask-worker-space/
 *.out
 apps/lbann-cosmoflow/dump_acts
+apps/lbann-atom/1-node/weights
