@@ -5,7 +5,7 @@ data_reader {
     shuffle: true
     percent_of_data_to_use: 1.0
     disable_labels: true
-    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/train/univ_ics_2019-03_a1038*.hdf5"
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/train/*.hdf5"
     scaling_factor_int16: 1.0
     hdf5_key_data: "full"
     hdf5_key_responses: "unitPar"
@@ -17,7 +17,7 @@ data_reader {
     shuffle: true
     percent_of_data_to_use: 1.0
     disable_labels: true
-    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/val/univ_ics_2019-03_a7335*.hdf5"
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/val/*.hdf5"
     scaling_factor_int16: 1.0
     hdf5_key_data: "full"
     hdf5_key_responses: "unitPar"
@@ -28,7 +28,7 @@ data_reader {
     role: "test"
     percent_of_data_to_use: 1.0
     disable_labels: true
-    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/test/univ_ics_2019-03_a8847*.hdf5"
+    data_file_pattern: "/p/gpfs1/brainusr/datasets/cosmoflow/cosmoUniverse_2019_05_4parE/hdf5_transposed_dim128_float/test/*.hdf5"
     scaling_factor_int16: 1.0
     hdf5_key_data: "full"
     hdf5_key_responses: "unitPar"
@@ -48,7 +48,7 @@ model {
       name: "MSE"
     }
   }
-  num_epochs: 1
+  num_epochs: 2
   layer {
     name: "layer1"
     children: "cosmoflow_module1_conv1_conv_instance1"

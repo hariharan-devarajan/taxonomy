@@ -1,0 +1,2796 @@
+data_reader {
+  reader {
+    name: "smiles"
+    role: "train"
+    shuffle: true
+    label_filename: "/p/vast1/lbann/datasets/atom/combo_enamine1612M_mpro_inhib_kekulized.metadata"
+    sample_list: "/p/vast1/lbann/datasets/atom/sample_lists/enamine1612M_mpro_inhib_kekulized/combo_enamine1612M_mpro_inhib_kekulized.sample_list"
+    validation_percent: 0.1
+    tournament_percent: 0.1
+    percent_of_data_to_use: 1.0
+    sample_list_per_trainer: true
+  }
+  reader {
+    name: "smiles"
+    role: "test"
+    shuffle: true
+    label_filename: "/p/vast1/lbann/datasets/atom/combo_enamine1612M_mpro_inhib_kekulized.metadata"
+    sample_list: "/p/vast1/lbann/datasets/atom/sample_lists/enamine1612M_mpro_inhib_kekulized/test_combo_enamine1612M_mpro_inhib_kekulized.sample_list"
+    percent_of_data_to_use: 1.0
+  }
+}
+model {
+  objective_function {
+    layer_term {
+      scale_factor: 1.0
+      layer: "d1_real_bce"
+    }
+    layer_term {
+      scale_factor: 1.0
+      layer: "d1_fake_bce"
+    }
+    layer_term {
+      scale_factor: 0.00157
+      layer: "d_adv_bce"
+    }
+    layer_term {
+      scale_factor: 1.0
+      layer: "layer257"
+    }
+    l2_weight_regularization {
+      scale_factor: 0.0001
+      weights: "molvae_module1_disc0_fc2_bias molvae_module1_decoder_rnn_layer2_ih_bias molvae_module1_encoder_rnn_layer0_hh_bias molvae_module1_decoder_rnn_layer2_hh_bias molvae_module1_decoder_lat_bias molvae_module1_decoder_fc_matrix molvae_module1_decoder_fc_bias molvae_module1_decoder_lat_matrix emb_matrix molvae_module1_decoder_rnn_layer0_ih_matrix molvae_module1_decoder_rnn_layer0_hh_matrix molvae_module1_disc0_fc0_matrix molvae_module1_decoder_rnn_layer0_ih_bias molvae_module1_disc0_fc0_bias molvae_module1_decoder_rnn_layer0_hh_bias molvae_module1_decoder_rnn_layer1_ih_matrix molvae_module1_decoder_rnn_layer1_hh_matrix molvae_module1_encoder_rnn_layer0_hh_matrix molvae_module1_disc0_fc1_matrix molvae_module1_encoder_rnn_layer0_ih_matrix molvae_module1_decoder_rnn_layer1_ih_bias molvae_module1_disc0_fc1_bias molvae_module1_decoder_rnn_layer1_hh_bias encoder_qmu_matrix molvae_module1_decoder_rnn_layer2_ih_matrix molvae_module1_disc0_fc2_matrix molvae_module1_decoder_rnn_layer2_hh_matrix encoder_qmu_bias molvae_module1_encoder_rnn_layer0_ih_bias"
+    }
+  }
+  metric {
+    layer_metric {
+      layer: "layer257"
+      name: "recon"
+    }
+  }
+  num_epochs: 4
+  layer {
+    name: "inp"
+    children: "inp1"
+    input {
+      data_field: "samples"
+    }
+  }
+  layer {
+    name: "inp1"
+    parents: "inp"
+    children: "layer6"
+    identity {
+    }
+  }
+  layer {
+    name: "layer6"
+    parents: "inp1"
+    children: "layer7"
+    slice {
+      slice_points: "0 100"
+    }
+  }
+  layer {
+    name: "layer7"
+    parents: "layer6"
+    children: "emb layer226"
+    identity {
+    }
+  }
+  layer {
+    name: "layer226"
+    parents: "layer7"
+    children: "layer227"
+    slice {
+      slice_points: "1 100"
+    }
+  }
+  layer {
+    name: "layer227"
+    parents: "layer226"
+    children: "layer229 layer235"
+    identity {
+    }
+  }
+  layer {
+    name: "emb"
+    parents: "layer7"
+    children: "molvae_module1_encoder_rnn_instance1 layer17 layer260 layer268"
+    weights: "emb_matrix"
+    embedding {
+      num_embeddings: 42
+      embedding_dim: 42
+    }
+  }
+  layer {
+    name: "molvae_module1_encoder_rnn_zeros"
+    children: "molvae_module1_encoder_rnn_instance1"
+    constant {
+      num_neurons: "1 256"
+    }
+  }
+  layer {
+    name: "molvae_module1_encoder_rnn_instance1"
+    parents: "emb molvae_module1_encoder_rnn_zeros"
+    children: "layer10"
+    weights: "molvae_module1_encoder_rnn_layer0_ih_matrix molvae_module1_encoder_rnn_layer0_hh_matrix molvae_module1_encoder_rnn_layer0_ih_bias molvae_module1_encoder_rnn_layer0_hh_bias"
+    gru {
+      hidden_size: 256
+      num_layers {
+        value: 1
+      }
+    }
+  }
+  layer {
+    name: "layer10"
+    parents: "molvae_module1_encoder_rnn_instance1"
+    children: "layer11"
+    slice {
+      slice_points: "99 100"
+    }
+  }
+  layer {
+    name: "layer11"
+    parents: "layer10"
+    children: "encoder_qmu_instance1"
+    identity {
+    }
+  }
+  layer {
+    name: "encoder_qmu_instance1"
+    parents: "layer11"
+    children: "layer14"
+    data_layout: "data_parallel"
+    weights: "encoder_qmu_matrix encoder_qmu_bias"
+    fully_connected {
+      num_neurons: 512
+      has_bias: true
+    }
+  }
+  layer {
+    name: "layer13"
+    children: "layer14"
+    hint_layer: "encoder_qmu_instance1"
+    gaussian {
+      stdev: 1.0
+    }
+  }
+  layer {
+    name: "layer14"
+    parents: "encoder_qmu_instance1 layer13"
+    children: "layer15 molvae_module1_decoder_lat_instance1 layer266"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.AddOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer266"
+    parents: "layer14"
+    children: "layer267"
+    reshape {
+      dims: "1 512"
+    }
+  }
+  layer {
+    name: "layer267"
+    parents: "layer266"
+    children: "layer268"
+    tessellate {
+      dims: "100 512"
+    }
+  }
+  layer {
+    name: "layer268"
+    parents: "emb layer267"
+    children: "layer269 molvae_module1_disc1_fc0_instance1_fc"
+    concatenation {
+      axis: 1
+    }
+  }
+  layer {
+    name: "molvae_module1_disc1_fc0_instance1_fc"
+    parents: "layer268"
+    children: "molvae_module1_disc1_fc0_instance1_activation"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc1_fc0_matrix molvae_module1_disc1_fc0_bias"
+    fully_connected {
+      num_neurons: 128
+      has_bias: true
+    }
+  }
+  layer {
+    name: "molvae_module1_disc1_fc0_instance1_activation"
+    parents: "molvae_module1_disc1_fc0_instance1_fc"
+    children: "molvae_module1_disc1_fc1_instance1_fc"
+    data_layout: "data_parallel"
+    relu {
+    }
+  }
+  layer {
+    name: "molvae_module1_disc1_fc1_instance1_fc"
+    parents: "molvae_module1_disc1_fc0_instance1_activation"
+    children: "molvae_module1_disc1_fc1_instance1_activation"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc1_fc1_matrix molvae_module1_disc1_fc1_bias"
+    fully_connected {
+      num_neurons: 64
+      has_bias: true
+    }
+  }
+  layer {
+    name: "molvae_module1_disc1_fc1_instance1_activation"
+    parents: "molvae_module1_disc1_fc1_instance1_fc"
+    children: "molvae_module1_disc1_fc2_instance1"
+    data_layout: "data_parallel"
+    relu {
+    }
+  }
+  layer {
+    name: "molvae_module1_disc1_fc2_instance1"
+    parents: "molvae_module1_disc1_fc1_instance1_activation"
+    children: "d_adv_bce"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc1_fc2_matrix molvae_module1_disc1_fc2_bias"
+    fully_connected {
+      num_neurons: 1
+      has_bias: true
+    }
+  }
+  layer {
+    name: "layer269"
+    parents: "layer268"
+    children: "molvae_module1_disc0_fc0_instance2_fc"
+    stop_gradient {
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc0_instance2_fc"
+    parents: "layer269"
+    children: "molvae_module1_disc0_fc0_instance2_activation"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc0_fc0_matrix molvae_module1_disc0_fc0_bias"
+    fully_connected {
+      num_neurons: 128
+      has_bias: true
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc0_instance2_activation"
+    parents: "molvae_module1_disc0_fc0_instance2_fc"
+    children: "molvae_module1_disc0_fc1_instance2_fc"
+    data_layout: "data_parallel"
+    relu {
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc1_instance2_fc"
+    parents: "molvae_module1_disc0_fc0_instance2_activation"
+    children: "molvae_module1_disc0_fc1_instance2_activation"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc0_fc1_matrix molvae_module1_disc0_fc1_bias"
+    fully_connected {
+      num_neurons: 64
+      has_bias: true
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc1_instance2_activation"
+    parents: "molvae_module1_disc0_fc1_instance2_fc"
+    children: "molvae_module1_disc0_fc2_instance2"
+    data_layout: "data_parallel"
+    relu {
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc2_instance2"
+    parents: "molvae_module1_disc0_fc1_instance2_activation"
+    children: "d1_fake_bce"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc0_fc2_matrix molvae_module1_disc0_fc2_bias"
+    fully_connected {
+      num_neurons: 1
+      has_bias: true
+    }
+  }
+  layer {
+    name: "molvae_module1_decoder_lat_instance1"
+    parents: "layer14"
+    children: "layer19"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_decoder_lat_matrix molvae_module1_decoder_lat_bias"
+    fully_connected {
+      num_neurons: 512
+      has_bias: true
+    }
+  }
+  layer {
+    name: "layer19"
+    parents: "molvae_module1_decoder_lat_instance1"
+    children: "layer20"
+    reshape {
+      dims: "1 512"
+    }
+  }
+  layer {
+    name: "layer20"
+    parents: "layer19"
+    children: "molvae_module1_decoder_rnn_instance1"
+    tessellate {
+      dims: "3 512"
+    }
+  }
+  layer {
+    name: "layer15"
+    parents: "layer14"
+    children: "layer16"
+    reshape {
+      dims: "1 512"
+    }
+  }
+  layer {
+    name: "layer16"
+    parents: "layer15"
+    children: "layer17"
+    tessellate {
+      dims: "100 512"
+    }
+  }
+  layer {
+    name: "layer17"
+    parents: "emb layer16"
+    children: "molvae_module1_decoder_rnn_instance1"
+    concatenation {
+      axis: 1
+    }
+  }
+  layer {
+    name: "molvae_module1_decoder_rnn_instance1"
+    parents: "layer17 layer20"
+    children: "molvae_module1_decoder_fc"
+    weights: "molvae_module1_decoder_rnn_layer0_ih_matrix molvae_module1_decoder_rnn_layer0_hh_matrix molvae_module1_decoder_rnn_layer0_ih_bias molvae_module1_decoder_rnn_layer0_hh_bias molvae_module1_decoder_rnn_layer1_ih_matrix molvae_module1_decoder_rnn_layer1_hh_matrix molvae_module1_decoder_rnn_layer1_ih_bias molvae_module1_decoder_rnn_layer1_hh_bias molvae_module1_decoder_rnn_layer2_ih_matrix molvae_module1_decoder_rnn_layer2_hh_matrix molvae_module1_decoder_rnn_layer2_ih_bias molvae_module1_decoder_rnn_layer2_hh_bias"
+    gru {
+      hidden_size: 512
+      num_layers {
+        value: 3
+      }
+    }
+  }
+  layer {
+    name: "molvae_module1_decoder_fc"
+    parents: "molvae_module1_decoder_rnn_instance1"
+    children: "layer23 layer224"
+    weights: "molvae_module1_decoder_fc_matrix molvae_module1_decoder_fc_bias"
+    channelwise_fully_connected {
+      output_channel_dims: 42
+      bias {
+        value: true
+      }
+    }
+  }
+  layer {
+    name: "layer224"
+    parents: "molvae_module1_decoder_fc"
+    children: "layer225"
+    slice {
+      slice_points: "0 99"
+    }
+  }
+  layer {
+    name: "layer225"
+    parents: "layer224"
+    children: "layer241 layer244"
+    identity {
+    }
+  }
+  layer {
+    name: "layer23"
+    parents: "molvae_module1_decoder_fc"
+    children: "layer24 layer25 layer26 layer27 layer28 layer29 layer30 layer31 layer32 layer33 layer34 layer35 layer36 layer37 layer38 layer39 layer40 layer41 layer42 layer43 layer44 layer45 layer46 layer47 layer48 layer49 layer50 layer51 layer52 layer53 layer54 layer55 layer56 layer57 layer58 layer59 layer60 layer61 layer62 layer63 layer64 layer65 layer66 layer67 layer68 layer69 layer70 layer71 layer72 layer73 layer74 layer75 layer76 layer77 layer78 layer79 layer80 layer81 layer82 layer83 layer84 layer85 layer86 layer87 layer88 layer89 layer90 layer91 layer92 layer93 layer94 layer95 layer96 layer97 layer98 layer99 layer100 layer101 layer102 layer103 layer104 layer105 layer106 layer107 layer108 layer109 layer110 layer111 layer112 layer113 layer114 layer115 layer116 layer117 layer118 layer119 layer120 layer121 layer122 layer123"
+    slice {
+      slice_points: "0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100"
+    }
+  }
+  layer {
+    name: "layer123"
+    parents: "layer23"
+    children: "layer223"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer223"
+    parents: "layer123"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer122"
+    parents: "layer23"
+    children: "layer222"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer222"
+    parents: "layer122"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer121"
+    parents: "layer23"
+    children: "layer221"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer221"
+    parents: "layer121"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer120"
+    parents: "layer23"
+    children: "layer220"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer220"
+    parents: "layer120"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer119"
+    parents: "layer23"
+    children: "layer219"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer219"
+    parents: "layer119"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer118"
+    parents: "layer23"
+    children: "layer218"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer218"
+    parents: "layer118"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer117"
+    parents: "layer23"
+    children: "layer217"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer217"
+    parents: "layer117"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer116"
+    parents: "layer23"
+    children: "layer216"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer216"
+    parents: "layer116"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer115"
+    parents: "layer23"
+    children: "layer215"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer215"
+    parents: "layer115"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer114"
+    parents: "layer23"
+    children: "layer214"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer214"
+    parents: "layer114"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer113"
+    parents: "layer23"
+    children: "layer213"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer213"
+    parents: "layer113"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer112"
+    parents: "layer23"
+    children: "layer212"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer212"
+    parents: "layer112"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer111"
+    parents: "layer23"
+    children: "layer211"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer211"
+    parents: "layer111"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer110"
+    parents: "layer23"
+    children: "layer210"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer210"
+    parents: "layer110"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer109"
+    parents: "layer23"
+    children: "layer209"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer209"
+    parents: "layer109"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer108"
+    parents: "layer23"
+    children: "layer208"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer208"
+    parents: "layer108"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer107"
+    parents: "layer23"
+    children: "layer207"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer207"
+    parents: "layer107"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer106"
+    parents: "layer23"
+    children: "layer206"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer206"
+    parents: "layer106"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer105"
+    parents: "layer23"
+    children: "layer205"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer205"
+    parents: "layer105"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer104"
+    parents: "layer23"
+    children: "layer204"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer204"
+    parents: "layer104"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer103"
+    parents: "layer23"
+    children: "layer203"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer203"
+    parents: "layer103"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer102"
+    parents: "layer23"
+    children: "layer202"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer202"
+    parents: "layer102"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer101"
+    parents: "layer23"
+    children: "layer201"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer201"
+    parents: "layer101"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer100"
+    parents: "layer23"
+    children: "layer200"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer200"
+    parents: "layer100"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer99"
+    parents: "layer23"
+    children: "layer199"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer199"
+    parents: "layer99"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer98"
+    parents: "layer23"
+    children: "layer198"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer198"
+    parents: "layer98"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer97"
+    parents: "layer23"
+    children: "layer197"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer197"
+    parents: "layer97"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer96"
+    parents: "layer23"
+    children: "layer196"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer196"
+    parents: "layer96"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer95"
+    parents: "layer23"
+    children: "layer195"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer195"
+    parents: "layer95"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer94"
+    parents: "layer23"
+    children: "layer194"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer194"
+    parents: "layer94"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer93"
+    parents: "layer23"
+    children: "layer193"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer193"
+    parents: "layer93"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer92"
+    parents: "layer23"
+    children: "layer192"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer192"
+    parents: "layer92"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer91"
+    parents: "layer23"
+    children: "layer191"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer191"
+    parents: "layer91"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer90"
+    parents: "layer23"
+    children: "layer190"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer190"
+    parents: "layer90"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer89"
+    parents: "layer23"
+    children: "layer189"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer189"
+    parents: "layer89"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer88"
+    parents: "layer23"
+    children: "layer188"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer188"
+    parents: "layer88"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer87"
+    parents: "layer23"
+    children: "layer187"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer187"
+    parents: "layer87"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer86"
+    parents: "layer23"
+    children: "layer186"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer186"
+    parents: "layer86"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer85"
+    parents: "layer23"
+    children: "layer185"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer185"
+    parents: "layer85"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer84"
+    parents: "layer23"
+    children: "layer184"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer184"
+    parents: "layer84"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer83"
+    parents: "layer23"
+    children: "layer183"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer183"
+    parents: "layer83"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer82"
+    parents: "layer23"
+    children: "layer182"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer182"
+    parents: "layer82"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer81"
+    parents: "layer23"
+    children: "layer181"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer181"
+    parents: "layer81"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer80"
+    parents: "layer23"
+    children: "layer180"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer180"
+    parents: "layer80"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer79"
+    parents: "layer23"
+    children: "layer179"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer179"
+    parents: "layer79"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer78"
+    parents: "layer23"
+    children: "layer178"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer178"
+    parents: "layer78"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer77"
+    parents: "layer23"
+    children: "layer177"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer177"
+    parents: "layer77"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer76"
+    parents: "layer23"
+    children: "layer176"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer176"
+    parents: "layer76"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer75"
+    parents: "layer23"
+    children: "layer175"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer175"
+    parents: "layer75"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer74"
+    parents: "layer23"
+    children: "layer174"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer174"
+    parents: "layer74"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer73"
+    parents: "layer23"
+    children: "layer173"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer173"
+    parents: "layer73"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer72"
+    parents: "layer23"
+    children: "layer172"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer172"
+    parents: "layer72"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer71"
+    parents: "layer23"
+    children: "layer171"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer171"
+    parents: "layer71"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer70"
+    parents: "layer23"
+    children: "layer170"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer170"
+    parents: "layer70"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer69"
+    parents: "layer23"
+    children: "layer169"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer169"
+    parents: "layer69"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer68"
+    parents: "layer23"
+    children: "layer168"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer168"
+    parents: "layer68"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer67"
+    parents: "layer23"
+    children: "layer167"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer167"
+    parents: "layer67"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer66"
+    parents: "layer23"
+    children: "layer166"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer166"
+    parents: "layer66"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer65"
+    parents: "layer23"
+    children: "layer165"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer165"
+    parents: "layer65"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer64"
+    parents: "layer23"
+    children: "layer164"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer164"
+    parents: "layer64"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer63"
+    parents: "layer23"
+    children: "layer163"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer163"
+    parents: "layer63"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer62"
+    parents: "layer23"
+    children: "layer162"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer162"
+    parents: "layer62"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer61"
+    parents: "layer23"
+    children: "layer161"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer161"
+    parents: "layer61"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer60"
+    parents: "layer23"
+    children: "layer160"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer160"
+    parents: "layer60"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer59"
+    parents: "layer23"
+    children: "layer159"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer159"
+    parents: "layer59"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer58"
+    parents: "layer23"
+    children: "layer158"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer158"
+    parents: "layer58"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer57"
+    parents: "layer23"
+    children: "layer157"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer157"
+    parents: "layer57"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer56"
+    parents: "layer23"
+    children: "layer156"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer156"
+    parents: "layer56"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer55"
+    parents: "layer23"
+    children: "layer155"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer155"
+    parents: "layer55"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer54"
+    parents: "layer23"
+    children: "layer154"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer154"
+    parents: "layer54"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer53"
+    parents: "layer23"
+    children: "layer153"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer153"
+    parents: "layer53"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer52"
+    parents: "layer23"
+    children: "layer152"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer152"
+    parents: "layer52"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer51"
+    parents: "layer23"
+    children: "layer151"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer151"
+    parents: "layer51"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer50"
+    parents: "layer23"
+    children: "layer150"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer150"
+    parents: "layer50"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer49"
+    parents: "layer23"
+    children: "layer149"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer149"
+    parents: "layer49"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer48"
+    parents: "layer23"
+    children: "layer148"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer148"
+    parents: "layer48"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer47"
+    parents: "layer23"
+    children: "layer147"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer147"
+    parents: "layer47"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer46"
+    parents: "layer23"
+    children: "layer146"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer146"
+    parents: "layer46"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer45"
+    parents: "layer23"
+    children: "layer145"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer145"
+    parents: "layer45"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer44"
+    parents: "layer23"
+    children: "layer144"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer144"
+    parents: "layer44"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer43"
+    parents: "layer23"
+    children: "layer143"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer143"
+    parents: "layer43"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer42"
+    parents: "layer23"
+    children: "layer142"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer142"
+    parents: "layer42"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer41"
+    parents: "layer23"
+    children: "layer141"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer141"
+    parents: "layer41"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer40"
+    parents: "layer23"
+    children: "layer140"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer140"
+    parents: "layer40"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer39"
+    parents: "layer23"
+    children: "layer139"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer139"
+    parents: "layer39"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer38"
+    parents: "layer23"
+    children: "layer138"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer138"
+    parents: "layer38"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer37"
+    parents: "layer23"
+    children: "layer137"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer137"
+    parents: "layer37"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer36"
+    parents: "layer23"
+    children: "layer136"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer136"
+    parents: "layer36"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer35"
+    parents: "layer23"
+    children: "layer135"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer135"
+    parents: "layer35"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer34"
+    parents: "layer23"
+    children: "layer134"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer134"
+    parents: "layer34"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer33"
+    parents: "layer23"
+    children: "layer133"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer133"
+    parents: "layer33"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer32"
+    parents: "layer23"
+    children: "layer132"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer132"
+    parents: "layer32"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer31"
+    parents: "layer23"
+    children: "layer131"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer131"
+    parents: "layer31"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer30"
+    parents: "layer23"
+    children: "layer130"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer130"
+    parents: "layer30"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer29"
+    parents: "layer23"
+    children: "layer129"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer129"
+    parents: "layer29"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer28"
+    parents: "layer23"
+    children: "layer128"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer128"
+    parents: "layer28"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer27"
+    parents: "layer23"
+    children: "layer127"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer127"
+    parents: "layer27"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer26"
+    parents: "layer23"
+    children: "layer126"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer126"
+    parents: "layer26"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer25"
+    parents: "layer23"
+    children: "layer125"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer125"
+    parents: "layer25"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "layer24"
+    parents: "layer23"
+    children: "layer124"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer124"
+    parents: "layer24"
+    children: "pred_tensor"
+    device_allocation: "CPU"
+    argmax {
+    }
+  }
+  layer {
+    name: "pred_tensor"
+    parents: "layer124 layer125 layer126 layer127 layer128 layer129 layer130 layer131 layer132 layer133 layer134 layer135 layer136 layer137 layer138 layer139 layer140 layer141 layer142 layer143 layer144 layer145 layer146 layer147 layer148 layer149 layer150 layer151 layer152 layer153 layer154 layer155 layer156 layer157 layer158 layer159 layer160 layer161 layer162 layer163 layer164 layer165 layer166 layer167 layer168 layer169 layer170 layer171 layer172 layer173 layer174 layer175 layer176 layer177 layer178 layer179 layer180 layer181 layer182 layer183 layer184 layer185 layer186 layer187 layer188 layer189 layer190 layer191 layer192 layer193 layer194 layer195 layer196 layer197 layer198 layer199 layer200 layer201 layer202 layer203 layer204 layer205 layer206 layer207 layer208 layer209 layer210 layer211 layer212 layer213 layer214 layer215 layer216 layer217 layer218 layer219 layer220 layer221 layer222 layer223"
+    concatenation {
+    }
+  }
+  layer {
+    name: "layer240"
+    children: "layer241"
+    hint_layer: "layer225"
+    constant {
+    }
+  }
+  layer {
+    name: "layer241"
+    parents: "layer225 layer240"
+    children: "layer243"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.MaxOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer242"
+    children: "layer243"
+    constant {
+      value: 0.1543033499620919
+      num_neurons: "42 42"
+    }
+  }
+  layer {
+    name: "layer243"
+    parents: "layer241 layer242"
+    children: "layer244"
+    matmul {
+    }
+  }
+  layer {
+    name: "layer244"
+    parents: "layer225 layer243"
+    children: "layer245 layer252"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.SubtractOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer252"
+    parents: "layer244"
+    children: "layer253"
+    reshape {
+      dims: "-1"
+    }
+  }
+  layer {
+    name: "layer245"
+    parents: "layer244"
+    children: "layer247"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.ExpOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer246"
+    children: "layer247"
+    constant {
+      value: 1.0
+      num_neurons: "42 1"
+    }
+  }
+  layer {
+    name: "layer247"
+    parents: "layer245 layer246"
+    children: "layer248"
+    matmul {
+    }
+  }
+  layer {
+    name: "layer248"
+    parents: "layer247"
+    children: "layer250"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.LogOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "zero"
+    children: "d1_fake_bce"
+    constant {
+      num_neurons: "1"
+    }
+  }
+  layer {
+    name: "d1_fake_bce"
+    parents: "molvae_module1_disc0_fc2_instance2 zero"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.SigmoidBinaryCrossEntropyOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer3"
+    children: "layer258"
+    gaussian {
+      stdev: 1.0
+      neuron_dims: "512"
+    }
+  }
+  layer {
+    name: "layer258"
+    parents: "layer3"
+    children: "layer259"
+    reshape {
+      dims: "1 512"
+    }
+  }
+  layer {
+    name: "layer259"
+    parents: "layer258"
+    children: "layer260"
+    tessellate {
+      dims: "100 512"
+    }
+  }
+  layer {
+    name: "layer260"
+    parents: "emb layer259"
+    children: "molvae_module1_disc0_fc0_instance1_fc"
+    concatenation {
+      axis: 1
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc0_instance1_fc"
+    parents: "layer260"
+    children: "molvae_module1_disc0_fc0_instance1_activation"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc0_fc0_matrix molvae_module1_disc0_fc0_bias"
+    fully_connected {
+      num_neurons: 128
+      has_bias: true
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc0_instance1_activation"
+    parents: "molvae_module1_disc0_fc0_instance1_fc"
+    children: "molvae_module1_disc0_fc1_instance1_fc"
+    data_layout: "data_parallel"
+    relu {
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc1_instance1_fc"
+    parents: "molvae_module1_disc0_fc0_instance1_activation"
+    children: "molvae_module1_disc0_fc1_instance1_activation"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc0_fc1_matrix molvae_module1_disc0_fc1_bias"
+    fully_connected {
+      num_neurons: 64
+      has_bias: true
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc1_instance1_activation"
+    parents: "molvae_module1_disc0_fc1_instance1_fc"
+    children: "molvae_module1_disc0_fc2_instance1"
+    data_layout: "data_parallel"
+    relu {
+    }
+  }
+  layer {
+    name: "molvae_module1_disc0_fc2_instance1"
+    parents: "molvae_module1_disc0_fc1_instance1_activation"
+    children: "d1_real_bce"
+    data_layout: "data_parallel"
+    weights: "molvae_module1_disc0_fc2_matrix molvae_module1_disc0_fc2_bias"
+    fully_connected {
+      num_neurons: 1
+      has_bias: true
+    }
+  }
+  layer {
+    name: "one"
+    children: "d1_real_bce d_adv_bce"
+    constant {
+      value: 1.0
+      num_neurons: "1"
+    }
+  }
+  layer {
+    name: "d_adv_bce"
+    parents: "molvae_module1_disc1_fc2_instance1 one"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.SigmoidBinaryCrossEntropyOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "d1_real_bce"
+    parents: "molvae_module1_disc0_fc2_instance1 one"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.SigmoidBinaryCrossEntropyOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer234"
+    children: "layer235"
+    weights: "weights38"
+    weights_layer {
+      dims: "99"
+    }
+  }
+  layer {
+    name: "layer235"
+    parents: "layer227 layer234"
+    children: "layer236"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.AddOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer228"
+    children: "layer229"
+    hint_layer: "layer227"
+    constant {
+      value: 40.0
+    }
+  }
+  layer {
+    name: "layer229"
+    parents: "layer227 layer228"
+    children: "layer230 layer238"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.EqualOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer230"
+    parents: "layer229"
+    children: "layer231 layer236 layer249"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.LogicalNotOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer249"
+    parents: "layer230"
+    children: "layer250"
+    reshape {
+      dims: "1 -1"
+    }
+  }
+  layer {
+    name: "layer250"
+    parents: "layer249 layer248"
+    children: "layer251"
+    matmul {
+    }
+  }
+  layer {
+    name: "layer251"
+    parents: "layer250"
+    children: "layer255"
+    reshape {
+      dims: "1"
+    }
+  }
+  layer {
+    name: "layer236"
+    parents: "layer230 layer235"
+    children: "layer239"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.MultiplyOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer231"
+    parents: "layer230"
+    children: "layer233"
+    reduction {
+      mode: "sum"
+    }
+  }
+  layer {
+    name: "layer237"
+    children: "layer238"
+    hint_layer: "layer235"
+    constant {
+      value: -1.0
+    }
+  }
+  layer {
+    name: "layer238"
+    parents: "layer229 layer237"
+    children: "layer239"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.MultiplyOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer239"
+    parents: "layer236 layer238"
+    children: "layer253"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.AddOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer253"
+    parents: "layer252 layer239"
+    children: "layer254"
+    gather {
+    }
+  }
+  layer {
+    name: "layer254"
+    parents: "layer253"
+    children: "layer255"
+    reduction {
+      mode: "sum"
+    }
+  }
+  layer {
+    name: "layer255"
+    parents: "layer251 layer254"
+    children: "layer256"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.SubtractOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer232"
+    children: "layer233"
+    constant {
+      value: 1.0
+      num_neurons: "1"
+    }
+  }
+  layer {
+    name: "layer233"
+    parents: "layer231 layer232"
+    children: "layer256"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.MaxOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer256"
+    parents: "layer255 layer233"
+    children: "layer257"
+    operator_layer {
+      ops {
+        parameters {
+          [type.googleapis.com/lbann_data.DivideOperator] {
+          }
+        }
+      }
+    }
+  }
+  layer {
+    name: "layer257"
+    parents: "layer256"
+    device_allocation: "CPU"
+    identity {
+    }
+  }
+  weights {
+    name: "molvae_module1_disc0_fc2_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer2_ih_bias"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_encoder_rnn_layer0_hh_bias"
+    initializer {
+      uniform_initializer {
+        min: -0.0625
+        max: 0.0625
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer2_hh_bias"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_lat_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "weights38"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      value_initializer {
+        values: "0 42 84 126 168 210 252 294 336 378 420 462 504 546 588 630 672 714 756 798 840 882 924 966 1008 1050 1092 1134 1176 1218 1260 1302 1344 1386 1428 1470 1512 1554 1596 1638 1680 1722 1764 1806 1848 1890 1932 1974 2016 2058 2100 2142 2184 2226 2268 2310 2352 2394 2436 2478 2520 2562 2604 2646 2688 2730 2772 2814 2856 2898 2940 2982 3024 3066 3108 3150 3192 3234 3276 3318 3360 3402 3444 3486 3528 3570 3612 3654 3696 3738 3780 3822 3864 3906 3948 3990 4032 4074 4116"
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc1_fc0_matrix"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      he_normal_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc1_fc0_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_fc_matrix"
+    initializer {
+      normal_initializer {
+        standard_deviation: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_fc_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc1_fc1_matrix"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      he_normal_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_lat_matrix"
+    initializer {
+      he_normal_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc1_fc1_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "emb_matrix"
+    initializer {
+      normal_initializer {
+        standard_deviation: 1.0
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc1_fc2_matrix"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      he_normal_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer0_ih_matrix"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc1_fc2_bias"
+    optimizer {
+      no_optimizer {
+      }
+    }
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer0_hh_matrix"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc0_fc0_matrix"
+    initializer {
+      he_normal_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer0_ih_bias"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc0_fc0_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer0_hh_bias"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer1_ih_matrix"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer1_hh_matrix"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_encoder_rnn_layer0_hh_matrix"
+    initializer {
+      uniform_initializer {
+        min: -0.0625
+        max: 0.0625
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc0_fc1_matrix"
+    initializer {
+      he_normal_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_encoder_rnn_layer0_ih_matrix"
+    initializer {
+      uniform_initializer {
+        min: -0.0625
+        max: 0.0625
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer1_ih_bias"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc0_fc1_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer1_hh_bias"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "encoder_qmu_matrix"
+    initializer {
+      he_normal_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer2_ih_matrix"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_disc0_fc2_matrix"
+    initializer {
+      he_normal_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_decoder_rnn_layer2_hh_matrix"
+    initializer {
+      uniform_initializer {
+        min: -0.044194173824159216
+        max: 0.044194173824159216
+      }
+    }
+  }
+  weights {
+    name: "encoder_qmu_bias"
+    initializer {
+      constant_initializer {
+      }
+    }
+  }
+  weights {
+    name: "molvae_module1_encoder_rnn_layer0_ih_bias"
+    initializer {
+      uniform_initializer {
+        min: -0.0625
+        max: 0.0625
+      }
+    }
+  }
+  callback {
+    print {
+    }
+  }
+  callback {
+    timer {
+    }
+  }
+  callback {
+    dump_weights {
+      directory: "weights"
+      epoch_interval: 10
+    }
+  }
+  callback {
+    replace_weights {
+      source_layers: "molvae_module1_disc0_fc0_instance1_fc molvae_module1_disc0_fc1_instance1_fc molvae_module1_disc0_fc2_instance1"
+      destination_layers: "molvae_module1_disc1_fc0_instance1_fc molvae_module1_disc1_fc1_instance1_fc molvae_module1_disc1_fc2_instance1"
+      batch_interval: 2
+    }
+  }
+  callback {
+    save_model {
+      dir: "models"
+    }
+  }
+  callback {
+    dump_outputs {
+      layers: "inp pred_tensor"
+      execution_modes: "test"
+      batch_interval: 10
+      directory: "outputs"
+    }
+  }
+}
+optimizer {
+  adam {
+    learn_rate: 0.0003
+    beta1: 0.9
+    beta2: 0.99
+    eps: 1e-08
+  }
+}
+trainer {
+  mini_batch_size: 512
+}

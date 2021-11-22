@@ -3,7 +3,7 @@
 #BSUB -o /usr/WS2/iopp/software/iopp/apps/lbann-cosmoflow/out.log
 #BSUB -e /usr/WS2/iopp/software/iopp/apps/lbann-cosmoflow/err.log
 #BSUB -nnodes 32
-#BSUB -W 04:00
+#BSUB -W 06:00
 #BSUB -J lbann_cosmoflow
 #BSUB -q pbatch
 #BSUB -G asccasc
@@ -37,7 +37,7 @@ export LBANN_NUM_IO_THREADS=1
 echo "Started at $(date)"
 recorder_lib_path=/usr/workspace/iopp/software/Recorder/install/lib/librecorder.so
 
-jsrun --env LD_PRELOAD=$recorder_lib_path --bind packed:8 --smpiargs="-gpu" --chdir /usr/WS2/iopp/software/iopp/apps/lbann-cosmoflow --nrs 32 --rs_per_host 1 --tasks_per_rs 4 --launch_distribution packed --cpu_per_rs ALL_CPUS --gpu_per_rs ALL_GPUS lbann --use_data_store --prototext=/usr/WS2/iopp/software/iopp/apps/lbann-cosmoflow/experiment_6.prototext
+jsrun --env LD_PRELOAD=$recorder_lib_path --bind packed:8 --smpiargs="-gpu" --chdir /usr/WS2/iopp/software/iopp/apps/lbann-cosmoflow --nrs 32 --rs_per_host 1 --tasks_per_rs 4 --launch_distribution packed --cpu_per_rs ALL_CPUS --gpu_per_rs ALL_GPUS lbann --prototext=/usr/WS2/iopp/software/iopp/apps/lbann-cosmoflow/experiment.prototext
 status=$?
 echo "Finished at $(date)"
 exit ${status}

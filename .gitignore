@@ -131,3 +131,4 @@ data/
 .idea/
 /analysis/notebooks/recorder/dask-worker-space/
 *.out
+apps/lbann-cosmoflow/dump_acts
