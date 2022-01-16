@@ -27,7 +27,7 @@ do
         echo "[`date +%x_%H:%M:%S:%N`] RANK ${WORLD_RANK} WORLD $WORLD_SIZE | nrun ${nrun} | ${PATCHDIR}]" 
         {
             echo "[`date +%x_%H:%M:%S:%N`] PWD for rank $WORLD_RANK >>>>>>>> `pwd`"
-            $SCRIPT $PATCHDIR $WORLD_RANK > ${LSB_JOBID}/${LSB_JOBID}_${WORLD_RANK}.log
+            $SCRIPT $PATCHDIR $WORLD_RANK #> ${LSB_JOBID}/${LSB_JOBID}_${WORLD_RANK}.log
         } & 
         
         let nrun++

@@ -39,7 +39,11 @@ export DATA_DIR=/p/gpfs1/brainusr/datasets/cosmoflow/norm_train200K.npy
 
 #recorder_lib_path=/usr/workspace/iopp/software/Recorder/install/lib/librecorder.so
 
-jsrun --env LD_PRELOAD=$recorder_lib_path --bind packed:8 --smpiargs="-gpu" --chdir /usr/WS2/iopp/software/iopp/apps/lbann-exagan --nrs 32 --rs_per_host 1 --tasks_per_rs 4 --launch_distribution packed --cpu_per_rs ALL_CPUS --gpu_per_rs ALL_GPUS lbann --num_io_threads=1 --prototext=/usr/WS2/iopp/software/iopp/apps/lbann-exagan/experiment.prototext
+jsrun --env LD_PRELOAD=$recorder_lib_path --bind packed:8 --smpiargs="-gpu" \
+      --chdir /usr/WS2/iopp/software/iopp/apps/lbann-exagan --nrs 32 --rs_per_host 1 \
+      --tasks_per_rs 4 --launch_distribution packed --cpu_per_rs ALL_CPUS --gpu_per_rs ALL_GPUS lbann \
+      --num_io_threads=1 --prototext=/usr/WS2/iopp/software/iopp/apps/lbann-exagan/experiment.prototext
+
 status=$?
 echo "Finished at $(date)"
 exit ${status}

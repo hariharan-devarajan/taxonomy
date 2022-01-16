@@ -129,6 +129,9 @@ dmypy.json
 .pyre/
 data/
 .idea/
+apps/mummi/complete/mummi_root_20211019/macro/
+apps/mummi/macro.tar
+apps/mummi/macro/
 /analysis/notebooks/recorder/dask-worker-space/
 *.out
 apps/lbann-cosmoflow/dump_acts

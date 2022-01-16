@@ -1,8 +1,8 @@
 #!/bin/bash
 ### LSF syntax
 #BSUB -cwd /usr/workspace/iopp/software/iopp/apps/montage_pegasus 
-#BSUB -nnodes 32           #number of nodes
-#BSUB -W 06:00             #walltime in minutes
+#BSUB -nnodes 2           #number of nodes
+#BSUB -W 01:00             #walltime in minutes
 #BSUB -G asccasc           #account
 #BSUB -J montage-pegasus   #name of job
 #BSUB -q pbatch            #queue to use
@@ -43,10 +43,10 @@ pushd job/$LSB_JOBID
 echo "Create worklow directory - End"
 echo "Create worklow data - Start"
 rm -rf job/$LSB_JOBID/data
-/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
-#/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 0.5 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
+#/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
+/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 0.5 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
 
-du -sh data 
+du -sh $PWD/data 
 
 echo "Create worklow data - End"
 echo "Plan worklow - Start"
