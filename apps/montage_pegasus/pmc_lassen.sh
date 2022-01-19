@@ -14,4 +14,4 @@ echo "/usr/tcetmp/bin/jsrun -n ALL_HOSTS -c ALL_CPUS /usr/WS2/iopp/software/pega
 recorder_lib_path=/usr/workspace/iopp/software/Recorder/install/lib/librecorder.so
 export RECORDER_TRACES_DIR=/p/gpfs1/iopp/recorder_logs/montage_peagsus_${LSB_JOBID}
 #/usr/tcetmp/bin/jsrun --env LD_PRELOAD=$recorder_lib_path /usr/WS2/iopp/software/pegasus/install/bin/pegasus-mpi-cluster -v "$@"
-/usr/tcetmp/bin/jsrun --env LD_PRELOAD=$recorder_lib_path --env RECORDER_NO_MPI=1 /usr/WS2/iopp/software/pegasus/install/bin/pegasus-mpi-cluster -v "$@"
+/usr/tcetmp/bin/jsrun --env LD_PRELOAD=$recorder_lib_path /usr/WS2/iopp/software/pegasus/install/bin/pegasus-mpi-cluster -v "$@"
