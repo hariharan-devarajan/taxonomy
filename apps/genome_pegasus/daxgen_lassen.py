@@ -322,17 +322,25 @@ class GenomeWorkflow(object):
                 n_nodes = self.ind_jobs
                 pmc = (
                     Transformation("mpiexec", namespace="pegasus", site="cori", pfn=pmc_wrapper_pfn, is_stageable=False)
-                    .add_pegasus_profile(
-                        runtime="72000",
-                        glite_arguments="--qos=regular --constraint=haswell --licenses=SCRATCH --nodes=" + str(n_nodes) + " --ntasks-per-node=1 --ntasks=" + str(n_nodes),
-                    )
                     .add_env(key="PEGASUS_PMC_TASKS", value=n_nodes+1)
-                    # .add_profiles(Namespace.PEGASUS, key="job.aggregator", value="mpiexec")
-                    # .add_profiles(Namespace.PEGASUS, key="nodes", value=1)
-                    # .add_profiles(Namespace.PEGASUS, key="ppn", value=32)
+                    .add_profiles(Namespace.PEGASUS, key="job.aggregator", value="mpiexec")
+                    .add_profiles(Namespace.PEGASUS, key="nodes", value=1)
+                    .add_profiles(Namespace.PEGASUS, key="ppn", value=32)
                 )
                 self.tc.add_transformations(pmc)
-
+        elif self.use_pmc:
+            pmc_wrapper_pfn = "/usr/workspace/iopp/software/iopp/apps/genome_pegasus/pmc_lassen.sh"
+            n_nodes = self.ind_jobs
+            path = os.environ["PATH"]+":."
+            pmc = (
+                Transformation("mpiexec", namespace="pegasus", site="condorpool", pfn=pmc_wrapper_pfn, is_stageable=False)
+                .add_profiles(Namespace.PEGASUS, key="job.aggregator", value="mpiexec")
+                .add_profiles(Namespace.PEGASUS, key="nodes", value=1)
+                .add_profiles(Namespace.PEGASUS, key="ppn", value=32)
+                .add_profiles(Namespace.CONDOR, key="getenv", value="*")
+                .add_profiles(Namespace.ENV, key="PATH", value=path)
+            )
+            self.tc.add_transformations(pmc)
         self.tc.add_transformations(
             e_individuals, e_individuals_merge, e_sifting, e_mutation_overlap, e_freq)
 
@@ -470,7 +478,7 @@ class GenomeWorkflow(object):
             plan_site = [self.exec_site]
             cluster_type = None
             if self.use_decaf or self.use_pmc: 
-                cluster_type = ["label"]
+                cluster_type = ["whole"]
             self.wf.plan(
                 dir=self.wf_dir,
                 relative_dir=dir_name,

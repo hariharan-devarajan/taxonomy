@@ -1,7 +1,7 @@
 #!/bin/bash
 ### LSF syntax
 #BSUB -cwd /usr/workspace/iopp/software/iopp/apps/genome_pegasus 
-#BSUB -nnodes 1            #number of nodes
+#BSUB -nnodes 4            #number of nodes
 #BSUB -W 02:00             #walltime in minutes
 #BSUB -G asccasc           #account
 #BSUB -J genome-pegasus   #name of job
@@ -31,7 +31,9 @@ JOB_DIR=/p/gpfs1/iopp/temp/1000-genome-$USER
 
 
 #./daxgen.py -S sites.local.yml -e local -n run_dir
+#pegasus-remove /p/gpfs1/iopp/temp/1000-genome-haridev/run_dir
 
+#sleep 10
 pushd $JOB_DIR/run_dir
 
 pegasus-run $PWD
