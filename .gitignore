@@ -136,3 +136,4 @@ apps/mummi/macro/
 *.out
 apps/lbann-cosmoflow/dump_acts
 apps/lbann-atom/1-node/weights
+dask-worker-space

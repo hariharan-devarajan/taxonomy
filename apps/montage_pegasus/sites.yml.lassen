@@ -7,9 +7,9 @@ sites:
 - name: local
   directories:
   - type: localStorage
-    path: /p/gpfs1/haridev/iopp/montage-workflow/output
+    path: /p/gpfs1/iopp/temp/montage-workflow-${USER}/output
     fileServers:
-    - url: file:///p/gpfs1/haridev/iopp/montage-workflow/output
+    - url: file:///p/gpfs1/iopp/temp/montage-workflow-${USER}/output
       operation: all
   profiles:
     pegasus:
@@ -17,9 +17,9 @@ sites:
 - name: condorpool
   directories:
   - type: sharedScratch
-    path: /p/gpfs1/haridev/iopp/montage-workflow/scratch
+    path: /p/gpfs1/iopp/temp/montage-workflow-${USER}/scratch
     fileServers:
-    - url: file:///p/gpfs1/haridev/iopp/montage-workflow/scratch
+    - url: file:///p/gpfs1/iopp/temp/montage-workflow-${USER}/scratch
       operation: all 
   profiles:
     pegasus:

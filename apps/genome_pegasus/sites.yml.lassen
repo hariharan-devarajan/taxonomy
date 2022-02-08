@@ -7,15 +7,15 @@ sites:
 - name: local
   directories:
   - type: localStorage
-    path: /p/gpfs1/iopp/temp/1000-genome/output
+    path: /p/gpfs1/iopp/temp/1000-genome-${USER}/output
     fileServers:
-    - url: file:///p/gpfs1/iopp/temp/1000-genome/output
+    - url: file:///p/gpfs1/iopp/temp/1000-genome-${USER}/output
       operation: all
   directories:
   - type: sharedScratch
-    path: /p/gpfs1/iopp/temp/1000-genome/scratch
+    path: /p/gpfs1/iopp/temp/1000-genome-${USER}/scratch
     fileServers:
-    - url: file:///p/gpfs1/iopp/temp/1000-genome/scratch
+    - url: file:///p/gpfs1/iopp/temp/1000-genome-${USER}/scratch
       operation: all 
   profiles:
     pegasus:
@@ -30,9 +30,9 @@ sites:
 - name: condorpool
   directories:
   - type: sharedScratch
-    path: /p/gpfs1/iopp/temp/1000-genome/scratch
+    path: /p/gpfs1/iopp/temp/1000-genome-${USER}/scratch
     fileServers:
-    - url: file:///p/gpfs1/iopp/temp/1000-genome/scratch
+    - url: file:///p/gpfs1/iopp/temp/1000-genome-${USER}/scratch
       operation: all 
   profiles:
     pegasus:

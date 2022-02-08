@@ -29,7 +29,7 @@ echo "Loading environment - Done"
 echo "Create worklow directory - Start"
 pushd /usr/workspace/iopp/applications/montage-workflow-v3
 
-rm -rf /p/gpfs1/haridev/iopp/montage-workflow/scratch
+rm -rf /p/gpfs1/iopp/temp/montage-workflow-${USER}/scratch
 rm -rf job/$LSB_JOBID
 
 mkdir -p job/$LSB_JOBID/

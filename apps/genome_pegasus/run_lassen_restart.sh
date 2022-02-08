@@ -31,9 +31,9 @@ JOB_DIR=/p/gpfs1/iopp/temp/1000-genome-$USER
 
 
 #./daxgen.py -S sites.local.yml -e local -n run_dir
-#pegasus-remove /p/gpfs1/iopp/temp/1000-genome-haridev/run_dir
+pegasus-remove /p/gpfs1/iopp/temp/1000-genome-haridev/run_dir
 
-#sleep 10
+sleep 10
 pushd $JOB_DIR/run_dir
 
 pegasus-run $PWD

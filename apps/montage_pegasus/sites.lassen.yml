@@ -30,7 +30,4 @@ sites:
     condor:
       universe: vanilla
     env:
-      RECORDER_NO_MPI: 1
-      LD_PRELOAD: /usr/workspace/iopp/software/Recorder/install/lib/librecorder.so 
-      RECORDER_TRACES_DIR: /p/gpfs1/iopp/recorder_logs/montage_pegasus_${USER}_${LSB_JOBID}
       PEGASUS_HOME: /usr/WS2/iopp/software/pegasus/install
