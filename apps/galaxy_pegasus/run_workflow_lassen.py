@@ -112,11 +112,11 @@ def run_workflow(DATA_PATH):
     #-------------------------------------------------------------------------------------------------------
     props = Properties()
     if PMC:
-        self.props["pegasus.job.aggregator"] = "mpiexec"
-        self.props["pegasus.data.configuration"] = "sharedfs"
+        props["pegasus.job.aggregator"] = "mpiexec"
+        props["pegasus.data.configuration"] = "sharedfs"
     if CUSTOM_SITES_FILE is not None:
-        print("==> Overriding site file with given site catalog: {}".format(self.custom_site_file))
-        self.props["pegasus.catalog.site.file"] = CUSTOM_SITES_FILE
+        print("==> Overriding site file with given site catalog: {}".format(CUSTOM_SITES_FILE))
+        props["pegasus.catalog.site.file"] = CUSTOM_SITES_FILE
     props.write()
 
 
@@ -210,7 +210,7 @@ def run_workflow(DATA_PATH):
                                     is_stageable= True)
     if PMC:
         pmc_wrapper_pfn = "/usr/workspace/iopp/software/iopp/apps/galaxy_pegasus/pmc_lassen.sh"
-        n_nodes = self.ind_jobs
+        n_nodes = 2
         path = os.environ["PATH"]+":."
         pmc = (
             Transformation("mpiexec", namespace="pegasus", site="condorpool", pfn=pmc_wrapper_pfn, is_stageable=False)
@@ -220,7 +220,7 @@ def run_workflow(DATA_PATH):
             .add_profiles(Namespace.CONDOR, key="getenv", value="*")
             .add_profiles(Namespace.ENV, key="PATH", value=path)
         )
-        self.tc.add_transformations(pmc)
+        tc.add_transformations(pmc)
 
     tc.add_transformations(
         create_dataset,
@@ -319,12 +319,20 @@ def run_workflow(DATA_PATH):
     #-------------------------------------------------------------------------------------
     try:
         plan_site = [EXEC_SITE]
-        wf.plan(submit=True,
+        cluster_type = None
+        if PMC:
+            cluster_type = ["whole"]
+        wf.plan(
+                dir=os.getcwd(),
+                submit=False,
                 sites=plan_site,
                 relative_dir="run_dir",
-                cleanup="leaf")
-        wf.wait()
-        wf.statistics()
+                output_dir=os.path.join(os.getcwd(), "output"),
+                cleanup="leaf",
+                force=True,
+                cluster=cluster_type)
+        #wf.wait()
+        #wf.statistics()
     except PegasusClientError as e:
         print(e.output)   
     graph_filename = "galaxy-wf.dot"
@@ -352,7 +360,7 @@ def main():
     parser = argparse.ArgumentParser(description="Galaxy Classification")   
     parser.add_argument('--batch_size', type=int, default=32, help='batch size for training')
     parser.add_argument('--seed', type=int, default=10, help='select seed number for reproducibility')
-    parser.add_argument('--data_path', type=str, default='galaxy_data/',help='path to dataset ')
+    parser.add_argument('--data_path', type=str, default='full_galaxy_data/',help='path to dataset ')
     parser.add_argument('--epochs', type=int,default=1, help = "number of training epochs")  
     parser.add_argument('--trials', type=int,default=1, help = "number of trials") 
     parser.add_argument('--num_workers', type=int, default= 5, help = "number of workers")

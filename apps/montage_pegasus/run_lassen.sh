@@ -1,7 +1,7 @@
 #!/bin/bash
 ### LSF syntax
 #BSUB -cwd /usr/workspace/iopp/software/iopp/apps/montage_pegasus 
-#BSUB -nnodes 32           #number of nodes
+#BSUB -nnodes 16           #number of nodes
 #BSUB -W 06:00             #walltime in minutes
 #BSUB -G asccasc           #account
 #BSUB -J montage-pegasus   #name of job
