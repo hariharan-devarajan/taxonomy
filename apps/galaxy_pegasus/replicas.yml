@@ -1,0 +1,1178 @@
+x-pegasus:
+  apiLang: python
+  createdBy: haridev
+  createdOn: 02-10-22T12:49:23Z
+pegasus: '5.0'
+replicas:
+- lfn: train_class_3_32.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106432.jpg
+- lfn: train_class_0_61.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106773.jpg
+- lfn: train_class_3_15.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102982.jpg
+- lfn: train_class_0_43.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103904.jpg
+- lfn: train_class_2_6.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/111499.jpg
+- lfn: train_class_3_35.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107117.jpg
+- lfn: train_class_3_1.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100322.jpg
+- lfn: train_class_1_47.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105991.jpg
+- lfn: train_class_1_42.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105258.jpg
+- lfn: train_class_1_73.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108661.jpg
+- lfn: train_class_0_25.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102471.jpg
+- lfn: train_class_4_58.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105774.jpg
+- lfn: train_class_1_37.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104612.jpg
+- lfn: train_class_4_30.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102765.jpg
+- lfn: train_class_4_61.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106390.jpg
+- lfn: train_class_0_47.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104977.jpg
+- lfn: train_class_1_67.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108305.jpg
+- lfn: train_class_4_27.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102433.jpg
+- lfn: train_class_0_24.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102371.jpg
+- lfn: train_class_1_3.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100295.jpg
+- lfn: train_class_4_69.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107202.jpg
+- lfn: train_class_4_31.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102990.jpg
+- lfn: train_class_4_71.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107379.jpg
+- lfn: train_class_4_51.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105069.jpg
+- lfn: train_class_0_26.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102481.jpg
+- lfn: train_class_4_36.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103533.jpg
+- lfn: train_class_1_78.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108920.jpg
+- lfn: train_class_3_8.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101660.jpg
+- lfn: train_class_1_30.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104173.jpg
+- lfn: train_class_1_8.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101290.jpg
+- lfn: train_class_3_19.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103787.jpg
+- lfn: train_class_1_54.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106694.jpg
+- lfn: train_class_2_3.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107388.jpg
+- lfn: train_class_1_21.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103323.jpg
+- lfn: train_class_0_64.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107272.jpg
+- lfn: train_class_0_36.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103500.jpg
+- lfn: train_class_0_35.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103354.jpg
+- lfn: train_class_4_6.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100859.jpg
+- lfn: train_class_0_60.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106544.jpg
+- lfn: train_class_0_19.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101943.jpg
+- lfn: train_class_2_5.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/110411.jpg
+- lfn: train_class_0_78.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107967.jpg
+- lfn: train_class_0_10.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101251.jpg
+- lfn: train_class_2_7.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/112819.jpg
+- lfn: train_class_0_56.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106000.jpg
+- lfn: train_class_3_14.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102964.jpg
+- lfn: train_class_1_45.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105797.jpg
+- lfn: train_class_4_76.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107709.jpg
+- lfn: train_class_1_63.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107403.jpg
+- lfn: train_class_0_59.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106463.jpg
+- lfn: train_class_3_25.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105513.jpg
+- lfn: train_class_3_11.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101980.jpg
+- lfn: train_class_3_27.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105764.jpg
+- lfn: train_class_3_16.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103040.jpg
+- lfn: train_class_4_50.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105009.jpg
+- lfn: train_class_4_22.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102243.jpg
+- lfn: train_class_0_70.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107573.jpg
+- lfn: train_class_1_35.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104516.jpg
+- lfn: train_class_3_21.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104398.jpg
+- lfn: train_class_1_46.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105870.jpg
+- lfn: train_class_0_21.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102000.jpg
+- lfn: train_class_4_52.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105218.jpg
+- lfn: train_class_0_76.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107849.jpg
+- lfn: train_class_3_18.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103255.jpg
+- lfn: train_class_1_79.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108928.jpg
+- lfn: train_class_0_49.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105092.jpg
+- lfn: train_class_0_80.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108066.jpg
+- lfn: train_class_4_40.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104001.jpg
+- lfn: train_class_4_33.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103037.jpg
+- lfn: train_class_3_24.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105381.jpg
+- lfn: train_class_3_38.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107314.jpg
+- lfn: train_class_3_3.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101232.jpg
+- lfn: train_class_0_20.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101971.jpg
+- lfn: train_class_0_38.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103646.jpg
+- lfn: train_class_3_9.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101848.jpg
+- lfn: train_class_1_68.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108551.jpg
+- lfn: train_class_4_26.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102422.jpg
+- lfn: train_class_4_13.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101307.jpg
+- lfn: train_class_1_58.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106973.jpg
+- lfn: train_class_3_20.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104008.jpg
+- lfn: train_class_0_68.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107480.jpg
+- lfn: train_class_4_7.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100951.jpg
+- lfn: train_class_0_0.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100428.jpg
+- lfn: train_class_2_0.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100740.jpg
+- lfn: train_class_1_43.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105354.jpg
+- lfn: train_class_1_14.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101816.jpg
+- lfn: train_class_0_6.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100852.jpg
+- lfn: train_class_0_55.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105868.jpg
+- lfn: train_class_4_12.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101298.jpg
+- lfn: train_class_4_72.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107517.jpg
+- lfn: train_class_1_70.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108584.jpg
+- lfn: train_class_0_37.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103610.jpg
+- lfn: train_class_0_83.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108195.jpg
+- lfn: train_class_0_27.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102513.jpg
+- lfn: train_class_1_16.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102174.jpg
+- lfn: train_class_4_15.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101564.jpg
+- lfn: train_class_0_63.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106800.jpg
+- lfn: train_class_0_1.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100434.jpg
+- lfn: train_class_4_23.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102391.jpg
+- lfn: train_class_3_34.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106986.jpg
+- lfn: train_class_4_38.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103818.jpg
+- lfn: train_class_4_11.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101275.jpg
+- lfn: train_class_0_69.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107539.jpg
+- lfn: train_class_0_58.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106044.jpg
+- lfn: train_class_1_2.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100288.jpg
+- lfn: train_class_4_77.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107745.jpg
+- lfn: train_class_4_8.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101007.jpg
+- lfn: train_class_0_46.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104703.jpg
+- lfn: train_class_4_68.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107159.jpg
+- lfn: train_class_4_14.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101315.jpg
+- lfn: train_class_3_37.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107231.jpg
+- lfn: train_class_1_77.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108757.jpg
+- lfn: train_class_4_53.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105314.jpg
+- lfn: train_class_3_23.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104962.jpg
+- lfn: train_class_1_27.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104110.jpg
+- lfn: train_class_4_48.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104784.jpg
+- lfn: train_class_0_5.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100744.jpg
+- lfn: train_class_0_52.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105755.jpg
+- lfn: train_class_0_75.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107828.jpg
+- lfn: train_class_4_9.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101074.jpg
+- lfn: train_class_1_22.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103348.jpg
+- lfn: train_class_4_43.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104234.jpg
+- lfn: train_class_1_18.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102839.jpg
+- lfn: train_class_1_29.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104159.jpg
+- lfn: train_class_4_64.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106777.jpg
+- lfn: train_class_0_65.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107298.jpg
+- lfn: train_class_0_2.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100571.jpg
+- lfn: train_class_1_48.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106105.jpg
+- lfn: train_class_3_12.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101997.jpg
+- lfn: train_class_4_42.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104040.jpg
+- lfn: train_class_1_32.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104243.jpg
+- lfn: train_class_1_36.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104611.jpg
+- lfn: train_class_1_64.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107521.jpg
+- lfn: train_class_3_26.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105743.jpg
+- lfn: train_class_0_32.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102977.jpg
+- lfn: train_class_0_7.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100867.jpg
+- lfn: train_class_0_9.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101247.jpg
+- lfn: train_class_1_19.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102933.jpg
+- lfn: train_class_1_7.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101164.jpg
+- lfn: train_class_0_39.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103707.jpg
+- lfn: train_class_4_66.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107012.jpg
+- lfn: train_class_4_46.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104478.jpg
+- lfn: train_class_4_21.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102040.jpg
+- lfn: train_class_4_56.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105631.jpg
+- lfn: train_class_4_74.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107555.jpg
+- lfn: train_class_4_60.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106355.jpg
+- lfn: train_class_1_25.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103758.jpg
+- lfn: train_class_0_72.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107619.jpg
+- lfn: train_class_1_52.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106652.jpg
+- lfn: train_class_4_20.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101991.jpg
+- lfn: train_class_4_59.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105925.jpg
+- lfn: train_class_3_0.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100143.jpg
+- lfn: train_class_4_70.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107229.jpg
+- lfn: train_class_3_30.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106199.jpg
+- lfn: train_class_1_65.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107961.jpg
+- lfn: train_class_4_24.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102402.jpg
+- lfn: train_class_1_31.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104196.jpg
+- lfn: train_class_1_33.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104387.jpg
+- lfn: train_class_0_48.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105020.jpg
+- lfn: train_class_1_23.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103353.jpg
+- lfn: train_class_4_47.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104536.jpg
+- lfn: train_class_4_2.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100765.jpg
+- lfn: train_class_3_22.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104723.jpg
+- lfn: train_class_1_71.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108624.jpg
+- lfn: train_class_1_15.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101875.jpg
+- lfn: train_class_1_11.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101623.jpg
+- lfn: train_class_0_67.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107461.jpg
+- lfn: train_class_0_66.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107435.jpg
+- lfn: train_class_4_25.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102407.jpg
+- lfn: train_class_0_22.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102182.jpg
+- lfn: train_class_2_2.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106018.jpg
+- lfn: train_class_1_40.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105088.jpg
+- lfn: train_class_1_17.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102602.jpg
+- lfn: train_class_1_75.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108692.jpg
+- lfn: train_class_4_29.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102735.jpg
+- lfn: train_class_1_60.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107143.jpg
+- lfn: train_class_4_55.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105572.jpg
+- lfn: train_class_0_30.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102770.jpg
+- lfn: train_class_4_3.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100801.jpg
+- lfn: train_class_1_6.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101092.jpg
+- lfn: train_class_0_41.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103900.jpg
+- lfn: train_class_0_81.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108146.jpg
+- lfn: train_class_1_76.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108715.jpg
+- lfn: train_class_3_17.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103132.jpg
+- lfn: train_class_3_4.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101355.jpg
+- lfn: train_class_1_26.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104096.jpg
+- lfn: train_class_1_69.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108580.jpg
+- lfn: train_class_0_53.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105757.jpg
+- lfn: train_class_3_6.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101563.jpg
+- lfn: train_class_0_17.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101754.jpg
+- lfn: train_class_4_0.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100380.jpg
+- lfn: train_class_0_51.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105507.jpg
+- lfn: train_class_0_14.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101518.jpg
+- lfn: train_class_4_4.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100813.jpg
+- lfn: train_class_0_82.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108182.jpg
+- lfn: train_class_1_0.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100053.jpg
+- lfn: train_class_4_67.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107084.jpg
+- lfn: train_class_0_29.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102743.jpg
+- lfn: train_class_0_3.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100672.jpg
+- lfn: train_class_0_23.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102260.jpg
+- lfn: train_class_1_62.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107394.jpg
+- lfn: train_class_1_44.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105648.jpg
+- lfn: train_class_2_1.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101135.jpg
+- lfn: train_class_3_29.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106176.jpg
+- lfn: train_class_2_4.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108959.jpg
+- lfn: train_class_0_45.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104422.jpg
+- lfn: train_class_4_17.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101774.jpg
+- lfn: train_class_1_13.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101695.jpg
+- lfn: train_class_0_57.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106040.jpg
+- lfn: train_class_0_42.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103902.jpg
+- lfn: train_class_4_16.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101756.jpg
+- lfn: train_class_0_79.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107975.jpg
+- lfn: train_class_3_13.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102021.jpg
+- lfn: train_class_4_63.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106664.jpg
+- lfn: train_class_0_12.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101325.jpg
+- lfn: train_class_1_28.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104143.jpg
+- lfn: train_class_0_11.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101296.jpg
+- lfn: train_class_1_66.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108160.jpg
+- lfn: train_class_1_1.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100122.jpg
+- lfn: train_class_1_50.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106170.jpg
+- lfn: train_class_1_59.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107055.jpg
+- lfn: train_class_4_18.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101787.jpg
+- lfn: train_class_3_33.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106788.jpg
+- lfn: train_class_4_39.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103950.jpg
+- lfn: train_class_1_20.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103072.jpg
+- lfn: train_class_0_34.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103260.jpg
+- lfn: train_class_3_10.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101893.jpg
+- lfn: train_class_1_24.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103718.jpg
+- lfn: train_class_0_50.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105447.jpg
+- lfn: train_class_4_19.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101804.jpg
+- lfn: train_class_4_34.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103075.jpg
+- lfn: val_class_4_35.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103356.jpg
+- lfn: val_class_0_4.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100727.jpg
+- lfn: val_class_1_49.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106124.jpg
+- lfn: val_class_0_44.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104414.jpg
+- lfn: val_class_4_41.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104020.jpg
+- lfn: val_class_1_12.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101651.jpg
+- lfn: val_class_4_1.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100673.jpg
+- lfn: val_class_4_62.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106621.jpg
+- lfn: val_class_0_28.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102642.jpg
+- lfn: val_class_3_31.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106298.jpg
+- lfn: val_class_1_51.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106230.jpg
+- lfn: val_class_3_2.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101181.jpg
+- lfn: val_class_1_61.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107261.jpg
+- lfn: val_class_4_44.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104389.jpg
+- lfn: val_class_1_4.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100444.jpg
+- lfn: val_class_0_71.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107610.jpg
+- lfn: val_class_1_34.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104440.jpg
+- lfn: val_class_3_36.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107197.jpg
+- lfn: val_class_4_49.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104934.jpg
+- lfn: val_class_4_75.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107606.jpg
+- lfn: val_class_1_53.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106689.jpg
+- lfn: val_class_4_5.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/100821.jpg
+- lfn: val_class_0_74.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107692.jpg
+- lfn: val_class_4_73.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107524.jpg
+- lfn: val_class_1_55.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106841.jpg
+- lfn: val_class_4_37.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103547.jpg
+- lfn: val_class_1_10.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101572.jpg
+- lfn: val_class_4_57.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105700.jpg
+- lfn: val_class_1_9.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101538.jpg
+- lfn: test_class_0_18.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101854.jpg
+- lfn: test_class_0_31.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102928.jpg
+- lfn: test_class_1_56.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106919.jpg
+- lfn: test_class_1_5.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101061.jpg
+- lfn: test_class_1_74.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108672.jpg
+- lfn: test_class_1_57.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106923.jpg
+- lfn: test_class_4_32.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103019.jpg
+- lfn: test_class_0_13.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101502.jpg
+- lfn: test_class_0_77.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107888.jpg
+- lfn: test_class_4_65.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106784.jpg
+- lfn: test_class_3_7.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101595.jpg
+- lfn: test_class_3_5.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101374.jpg
+- lfn: test_class_3_28.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105940.jpg
+- lfn: test_class_0_33.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103191.jpg
+- lfn: test_class_0_62.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/106781.jpg
+- lfn: test_class_1_38.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104764.jpg
+- lfn: test_class_0_54.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105772.jpg
+- lfn: test_class_4_28.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/102474.jpg
+- lfn: test_class_0_16.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101627.jpg
+- lfn: test_class_0_40.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/103819.jpg
+- lfn: test_class_4_45.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104420.jpg
+- lfn: test_class_0_73.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/107688.jpg
+- lfn: test_class_0_8.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101246.jpg
+- lfn: test_class_4_10.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101140.jpg
+- lfn: test_class_1_72.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/108645.jpg
+- lfn: test_class_1_39.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/104988.jpg
+- lfn: test_class_0_15.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/101548.jpg
+- lfn: test_class_1_41.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105165.jpg
+- lfn: test_class_4_54.jpg
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/full_galaxy_data/105497.jpg
+- lfn: data_loader.py
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/bin/data_loader.py
+- lfn: model_selection.py
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/bin/model_selection.py
+- lfn: hpo_galaxy_vgg16.pkl
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/config/hpo_galaxy_vgg16.pkl
+- lfn: checkpoint_vgg16.pkl
+  pfns:
+  - site: condorpool
+    pfn: file://${PWD}/config/checkpoint_vgg16.pkl
