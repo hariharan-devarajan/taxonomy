@@ -6,9 +6,11 @@ from enum import Enum
 from time import perf_counter, sleep
 
 # Import Dask libraries
+import dask
 import dask.dataframe as dd
+import numpy as np
 from dask.dataframe import DataFrame
-from dask.distributed import Client, progress, wait
+from dask.distributed import Client, LocalCluster, progress, wait
 from dask_jobqueue import LSFCluster
 
 # Import other libraries
@@ -18,6 +20,7 @@ WORKER_CHECK_INTERVAL = 5.0
 
 
 class ClusterType(Enum):
+    Local = 'Local'
     LSF = 'LSF'
 
 
@@ -54,8 +57,9 @@ class Analyzer(object):
 
         # Scale cluster
         pbar.set_description(f"Scaling up the cluster to {n_workers} nodes")
-        self.cluster.scale(n_workers)
-        self.__wait_until_workers_alive()
+        if (cluster_options.cluster_type != ClusterType.Local):
+            self.cluster.scale(n_workers)
+            self.__wait_until_workers_alive()
         pbar.update()
 
         # Close progress
@@ -79,37 +83,40 @@ class Analyzer(object):
         # Return splitted dataframes
         return io_df, mpi_df, trace_df
 
-    def analyze_parquet_logs(self, log_dir: str, engine="pyarrow-dataset"):
+    def analyze_parquet_logs(self, log_dir: str):
         # Keep workers alive
         keep_alive_task = asyncio.create_task(self.__keep_workers_alive())
 
         # Declare vars
-        n_steps = 7
-
         # Start progress
+        n_steps = 7
         pbar = tqdm(total=n_steps)
 
         # Read logs into a dataframe
         pbar.set_description("Reading logs into dataframe")
-        df, _ = self.__read_parquet(log_dir=log_dir, engine=engine)
+        df, _ = self.__read_parquet(log_dir=log_dir)
         pbar.update()
 
         # Compute job time
         pbar.set_description("Computing job time")
+        #! Could be delayed, we will see
         job_time, _ = self._compute_job_time(df=df)
         pbar.update()
 
         # Filter non-I/O traces (except for MPI)
-        df = self._filter_non_io_traces(df)
-
         # Split dataframe into I/O, MPI and trace
-        io_df, mpi_df, trace_df = self._split_io_mpi_trace(df)
-
         # Split io_df into read & write and metadata dataframes
+        df = self._filter_non_io_traces(df)
+        io_df, mpi_df, trace_df = self._split_io_mpi_trace(df)
         io_df_read_write, io_df_metadata = self.__split_read_write_metadata(io_df)
 
         # Build hypotheses
-        # print(io_df_read_write.info())
+        # n_bins = 100
+        # n_repeats = 1
+
+        # tbins_step = job_time/n_bins
+        # tbins = np.arange(0, n_bins, job_time/n_bins)
+        # self.__set_bins(io_df_read_write, tbins, tbins_step)
 
         # Close progress
         pbar.set_description("Analysis completed")
@@ -119,6 +126,12 @@ class Analyzer(object):
         keep_alive_task.cancel()
 
         return io_df_read_write, job_time
+
+    def _mean_of_bws_of_group(io_df_read_write: DataFrame, group_by: str):
+        return io_df_read_write.groupby(group_by)["bandwidth"].mean()/1024.0
+
+    def _sum_of_sizes_of_group(io_df_read_write: DataFrame, group_by: str):
+        return io_df_read_write.groupby(group_by)["size"].sum()/1024.0/1024.0/1024.0
 
     def _compute_job_time(self, df: DataFrame):
         # Compute job time
@@ -163,7 +176,10 @@ class Analyzer(object):
         # Create empty cluster
         cluster = None
         # Check specificed cluster type
-        if (cluster_options.cluster_type == ClusterType.LSF):
+        if (cluster_options.cluster_type == ClusterType.Local):
+            cluster = LocalCluster(n_workers=8,
+                                   local_directory=os.environ["BBPATH"])
+        elif (cluster_options.cluster_type == ClusterType.LSF):
             # Initialize cluster
             cluster = LSFCluster(cores=cores,
                                  processes=processes,
@@ -179,8 +195,10 @@ class Analyzer(object):
                                             '-o {}'.format(log_file),
                                             '-e {}'.format(log_file)],
                                  use_stdin=use_stdin)
-            # Print cluster job script
-            if self.debug:
+        # Print cluster job script
+        if self.debug:
+            print("Dashboard link:", cluster.dashboard_link)
+            if (cluster_options.cluster_type == ClusterType.LSF):
                 print(cluster.job_script())
         # Return initialized cluster
         return cluster
@@ -227,9 +245,17 @@ class Analyzer(object):
         io_df_read_write['bandwidth'] = io_df_read_write['bandwidth'].mask(
             correct_dur, io_df_read_write['size']*1.0/(io_df_read_write['tend'] - io_df_read_write['tstart'])/1024.0/1024.0)
 
+    def __set_bins(self, io_df_read_write: DataFrame, tbins: list, step: int):
+        io_df_read_write["tbin"] = 0
+        for tbin in tbins:
+            tstart_cond = io_df_read_write["tstart"].ge(tbin)
+            tend_cond = io_df_read_write["tend"].lt(tbin + step)
+            io_df_read_write["tbin"] = io_df_read_write["tbin"].mask(tstart_cond & tend_cond, tbin)
+
     def __set_durations(self, io_df: DataFrame):
         # Set durations according tend - tstart
         io_df['duration'] = io_df['tend'] - io_df['tstart']
+        io_df['tmid'] = (io_df['tend'] + io_df['tstart'])/2.0
 
     def __set_filenames(self, io_df: DataFrame):
         # Prepare conditions
