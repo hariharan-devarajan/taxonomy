@@ -1,0 +1,8 @@
+install
+*.o
+*.f90
+*.mod
+source/install
+source/run/p3_lookupTable_1.dat-3momI_v5.1.6
+*.exe
+*.bin

@@ -1,0 +1,67 @@
+ 
+   CM1 version: cm1r20.3
+ 
+   nx                        =  60
+   ny                        =  60
+   nz                        =  40
+ 
+   imoist                    =  1
+   sgsmodel                  =  1
+   tconfig                   =  1
+   bcturbs                   =  1
+   ptype                     =  5
+   wbc                       =  2
+   ebc                       =  2
+   sbc                       =  2
+   nbc                       =  2
+   bbc                       =  1
+   tbc                       =  1
+   iorigin                   =  2
+   axisymm                   =  0
+   iptra                     =  0
+   npt                       =  1
+ 
+   fcor                      =  0.0000000000E+00
+ 
+   radopt                    =  0
+ 
+   sfcmodel                  =  0
+   oceanmodel                =  0
+   ipbl                      =  0
+ 
+   iice                      =  1
+   idm                       =  1
+   idmplus                   =  0
+   numq                      =  10
+   nql1                      =  2
+   nql2                      =  3
+   nqs1                      =  4
+   nqs2                      =  6
+   nnc1                      =  7
+   nnc2                      =  10
+   nzl1                      =  -2
+   nzl2                      =  -2
+   nvl1                      =  -2
+   nvl2                      =  -2
+ 
+   c_m                       =  0.1000000015
+   c_e1                      =  0.2000016868
+   c_e2                      =  0.7869588137
+   c_s                       =  0.1784124076
+ 
+   cgs1                      =  1.875000000
+   cgs2                      =  -1.250000000
+   cgs3                      =  0.3750000000
+ 
+   dgs1                      =  -2.000000000
+   dgs2                      =  3.000000000
+   dgs3                      =  -1.000000000
+ 
+   cgt1                      =  1.875000000
+   cgt2                      =  -1.250000000
+   cgt3                      =  0.3750000000
+ 
+   dgt1                      =  2.000000000
+   dgt2                      =  -3.000000000
+   dgt3                      =  1.000000000
+ 

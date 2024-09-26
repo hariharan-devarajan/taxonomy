@@ -137,3 +137,8 @@ apps/mummi/macro/
 apps/lbann-cosmoflow/dump_acts
 apps/lbann-atom/1-node/weights
 dask-worker-space
+apps/cm1r20.3/source/run/onefile.F
+apps/cm1r20.3/source/run/p3_lookupTable_2.dat-4.1
+apps/cm1r20.3/source/run/RRTMG_LW_DATA
+apps/cm1r20.3/source/run/RRTMG_SW_DATA
+apps/cm1r20.3/source/run/p3_lookupTable_1.dat-2momI_v5.1.6_oldDimax

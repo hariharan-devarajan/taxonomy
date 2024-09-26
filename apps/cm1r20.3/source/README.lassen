@@ -1,0 +1,23 @@
+To build cm1r20.3 on Lassen:
+- vim src/Makefile
+- Replace line 78 to 82 with the following:
+    #  multiple processors, distributed memory (MPI), GNU compiler
+    FC = mpif90
+    #OPTS = -ffree-form -ffree-line-length-none -O2 -finline-functions
+    OPTS = -O2
+    CPP  = cpp -C -P -traditional -Wno-invalid-pp-token -ffreestanding -finstrument-functions -rdynamic
+    DM = -DMPI -Uvector
+- vim src/module_sf_gfdl.F
+- Replace line 1904 with the following:
+    common /random/ junk
+- vim src/solve1.F
+- Replace line 628 with the following:
+    dttmp = mtime
+    if( mtime.gt.1800.0 .and. mod(dttmp,300.0).lt.0.01 )then
+
+- unlink install/bin
+- pushd src
+- make
+- popd
+- ln -s run install/bin
+
