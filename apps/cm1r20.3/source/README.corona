@@ -1,3 +1,4 @@
+pushd source
 To build cm1r20.3 on Corona:
 - vim src/Makefile
 - Replace line 78 to 82 with the following:
@@ -22,5 +23,6 @@ module load gcc/10.3.1-magic
 - pushd src
 - make
 - popd
-- ln -s run install/bin
+popd
+- ln -s source/run install/bin
 
