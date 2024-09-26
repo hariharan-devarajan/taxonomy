@@ -1,0 +1,16 @@
+job:
+  env_id: FLUX_JOB_ID
+  pfs: /p/lustre3/haridev
+  nodes: 32
+  ppn: 32
+  clean: 1
+  out_log: cm1.out
+  err_log: cm1.err
+  time: 60
+  queue: pbatch
+env:
+  python: /usr/workspace/haridev/iopp/venvs/python
+  spack: /usr/workspace/haridev/iopp/venvs/spack
+profiler:
+  enable: 1
+  preload: ${IOPP_ENV_PYTHON}/lib/python3.9/site-packages/dftracer/lib64/libdftracer_preload.so

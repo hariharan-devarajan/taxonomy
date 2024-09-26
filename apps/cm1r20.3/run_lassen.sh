@@ -5,12 +5,14 @@
 #BSUB -nnodes 32
 #BSUB -W 15
 
+
+
 export run_dir=/p/gpfs1/iopp/temp/cm1r20.3.$LSB_JOBID
 # export run_dir=/p/gpfs1/chowdhur/io_playground/cm1r20.3.$LSB_JOBID
 mkdir -p $run_dir
 min_nodes=32
 max_nodes=32
-tasks_per_node=40
+tasks_per_node=48
 
 min_iteration=1
 max_iteration=1
