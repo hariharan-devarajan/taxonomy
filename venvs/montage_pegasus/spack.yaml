@@ -1,0 +1,31 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  specs:
+  - montage@6.1
+  - pegasus@5.1-dev
+  - condor@10
+  view: true
+  concretizer:
+    unify: true
+  packages:
+    montage:
+      externals:
+      - spec: montage@6.1
+        prefix: /usr/workspace/haridev/iopp/software/Montage
+      buildable: false
+    pegasus:
+      externals:
+      - spec: pegasus@5.1-dev
+        prefix: /usr/workspace/haridev/iopp/software/pegasus-5.1.0dev
+      buildable: false
+    condor:
+      externals:
+      - spec: condor@10
+        prefix: /usr/workspace/haridev/iopp/software/condor
+      buildable: false
+    
+
