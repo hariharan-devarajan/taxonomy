@@ -1,7 +1,8 @@
+name: montage-dss-2deg
 job:
   env_id: FLUX_JOB_ID
   pfs: /p/lustre3/haridev
-  nodes: 32
+  nodes: 16
   ppn: 48
   clean: 1
   out_log: cm1.out

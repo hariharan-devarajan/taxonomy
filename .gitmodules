@@ -4,3 +4,6 @@
 [submodule "software/pegasus"]
 	path = software/pegasus
 	url = https://github.com/pegasus-isi/pegasus.git
+[submodule "software/montage-workflow-v3"]
+	path = apps/montage_pegasus/software/montage-workflow-v3
+	url = https://github.com/pegasus-isi/montage-workflow-v3.git

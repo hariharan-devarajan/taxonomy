@@ -1,0 +1,3 @@
+<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=master_2561647_aa78>
+$CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+$CondorPlatform: x86_64_AlmaLinux8 $

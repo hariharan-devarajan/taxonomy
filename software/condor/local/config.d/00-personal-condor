@@ -1,0 +1,3 @@
+use security: user_based
+use role: personal
+CONDOR_HOST = $(FULL_HOSTNAME)

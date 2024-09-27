@@ -1,0 +1,2557 @@
+09/26/24 19:31:03 Setting maximum file descriptors to 4096.
+09/26/24 19:31:03 ******************************************************
+09/26/24 19:31:03 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/26/24 19:31:03 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/26/24 19:31:03 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/26/24 19:31:03 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/26/24 19:31:03 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 19:31:03 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 19:31:03 ** PID = 2725026
+09/26/24 19:31:03 ** Log last touched time unavailable (No such file or directory)
+09/26/24 19:31:03 ******************************************************
+09/26/24 19:31:03 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 19:31:03 Using local config sources: 
+09/26/24 19:31:03    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 19:31:03 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/26/24 19:31:03 CLASSAD_CACHING is ENABLED
+09/26/24 19:31:03 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 19:31:03 Daemoncore: Listening at <0.0.0.0:44357> on TCP (ReliSock).
+09/26/24 19:31:03 DaemonCore: command socket at <192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>
+09/26/24 19:31:03 DaemonCore: private command socket at <192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov>
+09/26/24 19:31:03 main_init() called
+09/26/24 19:31:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 19:36:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 22
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 19:41:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 32
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 19:46:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 42
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 19:51:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 53
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 19:56:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 67
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 20:01:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 77
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 20:06:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 87
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 20:11:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 98
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 20:16:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 113
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 20:21:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 138
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 20:26:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 424
+SharedPortCommandSinfuls = "<192.168.64.240:44357?alias=corona240.llnl.gov>"
+09/26/24 20:31:43 Setting maximum file descriptors to 4096.
+09/26/24 20:31:43 ******************************************************
+09/26/24 20:31:43 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/26/24 20:31:43 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/26/24 20:31:43 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/26/24 20:31:43 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/26/24 20:31:43 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:31:43 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:31:43 ** PID = 1623344
+09/26/24 20:31:43 ** Log last touched 9/26 20:29:04
+09/26/24 20:31:43 ******************************************************
+09/26/24 20:31:43 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:31:43 Using local config sources: 
+09/26/24 20:31:43    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:31:43 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/26/24 20:31:43 CLASSAD_CACHING is ENABLED
+09/26/24 20:31:43 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:31:43 Daemoncore: Listening at <0.0.0.0:41823> on TCP (ReliSock).
+09/26/24 20:31:43 DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>
+09/26/24 20:31:43 DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov>
+09/26/24 20:31:43 main_init() called
+09/26/24 20:31:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 20:36:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 26
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 20:41:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 89
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 20:46:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 112
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 20:51:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 207
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 20:56:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 319
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 21:01:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 375
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 21:06:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 444
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 21:11:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 535
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 21:16:43 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 547
+SharedPortCommandSinfuls = "<192.168.64.198:41823?alias=corona198.llnl.gov>"
+09/26/24 21:20:41 Setting maximum file descriptors to 4096.
+09/26/24 21:20:41 ******************************************************
+09/26/24 21:20:41 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/26/24 21:20:41 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/26/24 21:20:41 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/26/24 21:20:41 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/26/24 21:20:41 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:20:41 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:20:41 ** PID = 1720676
+09/26/24 21:20:41 ** Log last touched 9/26 21:17:43
+09/26/24 21:20:41 ******************************************************
+09/26/24 21:20:41 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:20:41 Using local config sources: 
+09/26/24 21:20:41    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:20:41 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/26/24 21:20:41 CLASSAD_CACHING is ENABLED
+09/26/24 21:20:41 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:20:41 Daemoncore: Listening at <0.0.0.0:46405> on TCP (ReliSock).
+09/26/24 21:20:41 DaemonCore: command socket at <192.168.64.198:46405?addrs=192.168.64.198-46405&alias=corona198.llnl.gov&noUDP>
+09/26/24 21:20:41 DaemonCore: private command socket at <192.168.64.198:46405?addrs=192.168.64.198-46405&alias=corona198.llnl.gov>
+09/26/24 21:20:41 main_init() called
+09/26/24 21:20:41 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:46405?addrs=192.168.64.198-46405&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.198:46405?alias=corona198.llnl.gov>"
+09/26/24 21:22:19 Setting maximum file descriptors to 4096.
+09/26/24 21:22:19 ******************************************************
+09/26/24 21:22:19 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/26/24 21:22:19 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/26/24 21:22:19 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/26/24 21:22:19 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/26/24 21:22:19 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:22:19 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:22:19 ** PID = 1723379
+09/26/24 21:22:19 ** Log last touched 9/26 21:20:41
+09/26/24 21:22:19 ******************************************************
+09/26/24 21:22:19 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:22:19 Using local config sources: 
+09/26/24 21:22:19    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:22:19 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/26/24 21:22:19 CLASSAD_CACHING is ENABLED
+09/26/24 21:22:19 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:22:19 Daemoncore: Listening at <0.0.0.0:44617> on TCP (ReliSock).
+09/26/24 21:22:19 DaemonCore: command socket at <192.168.64.198:44617?addrs=192.168.64.198-44617&alias=corona198.llnl.gov&noUDP>
+09/26/24 21:22:19 DaemonCore: private command socket at <192.168.64.198:44617?addrs=192.168.64.198-44617&alias=corona198.llnl.gov>
+09/26/24 21:22:19 main_init() called
+09/26/24 21:22:19 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:44617?addrs=192.168.64.198-44617&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.198:44617?alias=corona198.llnl.gov>"
+09/26/24 21:27:19 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:44617?addrs=192.168.64.198-44617&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 53
+SharedPortCommandSinfuls = "<192.168.64.198:44617?alias=corona198.llnl.gov>"
+09/26/24 21:29:32 Setting maximum file descriptors to 4096.
+09/26/24 21:29:32 ******************************************************
+09/26/24 21:29:32 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/26/24 21:29:32 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/26/24 21:29:32 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/26/24 21:29:32 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/26/24 21:29:32 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:29:32 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:29:32 ** PID = 1726657
+09/26/24 21:29:32 ** Log last touched 9/26 21:28:19
+09/26/24 21:29:32 ******************************************************
+09/26/24 21:29:32 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:29:32 Using local config sources: 
+09/26/24 21:29:32    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:29:32 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/26/24 21:29:32 CLASSAD_CACHING is ENABLED
+09/26/24 21:29:32 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:29:32 Daemoncore: Listening at <0.0.0.0:39145> on TCP (ReliSock).
+09/26/24 21:29:32 DaemonCore: command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP>
+09/26/24 21:29:32 DaemonCore: private command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov>
+09/26/24 21:29:32 main_init() called
+09/26/24 21:29:32 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.198:39145?alias=corona198.llnl.gov>"
+09/26/24 21:34:32 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 70
+SharedPortCommandSinfuls = "<192.168.64.198:39145?alias=corona198.llnl.gov>"
+09/26/24 21:39:32 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 94
+SharedPortCommandSinfuls = "<192.168.64.198:39145?alias=corona198.llnl.gov>"
+09/26/24 21:55:16 Setting maximum file descriptors to 4096.
+09/26/24 21:55:16 ******************************************************
+09/26/24 21:55:16 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/26/24 21:55:16 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/26/24 21:55:16 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/26/24 21:55:16 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/26/24 21:55:16 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:55:16 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:55:16 ** PID = 2583826
+09/26/24 21:55:16 ** Log last touched 9/26 21:41:32
+09/26/24 21:55:16 ******************************************************
+09/26/24 21:55:16 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:55:16 Using local config sources: 
+09/26/24 21:55:16    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:55:16 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/26/24 21:55:16 CLASSAD_CACHING is ENABLED
+09/26/24 21:55:16 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:55:16 Daemoncore: Listening at <0.0.0.0:37619> on TCP (ReliSock).
+09/26/24 21:55:16 DaemonCore: command socket at <192.168.64.202:37619?addrs=192.168.64.202-37619&alias=corona202.llnl.gov&noUDP>
+09/26/24 21:55:16 DaemonCore: private command socket at <192.168.64.202:37619?addrs=192.168.64.202-37619&alias=corona202.llnl.gov>
+09/26/24 21:55:16 main_init() called
+09/26/24 21:55:16 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:37619?addrs=192.168.64.202-37619&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.202:37619?alias=corona202.llnl.gov>"
+09/26/24 21:58:52 Setting maximum file descriptors to 4096.
+09/26/24 21:58:52 ******************************************************
+09/26/24 21:58:52 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/26/24 21:58:52 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/26/24 21:58:52 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/26/24 21:58:52 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/26/24 21:58:52 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:58:52 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:58:52 ** PID = 2588033
+09/26/24 21:58:52 ** Log last touched 9/26 21:57:16
+09/26/24 21:58:52 ******************************************************
+09/26/24 21:58:52 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:58:52 Using local config sources: 
+09/26/24 21:58:52    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:58:52 config Macros = 56, Sorted = 56, StringBytes = 1623, TablesBytes = 2064
+09/26/24 21:58:52 CLASSAD_CACHING is ENABLED
+09/26/24 21:58:52 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:58:52 Daemoncore: Listening at <0.0.0.0:43025> on TCP (ReliSock).
+09/26/24 21:58:52 DaemonCore: command socket at <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>
+09/26/24 21:58:52 DaemonCore: private command socket at <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov>
+09/26/24 21:58:52 main_init() called
+09/26/24 21:58:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:03:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 70
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:08:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 94
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:13:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 129
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:18:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 155
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:23:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 176
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:28:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 197
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:33:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 219
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:38:52 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 1
+RequestsPendingPeak = 2
+RequestsSucceeded = 244
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:43:53 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 265
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:48:53 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 286
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:53:53 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 310
+SharedPortCommandSinfuls = "<192.168.64.202:43025?alias=corona202.llnl.gov>"
+09/26/24 22:59:18 Setting maximum file descriptors to 4096.
+09/26/24 22:59:18 ******************************************************
+09/26/24 22:59:18 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/26/24 22:59:18 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/26/24 22:59:18 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/26/24 22:59:18 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/26/24 22:59:18 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 22:59:18 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 22:59:18 ** PID = 1759198
+09/26/24 22:59:18 ** Log last touched 9/26 22:57:53
+09/26/24 22:59:18 ******************************************************
+09/26/24 22:59:18 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 22:59:18 Using local config sources: 
+09/26/24 22:59:18    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 22:59:18 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/26/24 22:59:18 CLASSAD_CACHING is ENABLED
+09/26/24 22:59:18 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 22:59:18 Daemoncore: Listening at <0.0.0.0:34199> on TCP (ReliSock).
+09/26/24 22:59:18 DaemonCore: command socket at <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>
+09/26/24 22:59:18 DaemonCore: private command socket at <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov>
+09/26/24 22:59:18 main_init() called
+09/26/24 22:59:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:04:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 71
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:09:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 85
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:14:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 110
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:19:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 125
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:24:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 137
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:29:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 148
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:34:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 160
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:39:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 175
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:44:18 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 187
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/26/24 23:49:19 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 200
+SharedPortCommandSinfuls = "<192.168.64.198:34199?alias=corona198.llnl.gov>"
+09/27/24 00:58:55 Setting maximum file descriptors to 4096.
+09/27/24 00:58:55 ******************************************************
+09/27/24 00:58:55 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 00:58:55 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 00:58:55 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 00:58:55 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 00:58:55 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 00:58:55 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 00:58:55 ** PID = 2352168
+09/27/24 00:58:55 ** Log last touched 9/26 23:49:19
+09/27/24 00:58:55 ******************************************************
+09/27/24 00:58:55 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 00:58:55 Using local config sources: 
+09/27/24 00:58:55    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 00:58:55 config Macros = 56, Sorted = 56, StringBytes = 1622, TablesBytes = 2064
+09/27/24 00:58:55 CLASSAD_CACHING is ENABLED
+09/27/24 00:58:55 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 00:58:55 Daemoncore: Listening at <0.0.0.0:37305> on TCP (ReliSock).
+09/27/24 00:58:55 DaemonCore: command socket at <192.168.65.24:37305?addrs=192.168.65.24-37305&alias=corona280.llnl.gov&noUDP>
+09/27/24 00:58:55 DaemonCore: private command socket at <192.168.65.24:37305?addrs=192.168.65.24-37305&alias=corona280.llnl.gov>
+09/27/24 00:58:55 main_init() called
+09/27/24 00:58:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.24:37305?addrs=192.168.65.24-37305&alias=corona280.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.65.24:37305?alias=corona280.llnl.gov>"
+.gov>"
+09/27/24 00:58:55 Setting maximum file descriptors to 4096.
+09/27/24 00:58:55 ******************************************************
+09/27/24 00:58:55 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 00:58:55 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 00:58:55 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 00:58:55 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 00:58:55 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 00:58:55 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 00:58:55 ** PID = 2561453
+09/27/24 00:58:55 ** Log last touched 9/27 00:58:55
+09/27/24 00:58:55 ******************************************************
+09/27/24 00:58:55 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 00:58:55 Using local config sources: 
+09/27/24 00:58:55    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 00:58:55 config Macros = 56, Sorted = 56, StringBytes = 1619, TablesBytes = 2064
+09/27/24 00:58:55 CLASSAD_CACHING is ENABLED
+09/27/24 00:58:55 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 00:58:55 Daemoncore: Listening at <0.0.0.0:45201> on TCP (ReliSock).
+09/27/24 00:58:55 DaemonCore: command socket at <192.168.65.7:45201?addrs=192.168.65.7-45201&alias=corona263.llnl.gov&noUDP>
+09/27/24 00:58:55 DaemonCore: private command socket at <192.168.65.7:45201?addrs=192.168.65.7-45201&alias=corona263.llnl.gov>
+09/27/24 00:58:55 main_init() called
+09/27/24 00:58:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.7:45201?addrs=192.168.65.7-45201&alias=corona263.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.65.7:45201?alias=corona263.llnl.gov>"
+09/27/24 00:5809/27/24 00:58:55 Setting maximum file descriptors to 4096.
+09/27/24 00:58:55 ******************************************************
+09/27/24 00:58:55 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 00:58:55 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 00:58:55 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 00:58:55 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 00:58:55 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 00:58:55 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 00:58:55 ** PID = 2665142
+09/27/24 00:58:55 ** Log last touched 9/27 00:58:55
+09/27/24 00:58:55 ******************************************************
+09/27/24 00:58:55 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 00:58:55 Using local config sources: 
+09/27/24 00:58:55    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 00:58:55 config Macros = 56, Sorted = 56, StringBytes = 1621, TablesBytes = 2064
+09/27/24 00:58:55 CLASSAD_CACHING is ENABLED
+09/27/24 00:58:55 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 00:58:55 Daemoncore: Listening at <0.0.0.0:42253> on TCP (ReliSock).
+09/27/24 00:58:55 DaemonCore: command socket at <192.168.65.21:42253?addrs=192.168.65.21-42253&alias=corona277.llnl.gov&noUDP>
+09/27/24 00:58:55 DaemonCore: private command socket at <192.168.65.21:42253?addrs=192.168.65.21-42253&alias=corona277.llnl.gov>
+09/27/24 00:58:55 main_init() called
+09/27/24 00:58:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.21:42253?addrs=192.168.65.21-42253&alias=corona277.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.65.21:42253?alias=corona277.llnl.gov>"
+.gov>"
+09/27/24 00:59:06 DaemonCore: Can't receive command request from 192.168.65.9 (perhaps a timeout?)
+09/27/24 00:59:06 DaemonCore: Can't receive command request from 192.168.65.0 (perhaps a timeout?)
+09/27/24 00:59:06 DaemonCore: Can't receive command request from 192.168.64.201 (perhaps a timeout?)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.0:41443>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.0:45479>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.0:41419>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.0:41049>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.0:43825>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.0:41563>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.9:37031>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.9:36767>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.9:40289>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.9:46749>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.9:36685>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.9:36631>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.2:39073>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.253:38097>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.0:44567>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.9:41225>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.198:39827>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.6:39451>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.248:39609>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.200:44823>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:18 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.199:38979>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:21 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.24:37021>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:22 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.28:37613>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:23 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.2:46747>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:23 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.253:39491>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:23 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.198:33331>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:23 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.6:41757>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:23 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.248:38849>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:23 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.200:43673>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:23 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.199:46855>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:26 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.24:41335>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:33 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.28:45033>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:34 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.2:46291>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:34 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.253:38435>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:34 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.198:34235>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:34 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.6:44931>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:34 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.248:44295>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:34 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.200:39559>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:34 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.199:34855>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:37 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.24:42241>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:50 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.28:34539>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:51 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.2:39277>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:51 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.253:38183>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:51 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by TOOL on <192.168.65.2:38993>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:51 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by TOOL on <192.168.64.253:44701>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:51 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.198:32823>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.6:45983>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.248:41623>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.199:46535>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.64.200:37127>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by TOOL on <192.168.64.198:40449>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by TOOL on <192.168.65.6:42439>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by TOOL on <192.168.64.248:33891>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by TOOL on <192.168.64.200:36723>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:52 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by TOOL on <192.168.64.199:34225>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:54 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by DAGMAN  on <192.168.65.24:41983>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:54 SharedPortServer: server was busy, failed to connect schedd_2683954_1847 as requested by TOOL on <192.168.65.24:40845>: primary (<cookie>/schedd_2683954_1847): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_2683954_1847): Connection refused (111)
+09/27/24 00:59:55 SharedPortServer: server was busy, failed to connect schedd_766344_2282 as requested by TOOL on <192.168.65.28:45729>: primary (<cookie>/schedd_766344_2282): Connection refused (111); alt (/tmp/condor-lock-m969O4/daemon_sock/schedd_766344_2282): Connection refused (111)
+09/27/24 01:04:35 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 57
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.27:44851?addrs=192.168.65.27-44851&alias=corona283.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.27:44851?alias=corona283.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.199:42095?addrs=192.168.64.199-42095&alias=corona199.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 16
+SharedPortCommandSinfuls = "<192.168.64.199:42095?alias=corona199.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.19:43411?addrs=192.168.65.19-43411&alias=corona275.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.19:43411?alias=corona275.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:35983?addrs=192.168.65.1-35983&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.1:35983?alias=corona257.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.242:40527?addrs=192.168.64.242-40527&alias=corona242.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.64.242:40527?alias=corona242.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.28:33729?addrs=192.168.65.28-33729&alias=corona284.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 6
+SharedPortCommandSinfuls = "<192.168.65.28:33729?alias=corona284.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.6:38413?addrs=192.168.65.6-38413&alias=corona262.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 8
+SharedPortCommandSinfuls = "<192.168.65.6:38413?alias=corona262.llnl.gov>"
+>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.8:42417?addrs=192.168.65.8-42417&alias=corona264.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.8:42417?alias=corona264.llnl.gov>"
+v>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.24:37305?addrs=192.168.65.24-37305&alias=corona280.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.24:37305?alias=corona280.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.0:36877?addrs=192.168.65.0-36877&alias=corona256.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 6
+SharedPortCommandSinfuls = "<192.168.65.0:36877?alias=corona256.llnl.gov>"
+>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.16:41055?addrs=192.168.65.16-41055&alias=corona272.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.16:41055?alias=corona272.llnl.gov>"
+27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.21:42253?addrs=192.168.65.21-42253&alias=corona277.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.21:42253?alias=corona277.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.248:39755?addrs=192.168.64.248-39755&alias=corona248.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 24
+SharedPortCommandSinfuls = "<192.168.64.248:39755?alias=corona248.llnl.gov>"
+9/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.17:45017?addrs=192.168.65.17-45017&alias=corona273.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.17:45017?alias=corona273.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.3:36111?addrs=192.168.65.3-36111&alias=corona259.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 18
+RequestsSucceeded = 279
+SharedPortCommandSinfuls = "<192.168.65.3:36111?alias=corona259.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.22:40373?addrs=192.168.65.22-40373&alias=corona278.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 16
+SharedPortCommandSinfuls = "<192.168.65.22:40373?alias=corona278.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.203:40793?addrs=192.168.64.203-40793&alias=corona203.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 9
+RequestsSucceeded = 221
+SharedPortCommandSinfuls = "<192.168.64.203:40793?alias=corona203.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.13:32821?addrs=192.168.65.13-32821&alias=corona269.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.13:32821?alias=corona269.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.2:33057?addrs=192.168.65.2-33057&alias=corona258.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.2:33057?alias=corona258.llnl.gov>"
+gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.201:42245?addrs=192.168.64.201-42245&alias=corona201.llnl.gov&noUDP>"
+RequestsBlocked = 57
+RequestsFailed = 57
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.64.201:42245?alias=corona201.llnl.gov>"
+09/27/24 01:03:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.10:36649?addrs=192.168.65.10-36649&alias=corona266.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.10:36649?alias=corona266.llnl.gov>"
+09/27/24 01:09:35 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 101
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+
+
+/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 9
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.19:43411?addrs=192.168.65.19-43411&alias=corona275.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.19:43411?alias=corona275.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.199:42095?addrs=192.168.64.199-42095&alias=corona199.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 16
+SharedPortCommandSinfuls = "<192.168.64.199:42095?alias=corona199.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.242:40527?addrs=192.168.64.242-40527&alias=corona242.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.64.242:40527?alias=corona242.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:35983?addrs=192.168.65.1-35983&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.1:35983?alias=corona257.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.28:33729?addrs=192.168.65.28-33729&alias=corona284.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 6
+SharedPortCommandSinfuls = "<192.168.65.28:33729?alias=corona284.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.11:42411?addrs=192.168.65.11-42411&alias=corona267.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.11:42411?alias=corona267.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.8:42417?addrs=192.168.65.8-42417&alias=corona264.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.8:42417?alias=corona264.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 10
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.17:45017?addrs=192.168.65.17-45017&alias=corona273.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.17:45017?alias=corona273.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.18:36005?addrs=192.168.65.18-36005&alias=corona274.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.18:36005?alias=corona274.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.7:45201?addrs=192.168.65.7-45201&alias=corona263.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.7:45201?alias=corona263.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.21:42253?addrs=192.168.65.21-42253&alias=corona277.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.21:42253?alias=corona277.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.16:41055?addrs=192.168.65.16-41055&alias=corona272.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.16:41055?alias=corona272.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.255:41643?addrs=192.168.64.255-41643&alias=corona255.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.64.255:41643?alias=corona255.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.5:39057?addrs=192.168.65.5-39057&alias=corona261.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.5:39057?alias=corona261.llnl.gov>"
+v>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.203:40793?addrs=192.168.64.203-40793&alias=corona203.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 9
+RequestsSucceeded = 221
+SharedPortCommandSinfuls = "<192.168.64.203:40793?alias=corona203.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.3:36111?addrs=192.168.65.3-36111&alias=corona259.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 18
+RequestsSucceeded = 493
+SharedPortCommandSinfuls = "<192.168.65.3:36111?alias=corona259.llnl.gov>"
+09/27/24 01:08:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:38995?addrs=192.168.64.198-38995&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.64.198:38995?alias=corona198.llnl.gov>"
+09/27/24 01:14:36 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 145
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+
+
+/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.27:44851?addrs=192.168.65.27-44851&alias=corona283.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.27:44851?alias=corona283.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.19:43411?addrs=192.168.65.19-43411&alias=corona275.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.19:43411?alias=corona275.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 9
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.199:42095?addrs=192.168.64.199-42095&alias=corona199.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 16
+SharedPortCommandSinfuls = "<192.168.64.199:42095?alias=corona199.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.24:37305?addrs=192.168.65.24-37305&alias=corona280.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.24:37305?alias=corona280.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.242:40527?addrs=192.168.64.242-40527&alias=corona242.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.64.242:40527?alias=corona242.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:35983?addrs=192.168.65.1-35983&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.1:35983?alias=corona257.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.28:33729?addrs=192.168.65.28-33729&alias=corona284.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 6
+SharedPortCommandSinfuls = "<192.168.65.28:33729?alias=corona284.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.21:42253?addrs=192.168.65.21-42253&alias=corona277.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.21:42253?alias=corona277.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.11:42411?addrs=192.168.65.11-42411&alias=corona267.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.11:42411?alias=corona267.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.7:45201?addrs=192.168.65.7-45201&alias=corona263.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.7:45201?alias=corona263.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.8:42417?addrs=192.168.65.8-42417&alias=corona264.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.8:42417?alias=corona264.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 10
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.17:45017?addrs=192.168.65.17-45017&alias=corona273.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.65.17:45017?alias=corona273.llnl.gov>"
+09/27/24 01:13:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.255:41643?addrs=192.168.64.255-41643&alias=corona255.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 7
+SharedPortCommandSinfuls = "<192.168.64.255:41643?alias=corona255.llnl.gov>"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        09/27/24 01:18:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.6:38413?addrs=192.168.65.6-38413&alias=corona262.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 10
+SharedPortCommandSinfuls = "<192.168.65.6:38413?alias=corona262.llnl.gov>"
+gov>"
+"
+/27/24 01:18:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.17:45017?addrs=192.168.65.17-45017&alias=corona273.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 8
+SharedPortCommandSinfuls = "<192.168.65.17:45017?alias=corona273.llnl.gov>"
+09/27/24 01:18:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.3:36111?addrs=192.168.65.3-36111&alias=corona259.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 18
+RequestsSucceeded = 937
+SharedPortCommandSinfuls = "<192.168.65.3:36111?alias=corona259.llnl.gov>"
+09/27/24 01:18:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 16
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:18:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.28:33729?addrs=192.168.65.28-33729&alias=corona284.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 8
+SharedPortCommandSinfuls = "<192.168.65.28:33729?alias=corona284.llnl.gov>"
+09/27/24 01:18:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 14
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+09/27/24 01:18:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.21:42253?addrs=192.168.65.21-42253&alias=corona277.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 10
+SharedPortCommandSinfuls = "<192.168.65.21:42253?alias=corona277.llnl.gov>"
+09/27/24 01:18:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.13:32821?addrs=192.168.65.13-32821&alias=corona269.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 8
+SharedPortCommandSinfuls = "<192.168.65.13:32821?alias=corona269.llnl.gov>"
+09/27/24 01:18:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.203:40793?addrs=192.168.64.203-40793&alias=corona203.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 9
+RequestsSucceeded = 233
+SharedPortCommandSinfuls = "<192.168.64.203:40793?alias=corona203.llnl.gov>"
+09/27/24 01:19:36 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 190
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+09/27/24 01:23:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.248:39755?addrs=192.168.64.248-39755&alias=corona248.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 29
+SharedPortCommandSinfuls = "<192.168.64.248:39755?alias=corona248.llnl.gov>"
+"
+/24 01:23:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.242:40527?addrs=192.168.64.242-40527&alias=corona242.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 12
+SharedPortCommandSinfuls = "<192.168.64.242:40527?alias=corona242.llnl.gov>"
+09/27/24 01:23:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 16
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+09/27/24 01:23:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.199:42095?addrs=192.168.64.199-42095&alias=corona199.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 21
+SharedPortCommandSinfuls = "<192.168.64.199:42095?alias=corona199.llnl.gov>"
+09/27/24 01:23:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 18
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:23:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.28:33729?addrs=192.168.65.28-33729&alias=corona284.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 11
+SharedPortCommandSinfuls = "<192.168.65.28:33729?alias=corona284.llnl.gov>"
+09/27/24 01:23:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.24:37305?addrs=192.168.65.24-37305&alias=corona280.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 12
+SharedPortCommandSinfuls = "<192.168.65.24:37305?alias=corona280.llnl.gov>"
+09/27/24 01:23:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.203:40793?addrs=192.168.64.203-40793&alias=corona203.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 9
+RequestsSucceeded = 236
+SharedPortCommandSinfuls = "<192.168.64.203:40793?alias=corona203.llnl.gov>"
+09/27/24 01:23:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.13:32821?addrs=192.168.65.13-32821&alias=corona269.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 12
+SharedPortCommandSinfuls = "<192.168.65.13:32821?alias=corona269.llnl.gov>"
+09/27/24 01:24:36 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 238
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+09/27/24 01:28:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.248:39755?addrs=192.168.64.248-39755&alias=corona248.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 29
+SharedPortCommandSinfuls = "<192.168.64.248:39755?alias=corona248.llnl.gov>"
+"
+/24 01:28:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.27:44851?addrs=192.168.65.27-44851&alias=corona283.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 12
+SharedPortCommandSinfuls = "<192.168.65.27:44851?alias=corona283.llnl.gov>"
+09/27/24 01:28:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.242:40527?addrs=192.168.64.242-40527&alias=corona242.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 12
+SharedPortCommandSinfuls = "<192.168.64.242:40527?alias=corona242.llnl.gov>"
+09/27/24 01:28:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 16
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+09/27/24 01:28:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.199:42095?addrs=192.168.64.199-42095&alias=corona199.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 21
+SharedPortCommandSinfuls = "<192.168.64.199:42095?alias=corona199.llnl.gov>"
+09/27/24 01:28:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 18
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:28:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.28:33729?addrs=192.168.65.28-33729&alias=corona284.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 11
+SharedPortCommandSinfuls = "<192.168.65.28:33729?alias=corona284.llnl.gov>"
+09/27/24 01:29:36 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 282
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+09/27/24 01:34:36 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 326
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+
+"
+/24 01:33:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 21
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:33:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 18
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+09/27/24 01:33:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.27:44851?addrs=192.168.65.27-44851&alias=corona283.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 12
+SharedPortCommandSinfuls = "<192.168.65.27:44851?alias=corona283.llnl.gov>"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       09/27/24 01:39:36 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 372
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+
+"
+/27/24 01:38:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 24
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:38:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.28:33729?addrs=192.168.65.28-33729&alias=corona284.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 13
+SharedPortCommandSinfuls = "<192.168.65.28:33729?alias=corona284.llnl.gov>"
+09/27/24 01:38:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.242:40527?addrs=192.168.64.242-40527&alias=corona242.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 15
+SharedPortCommandSinfuls = "<192.168.64.242:40527?alias=corona242.llnl.gov>"
+09/27/24 01:44:36 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 419
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+
+"
+/24 01:43:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 26
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:43:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 23
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       09/27/24 01:48:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.5:39057?addrs=192.168.65.5-39057&alias=corona261.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 17
+SharedPortCommandSinfuls = "<192.168.65.5:39057?alias=corona261.llnl.gov>"
+gov>"
+"
+/24 01:48:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 25
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+09/27/24 01:48:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 29
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:48:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.28:33729?addrs=192.168.65.28-33729&alias=corona284.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 18
+SharedPortCommandSinfuls = "<192.168.65.28:33729?alias=corona284.llnl.gov>"
+09/27/24 01:48:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.24:37305?addrs=192.168.65.24-37305&alias=corona280.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 17
+SharedPortCommandSinfuls = "<192.168.65.24:37305?alias=corona280.llnl.gov>"
+09/27/24 01:48:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.11:42411?addrs=192.168.65.11-42411&alias=corona267.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 17
+SharedPortCommandSinfuls = "<192.168.65.11:42411?alias=corona267.llnl.gov>"
+09/27/24 01:48:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.27:44851?addrs=192.168.65.27-44851&alias=corona283.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 18
+SharedPortCommandSinfuls = "<192.168.65.27:44851?alias=corona283.llnl.gov>"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         09/27/24 01:53:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.5:39057?addrs=192.168.65.5-39057&alias=corona261.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 17
+SharedPortCommandSinfuls = "<192.168.65.5:39057?alias=corona261.llnl.gov>"
+gov>"
+"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         09/27/24 01:53:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.27:44851?addrs=192.168.65.27-44851&alias=corona283.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 18
+SharedPortCommandSinfuls = "<192.168.65.27:44851?alias=corona283.llnl.gov>"
+09/27/24 01:54:36 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.26:40111?addrs=192.168.65.26-40111&alias=corona282.llnl.gov&noUDP>"
+RequestsBlocked = 1
+RequestsFailed = 1
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 12
+RequestsSucceeded = 509
+SharedPortCommandSinfuls = "<192.168.65.26:40111?alias=corona282.llnl.gov>"
+09/27/24 01:58:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.248:39755?addrs=192.168.64.248-39755&alias=corona248.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 37
+SharedPortCommandSinfuls = "<192.168.64.248:39755?alias=corona248.llnl.gov>"
+"
+/24 01:58:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.200:40081?addrs=192.168.64.200-40081&alias=corona200.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 1
+RequestsSucceeded = 29
+SharedPortCommandSinfuls = "<192.168.64.200:40081?alias=corona200.llnl.gov>"
+09/27/24 01:58:55 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:37041?addrs=192.168.65.12-37041&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 32
+SharedPortCommandSinfuls = "<192.168.65.12:37041?alias=corona268.llnl.gov>"
+09/27/24 01:58:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.11:42411?addrs=192.168.65.11-42411&alias=corona267.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 19
+SharedPortCommandSinfuls = "<192.168.65.11:42411?alias=corona267.llnl.gov>"
+09/27/24 01:58:56 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.24:37305?addrs=192.168.65.24-37305&alias=corona280.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 17
+SharedPortCommandSinfuls = "<192.168.65.24:37305?alias=corona280.llnl.gov>"
+09/27/24 09:29:42 Setting maximum file descriptors to 4096.
+09/27/24 09:29:42 ******************************************************
+09/27/24 09:29:42 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 09:29:42 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 09:29:42 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 09:29:42 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 09:29:42 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:29:42 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:29:42 ** PID = 1860718
+09/27/24 09:29:42 ** Log last touched 9/27 01:59:00
+09/27/24 09:29:42 ******************************************************
+09/27/24 09:29:42 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:29:42 Using local config sources: 
+09/27/24 09:29:42    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:29:42 config Macros = 56, Sorted = 56, StringBytes = 1620, TablesBytes = 2064
+09/27/24 09:29:42 CLASSAD_CACHING is ENABLED
+09/27/24 09:29:42 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:29:42 Daemoncore: Listening at <0.0.0.0:34687> on TCP (ReliSock).
+09/27/24 09:29:42 DaemonCore: command socket at <192.168.65.9:34687?addrs=192.168.65.9-34687&alias=corona265.llnl.gov&noUDP>
+09/27/24 09:29:42 DaemonCore: private command socket at <192.168.65.9:34687?addrs=192.168.65.9-34687&alias=corona265.llnl.gov>
+09/27/24 09:29:42 main_init() called
+09/27/24 09:29:42 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.9:34687?addrs=192.168.65.9-34687&alias=corona265.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.65.9:34687?alias=corona265.llnl.gov>"
+09/27/24 09:36:08 Setting maximum file descriptors to 4096.
+09/27/24 09:36:08 ******************************************************
+09/27/24 09:36:08 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 09:36:08 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 09:36:08 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 09:36:08 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 09:36:08 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:36:08 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:36:08 ** PID = 1945207
+09/27/24 09:36:08 ** Log last touched 9/27 09:32:42
+09/27/24 09:36:08 ******************************************************
+09/27/24 09:36:08 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:36:08 Using local config sources: 
+09/27/24 09:36:08    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:36:08 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/27/24 09:36:08 CLASSAD_CACHING is ENABLED
+09/27/24 09:36:08 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:36:08 Daemoncore: Listening at <0.0.0.0:45159> on TCP (ReliSock).
+09/27/24 09:36:08 DaemonCore: command socket at <192.168.64.198:45159?addrs=192.168.64.198-45159&alias=corona198.llnl.gov&noUDP>
+09/27/24 09:36:08 DaemonCore: private command socket at <192.168.64.198:45159?addrs=192.168.64.198-45159&alias=corona198.llnl.gov>
+09/27/24 09:36:08 main_init() called
+09/27/24 09:36:08 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:45159?addrs=192.168.64.198-45159&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.198:45159?alias=corona198.llnl.gov>"
+09/27/24 09:41:01 Setting maximum file descriptors to 4096.
+09/27/24 09:41:01 ******************************************************
+09/27/24 09:41:01 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 09:41:01 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 09:41:01 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 09:41:01 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 09:41:01 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:41:01 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:41:01 ** PID = 1948079
+09/27/24 09:41:01 ** Log last touched 9/27 09:39:08
+09/27/24 09:41:01 ******************************************************
+09/27/24 09:41:01 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:41:01 Using local config sources: 
+09/27/24 09:41:01    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:41:01 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/27/24 09:41:01 CLASSAD_CACHING is ENABLED
+09/27/24 09:41:01 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:41:01 Daemoncore: Listening at <0.0.0.0:35059> on TCP (ReliSock).
+09/27/24 09:41:01 DaemonCore: command socket at <192.168.64.198:35059?addrs=192.168.64.198-35059&alias=corona198.llnl.gov&noUDP>
+09/27/24 09:41:01 DaemonCore: private command socket at <192.168.64.198:35059?addrs=192.168.64.198-35059&alias=corona198.llnl.gov>
+09/27/24 09:41:01 main_init() called
+09/27/24 09:41:01 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:35059?addrs=192.168.64.198-35059&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.198:35059?alias=corona198.llnl.gov>"
+09/27/24 09:46:04 Setting maximum file descriptors to 4096.
+09/27/24 09:46:04 ******************************************************
+09/27/24 09:46:04 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 09:46:04 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 09:46:04 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 09:46:04 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 09:46:04 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:46:04 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:46:04 ** PID = 1950631
+09/27/24 09:46:04 ** Log last touched 9/27 09:43:01
+09/27/24 09:46:04 ******************************************************
+09/27/24 09:46:04 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:46:04 Using local config sources: 
+09/27/24 09:46:04    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:46:04 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/27/24 09:46:04 CLASSAD_CACHING is ENABLED
+09/27/24 09:46:04 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:46:04 Daemoncore: Listening at <0.0.0.0:37555> on TCP (ReliSock).
+09/27/24 09:46:04 DaemonCore: command socket at <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>
+09/27/24 09:46:04 DaemonCore: private command socket at <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov>
+09/27/24 09:46:04 main_init() called
+09/27/24 09:46:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 09:51:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 64
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 09:56:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 78
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:01:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 103
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:06:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 119
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:11:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 130
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:16:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 141
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:21:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 153
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:26:04 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 169
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:31:05 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 182
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:36:05 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 204
+SharedPortCommandSinfuls = "<192.168.64.198:37555?alias=corona198.llnl.gov>"
+09/27/24 10:47:19 Setting maximum file descriptors to 4096.
+09/27/24 10:47:19 ******************************************************
+09/27/24 10:47:19 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 10:47:19 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 10:47:19 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 10:47:19 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 10:47:19 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 10:47:19 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 10:47:19 ** PID = 1367479
+09/27/24 10:47:19 ** Log last touched 9/27 10:38:05
+09/27/24 10:47:19 ******************************************************
+09/27/24 10:47:19 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 10:47:19 Using local config sources: 
+09/27/24 10:47:19    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 10:47:19 config Macros = 56, Sorted = 56, StringBytes = 1622, TablesBytes = 2064
+09/27/24 10:47:19 CLASSAD_CACHING is ENABLED
+09/27/24 10:47:19 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 10:47:19 Daemoncore: Listening at <0.0.0.0:35377> on TCP (ReliSock).
+09/27/24 10:47:19 DaemonCore: command socket at <192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov&noUDP>
+09/27/24 10:47:19 DaemonCore: private command socket at <192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov>
+09/27/24 10:47:19 main_init() called
+09/27/24 10:47:19 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.65.10:35377?alias=corona266.llnl.gov>"
+09/27/24 10:54:03 Setting maximum file descriptors to 4096.
+09/27/24 10:54:03 ******************************************************
+09/27/24 10:54:03 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 10:54:03 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 10:54:03 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 10:54:03 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 10:54:03 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 10:54:03 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 10:54:03 ** PID = 2158975
+09/27/24 10:54:03 ** Log last touched 9/27 10:48:19
+09/27/24 10:54:03 ******************************************************
+09/27/24 10:54:03 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 10:54:03 Using local config sources: 
+09/27/24 10:54:03    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 10:54:03 config Macros = 56, Sorted = 56, StringBytes = 1622, TablesBytes = 2064
+09/27/24 10:54:03 CLASSAD_CACHING is ENABLED
+09/27/24 10:54:03 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 10:54:03 Daemoncore: Listening at <0.0.0.0:39065> on TCP (ReliSock).
+09/27/24 10:54:03 DaemonCore: command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP>
+09/27/24 10:54:03 DaemonCore: private command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov>
+09/27/24 10:54:03 main_init() called
+09/27/24 10:54:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.65.12:39065?alias=corona268.llnl.gov>"
+09/27/24 10:59:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 71
+SharedPortCommandSinfuls = "<192.168.65.12:39065?alias=corona268.llnl.gov>"
+09/27/24 11:04:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 126
+SharedPortCommandSinfuls = "<192.168.65.12:39065?alias=corona268.llnl.gov>"
+09/27/24 11:09:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 137
+SharedPortCommandSinfuls = "<192.168.65.12:39065?alias=corona268.llnl.gov>"
+09/27/24 11:14:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 152
+SharedPortCommandSinfuls = "<192.168.65.12:39065?alias=corona268.llnl.gov>"
+09/27/24 11:19:03 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 167
+SharedPortCommandSinfuls = "<192.168.65.12:39065?alias=corona268.llnl.gov>"
+09/27/24 11:23:14 Setting maximum file descriptors to 4096.
+09/27/24 11:23:14 ******************************************************
+09/27/24 11:23:14 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 11:23:14 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 11:23:14 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 11:23:14 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 11:23:14 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 11:23:14 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 11:23:14 ** PID = 3746290
+09/27/24 11:23:14 ** Log last touched 9/27 11:22:13
+09/27/24 11:23:14 ******************************************************
+09/27/24 11:23:14 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 11:23:14 Using local config sources: 
+09/27/24 11:23:14    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 11:23:14 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/27/24 11:23:14 CLASSAD_CACHING is ENABLED
+09/27/24 11:23:14 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 11:23:14 Daemoncore: Listening at <0.0.0.0:40855> on TCP (ReliSock).
+09/27/24 11:23:14 DaemonCore: command socket at <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>
+09/27/24 11:23:14 DaemonCore: private command socket at <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov>
+09/27/24 11:23:14 main_init() called
+09/27/24 11:23:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 11:28:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 75
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 11:33:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 103
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 11:38:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 114
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 11:43:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 129
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 11:48:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 141
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 11:53:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 153
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 11:58:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 164
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 12:03:14 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 179
+SharedPortCommandSinfuls = "<192.168.64.230:40855?alias=corona230.llnl.gov>"
+09/27/24 12:08:21 Setting maximum file descriptors to 4096.
+09/27/24 12:08:21 ******************************************************
+09/27/24 12:08:21 ** condor_shared_port (CONDOR_SHARED_PORT) STARTING UP
+09/27/24 12:08:21 ** /usr/WS2/haridev/iopp/software/condor/usr/libexec/condor/condor_shared_port
+09/27/24 12:08:21 ** SubsystemInfo: name=SHARED_PORT type=SHARED_PORT(10) class=DAEMON(1)
+09/27/24 12:08:21 ** Configuration: subsystem:SHARED_PORT local:<NONE> class:DAEMON
+09/27/24 12:08:21 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 12:08:21 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 12:08:21 ** PID = 2561649
+09/27/24 12:08:21 ** Log last touched 9/27 12:07:15
+09/27/24 12:08:21 ******************************************************
+09/27/24 12:08:21 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 12:08:21 Using local config sources: 
+09/27/24 12:08:21    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 12:08:21 config Macros = 56, Sorted = 56, StringBytes = 1624, TablesBytes = 2064
+09/27/24 12:08:21 CLASSAD_CACHING is ENABLED
+09/27/24 12:08:21 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 12:08:21 Daemoncore: Listening at <0.0.0.0:44501> on TCP (ReliSock).
+09/27/24 12:08:21 DaemonCore: command socket at <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>
+09/27/24 12:08:21 DaemonCore: private command socket at <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov>
+09/27/24 12:08:21 main_init() called
+09/27/24 12:08:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 0
+RequestsSucceeded = 0
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:13:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 70
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:18:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 98
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:23:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 109
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:28:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 121
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:33:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 136
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:38:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 148
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:43:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 159
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:48:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 173
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"
+09/27/24 12:53:21 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-m969O4/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 201
+SharedPortCommandSinfuls = "<192.168.64.192:44501?alias=corona192.llnl.gov>"

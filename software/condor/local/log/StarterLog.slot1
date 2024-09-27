@@ -1,0 +1,1660 @@
+09/26/24 20:21:40 (pid:2727110) ******************************************************
+09/26/24 20:21:40 (pid:2727110) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:21:40 (pid:2727110) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:21:40 (pid:2727110) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:21:40 (pid:2727110) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:21:40 (pid:2727110) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:21:40 (pid:2727110) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:21:40 (pid:2727110) ** PID = 2727110
+09/26/24 20:21:40 (pid:2727110) ** Log last touched time unavailable (No such file or directory)
+09/26/24 20:21:40 (pid:2727110) ******************************************************
+09/26/24 20:21:40 (pid:2727110) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:21:40 (pid:2727110) Using local config sources: 
+09/26/24 20:21:40 (pid:2727110)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:21:40 (pid:2727110) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:21:40 (pid:2727110) CLASSAD_CACHING is OFF
+09/26/24 20:21:40 (pid:2727110) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:21:40 (pid:2727110) SharedPortEndpoint: waiting for connections to named socket slot1_2725029_32b5_1
+09/26/24 20:21:40 (pid:2727110) DaemonCore: command socket at <192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP&sock=slot1_2725029_32b5_1>
+09/26/24 20:21:40 (pid:2727110) DaemonCore: private command socket at <192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP&sock=slot1_2725029_32b5_1>
+09/26/24 20:21:40 (pid:2727110) Communicating with shadow <192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP&sock=shadow_2725030_e716_3>
+09/26/24 20:21:40 (pid:2727110) Submitting machine is "192.168.64.240"
+09/26/24 20:21:40 (pid:2727110) setting the orig job name in starter
+09/26/24 20:21:40 (pid:2727110) setting the orig job iwd in starter
+09/26/24 20:21:40 (pid:2727110) Job has WantIOProxy=true
+09/26/24 20:21:40 (pid:2727110) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:21:40 (pid:2727110) Initialized IO Proxy.
+09/26/24 20:21:40 (pid:2727110) Done setting resource limits
+09/26/24 20:21:40 (pid:2727110) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2727110/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2727110/.machine.ad.
+09/26/24 20:21:40 (pid:2727110) File transfer completed successfully.
+09/26/24 20:21:40 (pid:2727110) Job 3.0 set to execute immediately
+09/26/24 20:21:40 (pid:2727110) Starting a VANILLA universe job with ID: 3.0
+09/26/24 20:21:40 (pid:2727110) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2727110
+09/26/24 20:21:40 (pid:2727110) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2727110/stage_worker_remote_montage_0_condorpool.in
+09/26/24 20:21:40 (pid:2727110) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2727110/_condor_stdout
+09/26/24 20:21:40 (pid:2727110) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2727110/_condor_stderr
+09/26/24 20:21:40 (pid:2727110) Renice expr "0" evaluated to 0
+09/26/24 20:21:40 (pid:2727110) Running job as user same uid as parent: personal condor
+09/26/24 20:21:40 (pid:2727110) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2727110/condor_exec.exe 
+09/26/24 20:21:40 (pid:2727110) Create_Process succeeded, pid=2727113
+09/26/24 20:21:45 (pid:2727110) Process exited, pid=2727113, status=0
+09/26/24 20:21:45 (pid:2727110) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:21:45 (pid:2727110) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:21:45 (pid:2727110) All jobs have exited... starter exiting
+09/26/24 20:21:45 (pid:2727110) **** condor_starter (condor_STARTER) pid 2727110 EXITING WITH STATUS 0
+09/26/24 20:21:57 (pid:2727386) ******************************************************
+09/26/24 20:21:57 (pid:2727386) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:21:57 (pid:2727386) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:21:57 (pid:2727386) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:21:57 (pid:2727386) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:21:57 (pid:2727386) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:21:57 (pid:2727386) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:21:57 (pid:2727386) ** PID = 2727386
+09/26/24 20:21:57 (pid:2727386) ** Log last touched 9/26 20:21:45
+09/26/24 20:21:57 (pid:2727386) ******************************************************
+09/26/24 20:21:57 (pid:2727386) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:21:57 (pid:2727386) Using local config sources: 
+09/26/24 20:21:57 (pid:2727386)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:21:57 (pid:2727386) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:21:57 (pid:2727386) CLASSAD_CACHING is OFF
+09/26/24 20:21:57 (pid:2727386) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:21:57 (pid:2727386) SharedPortEndpoint: waiting for connections to named socket slot1_2725029_32b5_2
+09/26/24 20:21:57 (pid:2727386) DaemonCore: command socket at <192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP&sock=slot1_2725029_32b5_2>
+09/26/24 20:21:57 (pid:2727386) DaemonCore: private command socket at <192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP&sock=slot1_2725029_32b5_2>
+09/26/24 20:21:57 (pid:2727386) Communicating with shadow <192.168.64.240:44357?addrs=192.168.64.240-44357&alias=corona240.llnl.gov&noUDP&sock=shadow_2725030_e716_4>
+09/26/24 20:21:57 (pid:2727386) Submitting machine is "192.168.64.240"
+09/26/24 20:21:57 (pid:2727386) setting the orig job name in starter
+09/26/24 20:21:57 (pid:2727386) setting the orig job iwd in starter
+09/26/24 20:21:57 (pid:2727386) Job has WantIOProxy=true
+09/26/24 20:21:57 (pid:2727386) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:21:57 (pid:2727386) Initialized IO Proxy.
+09/26/24 20:21:57 (pid:2727386) Done setting resource limits
+09/26/24 20:21:57 (pid:2727386) Job 4.0 set to execute immediately
+09/26/24 20:21:57 (pid:2727386) Starting a VANILLA universe job with ID: 4.0
+09/26/24 20:21:57 (pid:2727386) IWD: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir
+09/26/24 20:21:57 (pid:2727386) Output file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.out
+09/26/24 20:21:57 (pid:2727386) Error file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.err
+09/26/24 20:21:57 (pid:2727386) Renice expr "0" evaluated to 0
+09/26/24 20:21:57 (pid:2727386) Running job as user same uid as parent: personal condor
+09/26/24 20:21:57 (pid:2727386) About to exec /bin/tar -C /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir -zxvf /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/26/24 20:21:57 (pid:2727386) Create_Process succeeded, pid=2727387
+09/26/24 20:22:00 (pid:2727386) Process exited, pid=2727387, status=0
+09/26/24 20:22:00 (pid:2727386) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:22:00 (pid:2727386) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:22:00 (pid:2727386) All jobs have exited... starter exiting
+09/26/24 20:22:00 (pid:2727386) **** condor_starter (condor_STARTER) pid 2727386 EXITING WITH STATUS 0
+09/26/24 20:38:55 (pid:1640684) ******************************************************
+09/26/24 20:38:55 (pid:1640684) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:38:55 (pid:1640684) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:38:55 (pid:1640684) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:38:55 (pid:1640684) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:38:55 (pid:1640684) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:38:55 (pid:1640684) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:38:55 (pid:1640684) ** PID = 1640684
+09/26/24 20:38:55 (pid:1640684) ** Log last touched 9/26 20:22:00
+09/26/24 20:38:55 (pid:1640684) ******************************************************
+09/26/24 20:38:55 (pid:1640684) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:38:55 (pid:1640684) Using local config sources: 
+09/26/24 20:38:55 (pid:1640684)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:38:55 (pid:1640684) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:38:55 (pid:1640684) CLASSAD_CACHING is OFF
+09/26/24 20:38:55 (pid:1640684) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:38:55 (pid:1640684) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_1
+09/26/24 20:38:55 (pid:1640684) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_1>
+09/26/24 20:38:55 (pid:1640684) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_1>
+09/26/24 20:38:55 (pid:1640684) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_5>
+09/26/24 20:38:55 (pid:1640684) Submitting machine is "192.168.64.198"
+09/26/24 20:38:55 (pid:1640684) setting the orig job name in starter
+09/26/24 20:38:55 (pid:1640684) setting the orig job iwd in starter
+09/26/24 20:38:55 (pid:1640684) Job has WantIOProxy=true
+09/26/24 20:38:55 (pid:1640684) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:38:55 (pid:1640684) Initialized IO Proxy.
+09/26/24 20:38:55 (pid:1640684) Done setting resource limits
+09/26/24 20:38:55 (pid:1640684) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1640684/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1640684/.machine.ad.
+09/26/24 20:38:55 (pid:1640684) File transfer completed successfully.
+09/26/24 20:38:55 (pid:1640684) Job 8.0 set to execute immediately
+09/26/24 20:38:55 (pid:1640684) Starting a VANILLA universe job with ID: 8.0
+09/26/24 20:38:55 (pid:1640684) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1640684
+09/26/24 20:38:55 (pid:1640684) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1640684/stage_worker_remote_montage_0_condorpool.in
+09/26/24 20:38:55 (pid:1640684) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1640684/_condor_stdout
+09/26/24 20:38:55 (pid:1640684) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1640684/_condor_stderr
+09/26/24 20:38:55 (pid:1640684) Renice expr "0" evaluated to 0
+09/26/24 20:38:55 (pid:1640684) Running job as user same uid as parent: personal condor
+09/26/24 20:38:55 (pid:1640684) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1640684/condor_exec.exe 
+09/26/24 20:38:55 (pid:1640684) Create_Process succeeded, pid=1640689
+09/26/24 20:39:00 (pid:1640684) Process exited, pid=1640689, status=0
+09/26/24 20:39:00 (pid:1640684) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:39:00 (pid:1640684) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:39:00 (pid:1640684) All jobs have exited... starter exiting
+09/26/24 20:39:00 (pid:1640684) **** condor_starter (condor_STARTER) pid 1640684 EXITING WITH STATUS 0
+09/26/24 20:39:11 (pid:1641416) ******************************************************
+09/26/24 20:39:11 (pid:1641416) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:39:11 (pid:1641416) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:39:11 (pid:1641416) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:39:11 (pid:1641416) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:39:11 (pid:1641416) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:39:11 (pid:1641416) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:39:11 (pid:1641416) ** PID = 1641416
+09/26/24 20:39:11 (pid:1641416) ** Log last touched 9/26 20:39:00
+09/26/24 20:39:11 (pid:1641416) ******************************************************
+09/26/24 20:39:11 (pid:1641416) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:39:11 (pid:1641416) Using local config sources: 
+09/26/24 20:39:11 (pid:1641416)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:39:11 (pid:1641416) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:39:11 (pid:1641416) CLASSAD_CACHING is OFF
+09/26/24 20:39:11 (pid:1641416) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:39:11 (pid:1641416) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_2
+09/26/24 20:39:11 (pid:1641416) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_2>
+09/26/24 20:39:11 (pid:1641416) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_2>
+09/26/24 20:39:11 (pid:1641416) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_6>
+09/26/24 20:39:11 (pid:1641416) Submitting machine is "192.168.64.198"
+09/26/24 20:39:11 (pid:1641416) setting the orig job name in starter
+09/26/24 20:39:11 (pid:1641416) setting the orig job iwd in starter
+09/26/24 20:39:11 (pid:1641416) Job has WantIOProxy=true
+09/26/24 20:39:11 (pid:1641416) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:39:11 (pid:1641416) Initialized IO Proxy.
+09/26/24 20:39:11 (pid:1641416) Done setting resource limits
+09/26/24 20:39:11 (pid:1641416) Job 9.0 set to execute immediately
+09/26/24 20:39:11 (pid:1641416) Starting a VANILLA universe job with ID: 9.0
+09/26/24 20:39:11 (pid:1641416) IWD: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir
+09/26/24 20:39:11 (pid:1641416) Output file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.out
+09/26/24 20:39:11 (pid:1641416) Error file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.err
+09/26/24 20:39:11 (pid:1641416) Renice expr "0" evaluated to 0
+09/26/24 20:39:11 (pid:1641416) Running job as user same uid as parent: personal condor
+09/26/24 20:39:11 (pid:1641416) About to exec /bin/tar -C /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir -zxvf /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/26/24 20:39:12 (pid:1641416) Create_Process succeeded, pid=1641425
+09/26/24 20:39:14 (pid:1641416) Process exited, pid=1641425, status=0
+09/26/24 20:39:14 (pid:1641416) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:39:14 (pid:1641416) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:39:14 (pid:1641416) All jobs have exited... starter exiting
+09/26/24 20:39:14 (pid:1641416) **** condor_starter (condor_STARTER) pid 1641416 EXITING WITH STATUS 0
+09/26/24 20:48:07 (pid:1658247) ******************************************************
+09/26/24 20:48:07 (pid:1658247) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:48:07 (pid:1658247) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:48:07 (pid:1658247) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:48:07 (pid:1658247) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:48:07 (pid:1658247) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:48:07 (pid:1658247) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:48:07 (pid:1658247) ** PID = 1658247
+09/26/24 20:48:07 (pid:1658247) ** Log last touched 9/26 20:39:14
+09/26/24 20:48:07 (pid:1658247) ******************************************************
+09/26/24 20:48:07 (pid:1658247) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:48:07 (pid:1658247) Using local config sources: 
+09/26/24 20:48:07 (pid:1658247)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:48:07 (pid:1658247) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:48:07 (pid:1658247) CLASSAD_CACHING is OFF
+09/26/24 20:48:07 (pid:1658247) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:48:07 (pid:1658247) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_3
+09/26/24 20:48:07 (pid:1658247) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_3>
+09/26/24 20:48:07 (pid:1658247) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_3>
+09/26/24 20:48:07 (pid:1658247) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_9>
+09/26/24 20:48:07 (pid:1658247) Submitting machine is "192.168.64.198"
+09/26/24 20:48:07 (pid:1658247) setting the orig job name in starter
+09/26/24 20:48:07 (pid:1658247) setting the orig job iwd in starter
+09/26/24 20:48:07 (pid:1658247) Job has WantIOProxy=true
+09/26/24 20:48:07 (pid:1658247) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:48:07 (pid:1658247) Initialized IO Proxy.
+09/26/24 20:48:07 (pid:1658247) Done setting resource limits
+09/26/24 20:48:07 (pid:1658247) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658247/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658247/.machine.ad.
+09/26/24 20:48:07 (pid:1658247) File transfer completed successfully.
+09/26/24 20:48:07 (pid:1658247) Job 12.0 set to execute immediately
+09/26/24 20:48:07 (pid:1658247) Starting a VANILLA universe job with ID: 12.0
+09/26/24 20:48:07 (pid:1658247) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 20:48:07 (pid:1658247) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658247/_condor_stdout
+09/26/24 20:48:07 (pid:1658247) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658247/_condor_stderr
+09/26/24 20:48:07 (pid:1658247) Renice expr "0" evaluated to 0
+09/26/24 20:48:07 (pid:1658247) Running job as user same uid as parent: personal condor
+09/26/24 20:48:07 (pid:1658247) About to exec /usr/WS2/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 20:48:07 (pid:1658247) Create_Process succeeded, pid=1658251
+09/26/24 20:48:07 (pid:1658247) Process exited, pid=1658251, status=1
+09/26/24 20:48:07 (pid:1658247) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:48:07 (pid:1658247) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:48:07 (pid:1658247) All jobs have exited... starter exiting
+09/26/24 20:48:07 (pid:1658247) **** condor_starter (condor_STARTER) pid 1658247 EXITING WITH STATUS 0
+09/26/24 20:48:22 (pid:1658283) ******************************************************
+09/26/24 20:48:22 (pid:1658283) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:48:22 (pid:1658283) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:48:22 (pid:1658283) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:48:22 (pid:1658283) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:48:22 (pid:1658283) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:48:22 (pid:1658283) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:48:22 (pid:1658283) ** PID = 1658283
+09/26/24 20:48:22 (pid:1658283) ** Log last touched 9/26 20:48:07
+09/26/24 20:48:22 (pid:1658283) ******************************************************
+09/26/24 20:48:22 (pid:1658283) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:48:22 (pid:1658283) Using local config sources: 
+09/26/24 20:48:22 (pid:1658283)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:48:22 (pid:1658283) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:48:22 (pid:1658283) CLASSAD_CACHING is OFF
+09/26/24 20:48:22 (pid:1658283) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:48:22 (pid:1658283) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_4
+09/26/24 20:48:22 (pid:1658283) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_4>
+09/26/24 20:48:22 (pid:1658283) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_4>
+09/26/24 20:48:22 (pid:1658283) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_10>
+09/26/24 20:48:22 (pid:1658283) Submitting machine is "192.168.64.198"
+09/26/24 20:48:22 (pid:1658283) setting the orig job name in starter
+09/26/24 20:48:22 (pid:1658283) setting the orig job iwd in starter
+09/26/24 20:48:22 (pid:1658283) Job has WantIOProxy=true
+09/26/24 20:48:22 (pid:1658283) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:48:22 (pid:1658283) Initialized IO Proxy.
+09/26/24 20:48:22 (pid:1658283) Done setting resource limits
+09/26/24 20:48:22 (pid:1658283) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658283/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658283/.machine.ad.
+09/26/24 20:48:22 (pid:1658283) File transfer completed successfully.
+09/26/24 20:48:22 (pid:1658283) Job 13.0 set to execute immediately
+09/26/24 20:48:22 (pid:1658283) Starting a VANILLA universe job with ID: 13.0
+09/26/24 20:48:22 (pid:1658283) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 20:48:22 (pid:1658283) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658283/_condor_stdout
+09/26/24 20:48:22 (pid:1658283) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658283/_condor_stderr
+09/26/24 20:48:22 (pid:1658283) Renice expr "0" evaluated to 0
+09/26/24 20:48:22 (pid:1658283) Running job as user same uid as parent: personal condor
+09/26/24 20:48:22 (pid:1658283) About to exec /usr/WS2/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 20:48:22 (pid:1658283) Create_Process succeeded, pid=1658287
+09/26/24 20:48:23 (pid:1658283) Process exited, pid=1658287, status=1
+09/26/24 20:48:23 (pid:1658283) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:48:23 (pid:1658283) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:48:23 (pid:1658283) All jobs have exited... starter exiting
+09/26/24 20:48:23 (pid:1658283) **** condor_starter (condor_STARTER) pid 1658283 EXITING WITH STATUS 0
+09/26/24 20:50:10 (pid:1658604) ******************************************************
+09/26/24 20:50:10 (pid:1658604) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:50:10 (pid:1658604) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:50:10 (pid:1658604) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:50:10 (pid:1658604) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:50:10 (pid:1658604) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:50:10 (pid:1658604) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:50:10 (pid:1658604) ** PID = 1658604
+09/26/24 20:50:10 (pid:1658604) ** Log last touched 9/26 20:48:23
+09/26/24 20:50:10 (pid:1658604) ******************************************************
+09/26/24 20:50:10 (pid:1658604) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:50:10 (pid:1658604) Using local config sources: 
+09/26/24 20:50:10 (pid:1658604)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:50:10 (pid:1658604) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:50:10 (pid:1658604) CLASSAD_CACHING is OFF
+09/26/24 20:50:10 (pid:1658604) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:50:10 (pid:1658604) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_5
+09/26/24 20:50:10 (pid:1658604) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_5>
+09/26/24 20:50:10 (pid:1658604) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_5>
+09/26/24 20:50:10 (pid:1658604) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_12>
+09/26/24 20:50:10 (pid:1658604) Submitting machine is "192.168.64.198"
+09/26/24 20:50:10 (pid:1658604) setting the orig job name in starter
+09/26/24 20:50:10 (pid:1658604) setting the orig job iwd in starter
+09/26/24 20:50:10 (pid:1658604) Job has WantIOProxy=true
+09/26/24 20:50:10 (pid:1658604) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:50:10 (pid:1658604) Initialized IO Proxy.
+09/26/24 20:50:10 (pid:1658604) Done setting resource limits
+09/26/24 20:50:10 (pid:1658604) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658604/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658604/.machine.ad.
+09/26/24 20:50:10 (pid:1658604) File transfer completed successfully.
+09/26/24 20:50:10 (pid:1658604) Job 15.0 set to execute immediately
+09/26/24 20:50:10 (pid:1658604) Starting a VANILLA universe job with ID: 15.0
+09/26/24 20:50:10 (pid:1658604) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 20:50:10 (pid:1658604) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658604/_condor_stdout
+09/26/24 20:50:10 (pid:1658604) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658604/_condor_stderr
+09/26/24 20:50:10 (pid:1658604) Renice expr "0" evaluated to 0
+09/26/24 20:50:10 (pid:1658604) Running job as user same uid as parent: personal condor
+09/26/24 20:50:10 (pid:1658604) About to exec /usr/WS2/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 20:50:10 (pid:1658604) Create_Process succeeded, pid=1658607
+09/26/24 20:50:12 (pid:1658604) Process exited, pid=1658607, status=126
+09/26/24 20:50:12 (pid:1658604) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:50:12 (pid:1658604) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:50:12 (pid:1658604) All jobs have exited... starter exiting
+09/26/24 20:50:12 (pid:1658604) **** condor_starter (condor_STARTER) pid 1658604 EXITING WITH STATUS 0
+09/26/24 20:50:26 (pid:1658747) ******************************************************
+09/26/24 20:50:26 (pid:1658747) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:50:26 (pid:1658747) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:50:26 (pid:1658747) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:50:26 (pid:1658747) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:50:26 (pid:1658747) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:50:26 (pid:1658747) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:50:26 (pid:1658747) ** PID = 1658747
+09/26/24 20:50:26 (pid:1658747) ** Log last touched 9/26 20:50:12
+09/26/24 20:50:26 (pid:1658747) ******************************************************
+09/26/24 20:50:26 (pid:1658747) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:50:26 (pid:1658747) Using local config sources: 
+09/26/24 20:50:26 (pid:1658747)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:50:26 (pid:1658747) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:50:26 (pid:1658747) CLASSAD_CACHING is OFF
+09/26/24 20:50:26 (pid:1658747) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:50:26 (pid:1658747) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_6
+09/26/24 20:50:26 (pid:1658747) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_6>
+09/26/24 20:50:26 (pid:1658747) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_6>
+09/26/24 20:50:26 (pid:1658747) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_13>
+09/26/24 20:50:26 (pid:1658747) Submitting machine is "192.168.64.198"
+09/26/24 20:50:26 (pid:1658747) setting the orig job name in starter
+09/26/24 20:50:26 (pid:1658747) setting the orig job iwd in starter
+09/26/24 20:50:26 (pid:1658747) Job has WantIOProxy=true
+09/26/24 20:50:26 (pid:1658747) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:50:26 (pid:1658747) Initialized IO Proxy.
+09/26/24 20:50:26 (pid:1658747) Done setting resource limits
+09/26/24 20:50:26 (pid:1658747) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658747/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658747/.machine.ad.
+09/26/24 20:50:26 (pid:1658747) File transfer completed successfully.
+09/26/24 20:50:26 (pid:1658747) Job 16.0 set to execute immediately
+09/26/24 20:50:26 (pid:1658747) Starting a VANILLA universe job with ID: 16.0
+09/26/24 20:50:26 (pid:1658747) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 20:50:26 (pid:1658747) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658747/_condor_stdout
+09/26/24 20:50:26 (pid:1658747) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1658747/_condor_stderr
+09/26/24 20:50:26 (pid:1658747) Renice expr "0" evaluated to 0
+09/26/24 20:50:26 (pid:1658747) Running job as user same uid as parent: personal condor
+09/26/24 20:50:26 (pid:1658747) About to exec /usr/WS2/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 20:50:26 (pid:1658747) Create_Process succeeded, pid=1658750
+09/26/24 20:50:27 (pid:1658747) Process exited, pid=1658750, status=126
+09/26/24 20:50:27 (pid:1658747) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:50:27 (pid:1658747) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:50:27 (pid:1658747) All jobs have exited... starter exiting
+09/26/24 20:50:27 (pid:1658747) **** condor_starter (condor_STARTER) pid 1658747 EXITING WITH STATUS 0
+09/26/24 20:51:50 (pid:1659156) ******************************************************
+09/26/24 20:51:50 (pid:1659156) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:51:50 (pid:1659156) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:51:50 (pid:1659156) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:51:50 (pid:1659156) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:51:50 (pid:1659156) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:51:50 (pid:1659156) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:51:50 (pid:1659156) ** PID = 1659156
+09/26/24 20:51:50 (pid:1659156) ** Log last touched 9/26 20:50:27
+09/26/24 20:51:50 (pid:1659156) ******************************************************
+09/26/24 20:51:50 (pid:1659156) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:51:50 (pid:1659156) Using local config sources: 
+09/26/24 20:51:50 (pid:1659156)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:51:50 (pid:1659156) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:51:50 (pid:1659156) CLASSAD_CACHING is OFF
+09/26/24 20:51:50 (pid:1659156) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:51:50 (pid:1659156) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_7
+09/26/24 20:51:50 (pid:1659156) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_7>
+09/26/24 20:51:50 (pid:1659156) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_7>
+09/26/24 20:51:50 (pid:1659156) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_15>
+09/26/24 20:51:50 (pid:1659156) Submitting machine is "192.168.64.198"
+09/26/24 20:51:50 (pid:1659156) setting the orig job name in starter
+09/26/24 20:51:50 (pid:1659156) setting the orig job iwd in starter
+09/26/24 20:51:50 (pid:1659156) Job has WantIOProxy=true
+09/26/24 20:51:50 (pid:1659156) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:51:50 (pid:1659156) Initialized IO Proxy.
+09/26/24 20:51:50 (pid:1659156) Done setting resource limits
+09/26/24 20:51:50 (pid:1659156) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659156/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659156/.machine.ad.
+09/26/24 20:51:50 (pid:1659156) File transfer completed successfully.
+09/26/24 20:51:50 (pid:1659156) Job 18.0 set to execute immediately
+09/26/24 20:51:50 (pid:1659156) Starting a VANILLA universe job with ID: 18.0
+09/26/24 20:51:50 (pid:1659156) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 20:51:50 (pid:1659156) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659156/_condor_stdout
+09/26/24 20:51:50 (pid:1659156) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659156/_condor_stderr
+09/26/24 20:51:50 (pid:1659156) Renice expr "0" evaluated to 0
+09/26/24 20:51:50 (pid:1659156) Running job as user same uid as parent: personal condor
+09/26/24 20:51:50 (pid:1659156) About to exec /usr/WS2/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 20:51:50 (pid:1659156) Create_Process succeeded, pid=1659159
+09/26/24 20:51:52 (pid:1659156) Process exited, pid=1659159, status=143
+09/26/24 20:51:52 (pid:1659156) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:51:52 (pid:1659156) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:51:52 (pid:1659156) All jobs have exited... starter exiting
+09/26/24 20:51:52 (pid:1659156) **** condor_starter (condor_STARTER) pid 1659156 EXITING WITH STATUS 0
+09/26/24 20:52:05 (pid:1659252) ******************************************************
+09/26/24 20:52:05 (pid:1659252) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:52:05 (pid:1659252) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:52:05 (pid:1659252) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:52:05 (pid:1659252) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:52:05 (pid:1659252) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:52:05 (pid:1659252) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:52:05 (pid:1659252) ** PID = 1659252
+09/26/24 20:52:05 (pid:1659252) ** Log last touched 9/26 20:51:52
+09/26/24 20:52:05 (pid:1659252) ******************************************************
+09/26/24 20:52:05 (pid:1659252) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:52:05 (pid:1659252) Using local config sources: 
+09/26/24 20:52:05 (pid:1659252)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:52:05 (pid:1659252) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:52:05 (pid:1659252) CLASSAD_CACHING is OFF
+09/26/24 20:52:05 (pid:1659252) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:52:05 (pid:1659252) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_8
+09/26/24 20:52:05 (pid:1659252) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_8>
+09/26/24 20:52:05 (pid:1659252) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_8>
+09/26/24 20:52:05 (pid:1659252) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_16>
+09/26/24 20:52:05 (pid:1659252) Submitting machine is "192.168.64.198"
+09/26/24 20:52:05 (pid:1659252) setting the orig job name in starter
+09/26/24 20:52:05 (pid:1659252) setting the orig job iwd in starter
+09/26/24 20:52:05 (pid:1659252) Job has WantIOProxy=true
+09/26/24 20:52:05 (pid:1659252) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:52:05 (pid:1659252) Initialized IO Proxy.
+09/26/24 20:52:05 (pid:1659252) Done setting resource limits
+09/26/24 20:52:05 (pid:1659252) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659252/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659252/.machine.ad.
+09/26/24 20:52:05 (pid:1659252) File transfer completed successfully.
+09/26/24 20:52:05 (pid:1659252) Job 19.0 set to execute immediately
+09/26/24 20:52:05 (pid:1659252) Starting a VANILLA universe job with ID: 19.0
+09/26/24 20:52:05 (pid:1659252) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 20:52:05 (pid:1659252) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659252/_condor_stdout
+09/26/24 20:52:05 (pid:1659252) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659252/_condor_stderr
+09/26/24 20:52:05 (pid:1659252) Renice expr "0" evaluated to 0
+09/26/24 20:52:05 (pid:1659252) Running job as user same uid as parent: personal condor
+09/26/24 20:52:05 (pid:1659252) About to exec /usr/WS2/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 20:52:05 (pid:1659252) Create_Process succeeded, pid=1659255
+09/26/24 20:52:07 (pid:1659252) Process exited, pid=1659255, status=143
+09/26/24 20:52:07 (pid:1659252) All jobs have exited... starter exiting
+09/26/24 20:52:07 (pid:1659252) **** condor_starter (condor_STARTER) pid 1659252 EXITING WITH STATUS 0
+09/26/24 20:53:30 (pid:1659611) ******************************************************
+09/26/24 20:53:30 (pid:1659611) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 20:53:30 (pid:1659611) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 20:53:30 (pid:1659611) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 20:53:30 (pid:1659611) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 20:53:30 (pid:1659611) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:53:30 (pid:1659611) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:53:30 (pid:1659611) ** PID = 1659611
+09/26/24 20:53:30 (pid:1659611) ** Log last touched 9/26 20:52:07
+09/26/24 20:53:30 (pid:1659611) ******************************************************
+09/26/24 20:53:30 (pid:1659611) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:53:30 (pid:1659611) Using local config sources: 
+09/26/24 20:53:30 (pid:1659611)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:53:30 (pid:1659611) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 20:53:30 (pid:1659611) CLASSAD_CACHING is OFF
+09/26/24 20:53:30 (pid:1659611) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:53:30 (pid:1659611) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_9
+09/26/24 20:53:30 (pid:1659611) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_9>
+09/26/24 20:53:30 (pid:1659611) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_9>
+09/26/24 20:53:30 (pid:1659611) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_18>
+09/26/24 20:53:30 (pid:1659611) Submitting machine is "192.168.64.198"
+09/26/24 20:53:30 (pid:1659611) setting the orig job name in starter
+09/26/24 20:53:30 (pid:1659611) setting the orig job iwd in starter
+09/26/24 20:53:30 (pid:1659611) Job has WantIOProxy=true
+09/26/24 20:53:30 (pid:1659611) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 20:53:30 (pid:1659611) Initialized IO Proxy.
+09/26/24 20:53:30 (pid:1659611) Done setting resource limits
+09/26/24 20:53:30 (pid:1659611) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659611/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659611/.machine.ad.
+09/26/24 20:53:30 (pid:1659611) File transfer completed successfully.
+09/26/24 20:53:30 (pid:1659611) Job 21.0 set to execute immediately
+09/26/24 20:53:30 (pid:1659611) Starting a VANILLA universe job with ID: 21.0
+09/26/24 20:53:30 (pid:1659611) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 20:53:30 (pid:1659611) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659611/_condor_stdout
+09/26/24 20:53:30 (pid:1659611) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1659611/_condor_stderr
+09/26/24 20:53:30 (pid:1659611) Renice expr "0" evaluated to 0
+09/26/24 20:53:30 (pid:1659611) Running job as user same uid as parent: personal condor
+09/26/24 20:53:30 (pid:1659611) About to exec /usr/WS2/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 20:53:30 (pid:1659611) Create_Process succeeded, pid=1659614
+09/26/24 20:53:39 (pid:1659611) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 20:53:39 (pid:1659611) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:08:23 (pid:1659611) Process exited, pid=1659614, status=1
+09/26/24 21:08:24 (pid:1659611) All jobs have exited... starter exiting
+09/26/24 21:08:24 (pid:1659611) **** condor_starter (condor_STARTER) pid 1659611 EXITING WITH STATUS 0
+09/26/24 21:08:36 (pid:1690827) ******************************************************
+09/26/24 21:08:36 (pid:1690827) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 21:08:36 (pid:1690827) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 21:08:36 (pid:1690827) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 21:08:36 (pid:1690827) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 21:08:36 (pid:1690827) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:08:36 (pid:1690827) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:08:36 (pid:1690827) ** PID = 1690827
+09/26/24 21:08:36 (pid:1690827) ** Log last touched 9/26 21:08:24
+09/26/24 21:08:36 (pid:1690827) ******************************************************
+09/26/24 21:08:36 (pid:1690827) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:08:36 (pid:1690827) Using local config sources: 
+09/26/24 21:08:36 (pid:1690827)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:08:36 (pid:1690827) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 21:08:36 (pid:1690827) CLASSAD_CACHING is OFF
+09/26/24 21:08:36 (pid:1690827) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:08:36 (pid:1690827) SharedPortEndpoint: waiting for connections to named socket slot1_1623347_90f6_10
+09/26/24 21:08:36 (pid:1690827) DaemonCore: command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_10>
+09/26/24 21:08:36 (pid:1690827) DaemonCore: private command socket at <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=slot1_1623347_90f6_10>
+09/26/24 21:08:36 (pid:1690827) Communicating with shadow <192.168.64.198:41823?addrs=192.168.64.198-41823&alias=corona198.llnl.gov&noUDP&sock=shadow_1623348_4556_19>
+09/26/24 21:08:36 (pid:1690827) Submitting machine is "192.168.64.198"
+09/26/24 21:08:36 (pid:1690827) setting the orig job name in starter
+09/26/24 21:08:36 (pid:1690827) setting the orig job iwd in starter
+09/26/24 21:08:36 (pid:1690827) Job has WantIOProxy=true
+09/26/24 21:08:36 (pid:1690827) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 21:08:36 (pid:1690827) Initialized IO Proxy.
+09/26/24 21:08:36 (pid:1690827) Done setting resource limits
+09/26/24 21:08:36 (pid:1690827) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1690827/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1690827/.machine.ad.
+09/26/24 21:08:36 (pid:1690827) File transfer completed successfully.
+09/26/24 21:08:36 (pid:1690827) Job 22.0 set to execute immediately
+09/26/24 21:08:36 (pid:1690827) Starting a VANILLA universe job with ID: 22.0
+09/26/24 21:08:36 (pid:1690827) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 21:08:36 (pid:1690827) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1690827/_condor_stdout
+09/26/24 21:08:36 (pid:1690827) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1690827/_condor_stderr
+09/26/24 21:08:36 (pid:1690827) Renice expr "0" evaluated to 0
+09/26/24 21:08:36 (pid:1690827) Running job as user same uid as parent: personal condor
+09/26/24 21:08:36 (pid:1690827) About to exec /usr/WS2/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 21:08:36 (pid:1690827) Create_Process succeeded, pid=1690830
+09/26/24 21:08:38 (pid:1690827) Process exited, pid=1690830, status=0
+09/26/24 21:08:38 (pid:1690827) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:08:38 (pid:1690827) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:08:38 (pid:1690827) All jobs have exited... starter exiting
+09/26/24 21:08:38 (pid:1690827) **** condor_starter (condor_STARTER) pid 1690827 EXITING WITH STATUS 0
+09/26/24 21:32:33 (pid:1728021) ******************************************************
+09/26/24 21:32:33 (pid:1728021) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 21:32:33 (pid:1728021) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 21:32:33 (pid:1728021) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 21:32:33 (pid:1728021) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 21:32:33 (pid:1728021) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:32:33 (pid:1728021) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:32:33 (pid:1728021) ** PID = 1728021
+09/26/24 21:32:33 (pid:1728021) ** Log last touched 9/26 21:08:38
+09/26/24 21:32:33 (pid:1728021) ******************************************************
+09/26/24 21:32:33 (pid:1728021) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:32:33 (pid:1728021) Using local config sources: 
+09/26/24 21:32:33 (pid:1728021)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:32:33 (pid:1728021) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 21:32:33 (pid:1728021) CLASSAD_CACHING is OFF
+09/26/24 21:32:33 (pid:1728021) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:32:33 (pid:1728021) SharedPortEndpoint: waiting for connections to named socket slot1_1726660_ebbf_1
+09/26/24 21:32:33 (pid:1728021) DaemonCore: command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=slot1_1726660_ebbf_1>
+09/26/24 21:32:33 (pid:1728021) DaemonCore: private command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=slot1_1726660_ebbf_1>
+09/26/24 21:32:33 (pid:1728021) Communicating with shadow <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=shadow_1726661_a01f_3>
+09/26/24 21:32:33 (pid:1728021) Submitting machine is "192.168.64.198"
+09/26/24 21:32:33 (pid:1728021) setting the orig job name in starter
+09/26/24 21:32:33 (pid:1728021) setting the orig job iwd in starter
+09/26/24 21:32:33 (pid:1728021) Job has WantIOProxy=true
+09/26/24 21:32:33 (pid:1728021) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 21:32:33 (pid:1728021) Initialized IO Proxy.
+09/26/24 21:32:33 (pid:1728021) Done setting resource limits
+09/26/24 21:32:33 (pid:1728021) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1728021/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1728021/.machine.ad.
+09/26/24 21:32:33 (pid:1728021) File transfer completed successfully.
+09/26/24 21:32:33 (pid:1728021) Job 33.0 set to execute immediately
+09/26/24 21:32:33 (pid:1728021) Starting a VANILLA universe job with ID: 33.0
+09/26/24 21:32:33 (pid:1728021) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1728021
+09/26/24 21:32:33 (pid:1728021) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1728021/stage_worker_remote_montage_0_condorpool.in
+09/26/24 21:32:33 (pid:1728021) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1728021/_condor_stdout
+09/26/24 21:32:33 (pid:1728021) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1728021/_condor_stderr
+09/26/24 21:32:33 (pid:1728021) Renice expr "0" evaluated to 0
+09/26/24 21:32:33 (pid:1728021) Running job as user same uid as parent: personal condor
+09/26/24 21:32:33 (pid:1728021) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1728021/condor_exec.exe 
+09/26/24 21:32:33 (pid:1728021) Create_Process succeeded, pid=1728024
+09/26/24 21:32:38 (pid:1728021) Process exited, pid=1728024, status=0
+09/26/24 21:32:38 (pid:1728021) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:32:38 (pid:1728021) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:32:38 (pid:1728021) All jobs have exited... starter exiting
+09/26/24 21:32:38 (pid:1728021) **** condor_starter (condor_STARTER) pid 1728021 EXITING WITH STATUS 0
+09/26/24 21:32:49 (pid:1728218) ******************************************************
+09/26/24 21:32:49 (pid:1728218) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 21:32:49 (pid:1728218) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 21:32:49 (pid:1728218) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 21:32:49 (pid:1728218) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 21:32:49 (pid:1728218) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:32:49 (pid:1728218) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:32:49 (pid:1728218) ** PID = 1728218
+09/26/24 21:32:49 (pid:1728218) ** Log last touched 9/26 21:32:38
+09/26/24 21:32:49 (pid:1728218) ******************************************************
+09/26/24 21:32:49 (pid:1728218) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:32:49 (pid:1728218) Using local config sources: 
+09/26/24 21:32:49 (pid:1728218)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:32:49 (pid:1728218) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 21:32:49 (pid:1728218) CLASSAD_CACHING is OFF
+09/26/24 21:32:49 (pid:1728218) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:32:49 (pid:1728218) SharedPortEndpoint: waiting for connections to named socket slot1_1726660_ebbf_2
+09/26/24 21:32:49 (pid:1728218) DaemonCore: command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=slot1_1726660_ebbf_2>
+09/26/24 21:32:49 (pid:1728218) DaemonCore: private command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=slot1_1726660_ebbf_2>
+09/26/24 21:32:49 (pid:1728218) Communicating with shadow <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=shadow_1726661_a01f_4>
+09/26/24 21:32:49 (pid:1728218) Submitting machine is "192.168.64.198"
+09/26/24 21:32:49 (pid:1728218) setting the orig job name in starter
+09/26/24 21:32:49 (pid:1728218) setting the orig job iwd in starter
+09/26/24 21:32:49 (pid:1728218) Job has WantIOProxy=true
+09/26/24 21:32:49 (pid:1728218) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 21:32:49 (pid:1728218) Initialized IO Proxy.
+09/26/24 21:32:49 (pid:1728218) Done setting resource limits
+09/26/24 21:32:49 (pid:1728218) Job 34.0 set to execute immediately
+09/26/24 21:32:49 (pid:1728218) Starting a VANILLA universe job with ID: 34.0
+09/26/24 21:32:49 (pid:1728218) IWD: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir
+09/26/24 21:32:49 (pid:1728218) Output file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.out
+09/26/24 21:32:49 (pid:1728218) Error file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.err
+09/26/24 21:32:49 (pid:1728218) Renice expr "0" evaluated to 0
+09/26/24 21:32:49 (pid:1728218) Running job as user same uid as parent: personal condor
+09/26/24 21:32:49 (pid:1728218) About to exec /bin/tar -C /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir -zxvf /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/26/24 21:32:49 (pid:1728218) Create_Process succeeded, pid=1728219
+09/26/24 21:32:51 (pid:1728218) Process exited, pid=1728219, status=0
+09/26/24 21:32:51 (pid:1728218) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:32:51 (pid:1728218) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:32:51 (pid:1728218) All jobs have exited... starter exiting
+09/26/24 21:32:51 (pid:1728218) **** condor_starter (condor_STARTER) pid 1728218 EXITING WITH STATUS 0
+09/26/24 21:41:25 (pid:1744145) ******************************************************
+09/26/24 21:41:25 (pid:1744145) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 21:41:25 (pid:1744145) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 21:41:25 (pid:1744145) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 21:41:25 (pid:1744145) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 21:41:25 (pid:1744145) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:41:25 (pid:1744145) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:41:25 (pid:1744145) ** PID = 1744145
+09/26/24 21:41:25 (pid:1744145) ** Log last touched 9/26 21:32:51
+09/26/24 21:41:25 (pid:1744145) ******************************************************
+09/26/24 21:41:25 (pid:1744145) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:41:25 (pid:1744145) Using local config sources: 
+09/26/24 21:41:25 (pid:1744145)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:41:25 (pid:1744145) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 21:41:25 (pid:1744145) CLASSAD_CACHING is OFF
+09/26/24 21:41:25 (pid:1744145) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:41:25 (pid:1744145) SharedPortEndpoint: waiting for connections to named socket slot1_1726660_ebbf_3
+09/26/24 21:41:25 (pid:1744145) DaemonCore: command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=slot1_1726660_ebbf_3>
+09/26/24 21:41:25 (pid:1744145) DaemonCore: private command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=slot1_1726660_ebbf_3>
+09/26/24 21:41:25 (pid:1744145) Communicating with shadow <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=shadow_1726661_a01f_7>
+09/26/24 21:41:25 (pid:1744145) Submitting machine is "192.168.64.198"
+09/26/24 21:41:25 (pid:1744145) setting the orig job name in starter
+09/26/24 21:41:25 (pid:1744145) setting the orig job iwd in starter
+09/26/24 21:41:25 (pid:1744145) Job has WantIOProxy=true
+09/26/24 21:41:25 (pid:1744145) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 21:41:25 (pid:1744145) Initialized IO Proxy.
+09/26/24 21:41:25 (pid:1744145) Done setting resource limits
+09/26/24 21:41:25 (pid:1744145) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1744145/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1744145/.machine.ad.
+09/26/24 21:41:25 (pid:1744145) File transfer completed successfully.
+09/26/24 21:41:25 (pid:1744145) Job 37.0 set to execute immediately
+09/26/24 21:41:25 (pid:1744145) Starting a VANILLA universe job with ID: 37.0
+09/26/24 21:41:25 (pid:1744145) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 21:41:25 (pid:1744145) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1744145/_condor_stdout
+09/26/24 21:41:25 (pid:1744145) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1744145/_condor_stderr
+09/26/24 21:41:25 (pid:1744145) Renice expr "0" evaluated to 0
+09/26/24 21:41:25 (pid:1744145) Running job as user same uid as parent: personal condor
+09/26/24 21:41:25 (pid:1744145) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 21:41:25 (pid:1744145) Create_Process succeeded, pid=1744149
+09/26/24 21:41:27 (pid:1744145) Process exited, pid=1744149, status=0
+09/26/24 21:41:27 (pid:1744145) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:41:27 (pid:1744145) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:41:27 (pid:1744145) All jobs have exited... starter exiting
+09/26/24 21:41:27 (pid:1744145) **** condor_starter (condor_STARTER) pid 1744145 EXITING WITH STATUS 0
+09/26/24 21:41:40 (pid:1744240) ******************************************************
+09/26/24 21:41:40 (pid:1744240) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 21:41:40 (pid:1744240) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 21:41:40 (pid:1744240) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 21:41:40 (pid:1744240) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 21:41:40 (pid:1744240) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:41:40 (pid:1744240) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:41:40 (pid:1744240) ** PID = 1744240
+09/26/24 21:41:40 (pid:1744240) ** Log last touched 9/26 21:41:27
+09/26/24 21:41:40 (pid:1744240) ******************************************************
+09/26/24 21:41:40 (pid:1744240) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:41:40 (pid:1744240) Using local config sources: 
+09/26/24 21:41:40 (pid:1744240)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:41:40 (pid:1744240) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/26/24 21:41:40 (pid:1744240) CLASSAD_CACHING is OFF
+09/26/24 21:41:40 (pid:1744240) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:41:40 (pid:1744240) SharedPortEndpoint: waiting for connections to named socket slot1_1726660_ebbf_4
+09/26/24 21:41:40 (pid:1744240) DaemonCore: command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=slot1_1726660_ebbf_4>
+09/26/24 21:41:40 (pid:1744240) DaemonCore: private command socket at <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=slot1_1726660_ebbf_4>
+09/26/24 21:41:40 (pid:1744240) Communicating with shadow <192.168.64.198:39145?addrs=192.168.64.198-39145&alias=corona198.llnl.gov&noUDP&sock=shadow_1726661_a01f_8>
+09/26/24 21:41:40 (pid:1744240) Submitting machine is "192.168.64.198"
+09/26/24 21:41:40 (pid:1744240) setting the orig job name in starter
+09/26/24 21:41:40 (pid:1744240) setting the orig job iwd in starter
+09/26/24 21:41:40 (pid:1744240) Job has WantIOProxy=true
+09/26/24 21:41:40 (pid:1744240) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 21:41:40 (pid:1744240) Initialized IO Proxy.
+09/26/24 21:41:40 (pid:1744240) Done setting resource limits
+09/26/24 21:41:40 (pid:1744240) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1744240/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1744240/.machine.ad.
+09/26/24 21:41:40 (pid:1744240) File transfer completed successfully.
+09/26/24 21:41:40 (pid:1744240) Job 38.0 set to execute immediately
+09/26/24 21:41:40 (pid:1744240) Starting a VANILLA universe job with ID: 38.0
+09/26/24 21:41:40 (pid:1744240) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 21:41:40 (pid:1744240) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1744240/_condor_stdout
+09/26/24 21:41:40 (pid:1744240) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1744240/_condor_stderr
+09/26/24 21:41:40 (pid:1744240) Renice expr "0" evaluated to 0
+09/26/24 21:41:40 (pid:1744240) Running job as user same uid as parent: personal condor
+09/26/24 21:41:40 (pid:1744240) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 21:41:40 (pid:1744240) Create_Process succeeded, pid=1744244
+09/26/24 21:41:41 (pid:1744240) Process exited, pid=1744244, status=0
+09/26/24 21:41:41 (pid:1744240) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:41:41 (pid:1744240) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 21:41:41 (pid:1744240) All jobs have exited... starter exiting
+09/26/24 21:41:41 (pid:1744240) **** condor_starter (condor_STARTER) pid 1744240 EXITING WITH STATUS 0
+09/26/24 22:01:53 (pid:2589404) ******************************************************
+09/26/24 22:01:53 (pid:2589404) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 22:01:53 (pid:2589404) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 22:01:53 (pid:2589404) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 22:01:53 (pid:2589404) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 22:01:53 (pid:2589404) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 22:01:53 (pid:2589404) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 22:01:53 (pid:2589404) ** PID = 2589404
+09/26/24 22:01:53 (pid:2589404) ** Log last touched 9/26 21:41:41
+09/26/24 22:01:53 (pid:2589404) ******************************************************
+09/26/24 22:01:53 (pid:2589404) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 22:01:53 (pid:2589404) Using local config sources: 
+09/26/24 22:01:53 (pid:2589404)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 22:01:53 (pid:2589404) config Macros = 60, Sorted = 59, StringBytes = 1806, TablesBytes = 2208
+09/26/24 22:01:53 (pid:2589404) CLASSAD_CACHING is OFF
+09/26/24 22:01:53 (pid:2589404) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 22:01:53 (pid:2589404) SharedPortEndpoint: waiting for connections to named socket slot1_2588036_3c93_1
+09/26/24 22:01:53 (pid:2589404) DaemonCore: command socket at <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=slot1_2588036_3c93_1>
+09/26/24 22:01:53 (pid:2589404) DaemonCore: private command socket at <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=slot1_2588036_3c93_1>
+09/26/24 22:01:53 (pid:2589404) Communicating with shadow <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=shadow_2588037_f0f3_3>
+09/26/24 22:01:53 (pid:2589404) Submitting machine is "192.168.64.202"
+09/26/24 22:01:53 (pid:2589404) setting the orig job name in starter
+09/26/24 22:01:53 (pid:2589404) setting the orig job iwd in starter
+09/26/24 22:01:53 (pid:2589404) Job has WantIOProxy=true
+09/26/24 22:01:53 (pid:2589404) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 22:01:53 (pid:2589404) Initialized IO Proxy.
+09/26/24 22:01:53 (pid:2589404) Done setting resource limits
+09/26/24 22:01:53 (pid:2589404) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2589404/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2589404/.machine.ad.
+09/26/24 22:01:53 (pid:2589404) File transfer completed successfully.
+09/26/24 22:01:53 (pid:2589404) Job 42.0 set to execute immediately
+09/26/24 22:01:53 (pid:2589404) Starting a VANILLA universe job with ID: 42.0
+09/26/24 22:01:53 (pid:2589404) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2589404
+09/26/24 22:01:53 (pid:2589404) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2589404/stage_worker_remote_montage_0_condorpool.in
+09/26/24 22:01:53 (pid:2589404) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2589404/_condor_stdout
+09/26/24 22:01:53 (pid:2589404) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2589404/_condor_stderr
+09/26/24 22:01:53 (pid:2589404) Renice expr "0" evaluated to 0
+09/26/24 22:01:53 (pid:2589404) Running job as user same uid as parent: personal condor
+09/26/24 22:01:53 (pid:2589404) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2589404/condor_exec.exe 
+09/26/24 22:01:53 (pid:2589404) Create_Process succeeded, pid=2589407
+09/26/24 22:01:58 (pid:2589404) Process exited, pid=2589407, status=0
+09/26/24 22:01:58 (pid:2589404) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 22:01:58 (pid:2589404) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 22:01:58 (pid:2589404) All jobs have exited... starter exiting
+09/26/24 22:01:58 (pid:2589404) **** condor_starter (condor_STARTER) pid 2589404 EXITING WITH STATUS 0
+09/26/24 22:02:10 (pid:2589600) ******************************************************
+09/26/24 22:02:10 (pid:2589600) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 22:02:10 (pid:2589600) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 22:02:10 (pid:2589600) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 22:02:10 (pid:2589600) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 22:02:10 (pid:2589600) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 22:02:10 (pid:2589600) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 22:02:10 (pid:2589600) ** PID = 2589600
+09/26/24 22:02:10 (pid:2589600) ** Log last touched 9/26 22:01:58
+09/26/24 22:02:10 (pid:2589600) ******************************************************
+09/26/24 22:02:10 (pid:2589600) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 22:02:10 (pid:2589600) Using local config sources: 
+09/26/24 22:02:10 (pid:2589600)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 22:02:10 (pid:2589600) config Macros = 60, Sorted = 59, StringBytes = 1806, TablesBytes = 2208
+09/26/24 22:02:10 (pid:2589600) CLASSAD_CACHING is OFF
+09/26/24 22:02:10 (pid:2589600) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 22:02:10 (pid:2589600) SharedPortEndpoint: waiting for connections to named socket slot1_2588036_3c93_2
+09/26/24 22:02:10 (pid:2589600) DaemonCore: command socket at <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=slot1_2588036_3c93_2>
+09/26/24 22:02:10 (pid:2589600) DaemonCore: private command socket at <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=slot1_2588036_3c93_2>
+09/26/24 22:02:10 (pid:2589600) Communicating with shadow <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=shadow_2588037_f0f3_4>
+09/26/24 22:02:10 (pid:2589600) Submitting machine is "192.168.64.202"
+09/26/24 22:02:10 (pid:2589600) setting the orig job name in starter
+09/26/24 22:02:10 (pid:2589600) setting the orig job iwd in starter
+09/26/24 22:02:10 (pid:2589600) Job has WantIOProxy=true
+09/26/24 22:02:10 (pid:2589600) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 22:02:10 (pid:2589600) Initialized IO Proxy.
+09/26/24 22:02:10 (pid:2589600) Done setting resource limits
+09/26/24 22:02:10 (pid:2589600) Job 43.0 set to execute immediately
+09/26/24 22:02:10 (pid:2589600) Starting a VANILLA universe job with ID: 43.0
+09/26/24 22:02:10 (pid:2589600) IWD: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir
+09/26/24 22:02:10 (pid:2589600) Output file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.out
+09/26/24 22:02:10 (pid:2589600) Error file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.err
+09/26/24 22:02:10 (pid:2589600) Renice expr "0" evaluated to 0
+09/26/24 22:02:10 (pid:2589600) Running job as user same uid as parent: personal condor
+09/26/24 22:02:10 (pid:2589600) About to exec /bin/tar -C /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir -zxvf /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/26/24 22:02:10 (pid:2589600) Create_Process succeeded, pid=2589601
+09/26/24 22:02:13 (pid:2589600) Process exited, pid=2589601, status=0
+09/26/24 22:02:13 (pid:2589600) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 22:02:13 (pid:2589600) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 22:02:13 (pid:2589600) All jobs have exited... starter exiting
+09/26/24 22:02:13 (pid:2589600) **** condor_starter (condor_STARTER) pid 2589600 EXITING WITH STATUS 0
+09/26/24 22:10:30 (pid:2605525) ******************************************************
+09/26/24 22:10:30 (pid:2605525) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 22:10:30 (pid:2605525) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 22:10:30 (pid:2605525) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 22:10:30 (pid:2605525) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 22:10:30 (pid:2605525) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 22:10:30 (pid:2605525) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 22:10:30 (pid:2605525) ** PID = 2605525
+09/26/24 22:10:30 (pid:2605525) ** Log last touched 9/26 22:02:13
+09/26/24 22:10:30 (pid:2605525) ******************************************************
+09/26/24 22:10:30 (pid:2605525) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 22:10:30 (pid:2605525) Using local config sources: 
+09/26/24 22:10:30 (pid:2605525)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 22:10:30 (pid:2605525) config Macros = 60, Sorted = 59, StringBytes = 1806, TablesBytes = 2208
+09/26/24 22:10:30 (pid:2605525) CLASSAD_CACHING is OFF
+09/26/24 22:10:30 (pid:2605525) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 22:10:30 (pid:2605525) SharedPortEndpoint: waiting for connections to named socket slot1_2588036_3c93_3
+09/26/24 22:10:30 (pid:2605525) DaemonCore: command socket at <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=slot1_2588036_3c93_3>
+09/26/24 22:10:30 (pid:2605525) DaemonCore: private command socket at <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=slot1_2588036_3c93_3>
+09/26/24 22:10:30 (pid:2605525) Communicating with shadow <192.168.64.202:43025?addrs=192.168.64.202-43025&alias=corona202.llnl.gov&noUDP&sock=shadow_2588037_f0f3_7>
+09/26/24 22:10:30 (pid:2605525) Submitting machine is "192.168.64.202"
+09/26/24 22:10:30 (pid:2605525) setting the orig job name in starter
+09/26/24 22:10:30 (pid:2605525) setting the orig job iwd in starter
+09/26/24 22:10:31 (pid:2605525) Job has WantIOProxy=true
+09/26/24 22:10:31 (pid:2605525) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 22:10:31 (pid:2605525) Initialized IO Proxy.
+09/26/24 22:10:31 (pid:2605525) Done setting resource limits
+09/26/24 22:10:31 (pid:2605525) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2605525/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2605525/.machine.ad.
+09/26/24 22:10:31 (pid:2605525) File transfer completed successfully.
+09/26/24 22:10:31 (pid:2605525) Job 46.0 set to execute immediately
+09/26/24 22:10:31 (pid:2605525) Starting a VANILLA universe job with ID: 46.0
+09/26/24 22:10:31 (pid:2605525) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 22:10:31 (pid:2605525) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2605525/_condor_stdout
+09/26/24 22:10:31 (pid:2605525) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2605525/_condor_stderr
+09/26/24 22:10:31 (pid:2605525) Renice expr "0" evaluated to 0
+09/26/24 22:10:31 (pid:2605525) Running job as user same uid as parent: personal condor
+09/26/24 22:10:31 (pid:2605525) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 22:10:31 (pid:2605525) Create_Process succeeded, pid=2605530
+09/26/24 22:10:39 (pid:2605525) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 22:10:39 (pid:2605525) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 22:52:30 (pid:2605525) Process exited, pid=2605530, status=0
+09/26/24 22:52:32 (pid:2605525) All jobs have exited... starter exiting
+09/26/24 22:52:32 (pid:2605525) **** condor_starter (condor_STARTER) pid 2605525 EXITING WITH STATUS 0
+09/26/24 23:02:18 (pid:1760936) ******************************************************
+09/26/24 23:02:18 (pid:1760936) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 23:02:18 (pid:1760936) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 23:02:18 (pid:1760936) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 23:02:18 (pid:1760936) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 23:02:18 (pid:1760936) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 23:02:18 (pid:1760936) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 23:02:18 (pid:1760936) ** PID = 1760936
+09/26/24 23:02:18 (pid:1760936) ** Log last touched 9/26 22:52:32
+09/26/24 23:02:18 (pid:1760936) ******************************************************
+09/26/24 23:02:18 (pid:1760936) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 23:02:18 (pid:1760936) Using local config sources: 
+09/26/24 23:02:18 (pid:1760936)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 23:02:18 (pid:1760936) config Macros = 60, Sorted = 59, StringBytes = 1806, TablesBytes = 2208
+09/26/24 23:02:18 (pid:1760936) CLASSAD_CACHING is OFF
+09/26/24 23:02:18 (pid:1760936) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 23:02:18 (pid:1760936) SharedPortEndpoint: waiting for connections to named socket slot1_1759201_ffca_1
+09/26/24 23:02:18 (pid:1760936) DaemonCore: command socket at <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=slot1_1759201_ffca_1>
+09/26/24 23:02:18 (pid:1760936) DaemonCore: private command socket at <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=slot1_1759201_ffca_1>
+09/26/24 23:02:18 (pid:1760936) Communicating with shadow <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=shadow_1759202_b42a_5>
+09/26/24 23:02:18 (pid:1760936) Submitting machine is "192.168.64.198"
+09/26/24 23:02:18 (pid:1760936) setting the orig job name in starter
+09/26/24 23:02:18 (pid:1760936) setting the orig job iwd in starter
+09/26/24 23:02:18 (pid:1760936) Job has WantIOProxy=true
+09/26/24 23:02:18 (pid:1760936) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 23:02:18 (pid:1760936) Initialized IO Proxy.
+09/26/24 23:02:18 (pid:1760936) Done setting resource limits
+09/26/24 23:02:18 (pid:1760936) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1760936/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1760936/.machine.ad.
+09/26/24 23:02:18 (pid:1760936) File transfer completed successfully.
+09/26/24 23:02:18 (pid:1760936) Job 53.0 set to execute immediately
+09/26/24 23:02:18 (pid:1760936) Starting a VANILLA universe job with ID: 53.0
+09/26/24 23:02:18 (pid:1760936) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1760936
+09/26/24 23:02:18 (pid:1760936) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1760936/stage_worker_remote_montage_0_condorpool.in
+09/26/24 23:02:18 (pid:1760936) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1760936/_condor_stdout
+09/26/24 23:02:18 (pid:1760936) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1760936/_condor_stderr
+09/26/24 23:02:18 (pid:1760936) Renice expr "0" evaluated to 0
+09/26/24 23:02:18 (pid:1760936) Running job as user same uid as parent: personal condor
+09/26/24 23:02:18 (pid:1760936) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1760936/condor_exec.exe 
+09/26/24 23:02:18 (pid:1760936) Create_Process succeeded, pid=1760939
+09/26/24 23:02:23 (pid:1760936) Process exited, pid=1760939, status=0
+09/26/24 23:02:23 (pid:1760936) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 23:02:23 (pid:1760936) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 23:02:23 (pid:1760936) All jobs have exited... starter exiting
+09/26/24 23:02:23 (pid:1760936) **** condor_starter (condor_STARTER) pid 1760936 EXITING WITH STATUS 0
+09/26/24 23:02:34 (pid:1761132) ******************************************************
+09/26/24 23:02:34 (pid:1761132) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 23:02:34 (pid:1761132) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 23:02:34 (pid:1761132) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 23:02:34 (pid:1761132) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 23:02:34 (pid:1761132) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 23:02:34 (pid:1761132) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 23:02:34 (pid:1761132) ** PID = 1761132
+09/26/24 23:02:34 (pid:1761132) ** Log last touched 9/26 23:02:23
+09/26/24 23:02:34 (pid:1761132) ******************************************************
+09/26/24 23:02:34 (pid:1761132) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 23:02:34 (pid:1761132) Using local config sources: 
+09/26/24 23:02:34 (pid:1761132)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 23:02:34 (pid:1761132) config Macros = 60, Sorted = 59, StringBytes = 1806, TablesBytes = 2208
+09/26/24 23:02:34 (pid:1761132) CLASSAD_CACHING is OFF
+09/26/24 23:02:34 (pid:1761132) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 23:02:34 (pid:1761132) SharedPortEndpoint: waiting for connections to named socket slot1_1759201_ffca_2
+09/26/24 23:02:34 (pid:1761132) DaemonCore: command socket at <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=slot1_1759201_ffca_2>
+09/26/24 23:02:34 (pid:1761132) DaemonCore: private command socket at <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=slot1_1759201_ffca_2>
+09/26/24 23:02:34 (pid:1761132) Communicating with shadow <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=shadow_1759202_b42a_6>
+09/26/24 23:02:34 (pid:1761132) Submitting machine is "192.168.64.198"
+09/26/24 23:02:34 (pid:1761132) setting the orig job name in starter
+09/26/24 23:02:34 (pid:1761132) setting the orig job iwd in starter
+09/26/24 23:02:34 (pid:1761132) Job has WantIOProxy=true
+09/26/24 23:02:34 (pid:1761132) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 23:02:34 (pid:1761132) Initialized IO Proxy.
+09/26/24 23:02:34 (pid:1761132) Done setting resource limits
+09/26/24 23:02:34 (pid:1761132) Job 54.0 set to execute immediately
+09/26/24 23:02:34 (pid:1761132) Starting a VANILLA universe job with ID: 54.0
+09/26/24 23:02:34 (pid:1761132) IWD: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir
+09/26/24 23:02:34 (pid:1761132) Output file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.out
+09/26/24 23:02:34 (pid:1761132) Error file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.err
+09/26/24 23:02:34 (pid:1761132) Renice expr "0" evaluated to 0
+09/26/24 23:02:34 (pid:1761132) Running job as user same uid as parent: personal condor
+09/26/24 23:02:34 (pid:1761132) About to exec /bin/tar -C /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir -zxvf /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/26/24 23:02:34 (pid:1761132) Create_Process succeeded, pid=1761133
+09/26/24 23:02:36 (pid:1761132) Process exited, pid=1761133, status=0
+09/26/24 23:02:36 (pid:1761132) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 23:02:36 (pid:1761132) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 23:02:36 (pid:1761132) All jobs have exited... starter exiting
+09/26/24 23:02:36 (pid:1761132) **** condor_starter (condor_STARTER) pid 1761132 EXITING WITH STATUS 0
+09/26/24 23:11:00 (pid:1776969) ******************************************************
+09/26/24 23:11:00 (pid:1776969) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/26/24 23:11:00 (pid:1776969) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/26/24 23:11:00 (pid:1776969) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/26/24 23:11:00 (pid:1776969) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/26/24 23:11:00 (pid:1776969) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 23:11:00 (pid:1776969) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 23:11:00 (pid:1776969) ** PID = 1776969
+09/26/24 23:11:00 (pid:1776969) ** Log last touched 9/26 23:02:36
+09/26/24 23:11:00 (pid:1776969) ******************************************************
+09/26/24 23:11:00 (pid:1776969) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 23:11:00 (pid:1776969) Using local config sources: 
+09/26/24 23:11:00 (pid:1776969)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 23:11:00 (pid:1776969) config Macros = 60, Sorted = 59, StringBytes = 1806, TablesBytes = 2208
+09/26/24 23:11:00 (pid:1776969) CLASSAD_CACHING is OFF
+09/26/24 23:11:00 (pid:1776969) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 23:11:00 (pid:1776969) SharedPortEndpoint: waiting for connections to named socket slot1_1759201_ffca_3
+09/26/24 23:11:00 (pid:1776969) DaemonCore: command socket at <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=slot1_1759201_ffca_3>
+09/26/24 23:11:00 (pid:1776969) DaemonCore: private command socket at <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=slot1_1759201_ffca_3>
+09/26/24 23:11:00 (pid:1776969) Communicating with shadow <192.168.64.198:34199?addrs=192.168.64.198-34199&alias=corona198.llnl.gov&noUDP&sock=shadow_1759202_b42a_9>
+09/26/24 23:11:00 (pid:1776969) Submitting machine is "192.168.64.198"
+09/26/24 23:11:00 (pid:1776969) setting the orig job name in starter
+09/26/24 23:11:00 (pid:1776969) setting the orig job iwd in starter
+09/26/24 23:11:00 (pid:1776969) Job has WantIOProxy=true
+09/26/24 23:11:00 (pid:1776969) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/26/24 23:11:00 (pid:1776969) Initialized IO Proxy.
+09/26/24 23:11:00 (pid:1776969) Done setting resource limits
+09/26/24 23:11:00 (pid:1776969) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1776969/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1776969/.machine.ad.
+09/26/24 23:11:00 (pid:1776969) File transfer completed successfully.
+09/26/24 23:11:00 (pid:1776969) Job 57.0 set to execute immediately
+09/26/24 23:11:00 (pid:1776969) Starting a VANILLA universe job with ID: 57.0
+09/26/24 23:11:00 (pid:1776969) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/26/24 23:11:00 (pid:1776969) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1776969/_condor_stdout
+09/26/24 23:11:00 (pid:1776969) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1776969/_condor_stderr
+09/26/24 23:11:00 (pid:1776969) Renice expr "0" evaluated to 0
+09/26/24 23:11:00 (pid:1776969) Running job as user same uid as parent: personal condor
+09/26/24 23:11:00 (pid:1776969) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/26/24 23:11:00 (pid:1776969) Create_Process succeeded, pid=1776973
+09/26/24 23:11:10 (pid:1776969) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 23:11:10 (pid:1776969) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/26/24 23:46:58 (pid:1776969) Process exited, pid=1776973, status=0
+09/26/24 23:46:59 (pid:1776969) All jobs have exited... starter exiting
+09/26/24 23:46:59 (pid:1776969) **** condor_starter (condor_STARTER) pid 1776969 EXITING WITH STATUS 0
+09/27/24 09:36:29 (pid:1946093) ******************************************************
+09/27/24 09:36:29 (pid:1946093) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 09:36:29 (pid:1946093) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 09:36:29 (pid:1946093) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 09:36:29 (pid:1946093) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 09:36:29 (pid:1946093) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:36:29 (pid:1946093) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:36:29 (pid:1946093) ** PID = 1946093
+09/27/24 09:36:29 (pid:1946093) ** Log last touched 9/26 23:46:59
+09/27/24 09:36:29 (pid:1946093) ******************************************************
+09/27/24 09:36:29 (pid:1946093) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:36:29 (pid:1946093) Using local config sources: 
+09/27/24 09:36:29 (pid:1946093)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:36:29 (pid:1946093) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/27/24 09:36:29 (pid:1946093) CLASSAD_CACHING is OFF
+09/27/24 09:36:29 (pid:1946093) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:36:29 (pid:1946093) SharedPortEndpoint: waiting for connections to named socket slot1_1945210_2ab6_1
+09/27/24 09:36:29 (pid:1946093) DaemonCore: command socket at <192.168.64.198:45159?addrs=192.168.64.198-45159&alias=corona198.llnl.gov&noUDP&sock=slot1_1945210_2ab6_1>
+09/27/24 09:36:29 (pid:1946093) DaemonCore: private command socket at <192.168.64.198:45159?addrs=192.168.64.198-45159&alias=corona198.llnl.gov&noUDP&sock=slot1_1945210_2ab6_1>
+09/27/24 09:36:29 (pid:1946093) Communicating with shadow <192.168.64.198:45159?addrs=192.168.64.198-45159&alias=corona198.llnl.gov&noUDP&sock=shadow_1945211_df16_2>
+09/27/24 09:36:29 (pid:1946093) Submitting machine is "192.168.64.198"
+09/27/24 09:36:29 (pid:1946093) setting the orig job name in starter
+09/27/24 09:36:29 (pid:1946093) setting the orig job iwd in starter
+09/27/24 09:36:29 (pid:1946093) Job has WantIOProxy=true
+09/27/24 09:36:29 (pid:1946093) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 09:36:29 (pid:1946093) Initialized IO Proxy.
+09/27/24 09:36:29 (pid:1946093) Done setting resource limits
+09/27/24 09:36:29 (pid:1946093) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1946093/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1946093/.machine.ad.
+09/27/24 09:36:29 (pid:1946094) DoDownload: SHADOW at 192.168.64.198 failed to send file(s) to <192.168.64.198:44113>: |Error: reading from file /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir/pegasus-lite-common.sh: (errno 2) No such file or directory; STARTER failed to receive file(s) from <192.168.64.198:45159>
+09/27/24 09:36:29 (pid:1946093) File transfer failed (status=0).
+09/27/24 09:36:29 (pid:1946093) ERROR "Failed to transfer files" at line 2492 in file /var/lib/condor/execute/slot1/dir_3620933/userdir/.tmpdnieob/BUILD/condor-10.2.2/src/condor_starter.V6.1/jic_shadow.cpp
+09/27/24 09:36:29 (pid:1946093) ShutdownFast all jobs.
+09/27/24 09:36:29 (pid:1946093) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 09:36:29 (pid:1946093) condor_read(): Socket closed abnormally when trying to read 5 bytes from <192.168.64.198:46047>, errno=104 Connection reset by peer
+09/27/24 09:36:29 (pid:1946093) i/o error result is 0, errno is 104 (Connection reset by peer)
+09/27/24 09:36:29 (pid:1946093) Lost connection to shadow, last activity was 0 secs ago, waiting 2400 secs for reconnect
+09/27/24 09:36:29 (pid:1946093) All jobs have exited... starter exiting
+09/27/24 09:36:29 (pid:1946093) **** condor_starter (condor_STARTER) pid 1946093 EXITING WITH STATUS 0
+09/27/24 09:49:15 (pid:1951961) ******************************************************
+09/27/24 09:49:15 (pid:1951961) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 09:49:15 (pid:1951961) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 09:49:15 (pid:1951961) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 09:49:15 (pid:1951961) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 09:49:15 (pid:1951961) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:49:15 (pid:1951961) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:49:15 (pid:1951961) ** PID = 1951961
+09/27/24 09:49:15 (pid:1951961) ** Log last touched 9/27 09:36:29
+09/27/24 09:49:15 (pid:1951961) ******************************************************
+09/27/24 09:49:15 (pid:1951961) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:49:15 (pid:1951961) Using local config sources: 
+09/27/24 09:49:15 (pid:1951961)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:49:15 (pid:1951961) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/27/24 09:49:15 (pid:1951961) CLASSAD_CACHING is OFF
+09/27/24 09:49:15 (pid:1951961) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:49:15 (pid:1951961) SharedPortEndpoint: waiting for connections to named socket slot1_1950634_dd93_1
+09/27/24 09:49:15 (pid:1951961) DaemonCore: command socket at <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=slot1_1950634_dd93_1>
+09/27/24 09:49:15 (pid:1951961) DaemonCore: private command socket at <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=slot1_1950634_dd93_1>
+09/27/24 09:49:15 (pid:1951961) Communicating with shadow <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=shadow_1950635_91f3_3>
+09/27/24 09:49:15 (pid:1951961) Submitting machine is "192.168.64.198"
+09/27/24 09:49:15 (pid:1951961) setting the orig job name in starter
+09/27/24 09:49:15 (pid:1951961) setting the orig job iwd in starter
+09/27/24 09:49:15 (pid:1951961) Job has WantIOProxy=true
+09/27/24 09:49:15 (pid:1951961) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 09:49:15 (pid:1951961) Initialized IO Proxy.
+09/27/24 09:49:15 (pid:1951961) Done setting resource limits
+09/27/24 09:49:15 (pid:1951961) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1951961/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1951961/.machine.ad.
+09/27/24 09:49:15 (pid:1951961) File transfer completed successfully.
+09/27/24 09:49:15 (pid:1951961) Job 6.0 set to execute immediately
+09/27/24 09:49:15 (pid:1951961) Starting a VANILLA universe job with ID: 6.0
+09/27/24 09:49:15 (pid:1951961) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1951961
+09/27/24 09:49:15 (pid:1951961) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1951961/stage_worker_remote_montage_0_condorpool.in
+09/27/24 09:49:15 (pid:1951961) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1951961/_condor_stdout
+09/27/24 09:49:15 (pid:1951961) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1951961/_condor_stderr
+09/27/24 09:49:15 (pid:1951961) Renice expr "0" evaluated to 0
+09/27/24 09:49:15 (pid:1951961) Running job as user same uid as parent: personal condor
+09/27/24 09:49:15 (pid:1951961) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1951961/condor_exec.exe 
+09/27/24 09:49:15 (pid:1951961) Create_Process succeeded, pid=1951964
+09/27/24 09:49:20 (pid:1951961) Process exited, pid=1951964, status=0
+09/27/24 09:49:20 (pid:1951961) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 09:49:20 (pid:1951961) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 09:49:20 (pid:1951961) All jobs have exited... starter exiting
+09/27/24 09:49:20 (pid:1951961) **** condor_starter (condor_STARTER) pid 1951961 EXITING WITH STATUS 0
+09/27/24 09:49:32 (pid:1952157) ******************************************************
+09/27/24 09:49:32 (pid:1952157) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 09:49:32 (pid:1952157) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 09:49:32 (pid:1952157) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 09:49:32 (pid:1952157) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 09:49:32 (pid:1952157) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:49:32 (pid:1952157) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:49:32 (pid:1952157) ** PID = 1952157
+09/27/24 09:49:32 (pid:1952157) ** Log last touched 9/27 09:49:20
+09/27/24 09:49:32 (pid:1952157) ******************************************************
+09/27/24 09:49:32 (pid:1952157) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:49:32 (pid:1952157) Using local config sources: 
+09/27/24 09:49:32 (pid:1952157)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:49:32 (pid:1952157) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/27/24 09:49:32 (pid:1952157) CLASSAD_CACHING is OFF
+09/27/24 09:49:32 (pid:1952157) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:49:32 (pid:1952157) SharedPortEndpoint: waiting for connections to named socket slot1_1950634_dd93_2
+09/27/24 09:49:32 (pid:1952157) DaemonCore: command socket at <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=slot1_1950634_dd93_2>
+09/27/24 09:49:32 (pid:1952157) DaemonCore: private command socket at <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=slot1_1950634_dd93_2>
+09/27/24 09:49:32 (pid:1952157) Communicating with shadow <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=shadow_1950635_91f3_4>
+09/27/24 09:49:32 (pid:1952157) Submitting machine is "192.168.64.198"
+09/27/24 09:49:32 (pid:1952157) setting the orig job name in starter
+09/27/24 09:49:32 (pid:1952157) setting the orig job iwd in starter
+09/27/24 09:49:32 (pid:1952157) Job has WantIOProxy=true
+09/27/24 09:49:32 (pid:1952157) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 09:49:32 (pid:1952157) Initialized IO Proxy.
+09/27/24 09:49:32 (pid:1952157) Done setting resource limits
+09/27/24 09:49:32 (pid:1952157) Job 7.0 set to execute immediately
+09/27/24 09:49:32 (pid:1952157) Starting a VANILLA universe job with ID: 7.0
+09/27/24 09:49:32 (pid:1952157) IWD: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir
+09/27/24 09:49:32 (pid:1952157) Output file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.out
+09/27/24 09:49:32 (pid:1952157) Error file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.err
+09/27/24 09:49:32 (pid:1952157) Renice expr "0" evaluated to 0
+09/27/24 09:49:32 (pid:1952157) Running job as user same uid as parent: personal condor
+09/27/24 09:49:32 (pid:1952157) About to exec /bin/tar -C /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir -zxvf /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/27/24 09:49:32 (pid:1952157) Create_Process succeeded, pid=1952159
+09/27/24 09:49:35 (pid:1952157) Process exited, pid=1952159, status=0
+09/27/24 09:49:35 (pid:1952157) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 09:49:35 (pid:1952157) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 09:49:35 (pid:1952157) All jobs have exited... starter exiting
+09/27/24 09:49:35 (pid:1952157) **** condor_starter (condor_STARTER) pid 1952157 EXITING WITH STATUS 0
+09/27/24 09:58:28 (pid:1967999) ******************************************************
+09/27/24 09:58:28 (pid:1967999) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 09:58:28 (pid:1967999) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 09:58:28 (pid:1967999) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 09:58:28 (pid:1967999) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 09:58:28 (pid:1967999) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:58:28 (pid:1967999) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:58:28 (pid:1967999) ** PID = 1967999
+09/27/24 09:58:28 (pid:1967999) ** Log last touched 9/27 09:49:35
+09/27/24 09:58:28 (pid:1967999) ******************************************************
+09/27/24 09:58:28 (pid:1967999) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:58:28 (pid:1967999) Using local config sources: 
+09/27/24 09:58:28 (pid:1967999)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:58:28 (pid:1967999) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/27/24 09:58:28 (pid:1967999) CLASSAD_CACHING is OFF
+09/27/24 09:58:28 (pid:1967999) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:58:28 (pid:1967999) SharedPortEndpoint: waiting for connections to named socket slot1_1950634_dd93_3
+09/27/24 09:58:28 (pid:1967999) DaemonCore: command socket at <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=slot1_1950634_dd93_3>
+09/27/24 09:58:28 (pid:1967999) DaemonCore: private command socket at <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=slot1_1950634_dd93_3>
+09/27/24 09:58:28 (pid:1967999) Communicating with shadow <192.168.64.198:37555?addrs=192.168.64.198-37555&alias=corona198.llnl.gov&noUDP&sock=shadow_1950635_91f3_7>
+09/27/24 09:58:28 (pid:1967999) Submitting machine is "192.168.64.198"
+09/27/24 09:58:28 (pid:1967999) setting the orig job name in starter
+09/27/24 09:58:28 (pid:1967999) setting the orig job iwd in starter
+09/27/24 09:58:28 (pid:1967999) Job has WantIOProxy=true
+09/27/24 09:58:28 (pid:1967999) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 09:58:28 (pid:1967999) Initialized IO Proxy.
+09/27/24 09:58:28 (pid:1967999) Done setting resource limits
+09/27/24 09:58:28 (pid:1967999) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1967999/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1967999/.machine.ad.
+09/27/24 09:58:28 (pid:1967999) File transfer completed successfully.
+09/27/24 09:58:28 (pid:1967999) Job 10.0 set to execute immediately
+09/27/24 09:58:28 (pid:1967999) Starting a VANILLA universe job with ID: 10.0
+09/27/24 09:58:28 (pid:1967999) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/27/24 09:58:28 (pid:1967999) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1967999/_condor_stdout
+09/27/24 09:58:28 (pid:1967999) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1967999/_condor_stderr
+09/27/24 09:58:28 (pid:1967999) Renice expr "0" evaluated to 0
+09/27/24 09:58:28 (pid:1967999) Running job as user same uid as parent: personal condor
+09/27/24 09:58:28 (pid:1967999) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/27/24 09:58:28 (pid:1967999) Create_Process succeeded, pid=1968002
+09/27/24 09:58:37 (pid:1967999) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 09:58:37 (pid:1967999) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:30:25 (pid:1967999) Process exited, pid=1968002, status=0
+09/27/24 10:30:26 (pid:1967999) All jobs have exited... starter exiting
+09/27/24 10:30:26 (pid:1967999) **** condor_starter (condor_STARTER) pid 1967999 EXITING WITH STATUS 0
+09/27/24 10:48:00 (pid:1368493) ******************************************************
+09/27/24 10:48:00 (pid:1368493) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 10:48:00 (pid:1368493) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 10:48:00 (pid:1368493) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 10:48:00 (pid:1368493) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 10:48:00 (pid:1368493) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 10:48:00 (pid:1368493) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 10:48:00 (pid:1368493) ** PID = 1368493
+09/27/24 10:48:00 (pid:1368493) ** Log last touched 9/27 10:30:26
+09/27/24 10:48:00 (pid:1368493) ******************************************************
+09/27/24 10:48:00 (pid:1368493) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 10:48:00 (pid:1368493) Using local config sources: 
+09/27/24 10:48:00 (pid:1368493)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 10:48:00 (pid:1368493) config Macros = 60, Sorted = 59, StringBytes = 1804, TablesBytes = 2208
+09/27/24 10:48:00 (pid:1368493) CLASSAD_CACHING is OFF
+09/27/24 10:48:00 (pid:1368493) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 10:48:00 (pid:1368493) SharedPortEndpoint: waiting for connections to named socket slot1_1367482_86f1_1
+09/27/24 10:48:00 (pid:1368493) DaemonCore: command socket at <192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov&noUDP&sock=slot1_1367482_86f1_1>
+09/27/24 10:48:00 (pid:1368493) DaemonCore: private command socket at <192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov&noUDP&sock=slot1_1367482_86f1_1>
+09/27/24 10:48:00 (pid:1368493) Communicating with shadow <192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov&noUDP&sock=shadow_1367483_3b51_3>
+09/27/24 10:48:00 (pid:1368493) Submitting machine is "192.168.65.10"
+09/27/24 10:48:00 (pid:1368493) setting the orig job name in starter
+09/27/24 10:48:00 (pid:1368493) setting the orig job iwd in starter
+09/27/24 10:48:00 (pid:1368493) Job has WantIOProxy=true
+09/27/24 10:48:00 (pid:1368493) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 10:48:00 (pid:1368493) Initialized IO Proxy.
+09/27/24 10:48:00 (pid:1368493) Done setting resource limits
+09/27/24 10:48:00 (pid:1368493) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1368493/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1368493/.machine.ad.
+09/27/24 10:48:00 (pid:1368493) File transfer completed successfully.
+09/27/24 10:48:00 (pid:1368493) Job 16.0 set to execute immediately
+09/27/24 10:48:00 (pid:1368493) Starting a VANILLA universe job with ID: 16.0
+09/27/24 10:48:00 (pid:1368493) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1368493
+09/27/24 10:48:00 (pid:1368493) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1368493/stage_worker_remote_montage_0_condorpool.in
+09/27/24 10:48:00 (pid:1368493) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1368493/_condor_stdout
+09/27/24 10:48:00 (pid:1368493) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1368493/_condor_stderr
+09/27/24 10:48:00 (pid:1368493) Renice expr "0" evaluated to 0
+09/27/24 10:48:00 (pid:1368493) Running job as user same uid as parent: personal condor
+09/27/24 10:48:00 (pid:1368493) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_1368493/condor_exec.exe 
+09/27/24 10:48:00 (pid:1368493) Create_Process succeeded, pid=1368496
+09/27/24 10:48:04 (pid:1368493) Process exited, pid=1368496, status=0
+09/27/24 10:48:04 (pid:1368493) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:48:05 (pid:1368493) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:48:05 (pid:1368493) All jobs have exited... starter exiting
+09/27/24 10:48:05 (pid:1368493) **** condor_starter (condor_STARTER) pid 1368493 EXITING WITH STATUS 0
+09/27/24 10:48:19 (pid:1368689) ******************************************************
+09/27/24 10:48:19 (pid:1368689) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 10:48:19 (pid:1368689) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 10:48:19 (pid:1368689) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 10:48:19 (pid:1368689) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 10:48:19 (pid:1368689) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 10:48:19 (pid:1368689) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 10:48:19 (pid:1368689) ** PID = 1368689
+09/27/24 10:48:19 (pid:1368689) ** Log last touched 9/27 10:48:05
+09/27/24 10:48:19 (pid:1368689) ******************************************************
+09/27/24 10:48:19 (pid:1368689) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 10:48:19 (pid:1368689) Using local config sources: 
+09/27/24 10:48:19 (pid:1368689)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 10:48:19 (pid:1368689) config Macros = 60, Sorted = 59, StringBytes = 1804, TablesBytes = 2208
+09/27/24 10:48:19 (pid:1368689) CLASSAD_CACHING is OFF
+09/27/24 10:48:19 (pid:1368689) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 10:48:19 (pid:1368689) SharedPortEndpoint: waiting for connections to named socket slot1_1367482_86f1_2
+09/27/24 10:48:19 (pid:1368689) DaemonCore: command socket at <192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov&noUDP&sock=slot1_1367482_86f1_2>
+09/27/24 10:48:19 (pid:1368689) DaemonCore: private command socket at <192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov&noUDP&sock=slot1_1367482_86f1_2>
+09/27/24 10:48:19 (pid:1368689) Communicating with shadow <192.168.65.10:35377?addrs=192.168.65.10-35377&alias=corona266.llnl.gov&noUDP&sock=shadow_1367483_3b51_4>
+09/27/24 10:48:19 (pid:1368689) Submitting machine is "192.168.65.10"
+09/27/24 10:48:19 (pid:1368689) setting the orig job name in starter
+09/27/24 10:48:19 (pid:1368689) setting the orig job iwd in starter
+09/27/24 10:48:19 (pid:1368689) Job has WantIOProxy=true
+09/27/24 10:48:19 (pid:1368689) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 10:48:19 (pid:1368689) Initialized IO Proxy.
+09/27/24 10:48:19 (pid:1368689) Done setting resource limits
+09/27/24 10:48:19 (pid:1368689) Job 17.0 set to execute immediately
+09/27/24 10:48:19 (pid:1368689) Starting a VANILLA universe job with ID: 17.0
+09/27/24 10:48:19 (pid:1368689) IWD: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir
+09/27/24 10:48:19 (pid:1368689) Output file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.out
+09/27/24 10:48:19 (pid:1368689) Error file: /p/lustre3/haridev/montage-workflow-v3/job/work/run_dir//untar_montage_0_condorpool.err
+09/27/24 10:48:19 (pid:1368689) Renice expr "0" evaluated to 0
+09/27/24 10:48:19 (pid:1368689) Running job as user same uid as parent: personal condor
+09/27/24 10:48:19 (pid:1368689) About to exec /bin/tar -C /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir -zxvf /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/27/24 10:48:19 (pid:1368689) Create_Process succeeded, pid=1368690
+09/27/24 10:48:22 (pid:1368689) Process exited, pid=1368690, status=0
+09/27/24 10:48:22 (pid:1368689) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:48:22 (pid:1368689) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:48:22 (pid:1368689) All jobs have exited... starter exiting
+09/27/24 10:48:22 (pid:1368689) **** condor_starter (condor_STARTER) pid 1368689 EXITING WITH STATUS 0
+09/27/24 10:56:03 (pid:2164689) ******************************************************
+09/27/24 10:56:03 (pid:2164689) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 10:56:03 (pid:2164689) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 10:56:03 (pid:2164689) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 10:56:03 (pid:2164689) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 10:56:03 (pid:2164689) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 10:56:03 (pid:2164689) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 10:56:03 (pid:2164689) ** PID = 2164689
+09/27/24 10:56:03 (pid:2164689) ** Log last touched 9/27 10:48:22
+09/27/24 10:56:03 (pid:2164689) ******************************************************
+09/27/24 10:56:03 (pid:2164689) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 10:56:03 (pid:2164689) Using local config sources: 
+09/27/24 10:56:03 (pid:2164689)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 10:56:03 (pid:2164689) config Macros = 60, Sorted = 59, StringBytes = 1805, TablesBytes = 2208
+09/27/24 10:56:03 (pid:2164689) CLASSAD_CACHING is OFF
+09/27/24 10:56:03 (pid:2164689) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 10:56:03 (pid:2164689) SharedPortEndpoint: waiting for connections to named socket slot1_2158978_0fab_1
+09/27/24 10:56:03 (pid:2164689) DaemonCore: command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_1>
+09/27/24 10:56:03 (pid:2164689) DaemonCore: private command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_1>
+09/27/24 10:56:03 (pid:2164689) Communicating with shadow <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=shadow_2158979_c40b_5>
+09/27/24 10:56:03 (pid:2164689) Submitting machine is "192.168.65.12"
+09/27/24 10:56:03 (pid:2164689) setting the orig job name in starter
+09/27/24 10:56:03 (pid:2164689) setting the orig job iwd in starter
+09/27/24 10:56:03 (pid:2164689) Job has WantIOProxy=true
+09/27/24 10:56:03 (pid:2164689) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 10:56:03 (pid:2164689) Initialized IO Proxy.
+09/27/24 10:56:03 (pid:2164689) Done setting resource limits
+09/27/24 10:56:03 (pid:2164689) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2164689/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2164689/.machine.ad.
+09/27/24 10:56:03 (pid:2164689) File transfer completed successfully.
+09/27/24 10:56:03 (pid:2164689) Job 21.0 set to execute immediately
+09/27/24 10:56:03 (pid:2164689) Starting a VANILLA universe job with ID: 21.0
+09/27/24 10:56:03 (pid:2164689) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2164689
+09/27/24 10:56:03 (pid:2164689) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2164689/stage_worker_remote_montage_0_condorpool.in
+09/27/24 10:56:03 (pid:2164689) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2164689/_condor_stdout
+09/27/24 10:56:03 (pid:2164689) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2164689/_condor_stderr
+09/27/24 10:56:03 (pid:2164689) Renice expr "0" evaluated to 0
+09/27/24 10:56:03 (pid:2164689) Running job as user same uid as parent: personal condor
+09/27/24 10:56:03 (pid:2164689) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2164689/condor_exec.exe 
+09/27/24 10:56:03 (pid:2164689) Create_Process succeeded, pid=2164696
+09/27/24 10:56:08 (pid:2164689) Process exited, pid=2164696, status=0
+09/27/24 10:56:08 (pid:2164689) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:56:08 (pid:2164689) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:56:08 (pid:2164689) All jobs have exited... starter exiting
+09/27/24 10:56:08 (pid:2164689) **** condor_starter (condor_STARTER) pid 2164689 EXITING WITH STATUS 0
+09/27/24 10:56:18 (pid:2165378) ******************************************************
+09/27/24 10:56:18 (pid:2165378) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 10:56:18 (pid:2165378) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 10:56:18 (pid:2165378) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 10:56:18 (pid:2165378) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 10:56:18 (pid:2165378) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 10:56:18 (pid:2165378) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 10:56:18 (pid:2165378) ** PID = 2165378
+09/27/24 10:56:18 (pid:2165378) ** Log last touched 9/27 10:56:08
+09/27/24 10:56:18 (pid:2165378) ******************************************************
+09/27/24 10:56:18 (pid:2165378) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 10:56:18 (pid:2165378) Using local config sources: 
+09/27/24 10:56:18 (pid:2165378)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 10:56:18 (pid:2165378) config Macros = 60, Sorted = 59, StringBytes = 1805, TablesBytes = 2208
+09/27/24 10:56:18 (pid:2165378) CLASSAD_CACHING is OFF
+09/27/24 10:56:18 (pid:2165378) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 10:56:18 (pid:2165378) SharedPortEndpoint: waiting for connections to named socket slot1_2158978_0fab_2
+09/27/24 10:56:18 (pid:2165378) DaemonCore: command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_2>
+09/27/24 10:56:18 (pid:2165378) DaemonCore: private command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_2>
+09/27/24 10:56:18 (pid:2165378) Communicating with shadow <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=shadow_2158979_c40b_6>
+09/27/24 10:56:18 (pid:2165378) Submitting machine is "192.168.65.12"
+09/27/24 10:56:18 (pid:2165378) setting the orig job name in starter
+09/27/24 10:56:18 (pid:2165378) setting the orig job iwd in starter
+09/27/24 10:56:18 (pid:2165378) Job has WantIOProxy=true
+09/27/24 10:56:18 (pid:2165378) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 10:56:18 (pid:2165378) Initialized IO Proxy.
+09/27/24 10:56:18 (pid:2165378) Done setting resource limits
+09/27/24 10:56:18 (pid:2165378) Job 22.0 set to execute immediately
+09/27/24 10:56:18 (pid:2165378) Starting a VANILLA universe job with ID: 22.0
+09/27/24 10:56:18 (pid:2165378) IWD: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir
+09/27/24 10:56:18 (pid:2165378) Output file: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir//untar_montage_0_condorpool.out
+09/27/24 10:56:18 (pid:2165378) Error file: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir//untar_montage_0_condorpool.err
+09/27/24 10:56:18 (pid:2165378) Renice expr "0" evaluated to 0
+09/27/24 10:56:18 (pid:2165378) Running job as user same uid as parent: personal condor
+09/27/24 10:56:18 (pid:2165378) About to exec /bin/tar -C /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir -zxvf /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/27/24 10:56:18 (pid:2165378) Create_Process succeeded, pid=2165383
+09/27/24 10:56:20 (pid:2165378) Process exited, pid=2165383, status=0
+09/27/24 10:56:20 (pid:2165378) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:56:20 (pid:2165378) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 10:56:20 (pid:2165378) All jobs have exited... starter exiting
+09/27/24 10:56:20 (pid:2165378) **** condor_starter (condor_STARTER) pid 2165378 EXITING WITH STATUS 0
+09/27/24 11:02:26 (pid:2179286) ******************************************************
+09/27/24 11:02:26 (pid:2179286) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 11:02:26 (pid:2179286) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 11:02:26 (pid:2179286) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 11:02:26 (pid:2179286) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 11:02:26 (pid:2179286) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 11:02:26 (pid:2179286) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 11:02:26 (pid:2179286) ** PID = 2179286
+09/27/24 11:02:26 (pid:2179286) ** Log last touched 9/27 10:56:20
+09/27/24 11:02:26 (pid:2179286) ******************************************************
+09/27/24 11:02:26 (pid:2179286) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 11:02:26 (pid:2179286) Using local config sources: 
+09/27/24 11:02:26 (pid:2179286)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 11:02:26 (pid:2179286) config Macros = 60, Sorted = 59, StringBytes = 1805, TablesBytes = 2208
+09/27/24 11:02:26 (pid:2179286) CLASSAD_CACHING is OFF
+09/27/24 11:02:26 (pid:2179286) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 11:02:26 (pid:2179286) SharedPortEndpoint: waiting for connections to named socket slot1_2158978_0fab_3
+09/27/24 11:02:26 (pid:2179286) DaemonCore: command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_3>
+09/27/24 11:02:26 (pid:2179286) DaemonCore: private command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_3>
+09/27/24 11:02:26 (pid:2179286) Communicating with shadow <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=shadow_2158979_c40b_9>
+09/27/24 11:02:26 (pid:2179286) Submitting machine is "192.168.65.12"
+09/27/24 11:02:26 (pid:2179286) setting the orig job name in starter
+09/27/24 11:02:26 (pid:2179286) setting the orig job iwd in starter
+09/27/24 11:02:26 (pid:2179286) Job has WantIOProxy=true
+09/27/24 11:02:26 (pid:2179286) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 11:02:26 (pid:2179286) Initialized IO Proxy.
+09/27/24 11:02:26 (pid:2179286) Done setting resource limits
+09/27/24 11:02:26 (pid:2179286) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179286/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179286/.machine.ad.
+09/27/24 11:02:26 (pid:2179286) File transfer completed successfully.
+09/27/24 11:02:26 (pid:2179286) Job 25.0 set to execute immediately
+09/27/24 11:02:26 (pid:2179286) Starting a VANILLA universe job with ID: 25.0
+09/27/24 11:02:26 (pid:2179286) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/27/24 11:02:26 (pid:2179286) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179286/_condor_stdout
+09/27/24 11:02:26 (pid:2179286) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179286/_condor_stderr
+09/27/24 11:02:26 (pid:2179286) Renice expr "0" evaluated to 0
+09/27/24 11:02:26 (pid:2179286) Running job as user same uid as parent: personal condor
+09/27/24 11:02:26 (pid:2179286) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/27/24 11:02:26 (pid:2179286) Create_Process succeeded, pid=2179289
+09/27/24 11:02:27 (pid:2179286) Process exited, pid=2179289, status=0
+09/27/24 11:02:27 (pid:2179286) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:02:27 (pid:2179286) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:02:27 (pid:2179286) All jobs have exited... starter exiting
+09/27/24 11:02:27 (pid:2179286) **** condor_starter (condor_STARTER) pid 2179286 EXITING WITH STATUS 0
+09/27/24 11:02:41 (pid:2179330) ******************************************************
+09/27/24 11:02:41 (pid:2179330) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 11:02:41 (pid:2179330) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 11:02:41 (pid:2179330) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 11:02:41 (pid:2179330) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 11:02:41 (pid:2179330) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 11:02:41 (pid:2179330) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 11:02:41 (pid:2179330) ** PID = 2179330
+09/27/24 11:02:41 (pid:2179330) ** Log last touched 9/27 11:02:27
+09/27/24 11:02:41 (pid:2179330) ******************************************************
+09/27/24 11:02:41 (pid:2179330) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 11:02:41 (pid:2179330) Using local config sources: 
+09/27/24 11:02:41 (pid:2179330)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 11:02:41 (pid:2179330) config Macros = 60, Sorted = 59, StringBytes = 1805, TablesBytes = 2208
+09/27/24 11:02:41 (pid:2179330) CLASSAD_CACHING is OFF
+09/27/24 11:02:41 (pid:2179330) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 11:02:41 (pid:2179330) SharedPortEndpoint: waiting for connections to named socket slot1_2158978_0fab_4
+09/27/24 11:02:41 (pid:2179330) DaemonCore: command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_4>
+09/27/24 11:02:41 (pid:2179330) DaemonCore: private command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_4>
+09/27/24 11:02:41 (pid:2179330) Communicating with shadow <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=shadow_2158979_c40b_11>
+09/27/24 11:02:41 (pid:2179330) Submitting machine is "192.168.65.12"
+09/27/24 11:02:41 (pid:2179330) setting the orig job name in starter
+09/27/24 11:02:41 (pid:2179330) setting the orig job iwd in starter
+09/27/24 11:02:41 (pid:2179330) Job has WantIOProxy=true
+09/27/24 11:02:41 (pid:2179330) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 11:02:41 (pid:2179330) Initialized IO Proxy.
+09/27/24 11:02:41 (pid:2179330) Done setting resource limits
+09/27/24 11:02:41 (pid:2179330) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179330/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179330/.machine.ad.
+09/27/24 11:02:41 (pid:2179330) File transfer completed successfully.
+09/27/24 11:02:41 (pid:2179330) Job 27.0 set to execute immediately
+09/27/24 11:02:41 (pid:2179330) Starting a VANILLA universe job with ID: 27.0
+09/27/24 11:02:41 (pid:2179330) IWD: /p/lustre3/haridev/montage-workflow-v3/scratch/run_dir
+09/27/24 11:02:41 (pid:2179330) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179330/_condor_stdout
+09/27/24 11:02:41 (pid:2179330) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179330/_condor_stderr
+09/27/24 11:02:41 (pid:2179330) Renice expr "0" evaluated to 0
+09/27/24 11:02:41 (pid:2179330) Running job as user same uid as parent: personal condor
+09/27/24 11:02:41 (pid:2179330) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/27/24 11:02:41 (pid:2179330) Create_Process succeeded, pid=2179333
+09/27/24 11:02:42 (pid:2179330) Process exited, pid=2179333, status=0
+09/27/24 11:02:42 (pid:2179330) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:02:42 (pid:2179330) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:02:42 (pid:2179330) All jobs have exited... starter exiting
+09/27/24 11:02:42 (pid:2179330) **** condor_starter (condor_STARTER) pid 2179330 EXITING WITH STATUS 0
+09/27/24 11:02:50 (pid:2179360) ******************************************************
+09/27/24 11:02:50 (pid:2179360) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 11:02:50 (pid:2179360) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 11:02:50 (pid:2179360) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 11:02:50 (pid:2179360) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 11:02:50 (pid:2179360) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 11:02:50 (pid:2179360) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 11:02:50 (pid:2179360) ** PID = 2179360
+09/27/24 11:02:50 (pid:2179360) ** Log last touched 9/27 11:02:42
+09/27/24 11:02:50 (pid:2179360) ******************************************************
+09/27/24 11:02:50 (pid:2179360) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 11:02:50 (pid:2179360) Using local config sources: 
+09/27/24 11:02:50 (pid:2179360)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 11:02:50 (pid:2179360) config Macros = 60, Sorted = 59, StringBytes = 1805, TablesBytes = 2208
+09/27/24 11:02:50 (pid:2179360) CLASSAD_CACHING is OFF
+09/27/24 11:02:50 (pid:2179360) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 11:02:50 (pid:2179360) SharedPortEndpoint: waiting for connections to named socket slot1_2158978_0fab_5
+09/27/24 11:02:50 (pid:2179360) DaemonCore: command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_5>
+09/27/24 11:02:50 (pid:2179360) DaemonCore: private command socket at <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=slot1_2158978_0fab_5>
+09/27/24 11:02:50 (pid:2179360) Communicating with shadow <192.168.65.12:39065?addrs=192.168.65.12-39065&alias=corona268.llnl.gov&noUDP&sock=shadow_2158979_c40b_12>
+09/27/24 11:02:50 (pid:2179360) Submitting machine is "192.168.65.12"
+09/27/24 11:02:50 (pid:2179360) setting the orig job name in starter
+09/27/24 11:02:50 (pid:2179360) setting the orig job iwd in starter
+09/27/24 11:02:50 (pid:2179360) Job has WantIOProxy=true
+09/27/24 11:02:50 (pid:2179360) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 11:02:50 (pid:2179360) Initialized IO Proxy.
+09/27/24 11:02:50 (pid:2179360) Done setting resource limits
+09/27/24 11:02:50 (pid:2179360) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179360/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179360/.machine.ad.
+09/27/24 11:02:50 (pid:2179360) File transfer completed successfully.
+09/27/24 11:02:50 (pid:2179360) Job 28.0 set to execute immediately
+09/27/24 11:02:50 (pid:2179360) Starting a VANILLA universe job with ID: 28.0
+09/27/24 11:02:50 (pid:2179360) IWD: /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir
+09/27/24 11:02:50 (pid:2179360) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179360/_condor_stdout
+09/27/24 11:02:50 (pid:2179360) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2179360/_condor_stderr
+09/27/24 11:02:50 (pid:2179360) Renice expr "0" evaluated to 0
+09/27/24 11:02:50 (pid:2179360) Running job as user same uid as parent: personal condor
+09/27/24 11:02:50 (pid:2179360) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/27/24 11:02:50 (pid:2179360) Create_Process succeeded, pid=2179363
+09/27/24 11:02:58 (pid:2179360) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:02:58 (pid:2179360) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:17:46 (pid:2179360) Process exited, pid=2179363, status=0
+09/27/24 11:17:47 (pid:2179360) All jobs have exited... starter exiting
+09/27/24 11:17:47 (pid:2179360) **** condor_starter (condor_STARTER) pid 2179360 EXITING WITH STATUS 0
+09/27/24 11:25:15 (pid:3748010) ******************************************************
+09/27/24 11:25:15 (pid:3748010) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 11:25:15 (pid:3748010) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 11:25:15 (pid:3748010) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 11:25:15 (pid:3748010) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 11:25:15 (pid:3748010) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 11:25:15 (pid:3748010) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 11:25:15 (pid:3748010) ** PID = 3748010
+09/27/24 11:25:15 (pid:3748010) ** Log last touched 9/27 11:17:47
+09/27/24 11:25:15 (pid:3748010) ******************************************************
+09/27/24 11:25:15 (pid:3748010) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 11:25:15 (pid:3748010) Using local config sources: 
+09/27/24 11:25:15 (pid:3748010)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 11:25:15 (pid:3748010) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/27/24 11:25:15 (pid:3748010) CLASSAD_CACHING is OFF
+09/27/24 11:25:15 (pid:3748010) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 11:25:15 (pid:3748010) SharedPortEndpoint: waiting for connections to named socket slot1_3746293_12ef_1
+09/27/24 11:25:15 (pid:3748010) DaemonCore: command socket at <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=slot1_3746293_12ef_1>
+09/27/24 11:25:15 (pid:3748010) DaemonCore: private command socket at <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=slot1_3746293_12ef_1>
+09/27/24 11:25:15 (pid:3748010) Communicating with shadow <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=shadow_3746294_c74f_5>
+09/27/24 11:25:15 (pid:3748010) Submitting machine is "192.168.64.230"
+09/27/24 11:25:15 (pid:3748010) setting the orig job name in starter
+09/27/24 11:25:15 (pid:3748010) setting the orig job iwd in starter
+09/27/24 11:25:15 (pid:3748010) Job has WantIOProxy=true
+09/27/24 11:25:15 (pid:3748010) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 11:25:15 (pid:3748010) Initialized IO Proxy.
+09/27/24 11:25:15 (pid:3748010) Done setting resource limits
+09/27/24 11:25:15 (pid:3748010) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3748010/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3748010/.machine.ad.
+09/27/24 11:25:15 (pid:3748010) File transfer completed successfully.
+09/27/24 11:25:15 (pid:3748010) Job 36.0 set to execute immediately
+09/27/24 11:25:15 (pid:3748010) Starting a VANILLA universe job with ID: 36.0
+09/27/24 11:25:15 (pid:3748010) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3748010
+09/27/24 11:25:15 (pid:3748010) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3748010/stage_worker_remote_montage_0_condorpool.in
+09/27/24 11:25:15 (pid:3748010) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3748010/_condor_stdout
+09/27/24 11:25:15 (pid:3748010) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3748010/_condor_stderr
+09/27/24 11:25:15 (pid:3748010) Renice expr "0" evaluated to 0
+09/27/24 11:25:15 (pid:3748010) Running job as user same uid as parent: personal condor
+09/27/24 11:25:15 (pid:3748010) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3748010/condor_exec.exe 
+09/27/24 11:25:15 (pid:3748010) Create_Process succeeded, pid=3748013
+09/27/24 11:25:20 (pid:3748010) Process exited, pid=3748013, status=0
+09/27/24 11:25:20 (pid:3748010) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:25:20 (pid:3748010) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:25:20 (pid:3748010) All jobs have exited... starter exiting
+09/27/24 11:25:20 (pid:3748010) **** condor_starter (condor_STARTER) pid 3748010 EXITING WITH STATUS 0
+09/27/24 11:25:31 (pid:3748206) ******************************************************
+09/27/24 11:25:31 (pid:3748206) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 11:25:31 (pid:3748206) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 11:25:31 (pid:3748206) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 11:25:31 (pid:3748206) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 11:25:31 (pid:3748206) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 11:25:31 (pid:3748206) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 11:25:31 (pid:3748206) ** PID = 3748206
+09/27/24 11:25:31 (pid:3748206) ** Log last touched 9/27 11:25:20
+09/27/24 11:25:31 (pid:3748206) ******************************************************
+09/27/24 11:25:31 (pid:3748206) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 11:25:31 (pid:3748206) Using local config sources: 
+09/27/24 11:25:31 (pid:3748206)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 11:25:31 (pid:3748206) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/27/24 11:25:31 (pid:3748206) CLASSAD_CACHING is OFF
+09/27/24 11:25:31 (pid:3748206) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 11:25:31 (pid:3748206) SharedPortEndpoint: waiting for connections to named socket slot1_3746293_12ef_2
+09/27/24 11:25:31 (pid:3748206) DaemonCore: command socket at <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=slot1_3746293_12ef_2>
+09/27/24 11:25:31 (pid:3748206) DaemonCore: private command socket at <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=slot1_3746293_12ef_2>
+09/27/24 11:25:31 (pid:3748206) Communicating with shadow <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=shadow_3746294_c74f_6>
+09/27/24 11:25:31 (pid:3748206) Submitting machine is "192.168.64.230"
+09/27/24 11:25:31 (pid:3748206) setting the orig job name in starter
+09/27/24 11:25:31 (pid:3748206) setting the orig job iwd in starter
+09/27/24 11:25:31 (pid:3748206) Job has WantIOProxy=true
+09/27/24 11:25:31 (pid:3748206) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 11:25:31 (pid:3748206) Initialized IO Proxy.
+09/27/24 11:25:31 (pid:3748206) Done setting resource limits
+09/27/24 11:25:31 (pid:3748206) Job 37.0 set to execute immediately
+09/27/24 11:25:31 (pid:3748206) Starting a VANILLA universe job with ID: 37.0
+09/27/24 11:25:31 (pid:3748206) IWD: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir
+09/27/24 11:25:31 (pid:3748206) Output file: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir//untar_montage_0_condorpool.out
+09/27/24 11:25:31 (pid:3748206) Error file: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir//untar_montage_0_condorpool.err
+09/27/24 11:25:31 (pid:3748206) Renice expr "0" evaluated to 0
+09/27/24 11:25:31 (pid:3748206) Running job as user same uid as parent: personal condor
+09/27/24 11:25:31 (pid:3748206) About to exec /bin/tar -C /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir -zxvf /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/27/24 11:25:31 (pid:3748206) Create_Process succeeded, pid=3748207
+09/27/24 11:25:33 (pid:3748206) Process exited, pid=3748207, status=0
+09/27/24 11:25:33 (pid:3748206) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:25:33 (pid:3748206) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:25:33 (pid:3748206) All jobs have exited... starter exiting
+09/27/24 11:25:33 (pid:3748206) **** condor_starter (condor_STARTER) pid 3748206 EXITING WITH STATUS 0
+09/27/24 11:32:02 (pid:3750864) ******************************************************
+09/27/24 11:32:02 (pid:3750864) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 11:32:02 (pid:3750864) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 11:32:02 (pid:3750864) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 11:32:02 (pid:3750864) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 11:32:02 (pid:3750864) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 11:32:02 (pid:3750864) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 11:32:02 (pid:3750864) ** PID = 3750864
+09/27/24 11:32:02 (pid:3750864) ** Log last touched 9/27 11:25:33
+09/27/24 11:32:02 (pid:3750864) ******************************************************
+09/27/24 11:32:02 (pid:3750864) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 11:32:02 (pid:3750864) Using local config sources: 
+09/27/24 11:32:02 (pid:3750864)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 11:32:02 (pid:3750864) config Macros = 60, Sorted = 59, StringBytes = 1807, TablesBytes = 2208
+09/27/24 11:32:02 (pid:3750864) CLASSAD_CACHING is OFF
+09/27/24 11:32:02 (pid:3750864) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 11:32:02 (pid:3750864) SharedPortEndpoint: waiting for connections to named socket slot1_3746293_12ef_3
+09/27/24 11:32:02 (pid:3750864) DaemonCore: command socket at <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=slot1_3746293_12ef_3>
+09/27/24 11:32:02 (pid:3750864) DaemonCore: private command socket at <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=slot1_3746293_12ef_3>
+09/27/24 11:32:02 (pid:3750864) Communicating with shadow <192.168.64.230:40855?addrs=192.168.64.230-40855&alias=corona230.llnl.gov&noUDP&sock=shadow_3746294_c74f_9>
+09/27/24 11:32:02 (pid:3750864) Submitting machine is "192.168.64.230"
+09/27/24 11:32:02 (pid:3750864) setting the orig job name in starter
+09/27/24 11:32:02 (pid:3750864) setting the orig job iwd in starter
+09/27/24 11:32:02 (pid:3750864) Job has WantIOProxy=true
+09/27/24 11:32:02 (pid:3750864) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 11:32:02 (pid:3750864) Initialized IO Proxy.
+09/27/24 11:32:02 (pid:3750864) Done setting resource limits
+09/27/24 11:32:02 (pid:3750864) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3750864/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3750864/.machine.ad.
+09/27/24 11:32:02 (pid:3750864) File transfer completed successfully.
+09/27/24 11:32:02 (pid:3750864) Job 40.0 set to execute immediately
+09/27/24 11:32:02 (pid:3750864) Starting a VANILLA universe job with ID: 40.0
+09/27/24 11:32:02 (pid:3750864) IWD: /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir
+09/27/24 11:32:02 (pid:3750864) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3750864/_condor_stdout
+09/27/24 11:32:02 (pid:3750864) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_3750864/_condor_stderr
+09/27/24 11:32:02 (pid:3750864) Renice expr "0" evaluated to 0
+09/27/24 11:32:02 (pid:3750864) Running job as user same uid as parent: personal condor
+09/27/24 11:32:02 (pid:3750864) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/27/24 11:32:02 (pid:3750864) Create_Process succeeded, pid=3750867
+09/27/24 11:32:10 (pid:3750864) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 11:32:10 (pid:3750864) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 12:03:43 (pid:3750864) Process exited, pid=3750867, status=0
+09/27/24 12:03:44 (pid:3750864) All jobs have exited... starter exiting
+09/27/24 12:03:44 (pid:3750864) **** condor_starter (condor_STARTER) pid 3750864 EXITING WITH STATUS 0
+09/27/24 12:10:24 (pid:2578686) ******************************************************
+09/27/24 12:10:24 (pid:2578686) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 12:10:24 (pid:2578686) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 12:10:24 (pid:2578686) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 12:10:24 (pid:2578686) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 12:10:24 (pid:2578686) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 12:10:24 (pid:2578686) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 12:10:24 (pid:2578686) ** PID = 2578686
+09/27/24 12:10:24 (pid:2578686) ** Log last touched 9/27 12:03:44
+09/27/24 12:10:24 (pid:2578686) ******************************************************
+09/27/24 12:10:24 (pid:2578686) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 12:10:24 (pid:2578686) Using local config sources: 
+09/27/24 12:10:24 (pid:2578686)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 12:10:24 (pid:2578686) config Macros = 60, Sorted = 59, StringBytes = 1805, TablesBytes = 2208
+09/27/24 12:10:24 (pid:2578686) CLASSAD_CACHING is OFF
+09/27/24 12:10:24 (pid:2578686) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 12:10:24 (pid:2578686) SharedPortEndpoint: waiting for connections to named socket slot1_2561652_5262_1
+09/27/24 12:10:24 (pid:2578686) DaemonCore: command socket at <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=slot1_2561652_5262_1>
+09/27/24 12:10:24 (pid:2578686) DaemonCore: private command socket at <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=slot1_2561652_5262_1>
+09/27/24 12:10:24 (pid:2578686) Communicating with shadow <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=shadow_2561653_06c2_5>
+09/27/24 12:10:24 (pid:2578686) Submitting machine is "192.168.64.192"
+09/27/24 12:10:24 (pid:2578686) setting the orig job name in starter
+09/27/24 12:10:24 (pid:2578686) setting the orig job iwd in starter
+09/27/24 12:10:24 (pid:2578686) Job has WantIOProxy=true
+09/27/24 12:10:24 (pid:2578686) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 12:10:24 (pid:2578686) Initialized IO Proxy.
+09/27/24 12:10:24 (pid:2578686) Done setting resource limits
+09/27/24 12:10:24 (pid:2578686) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2578686/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2578686/.machine.ad.
+09/27/24 12:10:24 (pid:2578686) File transfer completed successfully.
+09/27/24 12:10:24 (pid:2578686) Job 46.0 set to execute immediately
+09/27/24 12:10:24 (pid:2578686) Starting a VANILLA universe job with ID: 46.0
+09/27/24 12:10:24 (pid:2578686) IWD: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2578686
+09/27/24 12:10:24 (pid:2578686) Input file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2578686/stage_worker_remote_montage_0_condorpool.in
+09/27/24 12:10:24 (pid:2578686) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2578686/_condor_stdout
+09/27/24 12:10:24 (pid:2578686) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2578686/_condor_stderr
+09/27/24 12:10:24 (pid:2578686) Renice expr "0" evaluated to 0
+09/27/24 12:10:24 (pid:2578686) Running job as user same uid as parent: personal condor
+09/27/24 12:10:24 (pid:2578686) About to exec /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2578686/condor_exec.exe 
+09/27/24 12:10:24 (pid:2578686) Create_Process succeeded, pid=2578689
+09/27/24 12:10:29 (pid:2578686) Process exited, pid=2578689, status=0
+09/27/24 12:10:29 (pid:2578686) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 12:10:29 (pid:2578686) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 12:10:29 (pid:2578686) All jobs have exited... starter exiting
+09/27/24 12:10:29 (pid:2578686) **** condor_starter (condor_STARTER) pid 2578686 EXITING WITH STATUS 0
+09/27/24 12:10:41 (pid:2578882) ******************************************************
+09/27/24 12:10:41 (pid:2578882) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 12:10:41 (pid:2578882) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 12:10:41 (pid:2578882) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 12:10:41 (pid:2578882) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 12:10:41 (pid:2578882) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 12:10:41 (pid:2578882) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 12:10:41 (pid:2578882) ** PID = 2578882
+09/27/24 12:10:41 (pid:2578882) ** Log last touched 9/27 12:10:29
+09/27/24 12:10:41 (pid:2578882) ******************************************************
+09/27/24 12:10:41 (pid:2578882) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 12:10:41 (pid:2578882) Using local config sources: 
+09/27/24 12:10:41 (pid:2578882)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 12:10:41 (pid:2578882) config Macros = 60, Sorted = 59, StringBytes = 1805, TablesBytes = 2208
+09/27/24 12:10:41 (pid:2578882) CLASSAD_CACHING is OFF
+09/27/24 12:10:41 (pid:2578882) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 12:10:41 (pid:2578882) SharedPortEndpoint: waiting for connections to named socket slot1_2561652_5262_2
+09/27/24 12:10:41 (pid:2578882) DaemonCore: command socket at <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=slot1_2561652_5262_2>
+09/27/24 12:10:41 (pid:2578882) DaemonCore: private command socket at <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=slot1_2561652_5262_2>
+09/27/24 12:10:41 (pid:2578882) Communicating with shadow <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=shadow_2561653_06c2_6>
+09/27/24 12:10:41 (pid:2578882) Submitting machine is "192.168.64.192"
+09/27/24 12:10:41 (pid:2578882) setting the orig job name in starter
+09/27/24 12:10:41 (pid:2578882) setting the orig job iwd in starter
+09/27/24 12:10:41 (pid:2578882) Job has WantIOProxy=true
+09/27/24 12:10:41 (pid:2578882) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 12:10:41 (pid:2578882) Initialized IO Proxy.
+09/27/24 12:10:41 (pid:2578882) Done setting resource limits
+09/27/24 12:10:41 (pid:2578882) Job 47.0 set to execute immediately
+09/27/24 12:10:41 (pid:2578882) Starting a VANILLA universe job with ID: 47.0
+09/27/24 12:10:41 (pid:2578882) IWD: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir
+09/27/24 12:10:41 (pid:2578882) Output file: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir//untar_montage_0_condorpool.out
+09/27/24 12:10:41 (pid:2578882) Error file: /p/lustre3/haridev/montage-dss-2deg/job/work/run_dir//untar_montage_0_condorpool.err
+09/27/24 12:10:41 (pid:2578882) Renice expr "0" evaluated to 0
+09/27/24 12:10:41 (pid:2578882) Running job as user same uid as parent: personal condor
+09/27/24 12:10:41 (pid:2578882) About to exec /bin/tar -C /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir -zxvf /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir/pegasus-worker-5.1.0dev-x86_64_rhel_7.tar.gz
+09/27/24 12:10:41 (pid:2578882) Create_Process succeeded, pid=2578883
+09/27/24 12:10:43 (pid:2578882) Process exited, pid=2578883, status=0
+09/27/24 12:10:43 (pid:2578882) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 12:10:43 (pid:2578882) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 12:10:43 (pid:2578882) All jobs have exited... starter exiting
+09/27/24 12:10:43 (pid:2578882) **** condor_starter (condor_STARTER) pid 2578882 EXITING WITH STATUS 0
+09/27/24 12:17:36 (pid:2581539) ******************************************************
+09/27/24 12:17:36 (pid:2581539) ** condor_starter (CONDOR_STARTER) STARTING UP
+09/27/24 12:17:36 (pid:2581539) ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_starter
+09/27/24 12:17:36 (pid:2581539) ** SubsystemInfo: name=STARTER type=STARTER(7) class=DAEMON(1)
+09/27/24 12:17:36 (pid:2581539) ** Configuration: subsystem:STARTER local:<NONE> class:DAEMON
+09/27/24 12:17:36 (pid:2581539) ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 12:17:36 (pid:2581539) ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 12:17:36 (pid:2581539) ** PID = 2581539
+09/27/24 12:17:36 (pid:2581539) ** Log last touched 9/27 12:10:43
+09/27/24 12:17:36 (pid:2581539) ******************************************************
+09/27/24 12:17:36 (pid:2581539) Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 12:17:36 (pid:2581539) Using local config sources: 
+09/27/24 12:17:36 (pid:2581539)    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 12:17:36 (pid:2581539) config Macros = 60, Sorted = 59, StringBytes = 1805, TablesBytes = 2208
+09/27/24 12:17:36 (pid:2581539) CLASSAD_CACHING is OFF
+09/27/24 12:17:36 (pid:2581539) Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 12:17:36 (pid:2581539) SharedPortEndpoint: waiting for connections to named socket slot1_2561652_5262_3
+09/27/24 12:17:36 (pid:2581539) DaemonCore: command socket at <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=slot1_2561652_5262_3>
+09/27/24 12:17:36 (pid:2581539) DaemonCore: private command socket at <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=slot1_2561652_5262_3>
+09/27/24 12:17:36 (pid:2581539) Communicating with shadow <192.168.64.192:44501?addrs=192.168.64.192-44501&alias=corona192.llnl.gov&noUDP&sock=shadow_2561653_06c2_9>
+09/27/24 12:17:36 (pid:2581539) Submitting machine is "192.168.64.192"
+09/27/24 12:17:36 (pid:2581539) setting the orig job name in starter
+09/27/24 12:17:36 (pid:2581539) setting the orig job iwd in starter
+09/27/24 12:17:36 (pid:2581539) Job has WantIOProxy=true
+09/27/24 12:17:36 (pid:2581539) Chirp config summary: IO true, Updates true, Delayed updates true.
+09/27/24 12:17:36 (pid:2581539) Initialized IO Proxy.
+09/27/24 12:17:36 (pid:2581539) Done setting resource limits
+09/27/24 12:17:36 (pid:2581539) Set filetransfer runtime ads to /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2581539/.job.ad and /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2581539/.machine.ad.
+09/27/24 12:17:37 (pid:2581539) File transfer completed successfully.
+09/27/24 12:17:37 (pid:2581539) Job 50.0 set to execute immediately
+09/27/24 12:17:37 (pid:2581539) Starting a VANILLA universe job with ID: 50.0
+09/27/24 12:17:37 (pid:2581539) IWD: /p/lustre3/haridev/montage-dss-2deg/scratch/run_dir
+09/27/24 12:17:37 (pid:2581539) Output file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2581539/_condor_stdout
+09/27/24 12:17:37 (pid:2581539) Error file: /usr/WS2/haridev/iopp/software/condor/local/execute/dir_2581539/_condor_stderr
+09/27/24 12:17:37 (pid:2581539) Renice expr "0" evaluated to 0
+09/27/24 12:17:37 (pid:2581539) Running job as user same uid as parent: personal condor
+09/27/24 12:17:37 (pid:2581539) About to exec /usr/workspace/haridev/iopp/apps/montage_pegasus/pmc_lassen.sh merge_whole-wf.in
+09/27/24 12:17:37 (pid:2581539) Create_Process succeeded, pid=2581542
+09/27/24 12:17:46 (pid:2581539) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 12:17:46 (pid:2581539) Failed to open '.update.ad' to read update ad: No such file or directory (2).
+09/27/24 12:47:12 (pid:2581539) Process exited, pid=2581542, status=0
+09/27/24 12:47:14 (pid:2581539) All jobs have exited... starter exiting
+09/27/24 12:47:14 (pid:2581539) **** condor_starter (condor_STARTER) pid 2581539 EXITING WITH STATUS 0

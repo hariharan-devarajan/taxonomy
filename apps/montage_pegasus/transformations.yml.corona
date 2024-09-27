@@ -1,0 +1,14 @@
+x-pegasus:
+  apiLang: python
+  createdBy: haridev
+  createdOn: 10-03-21T11:09:31Z
+pegasus: '5.1'
+transformations:
+    - namespace: pegasus
+      name: mpiexec
+      sites:
+      - {name: condorpool, pfn: IOPP_SCRIPT_DIR/pmc_lassen.sh, type: installed}
+      profiles:
+        pegasus: {nodes: 2, ppn: 40}
+        condor: {getenv: "*"}
+        env:  {PATH: "/usr/WS2/haridev/iopp/software/condor/bin:/usr/WS2/haridev/iopp/software/condor/sbin:/usr/workspace/haridev/iopp/software/condor/bin:/usr/workspace/haridev/iopp/software/Montage/bin:/usr/workspace/haridev/iopp/software/pegasus-5.1.0dev/bin:/usr/WS2/haridev/iopp/venvs/montage_pegasus/.spack-env/view/bin:/usr/tce/packages/python/python-3.9.12/bin:/usr/tce/packages/mvapich2/mvapich2-2.3.7-gcc-12.1.1/bin:/usr/tce/packages/gcc/gcc-12.1.1/bin:/usr/WS2/haridev/spack-09-26-24/bin:/usr/workspace/iopp/install_scripts/bin:/g/g92/haridev/install_scripts/bin:/g/g92/haridev/.vscode-server/cli/servers/Stable-38c31bc77e0dd6ae88a4e9cc93428cc27a56ba40/server/bin/remote-cli:/g/g92/haridev/.cargo/bin:/usr/tce/packages/texlive/texlive-20220321/bin/x86_64-linux:/usr/tce/packages/texlive/texlive-20220321/bin:/usr/global/tools/flux_wrappers/bin:/usr/tce/bin:/usr/lib64/ccache:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:."}

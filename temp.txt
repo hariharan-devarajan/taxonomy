@@ -1,0 +1,33 @@
+x-pegasus:
+  apiLang: python
+  createdBy: haridev
+  createdOn: 10-03-21T11:09:31Z
+pegasus: '5.0'
+sites:
+- name: local
+  directories:
+  - type: localStorage
+    path: IOPP_JOB_SPACE/output
+    fileServers:
+    - url: file://IOPP_JOB_SPACE/output
+      operation: all
+  profiles:
+    pegasus:
+      stagein.clusters: 10
+- name: condorpool
+  directories:
+  - type: sharedScratch
+    path: IOPP_JOB_SPACE/scratch
+    fileServers:
+    - url: file://IOPP_JOB_SPACE/scratch
+      operation: all 
+  profiles:
+    pegasus:
+      style: condor
+      stagein.clusters: 10
+      data.configuration: sharedfs
+      auxillary.local: "true"
+    condor:
+      universe: vanilla
+    env:
+      PEGASUS_HOME: PEGASUS_HOME_INSTALL

@@ -1,0 +1,257 @@
+09/26/24 19:31:06 (pid:2725034) Could not parse docker version string podman version 4.9.4-rhel
+09/26/24 19:31:11 (pid:2725034) Docker test container ran incorrectly, returned 125 unexpectedly
+09/26/24 19:31:12 (pid:2725034) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/26/24 19:31:13 (pid:2725034) [singularity version] SingularityPRO version 3.11-3.el8
+09/26/24 19:31:14 (pid:2725034) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/26/24 19:31:14 (pid:2725034) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/26/24 19:31:15 (pid:2725034) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/26/24 20:31:45 (pid:1623351) Could not parse docker version string podman version 4.9.4-rhel
+09/26/24 20:31:53 (pid:1623351) Docker test container ran incorrectly, returned 125 unexpectedly
+09/26/24 20:31:55 (pid:1623351) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/26/24 20:31:57 (pid:1623351) [singularity version] SingularityPRO version 3.11-3.el8
+09/26/24 20:31:58 (pid:1623351) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/26/24 20:31:58 (pid:1623351) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/26/24 20:32:00 (pid:1623351) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/26/24 21:20:44 (pid:1720686) Could not parse docker version string podman version 4.9.4-rhel
+09/26/24 21:20:49 (pid:1720686) Docker test container ran incorrectly, returned 125 unexpectedly
+09/26/24 21:20:50 (pid:1720686) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/26/24 21:20:51 (pid:1720686) [singularity version] SingularityPRO version 3.11-3.el8
+09/26/24 21:20:52 (pid:1720686) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/26/24 21:20:52 (pid:1720686) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/26/24 21:20:53 (pid:1720686) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/26/24 21:22:22 (pid:1723388) Could not parse docker version string podman version 4.9.4-rhel
+09/26/24 21:22:28 (pid:1723388) Docker test container ran incorrectly, returned 125 unexpectedly
+09/26/24 21:22:29 (pid:1723388) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/26/24 21:22:29 (pid:1723388) [singularity version] SingularityPRO version 3.11-3.el8
+09/26/24 21:22:31 (pid:1723388) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/26/24 21:22:31 (pid:1723388) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/26/24 21:22:32 (pid:1723388) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/26/24 21:29:35 (pid:1726666) Could not parse docker version string podman version 4.9.4-rhel
+09/26/24 21:29:40 (pid:1726666) Docker test container ran incorrectly, returned 125 unexpectedly
+09/26/24 21:29:41 (pid:1726666) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/26/24 21:29:42 (pid:1726666) [singularity version] SingularityPRO version 3.11-3.el8
+09/26/24 21:29:43 (pid:1726666) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/26/24 21:29:43 (pid:1726666) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/26/24 21:29:44 (pid:1726666) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/26/24 21:55:19 (pid:2583836) Could not parse docker version string podman version 4.9.4-rhel
+09/26/24 21:55:26 (pid:2583836) Docker test container ran incorrectly, returned 125 unexpectedly
+09/26/24 21:55:27 (pid:2583836) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/26/24 21:55:27 (pid:2583836) [singularity version] SingularityPRO version 3.11-3.el8
+09/26/24 21:55:29 (pid:2583836) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/26/24 21:55:29 (pid:2583836) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/26/24 21:55:30 (pid:2583836) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/26/24 21:58:55 (pid:2588042) Could not parse docker version string podman version 4.9.4-rhel
+09/26/24 21:59:00 (pid:2588042) Docker test container ran incorrectly, returned 125 unexpectedly
+09/26/24 21:59:01 (pid:2588042) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/26/24 21:59:01 (pid:2588042) [singularity version] SingularityPRO version 3.11-3.el8
+09/26/24 21:59:03 (pid:2588042) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/26/24 21:59:03 (pid:2588042) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/26/24 21:59:04 (pid:2588042) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/26/24 22:59:21 (pid:1759208) Could not parse docker version string podman version 4.9.4-rhel
+09/26/24 22:59:27 (pid:1759208) Docker test container ran incorrectly, returned 125 unexpectedly
+09/26/24 22:59:28 (pid:1759208) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/26/24 22:59:29 (pid:1759208) [singularity version] SingularityPRO version 3.11-3.el8
+09/26/24 22:59:30 (pid:1759208) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/26/24 22:59:30 (pid:1759208) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/26/24 22:59:31 (pid:1759208) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 00:58:58 (pid:1787124) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:58 (pid:3258025) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:58 (pid:2982068) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:58 (pid:2683964) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:58 (pid:1416437) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:1951657) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:3296087) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2080981) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2169858) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:3896932) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2352175) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:1294750) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:3306298) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2665150) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2813232) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:1942227) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:1901694) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:1795204) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2790300) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:3765898) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2925509) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2463464) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2129786) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:2708804) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:3351392) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:3783541) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:58:59 (pid:1692420) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:59:49 (pid:766356) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 00:59:52 (pid:3258025) Failed to read results from '/usr/bin/docker load -i /usr/WS2/haridev/iopp/software/condor/libexec/htcondor_docker_test': 'Timed out waiting for program to exit' (110)
+09/27/24 00:59:52 (pid:3258025) Declaring a hung docker
+09/27/24 00:59:52 (pid:3258025) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 00:59:54 (pid:3258025) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 00:59:55 (pid:3258025) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 00:59:55 (pid:3258025) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 00:59:56 (pid:3258025) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 01:00:22 (pid:1787124) Failed to read results from '/usr/bin/docker load -i /usr/WS2/haridev/iopp/software/condor/libexec/htcondor_docker_test': 'Timed out waiting for program to exit' (110)
+09/27/24 01:00:22 (pid:1787124) Declaring a hung docker
+09/27/24 01:00:22 (pid:1787124) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:00:23 (pid:1787124) [singularity version] SingularityPRO version 3.11-3.el8
+r/WS2/haridev/iopp/software/condor/libexec/htcondor_docker_test': 'Timed out waiting for program to exit' (110)
+09/27/24 01:00:22 (pid:2982068) Declaring a hung docker
+09/27/24 01:00:22 (pid:2982068) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:00:25 (pid:1787124) Successfully ran: '/usr/bin/singularity exec -C /usr/WS209/27/24 01:00:25 (pid:2982068) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_09/27/24 01:00:26 (pid:1787124) Successfully ran: '/usr/bin/singularity exec -C /usr/WS209/27/24 01:00:26 (pid:2982068) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 01:00:53 (pid:1416437) Failed to read results from '/usr/bin/docker load -i /usr/WS2/haridev/iopp/software/condor/libexec/htcondor_docker_test': 'Timed out waiting for program to exit' (110)
+09/27/24 01:00:53 (pid:1416437) Declaring a hung docker
+09/27/24 01:00:53 (pid:1416437) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:00:54 (pid:1416437) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 01:00:55 (pid:1416437) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 01:00:55 (pid:1416437) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 01:00:57 (pid:1416437) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 01:01:00 (pid:2683964) '/usr/bin/docker info' did not exit successfully (code 0); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:00 (pid:2683964)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:00 (pid:2683964) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:01 (pid:2683964) [singularity version] Singularityit successfully (code 0); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:00 (pid:2080981)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:00 (pid:2080981) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:01 (pid:2080981) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:1951657)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:1951657) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:02 (pid:1951657) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:3296087)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:3296087) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:02 (pid:3296087) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2169858)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2169858) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2169858) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:3765898)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:3765898) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:3765898) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:3896932)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:3896932) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:3896932) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2352175)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2352175) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2352175) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:1294750)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:1294750) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:1294750) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:1901694)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:1901694) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:1901694) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:3306298)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:3306298) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:1635966) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2665150)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2665150) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2665150) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2561460)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2561460) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2813232) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:1942227)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:1942227) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:1942227) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2167667)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2167667) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2167667) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:1795204)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:1795204) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:1795204) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2790300)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2790300) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2790300) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2925509)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2925509) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2925509) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2463464)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2463464) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2463464) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2129786)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2129786) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2129786) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:2708804)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:2708804) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:2708804) [singularity version] SingularityPRO version 3.11-3.el8
+); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:01 (pid:3351392)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:01 (pid:3351392) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:03 (pid:3351392) [singularity version] SingularityPRO version 3.11-3.el8
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              09/27/24 01:01:05 (pid:3351392) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 01:01:06 (pid:2463464) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 01:01:52 (pid:766356) '/usr/bin/docker info' did not exit successfully (code 0); the first line of output was 'Emulate Docker CLI using podman. Create /etc/containers/nodocker to quiet msg.'.
+09/27/24 01:01:52 (pid:766356)   Try adding condor to the docker group in /etc/group
+09/27/24 01:01:52 (pid:766356) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 01:01:55 (pid:766356) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 01:01:58 (pid:766356) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 01:02:02 (pid:766356) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 09:29:45 (pid:1860727) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 09:29:51 (pid:1860727) Docker test container ran incorrectly, returned 125 unexpectedly
+09/27/24 09:29:53 (pid:1860727) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 09:29:53 (pid:1860727) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 09:29:54 (pid:1860727) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 09:29:54 (pid:1860727) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 09:29:56 (pid:1860727) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 09:36:10 (pid:1945217) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 09:36:16 (pid:1945217) Docker test container ran incorrectly, returned 125 unexpectedly
+09/27/24 09:36:17 (pid:1945217) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 09:36:17 (pid:1945217) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 09:36:18 (pid:1945217) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 09:36:18 (pid:1945217) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 09:36:20 (pid:1945217) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 09:41:04 (pid:1948088) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 09:41:15 (pid:1948088) Docker test container ran incorrectly, returned 125 unexpectedly
+09/27/24 09:41:17 (pid:1948088) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 09:41:17 (pid:1948088) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 09:41:19 (pid:1948088) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 09:41:19 (pid:1948088) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 09:41:20 (pid:1948088) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 09:46:07 (pid:1950641) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 09:46:13 (pid:1950641) Docker test container ran incorrectly, returned 125 unexpectedly
+09/27/24 09:46:14 (pid:1950641) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 09:46:14 (pid:1950641) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 09:46:16 (pid:1950641) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 09:46:16 (pid:1950641) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 09:46:17 (pid:1950641) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 10:47:22 (pid:1367489) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 10:47:28 (pid:1367489) Docker test container ran incorrectly, returned 125 unexpectedly
+09/27/24 10:47:29 (pid:1367489) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 10:47:31 (pid:1367489) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 10:47:32 (pid:1367489) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 10:47:32 (pid:1367489) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 10:47:33 (pid:1367489) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 10:54:06 (pid:2158986) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 10:54:11 (pid:2158986) Docker test container ran incorrectly, returned 125 unexpectedly
+09/27/24 10:54:12 (pid:2158986) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 10:54:12 (pid:2158986) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 10:54:14 (pid:2158986) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 10:54:14 (pid:2158986) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 10:54:15 (pid:2158986) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 11:23:17 (pid:3746300) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 11:23:27 (pid:3746300) Docker test container ran incorrectly, returned 125 unexpectedly
+09/27/24 11:23:29 (pid:3746300) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 11:23:29 (pid:3746300) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 11:23:31 (pid:3746300) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 11:23:31 (pid:3746300) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 11:23:32 (pid:3746300) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.
+09/27/24 12:08:24 (pid:2561658) Could not parse docker version string podman version 4.9.4-rhel
+09/27/24 12:08:29 (pid:2561658) Docker test container ran incorrectly, returned 125 unexpectedly
+09/27/24 12:08:30 (pid:2561658) Attempting to run: '/usr/bin/singularity /usr/bin/singularity --version'.
+09/27/24 12:08:31 (pid:2561658) [singularity version] SingularityPRO version 3.11-3.el8
+09/27/24 12:08:32 (pid:2561658) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/singularity_test_sandbox /exit_37'.
+09/27/24 12:08:32 (pid:2561658) warning: attempted switch out of PRIV_CONDOR_FINAL
+09/27/24 12:08:33 (pid:2561658) Successfully ran: '/usr/bin/singularity exec -C /usr/WS2/haridev/iopp/software/condor/libexec/exit_37.sif /exit_37'.

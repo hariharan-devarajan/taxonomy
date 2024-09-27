@@ -1,0 +1,1065 @@
+09/26/24 19:31:03 ******************************************************
+09/26/24 19:31:03 ** condor_master (CONDOR_MASTER) STARTING UP
+09/26/24 19:31:03 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/26/24 19:31:03 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/26/24 19:31:03 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/26/24 19:31:03 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 19:31:03 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 19:31:03 ** PID = 2725024
+09/26/24 19:31:03 ** Log last touched time unavailable (No such file or directory)
+09/26/24 19:31:03 ******************************************************
+09/26/24 19:31:03 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 19:31:03 Using local config sources: 
+09/26/24 19:31:03    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 19:31:03 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/26/24 19:31:03 CLASSAD_CACHING is OFF
+09/26/24 19:31:03 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 19:31:03 SharedPortEndpoint: waiting for connections to named socket master_2725024_034b
+09/26/24 19:31:03 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/26/24 19:31:03 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/26/24 19:31:03 DaemonCore: private command socket at <192.168.64.240:0?alias=corona240.llnl.gov&sock=master_2725024_034b>
+09/26/24 19:31:03 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/26/24 19:31:03 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/26/24 19:31:03 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/26/24 19:31:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 2725026
+09/26/24 19:31:03 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/26/24 19:31:03 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/26/24 19:31:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 2725027
+09/26/24 19:31:03 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/26/24 19:31:03 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/26/24 19:31:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 2725028
+09/26/24 19:31:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 2725029
+09/26/24 19:31:04 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 2725030
+09/26/24 19:31:04 Daemons::StartAllDaemons all daemons were started
+09/26/24 19:31:18 Setting ready state 'Ready' for STARTD
+09/26/24 20:31:42 ******************************************************
+09/26/24 20:31:42 ** condor_master (CONDOR_MASTER) STARTING UP
+09/26/24 20:31:42 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/26/24 20:31:42 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/26/24 20:31:42 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/26/24 20:31:42 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 20:31:42 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 20:31:42 ** PID = 1623342
+09/26/24 20:31:42 ** Log last touched 9/26 20:29:05
+09/26/24 20:31:42 ******************************************************
+09/26/24 20:31:42 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 20:31:42 Using local config sources: 
+09/26/24 20:31:42    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 20:31:42 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/26/24 20:31:42 CLASSAD_CACHING is OFF
+09/26/24 20:31:42 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 20:31:42 SharedPortEndpoint: waiting for connections to named socket master_1623342_7b13
+09/26/24 20:31:42 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/26/24 20:31:42 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/26/24 20:31:42 DaemonCore: private command socket at <192.168.64.198:0?alias=corona198.llnl.gov&sock=master_1623342_7b13>
+09/26/24 20:31:43 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/26/24 20:31:43 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/26/24 20:31:43 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/26/24 20:31:43 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1623344
+09/26/24 20:31:43 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/26/24 20:31:43 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/26/24 20:31:43 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1623345
+09/26/24 20:31:43 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/26/24 20:31:43 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/26/24 20:31:43 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1623346
+09/26/24 20:31:43 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1623347
+09/26/24 20:31:43 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1623348
+09/26/24 20:31:43 Daemons::StartAllDaemons all daemons were started
+09/26/24 20:31:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 20:31:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 20:31:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 20:32:06 Setting ready state 'Ready' for STARTD
+09/26/24 20:36:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 20:36:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 20:36:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 20:41:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 20:41:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 20:41:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 20:46:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 20:46:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 20:46:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 20:51:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 20:51:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 20:51:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 20:56:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 20:56:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 20:56:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 21:01:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 21:01:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:01:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 21:06:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 21:06:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:06:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 21:11:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 21:11:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:11:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 21:16:48 attempt to connect to <192.168.64.240:44357> failed: Connection refused (connect errno = 111).
+09/26/24 21:16:48 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:16:48 Failed to start non-blocking update to <192.168.64.240:44357>.
+09/26/24 21:20:41 ******************************************************
+09/26/24 21:20:41 ** condor_master (CONDOR_MASTER) STARTING UP
+09/26/24 21:20:41 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/26/24 21:20:41 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/26/24 21:20:41 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/26/24 21:20:41 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:20:41 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:20:41 ** PID = 1720673
+09/26/24 21:20:41 ** Log last touched 9/26 21:17:43
+09/26/24 21:20:41 ******************************************************
+09/26/24 21:20:41 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:20:41 Using local config sources: 
+09/26/24 21:20:41    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:20:41 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/26/24 21:20:41 CLASSAD_CACHING is OFF
+09/26/24 21:20:41 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:20:41 SharedPortEndpoint: waiting for connections to named socket master_1720673_737c
+09/26/24 21:20:41 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/26/24 21:20:41 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/26/24 21:20:41 DaemonCore: private command socket at <192.168.64.198:0?alias=corona198.llnl.gov&sock=master_1720673_737c>
+09/26/24 21:20:41 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/26/24 21:20:41 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/26/24 21:20:41 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/26/24 21:20:41 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1720676
+09/26/24 21:20:41 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/26/24 21:20:41 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/26/24 21:20:41 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1720677
+09/26/24 21:20:41 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/26/24 21:20:41 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/26/24 21:20:41 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1720678
+09/26/24 21:20:41 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1720679
+09/26/24 21:20:41 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1720680
+09/26/24 21:20:41 Daemons::StartAllDaemons all daemons were started
+09/26/24 21:20:46 attempt to connect to <192.168.64.198:41823> failed: Connection refused (connect errno = 111).
+09/26/24 21:20:46 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:20:46 Failed to start non-blocking update to <192.168.64.198:41823>.
+09/26/24 21:20:55 Setting ready state 'Ready' for STARTD
+09/26/24 21:22:19 ******************************************************
+09/26/24 21:22:19 ** condor_master (CONDOR_MASTER) STARTING UP
+09/26/24 21:22:19 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/26/24 21:22:19 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/26/24 21:22:19 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/26/24 21:22:19 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:22:19 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:22:19 ** PID = 1723377
+09/26/24 21:22:19 ** Log last touched 9/26 21:20:59
+09/26/24 21:22:19 ******************************************************
+09/26/24 21:22:19 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:22:19 Using local config sources: 
+09/26/24 21:22:19    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:22:19 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/26/24 21:22:19 CLASSAD_CACHING is OFF
+09/26/24 21:22:19 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:22:19 SharedPortEndpoint: waiting for connections to named socket master_1723377_2b92
+09/26/24 21:22:19 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/26/24 21:22:19 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/26/24 21:22:19 DaemonCore: private command socket at <192.168.64.198:0?alias=corona198.llnl.gov&sock=master_1723377_2b92>
+09/26/24 21:22:19 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/26/24 21:22:19 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/26/24 21:22:19 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/26/24 21:22:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1723379
+09/26/24 21:22:19 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/26/24 21:22:19 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/26/24 21:22:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1723380
+09/26/24 21:22:19 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/26/24 21:22:19 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/26/24 21:22:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1723381
+09/26/24 21:22:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1723382
+09/26/24 21:22:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1723383
+09/26/24 21:22:19 Daemons::StartAllDaemons all daemons were started
+09/26/24 21:22:24 attempt to connect to <192.168.64.198:46405> failed: Connection refused (connect errno = 111).
+09/26/24 21:22:24 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:22:24 Failed to start non-blocking update to <192.168.64.198:46405>.
+09/26/24 21:22:33 Setting ready state 'Ready' for STARTD
+09/26/24 21:27:24 attempt to connect to <192.168.64.198:46405> failed: Connection refused (connect errno = 111).
+09/26/24 21:27:24 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:27:24 Failed to start non-blocking update to <192.168.64.198:46405>.
+09/26/24 21:29:32 ******************************************************
+09/26/24 21:29:32 ** condor_master (CONDOR_MASTER) STARTING UP
+09/26/24 21:29:32 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/26/24 21:29:32 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/26/24 21:29:32 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/26/24 21:29:32 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:29:32 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:29:32 ** PID = 1726655
+09/26/24 21:29:32 ** Log last touched 9/26 21:28:20
+09/26/24 21:29:32 ******************************************************
+09/26/24 21:29:32 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:29:32 Using local config sources: 
+09/26/24 21:29:32    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:29:32 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/26/24 21:29:32 CLASSAD_CACHING is OFF
+09/26/24 21:29:32 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:29:32 SharedPortEndpoint: waiting for connections to named socket master_1726655_9b05
+09/26/24 21:29:32 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/26/24 21:29:32 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/26/24 21:29:32 DaemonCore: private command socket at <192.168.64.198:0?alias=corona198.llnl.gov&sock=master_1726655_9b05>
+09/26/24 21:29:32 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/26/24 21:29:32 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/26/24 21:29:32 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/26/24 21:29:32 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1726657
+09/26/24 21:29:32 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/26/24 21:29:32 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/26/24 21:29:32 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1726658
+09/26/24 21:29:32 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/26/24 21:29:33 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/26/24 21:29:33 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1726659
+09/26/24 21:29:33 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1726660
+09/26/24 21:29:33 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1726661
+09/26/24 21:29:33 Daemons::StartAllDaemons all daemons were started
+09/26/24 21:29:37 attempt to connect to <192.168.64.198:44617> failed: Connection refused (connect errno = 111).
+09/26/24 21:29:37 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:29:37 Failed to start non-blocking update to <192.168.64.198:44617>.
+09/26/24 21:29:47 Setting ready state 'Ready' for STARTD
+09/26/24 21:34:37 attempt to connect to <192.168.64.198:44617> failed: Connection refused (connect errno = 111).
+09/26/24 21:34:37 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:34:37 Failed to start non-blocking update to <192.168.64.198:44617>.
+09/26/24 21:39:37 attempt to connect to <192.168.64.198:44617> failed: Connection refused (connect errno = 111).
+09/26/24 21:39:37 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 21:39:37 Failed to start non-blocking update to <192.168.64.198:44617>.
+09/26/24 21:55:16 ******************************************************
+09/26/24 21:55:16 ** condor_master (CONDOR_MASTER) STARTING UP
+09/26/24 21:55:16 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/26/24 21:55:16 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/26/24 21:55:16 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/26/24 21:55:16 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:55:16 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:55:16 ** PID = 2583824
+09/26/24 21:55:16 ** Log last touched 9/26 21:41:32
+09/26/24 21:55:16 ******************************************************
+09/26/24 21:55:16 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:55:16 Using local config sources: 
+09/26/24 21:55:16    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:55:16 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/26/24 21:55:16 CLASSAD_CACHING is OFF
+09/26/24 21:55:16 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:55:16 SharedPortEndpoint: waiting for connections to named socket master_2583824_8eb0
+09/26/24 21:55:16 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/26/24 21:55:16 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/26/24 21:55:16 DaemonCore: private command socket at <192.168.64.202:0?alias=corona202.llnl.gov&sock=master_2583824_8eb0>
+09/26/24 21:55:16 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/26/24 21:55:16 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/26/24 21:55:16 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/26/24 21:55:16 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 2583826
+09/26/24 21:55:16 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/26/24 21:55:17 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/26/24 21:55:17 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 2583827
+09/26/24 21:55:17 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/26/24 21:55:17 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/26/24 21:55:17 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 2583828
+09/26/24 21:55:17 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 2583829
+09/26/24 21:55:17 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 2583830
+09/26/24 21:55:17 Daemons::StartAllDaemons all daemons were started
+09/26/24 21:55:22 attempt to connect to <192.168.64.198:39145> failed: Connection refused (connect errno = 111).
+09/26/24 21:55:22 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 21:55:22 Failed to start non-blocking update to <192.168.64.198:39145>.
+09/26/24 21:55:34 Setting ready state 'Ready' for STARTD
+09/26/24 21:58:52 ******************************************************
+09/26/24 21:58:52 ** condor_master (CONDOR_MASTER) STARTING UP
+09/26/24 21:58:52 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/26/24 21:58:52 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/26/24 21:58:52 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/26/24 21:58:52 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 21:58:52 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 21:58:52 ** PID = 2588031
+09/26/24 21:58:52 ** Log last touched 9/26 21:57:17
+09/26/24 21:58:52 ******************************************************
+09/26/24 21:58:52 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 21:58:52 Using local config sources: 
+09/26/24 21:58:52    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 21:58:52 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/26/24 21:58:52 CLASSAD_CACHING is OFF
+09/26/24 21:58:52 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 21:58:52 SharedPortEndpoint: waiting for connections to named socket master_2588031_e537
+09/26/24 21:58:52 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/26/24 21:58:52 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/26/24 21:58:52 DaemonCore: private command socket at <192.168.64.202:0?alias=corona202.llnl.gov&sock=master_2588031_e537>
+09/26/24 21:58:52 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/26/24 21:58:52 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/26/24 21:58:52 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/26/24 21:58:52 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 2588033
+09/26/24 21:58:52 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/26/24 21:58:52 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/26/24 21:58:52 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 2588034
+09/26/24 21:58:52 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/26/24 21:58:52 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/26/24 21:58:52 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 2588035
+09/26/24 21:58:52 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 2588036
+09/26/24 21:58:52 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 2588037
+09/26/24 21:58:52 Daemons::StartAllDaemons all daemons were started
+09/26/24 21:58:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 21:58:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 21:58:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 21:59:06 Setting ready state 'Ready' for STARTD
+09/26/24 22:03:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:03:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:03:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:08:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:08:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:08:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:13:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:13:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:13:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:18:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:18:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:18:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:23:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:23:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:23:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:28:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:28:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:28:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:33:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:33:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:33:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:38:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:38:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:38:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:43:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:43:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:43:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:48:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:48:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:48:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:53:57 attempt to connect to <192.168.64.202:37619> failed: Connection refused (connect errno = 111).
+09/26/24 22:53:57 ERROR: SECMAN:2003:TCP connection to collector corona202.llnl.gov failed.
+09/26/24 22:53:57 Failed to start non-blocking update to <192.168.64.202:37619>.
+09/26/24 22:59:18 ******************************************************
+09/26/24 22:59:18 ** condor_master (CONDOR_MASTER) STARTING UP
+09/26/24 22:59:18 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/26/24 22:59:18 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/26/24 22:59:18 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/26/24 22:59:18 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/26/24 22:59:18 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/26/24 22:59:18 ** PID = 1759196
+09/26/24 22:59:18 ** Log last touched 9/26 22:57:55
+09/26/24 22:59:18 ******************************************************
+09/26/24 22:59:18 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/26/24 22:59:18 Using local config sources: 
+09/26/24 22:59:18    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/26/24 22:59:18 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/26/24 22:59:18 CLASSAD_CACHING is OFF
+09/26/24 22:59:18 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/26/24 22:59:18 SharedPortEndpoint: waiting for connections to named socket master_1759196_0660
+09/26/24 22:59:18 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/26/24 22:59:18 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/26/24 22:59:18 DaemonCore: private command socket at <192.168.64.198:0?alias=corona198.llnl.gov&sock=master_1759196_0660>
+09/26/24 22:59:18 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/26/24 22:59:18 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/26/24 22:59:18 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/26/24 22:59:18 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1759198
+09/26/24 22:59:18 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/26/24 22:59:18 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/26/24 22:59:18 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1759199
+09/26/24 22:59:18 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/26/24 22:59:18 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/26/24 22:59:18 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1759200
+09/26/24 22:59:18 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1759201
+09/26/24 22:59:18 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1759202
+09/26/24 22:59:18 Daemons::StartAllDaemons all daemons were started
+09/26/24 22:59:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 22:59:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 22:59:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 22:59:33 Setting ready state 'Ready' for STARTD
+09/26/24 23:04:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:04:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:04:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:09:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:09:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:09:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:14:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:14:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:14:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:19:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:19:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:19:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:24:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:24:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:24:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:29:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:29:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:29:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:34:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:34:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:34:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:39:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:39:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:39:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:44:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:44:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:44:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/26/24 23:49:23 attempt to connect to <192.168.64.202:43025> failed: Connection refused (connect errno = 111).
+09/26/24 23:49:23 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/26/24 23:49:23 Failed to start non-blocking update to <192.168.64.202:43025>.
+09/27/24 00:58:55 ******************************************************
+09/27/24 00:58:55 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 00:58:55 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 00:58:55 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 00:58:55 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 00:58:55 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 00:58:55 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 00:58:55 ** PID = 2982057
+09/27/24 00:58:55 ** Log last touched 9/26 23:49:24
+09/27/24 00:58:55 ******************************************************
+09/27/24 00:58:54 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 00:58:54 Using local config sources: 
+09/27/24 00:58:54    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 00:58:54 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/27/24 00:58:54 CLASSAD_CACHING is OFF
+09/27/24 00:58:54 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 00:58:54 SharedPortEndpoint: waiting for connections to named socket master_3783530_c5a3
+09/27/24 00:58:54 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 00:58:54 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 00:58:54 DaemonCore: private command socket at <192.168.64.248:0?alias=corona248.llnl.gov&sock=master_3783530_c5a3>
+09/27/24 00:58:55 rename(/usr/WS2/haridev/iopp/software/condor/local/log/.master_address.new, /usr/WS2/haridev/iopp/software/condor/local/log/.master_address) failed with errno 2
+09/27/24 00:58:55 DaemonCore: ERROR: failed to rotate /usr/WS2/haridev/iopp/software/condor/local/log/.master_address.new to /usr/WS2/haridev/iopp/software/condor/local/log/.master_address
+09/27/24 00:58:55 rename(/usr/WS2/haridev/iopp/software/condor/local/log/.master_address.new, /usr/WS2/haridev/iopp/software/condor/local/log/.master_address) failed with errno 2
+09/27/24 00:58:55 DaemonCore: ERROR: failed to rotate /usr/WS2/haridev/iopp/software/condor/local/log/.master_address.new to /usr/WS2/haridev/iopp/software/condor/local/log/.master_address
+09/27/24 00:58:55 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 00:58:55 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 00:58:55 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 00:58:55 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 3783532
+09/27/24 00:58:55 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 00:58:55 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 00:58:55 rename(/usr/WS2/haridev/iopp/software/condor/local/log/.master_address.new, /usr/WS2/haridev/iopp/software/condor/local/log/.master_address) failed with errno 2
+09/27/24 00:58:55 DaemonCore: ERROR: failed to rotate /usr/WS2/haridev/iopp/software/condor/local/log/.master_address.new to /usr/WS2/haridev/iopp/software/condor/local/log/.master_address
+09/27/24 00:58:55 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 3783533
+09/27/24 00:58:55 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 00:58:55 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 00:58:55 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 3783534
+09/27/24 00:58:55 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 3783535
+09/27/24 00:58:55 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 3783536
+09/27/24 00:58:55 Daemons::StartAllDaemons all daemons were started
+09/27/24 00:58:55 The NEGOTIATOR (pid 3783534) exited with status 4
+09/27/24 00:58:55 Sending obituary for "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator"
+09/27/24 00:58:55 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator in 10 seconds
+09/27/24 00:58:55 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:58:55 ERROR: SECMAN:2003:TCP connection to collector corona248.llnl.gov failed.
+09/27/24 00:58:55 Failed to start non-blocking update to <192.168.64.198:34199>.
+09/27/24 00:58:55 The SCHEDD (pid 2982063) exited with status 4
+09/27/24 00:58:55 Sending obituary for "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd"
+09/27/24 00:58:55 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd in 10 seconds
+09/27/24 00:58:55 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:58:55 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 00:58:55 Failed to start non-blocking update to <192.168.64.198:34199>.
+09/27/24 00:59:06 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 2561587
+09/27/24 00:59:06 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:06 ERROR: SECMAN:2003:TCP co09/27/24 00:59:06 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1636092
+09/27/24 00:59:06 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:06 ERROR: SECMAN:2003:TCP connection to collector corona261.llnl.gov failed.
+09/27/24 00:59:06 Failed to start non-blocking update to <192.168.64.198:34199>.
+09/27/24 00:59:06 The SCHEDD (pid 2684101) exited with status 4
+09/27/24 00:59:06 Sending obituary for "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd"
+09/27/24 00:59:06 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd in 11 seconds
+09/27/24 00:59:06 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:06 ERROR: SECMAN:2003:TCP connection to collector corona201.llnl.gov failed.
+09/27/24 00:59:06 Failed to start non-blocking update to <192.168.64.198:34199>.
+09/27/24 00:59:17 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1795462
+09/27/24 00:59:17 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:17 ERROR: SECMAN:2003:TCP connection to collector corona265.llnl.gov failed.
+09/27/24 00:59:17 Failed to start non-blocking update to <192.168.64.198:34199>.
+09/27/24 00:59:17 The SCHEDD (pid 2684232) exited with status 4
+09/27/24 00:59:17 Sending obituary for "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd"
+09/27/24 00:59:17 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd in 13 seconds
+09/27/24 00:59:17 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:17 ERROR: SECMAN:2003:TCP connection to collector corona201.llnl.gov failed.
+09/27/24 00:59:17 Failed to start non-blocking update to <192.168.64.198:34199>.
+09/27/24 00:59:30 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 2684237
+09/27/24 00:59:30 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:30 ERROR: SECMAN:2003:TCP connection to collector corona201.llnl.gov failed.
+09/27/24 00:59:30 Failed to start non-blocking update to <192.168.64.198:34199>.
+09/27/24 00:59:31 The SCHEDD (pid 2684237) exited with status 4
+09/27/24 00:59:31 Sending obituary for "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd"
+09/27/24 00:59:31 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd in 17 seconds
+09/27/24 00:59:31 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:31 ERROR: SECMAN:2003:TCP connection to collector corona201.llnl.gov failed.
+09/27/24 00:59:31 Failed to start non-blocking update to <192.168.64.198:34199>.
+0:59:33 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 00:59:33 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 00:59:33 ** PID = 766344
+09/27/24 00:59:33 ** Log last touched 9/27 00:59:31
+09/27/24 00:59:33 ******************************************************
+09/27/24 00:59:33 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 00:59:33 Using local config sources: 
+09/27/24 00:59:33    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 00:59:33 config Macros = 55, Sorted = 55, StringBytes = 1563, TablesBytes = 2028
+09/27/24 00:59:33 CLASSAD_CACHING is OFF
+09/27/24 00:59:33 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 00:59:33 SharedPortEndpoint: waiting for connections to named socket master_766344_2282
+09/27/24 00:59:33 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 00:59:33 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 00:59:33 DaemonCore: private command socket at <192.168.65.26:0?alias=corona282.llnl.gov&sock=master_766344_2282>
+09/27/24 00:59:33 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 00:59:33 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 00:59:33 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 00:59:35 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 766346
+09/27/24 00:59:35 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 00:59:35 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 00:59:35 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 00:59:35 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 00:59:35 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 00:59:35 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 00:59:36 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 766347
+09/27/24 00:59:36 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 00:59:36 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 00:59:36 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 00:59:36 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 00:59:36 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 00:59:36 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 00:59:37 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 766348
+09/27/24 00:59:38 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 766349
+09/27/24 00:59:39 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 766350
+09/27/24 00:59:39 Daemons::StartAllDaemons all daemons were started
+09/27/24 00:59:41 TOKEN: No token found.
+09/27/24 00:59:41 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 00:59:41 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 00:59:41 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 00:59:41 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 00:59:41 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 00:59:41 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:41 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+09/27/24 00:59:41 The SCHEDD (pid 766350) exited with status 4
+09/27/24 00:59:41 Sending obituary for "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd"
+09/27/24 00:59:43 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd in 10 seconds
+09/27/24 00:59:43 TOKEN: No token found.
+09/27/24 00:59:43 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 00:59:43 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 00:59:43 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 00:59:43 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 00:59:43 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 00:59:43 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:43 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  09/27/24 00:59:53 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 766480
+09/27/24 00:59:53 TOKEN: No token found.
+09/27/24 00:59:53 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 00:59:54 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 00:59:54 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 00:59:54 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 00:59:54 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 00:59:54 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:54 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+09/27/24 00:59:54 The SCHEDD (pid 766480) exited with status 4
+09/27/24 00:59:54 Sending obituary for "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd"
+09/27/24 00:59:55 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd in 11 seconds
+09/27/24 00:59:55 TOKEN: No token found.
+09/27/24 00:59:55 AUTH_ERROR:09/27/24 01:00:13 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 2684264
+09/27/24 01:00:13 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 01:00:13 ERROR: SECMAN:2003:TCP connection to collector corona201.llnl.gov failed.
+09/27/24 01:00:13 Failed to start non-blocking update to <192.168.64.198:34199>.
+DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 3351865
+09/27/24 01:00:05 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect led to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 00:59:55 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 00:59:55 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+09/27/24 01:00:06 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 766483
+09/27/24 01:00:06 TOKEN: No token found.
+09/27/24 01:00:07 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:00:07 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:00:07 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:00:07 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:00:07 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:00:07 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:00:07 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                09/27/24 01:00:39 The NEGOTIATOR (pid 766348) exited with status 4
+09/27/24 01:00:39 Sending obituary for "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator"
+09/27/24 01:00:39 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator in 10 seconds
+09/27/24 01:00:39 TOKEN: No token found.
+09/27/24 01:00:40 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:00:40 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:00:40 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:00:40 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:00:40 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:00:40 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:00:40 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+09/27/24 01:00:50 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 766495
+09/27/24 01:00:50 TOKEN: No token found.
+09/27/24 01:00:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:00:50 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:00:50 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:00:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:00:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:00:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:00:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                  09/27/24 01:04:18 Setting ready state 'Ready' for STARTD
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   09/27/24 01:05:50 TOKEN: No token found.
+09/27/24 01:05:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:05:50 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:05:50 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:05:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:05:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:05:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:05:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:10:50 TOKEN: No token found.
+09/27/24 01:10:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:10:51 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:10:51 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:10:51 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:10:51 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:10:51 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:10:51 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:15:50 TOKEN: No token found.
+09/27/24 01:15:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:15:50 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:15:50 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:15:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:15:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:15:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:15:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:20:50 TOKEN: No token found.
+09/27/24 01:20:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:20:50 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:20:50 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:20:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:20:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:20:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:20:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:25:50 TOKEN: No token found.
+09/27/24 01:25:51 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:25:51 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:25:51 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:25:51 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:25:51 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:25:51 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:25:51 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:30:50 TOKEN: No token found.
+09/27/24 01:30:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:30:50 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:30:50 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:30:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:30:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:30:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:30:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:35:50 TOKEN: No token found.
+09/27/24 01:35:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:35:50 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:35:50 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:35:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:35:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:35:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:35:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:40:50 TOKEN: No token found.
+09/27/24 01:40:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:40:50 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:40:50 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:40:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:40:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:40:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:40:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:45:50 TOKEN: No token found.
+09/27/24 01:45:50 AUTH_ERROR: Client not found in Kerberos database
+09/27/24 01:45:50 SECMAN: required authentication with collector corona282.llnl.gov failed, so aborting command UPDATE_MASTER_AD.
+09/27/24 01:45:50 ERROR: AUTHENTICATE:1003:Failed to authenticate with any method|AUTHENTICATE:1004:Failed to authenticate using SCITOKENS|AUTHENTICATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:45:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:45:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:45:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:45:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:50:54 restarting /usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd in 10 seconds
+09/27/24 01:50:54 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 01:50:54 ERROR: SECMAN:2003:TCP connection to collector corona284.llnl.gov failed.
+09/27/24 01:50:54 Failed to start non-blocking update to <192.168.64.198:34199>.
+CATE:1004:Failed to authenticate using KERBEROS|AUTHENTICATE:1004:Failed to authenticate using IDTOKENS|AUTHENTICATE:1004:Failed to authenticate using FS
+09/27/24 01:50:50 Collector update failed; will try to get a token request for trust domain corona259.llnl.gov, identity (default).
+09/27/24 01:50:50 Failed to start non-blocking update to <192.168.65.3:36111>.
+09/27/24 01:50:50 attempt to connect to <192.168.129.26:9618> failed: Connection refused (connect errno = 111).
+09/27/24 01:50:50 Failed to request a new token: DAEMON:1:Failed to connect to remote daemon at '<192.168.129.26:9618?alias=corona282.llnl.gov>'
+09/27/24 01:51:04 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1952319
+09/27/24 01:51:04 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 01:51:04 ERROR: SECMAN:2003:TCP connection to collector corona284.llnl.gov failed.
+09/27/24 01:51:04 Failed to start non-blocking update to <192.168.64.198:34199>.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            09/27/24 01:56:04 attempt to connect to <192.168.64.198:34199> failed: Connection refused (connect errno = 111).
+09/27/24 01:56:04 ERROR: SECMAN:2003:TCP connection to collector corona284.llnl.gov failed.
+09/27/24 01:56:04 Failed to start non-blocking update to <192.168.64.198:34199>.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       09/27/24 01:58:56 Preen pid is 1952339
+                                                           09/27/24 01:58:59 Preen (pid 2926095) exited with status 0
+09/27/24 01:59:00 Preen (pid 3275652) exited with status 0
+09/27/24 01:59:02 Preen (pid 2790890) exited with status 0
+09/27/24 09:29:42 ******************************************************
+09/27/24 09:29:42 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 09:29:42 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 09:29:42 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 09:29:42 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 09:29:42 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:29:42 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:29:42 ** PID = 1860716
+09/27/24 09:29:42 ** Log last touched 9/27 01:59:08
+09/27/24 09:29:42 ******************************************************
+09/27/24 09:29:42 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:29:42 Using local config sources: 
+09/27/24 09:29:42    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:29:42 config Macros = 55, Sorted = 55, StringBytes = 1563, TablesBytes = 2028
+09/27/24 09:29:42 CLASSAD_CACHING is OFF
+09/27/24 09:29:42 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:29:42 SharedPortEndpoint: waiting for connections to named socket master_1860716_4d03
+09/27/24 09:29:42 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 09:29:42 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 09:29:42 DaemonCore: private command socket at <192.168.65.9:0?alias=corona265.llnl.gov&sock=master_1860716_4d03>
+09/27/24 09:29:42 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 09:29:42 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 09:29:42 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 09:29:42 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1860718
+09/27/24 09:29:42 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 09:29:42 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 09:29:42 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1860719
+09/27/24 09:29:42 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 09:29:42 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 09:29:42 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1860720
+09/27/24 09:29:42 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1860721
+09/27/24 09:29:42 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1860722
+09/27/24 09:29:42 Daemons::StartAllDaemons all daemons were started
+09/27/24 09:29:47 attempt to connect to <192.168.65.26:40111> failed: Connection refused (connect errno = 111).
+09/27/24 09:29:47 ERROR: SECMAN:2003:TCP connection to collector corona265.llnl.gov failed.
+09/27/24 09:29:47 Failed to start non-blocking update to <192.168.65.26:40111>.
+09/27/24 09:29:58 Setting ready state 'Ready' for STARTD
+09/27/24 09:36:08 ******************************************************
+09/27/24 09:36:08 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 09:36:08 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 09:36:08 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 09:36:08 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 09:36:08 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:36:08 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:36:08 ** PID = 1945205
+09/27/24 09:36:08 ** Log last touched 9/27 09:32:42
+09/27/24 09:36:08 ******************************************************
+09/27/24 09:36:08 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:36:08 Using local config sources: 
+09/27/24 09:36:08    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:36:08 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/27/24 09:36:08 CLASSAD_CACHING is OFF
+09/27/24 09:36:08 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:36:08 SharedPortEndpoint: waiting for connections to named socket master_1945205_ba33
+09/27/24 09:36:08 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 09:36:08 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 09:36:08 DaemonCore: private command socket at <192.168.64.198:0?alias=corona198.llnl.gov&sock=master_1945205_ba33>
+09/27/24 09:36:08 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 09:36:08 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 09:36:08 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 09:36:08 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1945207
+09/27/24 09:36:08 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 09:36:08 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 09:36:08 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1945208
+09/27/24 09:36:08 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 09:36:08 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 09:36:08 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1945209
+09/27/24 09:36:08 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1945210
+09/27/24 09:36:08 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1945211
+09/27/24 09:36:08 Daemons::StartAllDaemons all daemons were started
+09/27/24 09:36:13 attempt to connect to <192.168.65.9:34687> failed: Connection refused (connect errno = 111).
+09/27/24 09:36:13 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 09:36:13 Failed to start non-blocking update to <192.168.65.9:34687>.
+09/27/24 09:36:22 Setting ready state 'Ready' for STARTD
+09/27/24 09:41:01 ******************************************************
+09/27/24 09:41:01 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 09:41:01 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 09:41:01 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 09:41:01 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 09:41:01 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:41:01 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:41:01 ** PID = 1948077
+09/27/24 09:41:01 ** Log last touched 9/27 09:39:08
+09/27/24 09:41:01 ******************************************************
+09/27/24 09:41:01 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:41:01 Using local config sources: 
+09/27/24 09:41:01    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:41:01 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/27/24 09:41:01 CLASSAD_CACHING is OFF
+09/27/24 09:41:01 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:41:01 SharedPortEndpoint: waiting for connections to named socket master_1948077_ae32
+09/27/24 09:41:01 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 09:41:01 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 09:41:01 DaemonCore: private command socket at <192.168.64.198:0?alias=corona198.llnl.gov&sock=master_1948077_ae32>
+09/27/24 09:41:01 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 09:41:01 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 09:41:01 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 09:41:01 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1948079
+09/27/24 09:41:01 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 09:41:01 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 09:41:01 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1948080
+09/27/24 09:41:01 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 09:41:01 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 09:41:01 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1948081
+09/27/24 09:41:01 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1948082
+09/27/24 09:41:01 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1948083
+09/27/24 09:41:01 Daemons::StartAllDaemons all daemons were started
+09/27/24 09:41:06 attempt to connect to <192.168.64.198:45159> failed: Connection refused (connect errno = 111).
+09/27/24 09:41:06 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 09:41:06 Failed to start non-blocking update to <192.168.64.198:45159>.
+09/27/24 09:41:22 Setting ready state 'Ready' for STARTD
+09/27/24 09:46:04 ******************************************************
+09/27/24 09:46:04 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 09:46:04 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 09:46:04 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 09:46:04 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 09:46:04 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 09:46:04 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 09:46:04 ** PID = 1950629
+09/27/24 09:46:04 ** Log last touched 9/27 09:43:01
+09/27/24 09:46:04 ******************************************************
+09/27/24 09:46:04 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 09:46:04 Using local config sources: 
+09/27/24 09:46:04    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 09:46:04 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/27/24 09:46:04 CLASSAD_CACHING is OFF
+09/27/24 09:46:04 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 09:46:04 SharedPortEndpoint: waiting for connections to named socket master_1950629_23e4
+09/27/24 09:46:04 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 09:46:04 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 09:46:04 DaemonCore: private command socket at <192.168.64.198:0?alias=corona198.llnl.gov&sock=master_1950629_23e4>
+09/27/24 09:46:04 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 09:46:04 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 09:46:04 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 09:46:04 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1950631
+09/27/24 09:46:04 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 09:46:04 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 09:46:04 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1950632
+09/27/24 09:46:04 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 09:46:04 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 09:46:04 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1950633
+09/27/24 09:46:04 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1950634
+09/27/24 09:46:04 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1950635
+09/27/24 09:46:04 Daemons::StartAllDaemons all daemons were started
+09/27/24 09:46:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 09:46:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 09:46:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 09:46:19 Setting ready state 'Ready' for STARTD
+09/27/24 09:51:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 09:51:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 09:51:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 09:56:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 09:56:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 09:56:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:01:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 10:01:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 10:01:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:06:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 10:06:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 10:06:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:11:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 10:11:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 10:11:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:16:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 10:16:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 10:16:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:21:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 10:21:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 10:21:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:26:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 10:26:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 10:26:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:31:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 10:31:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 10:31:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:36:09 attempt to connect to <192.168.64.198:35059> failed: Connection refused (connect errno = 111).
+09/27/24 10:36:09 ERROR: SECMAN:2003:TCP connection to collector corona198.llnl.gov failed.
+09/27/24 10:36:09 Failed to start non-blocking update to <192.168.64.198:35059>.
+09/27/24 10:47:19 ******************************************************
+09/27/24 10:47:19 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 10:47:19 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 10:47:19 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 10:47:19 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 10:47:19 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 10:47:19 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 10:47:19 ** PID = 1367477
+09/27/24 10:47:19 ** Log last touched 9/27 10:38:05
+09/27/24 10:47:19 ******************************************************
+09/27/24 10:47:19 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 10:47:19 Using local config sources: 
+09/27/24 10:47:19    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 10:47:19 config Macros = 55, Sorted = 55, StringBytes = 1565, TablesBytes = 2028
+09/27/24 10:47:19 CLASSAD_CACHING is OFF
+09/27/24 10:47:19 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 10:47:19 SharedPortEndpoint: waiting for connections to named socket master_1367477_5f69
+09/27/24 10:47:19 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 10:47:19 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 10:47:19 DaemonCore: private command socket at <192.168.65.10:0?alias=corona266.llnl.gov&sock=master_1367477_5f69>
+09/27/24 10:47:19 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 10:47:19 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 10:47:19 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 10:47:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 1367479
+09/27/24 10:47:19 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 10:47:19 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 10:47:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 1367480
+09/27/24 10:47:19 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 10:47:19 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 10:47:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 1367481
+09/27/24 10:47:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 1367482
+09/27/24 10:47:19 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 1367483
+09/27/24 10:47:19 Daemons::StartAllDaemons all daemons were started
+09/27/24 10:47:24 attempt to connect to <192.168.64.198:37555> failed: Connection refused (connect errno = 111).
+09/27/24 10:47:24 ERROR: SECMAN:2003:TCP connection to collector corona266.llnl.gov failed.
+09/27/24 10:47:24 Failed to start non-blocking update to <192.168.64.198:37555>.
+09/27/24 10:47:35 Setting ready state 'Ready' for STARTD
+09/27/24 10:54:03 ******************************************************
+09/27/24 10:54:03 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 10:54:03 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 10:54:03 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 10:54:03 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 10:54:03 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 10:54:03 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 10:54:03 ** PID = 2158973
+09/27/24 10:54:03 ** Log last touched 9/27 10:48:20
+09/27/24 10:54:03 ******************************************************
+09/27/24 10:54:03 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 10:54:03 Using local config sources: 
+09/27/24 10:54:03    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 10:54:03 config Macros = 55, Sorted = 55, StringBytes = 1565, TablesBytes = 2028
+09/27/24 10:54:03 CLASSAD_CACHING is OFF
+09/27/24 10:54:03 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 10:54:03 SharedPortEndpoint: waiting for connections to named socket master_2158973_cb7d
+09/27/24 10:54:03 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 10:54:03 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 10:54:03 DaemonCore: private command socket at <192.168.65.12:0?alias=corona268.llnl.gov&sock=master_2158973_cb7d>
+09/27/24 10:54:03 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 10:54:03 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 10:54:03 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 10:54:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 2158975
+09/27/24 10:54:03 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 10:54:03 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 10:54:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 2158976
+09/27/24 10:54:03 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 10:54:03 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 10:54:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 2158977
+09/27/24 10:54:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 2158978
+09/27/24 10:54:03 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 2158979
+09/27/24 10:54:03 Daemons::StartAllDaemons all daemons were started
+09/27/24 10:54:08 attempt to connect to <192.168.65.10:35377> failed: Connection refused (connect errno = 111).
+09/27/24 10:54:08 ERROR: SECMAN:2003:TCP connection to collector corona268.llnl.gov failed.
+09/27/24 10:54:08 Failed to start non-blocking update to <192.168.65.10:35377>.
+09/27/24 10:54:17 Setting ready state 'Ready' for STARTD
+09/27/24 10:59:08 attempt to connect to <192.168.65.10:35377> failed: Connection refused (connect errno = 111).
+09/27/24 10:59:08 ERROR: SECMAN:2003:TCP connection to collector corona268.llnl.gov failed.
+09/27/24 10:59:08 Failed to start non-blocking update to <192.168.65.10:35377>.
+09/27/24 11:04:08 attempt to connect to <192.168.65.10:35377> failed: Connection refused (connect errno = 111).
+09/27/24 11:04:08 ERROR: SECMAN:2003:TCP connection to collector corona268.llnl.gov failed.
+09/27/24 11:04:08 Failed to start non-blocking update to <192.168.65.10:35377>.
+09/27/24 11:09:08 attempt to connect to <192.168.65.10:35377> failed: Connection refused (connect errno = 111).
+09/27/24 11:09:08 ERROR: SECMAN:2003:TCP connection to collector corona268.llnl.gov failed.
+09/27/24 11:09:08 Failed to start non-blocking update to <192.168.65.10:35377>.
+09/27/24 11:14:08 attempt to connect to <192.168.65.10:35377> failed: Connection refused (connect errno = 111).
+09/27/24 11:14:08 ERROR: SECMAN:2003:TCP connection to collector corona268.llnl.gov failed.
+09/27/24 11:14:08 Failed to start non-blocking update to <192.168.65.10:35377>.
+09/27/24 11:19:08 attempt to connect to <192.168.65.10:35377> failed: Connection refused (connect errno = 111).
+09/27/24 11:19:08 ERROR: SECMAN:2003:TCP connection to collector corona268.llnl.gov failed.
+09/27/24 11:19:08 Failed to start non-blocking update to <192.168.65.10:35377>.
+09/27/24 11:23:14 ******************************************************
+09/27/24 11:23:14 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 11:23:14 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 11:23:14 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 11:23:14 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 11:23:14 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 11:23:14 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 11:23:14 ** PID = 3746288
+09/27/24 11:23:14 ** Log last touched 9/27 11:22:13
+09/27/24 11:23:14 ******************************************************
+09/27/24 11:23:14 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 11:23:14 Using local config sources: 
+09/27/24 11:23:14    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 11:23:14 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/27/24 11:23:14 CLASSAD_CACHING is OFF
+09/27/24 11:23:14 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 11:23:14 SharedPortEndpoint: waiting for connections to named socket master_3746288_db91
+09/27/24 11:23:14 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 11:23:14 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 11:23:14 DaemonCore: private command socket at <192.168.64.230:0?alias=corona230.llnl.gov&sock=master_3746288_db91>
+09/27/24 11:23:14 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 11:23:14 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 11:23:14 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 11:23:14 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 3746290
+09/27/24 11:23:14 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 11:23:14 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 11:23:14 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 3746291
+09/27/24 11:23:14 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 11:23:14 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 11:23:14 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 3746292
+09/27/24 11:23:14 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 3746293
+09/27/24 11:23:14 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 3746294
+09/27/24 11:23:14 Daemons::StartAllDaemons all daemons were started
+09/27/24 11:23:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 11:23:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 11:23:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 11:23:35 Setting ready state 'Ready' for STARTD
+09/27/24 11:28:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 11:28:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 11:28:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 11:33:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 11:33:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 11:33:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 11:38:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 11:38:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 11:38:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 11:43:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 11:43:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 11:43:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 11:48:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 11:48:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 11:48:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 11:53:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 11:53:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 11:53:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 11:58:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 11:58:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 11:58:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 12:03:19 attempt to connect to <192.168.65.12:39065> failed: Connection refused (connect errno = 111).
+09/27/24 12:03:19 ERROR: SECMAN:2003:TCP connection to collector corona230.llnl.gov failed.
+09/27/24 12:03:19 Failed to start non-blocking update to <192.168.65.12:39065>.
+09/27/24 12:08:21 ******************************************************
+09/27/24 12:08:21 ** condor_master (CONDOR_MASTER) STARTING UP
+09/27/24 12:08:21 ** /usr/WS2/haridev/iopp/software/condor/usr/sbin/condor_master
+09/27/24 12:08:21 ** SubsystemInfo: name=MASTER type=MASTER(1) class=DAEMON(1)
+09/27/24 12:08:21 ** Configuration: subsystem:MASTER local:<NONE> class:DAEMON
+09/27/24 12:08:21 ** $CondorVersion: 10.2.2 2023-02-07 BuildID: 627878 PackageID: 10.2.2-1 $
+09/27/24 12:08:21 ** $CondorPlatform: x86_64_AlmaLinux8 $
+09/27/24 12:08:21 ** PID = 2561647
+09/27/24 12:08:21 ** Log last touched 9/27 12:07:19
+09/27/24 12:08:21 ******************************************************
+09/27/24 12:08:21 Using config source: /usr/WS2/haridev/iopp/software/condor/etc/condor_config
+09/27/24 12:08:21 Using local config sources: 
+09/27/24 12:08:21    /usr/WS2/haridev/iopp/software/condor/local/config.d/00-personal-condor
+09/27/24 12:08:21 config Macros = 55, Sorted = 55, StringBytes = 1567, TablesBytes = 2028
+09/27/24 12:08:21 CLASSAD_CACHING is OFF
+09/27/24 12:08:21 Daemon Log is logging: D_ALWAYS D_ERROR D_STATUS
+09/27/24 12:08:21 SharedPortEndpoint: waiting for connections to named socket master_2561647_aa78
+09/27/24 12:08:21 SharedPortEndpoint: failed to open /tmp/condor-lock-m969O4/shared_port_ad: No such file or directory
+09/27/24 12:08:21 SharedPortEndpoint: did not successfully find SharedPortServer address. Will retry in 60s.
+09/27/24 12:08:21 DaemonCore: private command socket at <192.168.64.192:0?alias=corona192.llnl.gov&sock=master_2561647_aa78>
+09/27/24 12:08:21 Adding SHARED_PORT to DAEMON_LIST, because USE_SHARED_PORT=true (to disable this, set AUTO_INCLUDE_SHARED_PORT_IN_DAEMON_LIST=False)
+09/27/24 12:08:21 SHARED_PORT is in front of a COLLECTOR, so it will use the configured collector port
+09/27/24 12:08:21 Master restart (GRACEFUL) is watching /usr/WS2/haridev/iopp/software/condor/sbin/condor_master (mtime:1675743202)
+09/27/24 12:08:21 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/libexec/condor_shared_port", pid and pgroup = 2561649
+09/27/24 12:08:21 Waiting for /tmp/condor-lock-m969O4/shared_port_ad to appear.
+09/27/24 12:08:21 Found /tmp/condor-lock-m969O4/shared_port_ad.
+09/27/24 12:08:21 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_collector", pid and pgroup = 2561650
+09/27/24 12:08:21 Waiting for /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address to appear.
+09/27/24 12:08:21 Found /usr/WS2/haridev/iopp/software/condor/local/log/.collector_address.
+09/27/24 12:08:21 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_negotiator", pid and pgroup = 2561651
+09/27/24 12:08:21 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_startd", pid and pgroup = 2561652
+09/27/24 12:08:22 Started DaemonCore process "/usr/WS2/haridev/iopp/software/condor/sbin/condor_schedd", pid and pgroup = 2561653
+09/27/24 12:08:22 Daemons::StartAllDaemons all daemons were started
+09/27/24 12:08:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:08:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:08:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:08:36 Setting ready state 'Ready' for STARTD
+09/27/24 12:13:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:13:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:13:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:18:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:18:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:18:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:23:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:23:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:23:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:28:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:28:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:28:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:33:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:33:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:33:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:38:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:38:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:38:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:43:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:43:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:43:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:48:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:48:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:48:26 Failed to start non-blocking update to <192.168.64.230:40855>.
+09/27/24 12:53:26 attempt to connect to <192.168.64.230:40855> failed: Connection refused (connect errno = 111).
+09/27/24 12:53:26 ERROR: SECMAN:2003:TCP connection to collector corona192.llnl.gov failed.
+09/27/24 12:53:26 Failed to start non-blocking update to <192.168.64.230:40855>.

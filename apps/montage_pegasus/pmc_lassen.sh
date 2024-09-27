@@ -10,7 +10,7 @@ cp $_CONDOR_SCRATCH_DIR/*.in .
 IOPP_PRELOAD=""
 if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
     IOPP_DATE=$(date '+%Y%m%d')
-    CM1_DFTRACER_LOG_DIR=${IOPP_PROJECT_HOME}/apps/montage_pegasus/dftracer/montage-2mass-2deg_${IOPP_JOB_NODES}_${IOPP_JOB_PPN}_${IOPP_DATE}
+    CM1_DFTRACER_LOG_DIR=${IOPP_PROJECT_HOME}/apps/montage_pegasus/dftracer/${IOPP_NAME}_${IOPP_JOB_NODES}_${IOPP_JOB_PPN}_${IOPP_DATE}
     mkdir -p ${CM1_DFTRACER_LOG_DIR}
     IOPP_PRELOAD="--env LD_PRELOAD=$IOPP_PROFILER_PRELOAD"
     export DFTRACER_ENABLE=1

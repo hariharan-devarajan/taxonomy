@@ -1,0 +1,1 @@
+../../../etc/blahp/kubernetes_local_submit_attributes.sh
