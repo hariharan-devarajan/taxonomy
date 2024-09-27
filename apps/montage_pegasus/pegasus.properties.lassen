@@ -1,2 +1,0 @@
-pegasus.clusterer.job.aggregator=mpiexec
-pegasus.register=false

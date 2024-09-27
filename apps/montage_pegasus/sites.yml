@@ -2,14 +2,14 @@ x-pegasus:
   apiLang: python
   createdBy: haridev
   createdOn: 10-03-21T11:09:31Z
-pegasus: '5.0'
+pegasus: '5.1'
 sites:
 - name: local
   directories:
   - type: localStorage
-    path: /p/gpfs1/iopp/temp/montage-workflow/output
+    path: /p/lustre3/haridev/montage-workflow/output
     fileServers:
-    - url: file:///p/gpfs1/iopp/temp/montage-workflow/output
+    - url: file:///p/lustre3/haridev/montage-workflow/output
       operation: all
   profiles:
     pegasus:
@@ -17,9 +17,9 @@ sites:
 - name: condorpool
   directories:
   - type: sharedScratch
-    path: /p/gpfs1/iopp/temp/montage-workflow/scratch
+    path: /p/lustre3/haridev/montage-workflow/scratch
     fileServers:
-    - url: file:///p/gpfs1/iopp/temp/montage-workflow/scratch
+    - url: file:///p/lustre3/haridev/montage-workflow/scratch
       operation: all 
   profiles:
     pegasus:
@@ -30,4 +30,4 @@ sites:
     condor:
       universe: vanilla
     env:
-      PEGASUS_HOME: /usr/WS2/iopp/software/pegasus/install
+      PEGASUS_HOME: /usr/workspace/haridev/iopp/software/pegasus-5.1.0dev

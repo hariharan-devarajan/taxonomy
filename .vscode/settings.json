@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "montage.h": "c",
+        "wcs.h": "c",
+        "condition_variable": "c"
+    },
+    "editor.formatOnSave": false
+}

@@ -1,17 +1,31 @@
 #!/bin/bash
 
-set -e
-#source /usr/workspace/iopp/install_scripts/bin/iopp-init
-#source /usr/workspace/iopp/install_scripts/bin/spack-init
-unset RECORDER_NO_MPI
-unset LD_PRELOAD
-#spack env activate montage-pegasus
-LAUNCH_DIR=`pwd`
-echo "Job Launched in directory $LAUNCH_DIR"
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+source ${SCRIPT_DIR}/../../setup.sh
+PEGASUS_HOME_INSTALL=${IOPP_PROJECT_HOME}/software/pegasus-5.1.0dev
+echo "Job Launched in directory $SCRIPT_DIR"
 pushd $PEGASUS_SCRATCH_DIR
 cp $_CONDOR_SCRATCH_DIR/*.in .
-echo "/usr/tcetmp/bin/jsrun -n ALL_HOSTS -c ALL_CPUS /usr/WS2/iopp/software/pegasus/install/bin/pegasus-mpi-cluster -v --host-cpus 40 $@"
-recorder_lib_path=/usr/workspace/iopp/software/Recorder/install/lib/librecorder.so
-export RECORDER_TRACES_DIR=/p/gpfs1/iopp/recorder_logs/montage_peagsus_${LSB_JOBID}
-#/usr/tcetmp/bin/jsrun --env LD_PRELOAD=$recorder_lib_path --env RECORDER_WITH_NON_MPI=1 /usr/WS2/iopp/software/pegasus/install/bin/pegasus-mpi-cluster -v "$@"
-/usr/tcetmp/bin/jsrun /usr/WS2/iopp/software/pegasus/install/bin/pegasus-mpi-cluster -v "$@"
+
+IOPP_PRELOAD=""
+if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
+    IOPP_DATE=$(date '+%Y%m%d')
+    CM1_DFTRACER_LOG_DIR=${IOPP_PROJECT_HOME}/apps/montage_pegasus/dftracer/montage-2mass-2deg_${IOPP_JOB_NODES}_${IOPP_JOB_PPN}_${IOPP_DATE}
+    mkdir -p ${CM1_DFTRACER_LOG_DIR}
+    IOPP_PRELOAD="--env LD_PRELOAD=$IOPP_PROFILER_PRELOAD"
+    export DFTRACER_ENABLE=1
+    export DFTRACER_INIT=PRELOAD
+    export DFTRACER_LOG_FILE=${CM1_DFTRACER_LOG_DIR}/montage
+    export DFTRACER_DATA_DIR=all
+    export DFTRACER_INC_METADATA=1
+fi
+cmd="flux run  -N $IOPP_JOB_NODES --tasks-per-node ${IOPP_JOB_PPN}  ${IOPP_PRELOAD} ${PEGASUS_HOME_INSTALL}/bin/pegasus-mpi-cluster -v $@"
+echo "Running Montage Workflow Pegasus $cmd"
+
+${cmd}
+
+if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
+    pushd $CM1_DFTRACER_LOG_DIR
+        gzip *.pfw
+    popd
+fi
