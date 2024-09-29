@@ -329,7 +329,7 @@ class GenomeWorkflow(object):
                 )
                 self.tc.add_transformations(pmc)
         elif self.use_pmc:
-            pmc_wrapper_pfn = "/usr/workspace/iopp/software/iopp/apps/genome_pegasus/pmc_lassen.sh"
+            pmc_wrapper_pfn = "/usr/workspace/haridev/iopp/apps/genome_pegasus/pmc.sh"
             n_nodes = self.ind_jobs
             path = os.environ["PATH"]+":."
             pmc = (

@@ -7,7 +7,7 @@ transformations:
     - namespace: pegasus
       name: mpiexec
       sites:
-      - {name: condorpool, pfn: IOPP_SCRIPT_DIR/pmc_lassen.sh, type: installed}
+      - {name: condorpool, pfn: IOPP_SCRIPT_DIR/pmc.sh, type: installed}
       profiles:
         pegasus: {nodes: 2, ppn: 40}
         condor: {getenv: "*"}

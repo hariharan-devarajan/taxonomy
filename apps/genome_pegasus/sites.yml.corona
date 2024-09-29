@@ -7,15 +7,19 @@ sites:
 - name: local
   directories:
   - type: localStorage
-    path: /p/lustre3/haridev/1000-genome-run-1/output
+    path: IOPP_JOB_SPACE/output
     fileServers:
-    - url: file:///p/lustre3/haridev/1000-genome-run-1/output
+    - url: file://IOPP_JOB_SPACE/output
       operation: all
+  profiles:
+    pegasus:
+      stagein.clusters: 10
+- name: condorpool
   directories:
   - type: sharedScratch
-    path: /p/lustre3/haridev/1000-genome-run-1/scratch
+    path: IOPP_JOB_SPACE/scratch
     fileServers:
-    - url: file:///p/lustre3/haridev/1000-genome-run-1/scratch
+    - url: file://IOPP_JOB_SPACE/scratch
       operation: all 
   profiles:
     pegasus:
@@ -26,4 +30,4 @@ sites:
     condor:
       universe: vanilla
     env:
-      PEGASUS_HOME: /usr/workspace/haridev/iopp/software/pegasus-5.1.0dev
+      PEGASUS_HOME: PEGASUS_HOME_INSTALL

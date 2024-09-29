@@ -147,3 +147,8 @@ venvs/montage_pegasus/.spack-env
 venvs/montage_pegasus/spack.lock
 venvs/montage_pegasus_py
 apps/montage_pegasus/dftracer
+software/condor/local/log
+software/condor/local/spool
+venvs/genome_pegasus/.spack-env
+venvs/genome_pegasus_py
+venvs/genome_pegasus/spack.lock

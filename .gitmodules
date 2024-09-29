@@ -7,3 +7,6 @@
 [submodule "software/montage-workflow-v3"]
 	path = apps/montage_pegasus/software/montage-workflow-v3
 	url = https://github.com/pegasus-isi/montage-workflow-v3.git
+[submodule "software/1000genome-workflow"]
+	path = software/1000genome-workflow
+	url = https://github.com/pegasus-isi/1000genome-workflow.git

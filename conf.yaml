@@ -1,17 +1,18 @@
-name: montage-dss-2deg
+name: 1000-genome-run
 job:
+  run_id: 2
   env_id: FLUX_JOB_ID
   pfs: /p/lustre3/haridev
   nodes: 16
-  ppn: 48
+  ppn: 24
   clean: 1
-  out_log: cm1.out
-  err_log: cm1.err
-  time: 60
+  time: 240
   queue: pbatch
+  name: 1000-genome-run-${IOPP_JOB_RUN_ID}
 env:
   venvs: /usr/workspace/haridev/iopp/venvs
   spack_root: /usr/WS2/haridev/spack-09-26-24
 profiler:
   enable: 1
   preload: ${IOPP_ENV_VENVS}/python/lib/python3.9/site-packages/dftracer/lib64/libdftracer_preload.so
+  data_dir: all

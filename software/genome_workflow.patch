@@ -1,0 +1,17 @@
+diff --git a/prepare_input.sh b/prepare_input.sh
+index c033197..3b50705 100755
+--- a/prepare_input.sh
++++ b/prepare_input.sh
+@@ -7,10 +7,11 @@ for i in {1..10}
+ do
+   gunzip -k ALL.chr${i}.250000.vcf.gz
+ done
+-
++mkdir -p cd $workdir/data/20130502/sifting
+ cd $workdir/data/20130502/sifting
+ for i in {1..10}
+ do
++  echo "Downloading Sifting $i"
+   wget ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/functional_annotation/filtered/ALL.chr${i}.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf.gz
+   gunzip -k ALL.chr${i}.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf.gz
+ done

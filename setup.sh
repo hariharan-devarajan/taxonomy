@@ -1,7 +1,7 @@
 #!/bin/bash
 
 export IOPP_PROJECT_HOME=/usr/workspace/haridev/iopp
-
+module load openmpi/4.1.2
 
 function parse_yaml {
     local prefix=$2
@@ -14,11 +14,16 @@ function parse_yaml {
     for (i in vname) {if (i > indent) {delete vname[i]}}
     if (length($3) > 0) {
        vn=""; for (i=0; i<indent; i++) {vn=(vn)(vname[i])("_")}
-       printf("%s%s%s=\"%s\";", "'$prefix'",vn, toupper($2), $3);
+       printf("export %s%s%s=\"%s\";", "'$prefix'",vn, toupper($2), $3);
     }
   }'
 }
 
+date_echo() {
+    dt=$(date '+%d/%m/%Y %H:%M:%S');
+    echo "$dt  $@"
+}
+# parse_yaml $IOPP_PROJECT_HOME/conf.yaml IOPP_
 eval $(parse_yaml $IOPP_PROJECT_HOME/conf.yaml IOPP_)
 
 
