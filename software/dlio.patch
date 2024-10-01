@@ -1,0 +1,18 @@
+diff --git a/dlio_benchmark/utils/config.py b/dlio_benchmark/utils/config.py
+index 13265f4..70ab7cb 100644
+--- a/dlio_benchmark/utils/config.py
++++ b/dlio_benchmark/utils/config.py
+@@ -191,11 +191,8 @@ class ConfigArguments:
+             if DLIOMPI.get_instance().rank() == 0:
+                 logging.info(f"{utcnow()} Profiling DLIO {dlp_trace}")
+             return PerfTrace.initialize_log(logfile=dlp_trace,
+-                                                   data_dir=f"{os.path.abspath(self.data_folder)}:"
+-                                                            f"{self.data_folder}:./{self.data_folder}:"
+-                                                            f"{self.checkpoint_folder}:./{self.checkpoint_folder}:"
+-                                                            f"{os.path.abspath(self.checkpoint_folder)}",
+-                                                   process_id=self.my_rank)
++                                                   data_dir="all",
++                                                   process_id=-1)
+         return None
+ 
+     def finalize_dftracer(self, dlp_logger):

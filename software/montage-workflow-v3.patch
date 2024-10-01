@@ -1,0 +1,19 @@
+diff --git a/montage-workflow.py b/montage-workflow.py
+index 14d6474..2927aca 100755
+--- a/montage-workflow.py
++++ b/montage-workflow.py
+@@ -114,8 +114,12 @@ def build_transformation_catalog(tc_target, wf):
+ def generate_region_hdr(wf, rc, center, degrees):
+ 
+     global common_files
+-
+-    (crval1, crval2) = center.split()
++    args = center.split()
++    if len(args) == 1:
++         (crval1, crval2) = args[0], args[0]
++    else:
++        (crval1, crval2) = args[0], args[1]
++   
+     crval1 = float(crval1)
+     crval2 = float(crval2)
+ 

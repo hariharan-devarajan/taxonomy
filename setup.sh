@@ -2,7 +2,7 @@
 
 export IOPP_PROJECT_HOME=/usr/workspace/haridev/iopp
 module load openmpi/4.1.2
-
+export OMPI_MCA_mpi_warn_on_fork=0
 function parse_yaml {
     local prefix=$2
     local s='[[:space:]]*' w='[a-zA-Z0-9_]*' fs=$(echo @ | tr @ '\034')

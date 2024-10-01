@@ -152,3 +152,5 @@ software/condor/local/spool
 venvs/genome_pegasus/.spack-env
 venvs/genome_pegasus_py
 venvs/genome_pegasus/spack.lock
+venvs/scr_dlio_env
+apps/montage-mpi/dftracer

@@ -10,3 +10,9 @@
 [submodule "software/1000genome-workflow"]
 	path = software/1000genome-workflow
 	url = https://github.com/pegasus-isi/1000genome-workflow.git
+[submodule "software/dlio_benchmark"]
+	path = software/dlio_benchmark
+	url = https://github.com/argonne-lcf/dlio_benchmark.git
+[submodule "software/scr"]
+	path = software/scr
+	url = https://github.com/LLNL/scr.git

@@ -1,18 +1,22 @@
-name: 1000-genome-run
+name: montage-mpi-2mass-7deg
 job:
-  run_id: 2
+  run_id: 1
   env_id: FLUX_JOB_ID
   pfs: /p/lustre3/haridev
   nodes: 16
-  ppn: 24
+  ppn: 48
+  cores: 48
+  gpus: 8
   clean: 1
   time: 240
   queue: pbatch
-  name: 1000-genome-run-${IOPP_JOB_RUN_ID}
+  name: ${IOPP_NAME}-${IOPP_JOB_RUN_ID}
 env:
   venvs: /usr/workspace/haridev/iopp/venvs
   spack_root: /usr/WS2/haridev/spack-09-26-24
 profiler:
   enable: 1
-  preload: ${IOPP_ENV_VENVS}/python/lib/python3.9/site-packages/dftracer/lib64/libdftracer_preload.so
+  preload: ${IOPP_ENV_VENVS}/scr_dlio_env/lib/python3.9/site-packages/dftracer/lib64/libdftracer_preload.so
   data_dir: all
+dlio:
+  readers: 6

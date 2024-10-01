@@ -50,6 +50,8 @@ if [[ "$IOPP_NAME" == "montage-2mass-2deg" ]]; then
     ${IOPP_PROJECT_HOME}/software/montage-workflow-v3/montage-workflow.py --center "15.09552 -0.74559" --degrees 2.0 --band 2mass:j:red --band 2mass:h:green --band 2mass:k:blue
 elif [[ "$IOPP_NAME" == "montage-dss-2deg" ]]; then
     ${IOPP_PROJECT_HOME}/software/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
+elif [[ "$IOPP_NAME" == "montage-dss-6deg" ]]; then
+    ${IOPP_PROJECT_HOME}/software/montage-workflow-v3/montage-workflow.py --center "15.09552 -0.74559" --degrees 7.0 --band 2mass:j:red --band 2mass:h:green --band 2mass:k:blue
 fi
 du -sh data 
 sleep 10
