@@ -1,4 +1,9 @@
-name: montage-mpi-2mass-7deg
+name: megatron_deepspeed
+dlio:
+  readers: 1
+  checkpoint: scr_dlio_benchmark.checkpoint.scr_pt_checkpointing.SCRPyTorchCheckpointing
+  checkpoint_steps: 100
+  scr_opt: 1
 job:
   run_id: 1
   env_id: FLUX_JOB_ID
@@ -10,7 +15,7 @@ job:
   clean: 1
   time: 240
   queue: pbatch
-  name: ${IOPP_NAME}-${IOPP_JOB_RUN_ID}
+  name: ${IOPP_NAME}-${IOPP_JOB_RUN_ID}-${IOPP_DLIO_CHECKPOINT_STEPS}-${IOPP_DLIO_SCR_OPT}
 env:
   venvs: /usr/workspace/haridev/iopp/venvs
   spack_root: /usr/WS2/haridev/spack-09-26-24
@@ -18,5 +23,3 @@ profiler:
   enable: 1
   preload: ${IOPP_ENV_VENVS}/scr_dlio_env/lib/python3.9/site-packages/dftracer/lib64/libdftracer_preload.so
   data_dir: all
-dlio:
-  readers: 6

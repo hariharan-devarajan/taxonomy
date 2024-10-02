@@ -26,6 +26,14 @@ export DLIO_DATA_ARGS="${DLIO_DATA_DIR} ${DLIO_CHECKPOINT_DIR}"
 export DLIO_DATA_GENERATE_ARGS="++workload.workflow.generate_data=True ++workload.workflow.train=False"
 export DLIO_TRAIN_ARGS="++workload.workflow.generate_data=False ++workload.workflow.train=True"
 export DLIO_WORKER_ARGS="++workload.reader.read_threads=${IOPP_DLIO_READERS}"
+if [[ "${IOPP_DLIO_CHECKPOINT}" != "" ]]; then
+    date_echo "Configure Checkpointing with SCR for DLIO"
+    export DLIO_LOG_DIR="${IOPP_PROJECT_HOME}/apps/dlio/output/${IOPP_JOB_NAME}_$((IOPP_JOB_NODES))_$((IOPP_JOB_GPUS))_scr_16-threads"
+fi
+
+
+export PYTHONPATH=/usr/workspace/haridev/iopp/software/scr-dlio:$PYTHONPATH
+
 
 date_echo "Create required directories"
 mkdir -p ${DLIO_LOG_DIR}  ${IOPP_JOB_SPACE_DATA} ${IOPP_JOB_SPACE_CHECKPOINT}
@@ -46,6 +54,32 @@ if [[ "${data_files}" == "0" ]]; then
 else
     date_echo "Dataset with ${data_files} files found for ${IOPP_NAME} at ${IOPP_JOB_SPACE_DATA}"
 fi
+DLIO_CHECKPOINT_ARGS=""
+if [[ "${IOPP_DLIO_CHECKPOINT_STEPS}" != "" ]]; then
+    DLIO_CHECKPOINT_ARGS="++workload.checkpoint.steps_between_checkpoints=${IOPP_DLIO_CHECKPOINT_STEPS}"
+fi
+DLIO_CHECKPOINT_TYPE_ARGS=""
+if [[ "${IOPP_DLIO_CHECKPOINT}" != "" ]]; then
+    date_echo "Configure Checkpointing with SCR for DLIO"
+    DLIO_CHECKPOINT_TYPE_ARGS="++workload.checkpoint.checkpoint_mechanism_classname=${IOPP_DLIO_CHECKPOINT} "
+    export DLIO_LOG_DIR="${IOPP_PROJECT_HOME}/apps/dlio/output/${IOPP_JOB_NAME}_$((IOPP_JOB_NODES))_$((IOPP_JOB_GPUS))_scr_16-threads"
+    # SCR Configuration
+    export SCR_CACHE_BASE=/l/ssd/haridev/scr/checkpoints/scr_megatron_deepspeed # /dev/shm
+    export SCR_CACHE_SIZE=16
+    export SCR_FLUSH_ASYNC=1
+    export SCR_FLUSH=1
+    export SCR_FLUSH_TYPE=PTHREAD
+    export SCR_CACHE_BYPASS=0
+    export SCR_CACHE_PURGE=1
+    export SCR_PREFIX=${IOPP_JOB_SPACE_CHECKPOINT}
+    #export SCR_DEBUG=1
+    if [[ "${IOPP_DLIO_SCR_OPT}" == "1" ]]; then
+        export SCR_COPY_TYPE=SINGLE
+        export SCR_FILE_BUF_SIZE=1875123200 # 1.74 GB
+    fi
+    rm -rf ${SCR_CACHE_BASE}
+    mkdir -p ${SCR_CACHE_BASE}
+fi
 
 IOPP_PRELOAD=""
 if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
@@ -57,7 +91,7 @@ if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
     export DFTRACER_INIT=PRELOAD
     export DFTRACER_DATA_DIR=all
 fi
-cmd="flux run -N $((IOPP_JOB_NODES)) --tasks-per-node=$((IOPP_JOB_GPUS)) --cores=$((IOPP_JOB_NODES*IOPP_JOB_PPN)) ${IOPP_PRELOAD} dlio_benchmark workload=${IOPP_NAME} ${DLIO_LOG_DIR_ARGS} ${DLIO_DATA_ARGS} ${DLIO_TRAIN_ARGS} ${DLIO_WORKER_ARGS}"
+cmd="flux run -N $((IOPP_JOB_NODES)) --tasks-per-node=$((IOPP_JOB_GPUS)) --cores=$((IOPP_JOB_NODES*IOPP_JOB_CORES)) ${IOPP_PRELOAD} dlio_benchmark workload=${IOPP_NAME} ${DLIO_LOG_DIR_ARGS} ${DLIO_DATA_ARGS} ${DLIO_TRAIN_ARGS} ${DLIO_WORKER_ARGS} ${DLIO_CHECKPOINT_ARGS} ${DLIO_CHECKPOINT_TYPE_ARGS}"
 date_echo "Running Training for ${IOPP_NAME} with $cmd"
 
 ${cmd}
