@@ -1,11 +1,11 @@
 #!/bin/bash
 ### LSF syntax
 #BSUB -cwd /usr/workspace/iopp/software/iopp/apps/montage_pegasus 
-#BSUB -nnodes 2           #number of nodes
+#BSUB -nnodes 1           #number of nodes
 #BSUB -W 01:00             #walltime in minutes
 #BSUB -G asccasc           #account
 #BSUB -J montage-pegasus   #name of job
-#BSUB -q pbatch            #queue to use
+#BSUB -q pdebug            #queue to use
 
 echo "Loading environment - Start"
 CPWD=$PWD
@@ -66,7 +66,7 @@ echo "Plan worklow - End"
 echo "Run worklow - Start"
 pegasus-run $PWD
 
-sleep $((6*3500))
+sleep $((1*3500))
 #unset RECORDER_NO_MPI
 pegasus-status $PWD
 echo "Run worklow - End"

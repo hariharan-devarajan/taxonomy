@@ -1,15 +1,14 @@
 #!/bin/bash
 ### LSF syntax
 #BSUB -cwd /usr/workspace/iopp/software/iopp/apps/montage_pegasus 
-#BSUB -nnodes 32         #number of nodes
-#BSUB -W 01:00             #walltime in minutes
+#BSUB -nnodes 32          #number of nodes
+#BSUB -W 08:00             #walltime in minutes
 #BSUB -G asccasc           #account
 #BSUB -J montage-pegasus   #name of job
 #BSUB -q pbatch            #queue to use
 
 echo "Loading environment - Start"
 CPWD=$PWD
-module load mpifileutils
 source /usr/workspace/iopp/install_scripts/bin/iopp-init
 source /usr/workspace/iopp/install_scripts/bin/spack-init
 
@@ -44,12 +43,9 @@ pushd job/$LSB_JOBID
 echo "Create worklow directory - End"
 echo "Create worklow data - Start"
 rm -rf job/$LSB_JOBID/data
-#/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:1 --band dss:DSS2R:2 --band dss:DSS2IR:3 --band dss:DSS2B:4 --band dss:DSS2R:5 --band dss:DSS2IR:6 --band dss:DSS2B:7 --band dss:DSS2R:8 --band dss:DSS2IR:9 --band dss:DSS2B:10 --band dss:DSS2R:11 --band dss:DSS2IR:12 --band dss:DSS2IR:13 --band dss:DSS2B:14 --band dss:DSS2R:15 --band dss:DSS2IR:16 --band dss:DSS2B:17 --band dss:DSS2R:18 --band dss:DSS2IR:19 --band dss:DSS2B:20 --band dss:DSS2R:21 --band dss:DSS2IR:22 --band dss:DSS2R:23 --band dss:DSS2IR:24
-#/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:1 --band dss:DSS2R:2 --band dss:DSS2IR:3 --band dss:DSS2B:4 --band dss:DSS2R:5 --band dss:DSS2IR:6 --band dss:DSS2B:7 --band dss:DSS2R:8 --band dss:DSS2IR:9 --band dss:DSS2B:10 --band dss:DSS2R:11 --band dss:DSS2IR:12
-#/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:1 --band dss:DSS2R:2 --band dss:DSS2IR:3 --band dss:DSS2B:4 --band dss:DSS2R:5 --band dss:DSS2IR:6
-#/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "24.0 24.00" --degrees 4.0 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
-#/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
-/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "15.09552 -0.74559" --degrees 2.0 --band 2mass:j:red --band 2mass:h:green --band 2mass:k:blue
+/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:1 --band dss:DSS2R:2 --band dss:DSS2IR:3 --band dss:DSS2B:4 --band dss:DSS2R:5 --band dss:DSS2IR:6 --band dss:DSS2B:7 --band dss:DSS2R:8 --band dss:DSS2IR:9 --band dss:DSS2B:10 --band dss:DSS2R:11 --band dss:DSS2IR:12 --band dss:DSS2B:13 --band dss:DSS2R:14 --band dss:DSS2IR:15 --band dss:DSS2B:16 --band dss:DSS2R:17 --band dss:DSS2IR:18 --band dss:DSS2B:19 --band dss:DSS2R:20 --band dss:DSS2IR:21 --band dss:DSS2B:22 --band dss:DSS2R:23 --band dss:DSS2IR:24
+# /usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
+#/usr/workspace/iopp/applications/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 0.5 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
 
 du -sh data 
 
@@ -77,5 +73,5 @@ pegasus-status $PWD
 echo "Run worklow - End"
 
 popd
-
+popd
 popd

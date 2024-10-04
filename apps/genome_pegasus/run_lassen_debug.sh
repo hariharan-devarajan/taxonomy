@@ -1,11 +1,11 @@
 #!/bin/bash
 ### LSF syntax
 #BSUB -cwd /usr/workspace/iopp/software/iopp/apps/genome_pegasus 
-#BSUB -nnodes 32       #number of nodes
-#BSUB -W 06:00             #walltime in minutes
+#BSUB -nnodes 16       #number of nodes
+#BSUB -W 02:00             #walltime in minutes
 #BSUB -G asccasc           #account
 #BSUB -J genome-pegasus   #name of job
-#BSUB -q pbatch            #queue to use
+#BSUB -q pdebug            #queue to use
 
 CPWD=$PWD
 source /usr/workspace/iopp/install_scripts/bin/iopp-init
