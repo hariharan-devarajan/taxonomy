@@ -25,3 +25,6 @@
 [submodule "apps/working/cosmoflow/code"]
 	path = apps/working/cosmoflow/code
 	url = https://github.com/sparticlesteve/cosmoflow-benchmark
+[submodule "software/lbann"]
+	path = software/lbann
+	url = https://github.com/LLNL/lbann.git
