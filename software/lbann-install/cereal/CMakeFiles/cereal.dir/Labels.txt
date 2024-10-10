@@ -1,0 +1,13 @@
+# Target labels
+ cereal
+# Source files and their labels
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/CMakeFiles/cereal
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/CMakeFiles/cereal.rule
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/CMakeFiles/cereal-complete.rule
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-build.rule
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-configure.rule
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-download.rule
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-install.rule
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-mkdir.rule
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-patch.rule
+/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-update.rule

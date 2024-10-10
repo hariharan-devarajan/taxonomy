@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/CMakeFiles/Conduit"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/CMakeFiles/Conduit.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/CMakeFiles/Conduit-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/stamp/Conduit-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/stamp/Conduit-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/stamp/Conduit-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/stamp/Conduit-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/stamp/Conduit-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/stamp/Conduit-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/conduit/stamp/Conduit-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Conduit"
+		],
+		"name" : "Conduit"
+	}
+}

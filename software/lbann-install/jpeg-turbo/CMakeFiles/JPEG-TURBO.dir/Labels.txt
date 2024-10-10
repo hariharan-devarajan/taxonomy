@@ -1,0 +1,13 @@
+# Target labels
+ JPEG-TURBO
+# Source files and their labels
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/CMakeFiles/JPEG-TURBO
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/CMakeFiles/JPEG-TURBO.rule
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/CMakeFiles/JPEG-TURBO-complete.rule
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-build.rule
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-configure.rule
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-download.rule
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-install.rule
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-mkdir.rule
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-patch.rule
+/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-update.rule

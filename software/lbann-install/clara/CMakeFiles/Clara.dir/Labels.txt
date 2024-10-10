@@ -1,0 +1,13 @@
+# Target labels
+ Clara
+# Source files and their labels
+/usr/workspace/haridev/iopp/software/lbann-install/clara/CMakeFiles/Clara
+/usr/workspace/haridev/iopp/software/lbann-install/clara/CMakeFiles/Clara.rule
+/usr/workspace/haridev/iopp/software/lbann-install/clara/CMakeFiles/Clara-complete.rule
+/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-build.rule
+/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-configure.rule
+/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-download.rule
+/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-install.rule
+/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-mkdir.rule
+/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-patch.rule
+/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-update.rule

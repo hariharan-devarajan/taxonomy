@@ -1,0 +1,24 @@
+workload:
+  model: cosmoflow
+  framework: tensorflow
+  workflow:
+    generate_data: false
+    train: true
+  dataset:
+    data_folder: /p/lustre3/haridev/cosmoflow_v100/data
+    num_files_train: 524288
+    num_samples_per_file: 1
+    record_length: 2828486
+    record_length_stdev: 71311
+    format: tfrecord
+  reader:
+    data_loader: tensorflow
+    read_threads: 6
+    batch_size: 1
+  train:
+    epochs: 5
+    computation_time: 0.00936
+  output:
+    folder: /usr/workspace/haridev/iopp/apps/dlio/output/cosmoflow_v100-2_16_8
+  checkpoint:
+    checkpoint_folder: /p/lustre3/haridev/cosmoflow_v100/checkpoint

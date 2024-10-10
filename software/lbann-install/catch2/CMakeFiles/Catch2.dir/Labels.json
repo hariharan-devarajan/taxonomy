@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/CMakeFiles/Catch2"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/CMakeFiles/Catch2.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/CMakeFiles/Catch2-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/stamp/Catch2-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/stamp/Catch2-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/stamp/Catch2-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/stamp/Catch2-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/stamp/Catch2-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/stamp/Catch2-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/catch2/stamp/Catch2-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Catch2"
+		],
+		"name" : "Catch2"
+	}
+}

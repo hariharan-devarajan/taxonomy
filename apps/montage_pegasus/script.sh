@@ -14,6 +14,8 @@ source $IOPP_ENV_SPACK_ROOT/share/spack/setup-env.sh
 spack env activate -p $IOPP_ENV_VENVS/montage_pegasus
 
 spack load montage@6.1 pegasus@5.1-dev condor@10
+source $IOPP_ENV_VENVS/montage_pegasus_py/bin/activate
+
 source ${IOPP_PROJECT_HOME}/software/condor/condor.sh
 
 condor_master
@@ -25,13 +27,14 @@ echo "Loading environment - Done"
 
 
 echo "Create worklow directory - Start"
-IOPP_JOB_SPACE=${IOPP_JOB_PFS}/${IOPP_NAME}/${IOPP_JOB_ID}
+IOPP_JOB_SPACE=${IOPP_JOB_PFS}/${IOPP_JOB_NAME}/${IOPP_JOB_ID}
 IOPP_JOB_PFS_SCRATCH=${IOPP_JOB_SPACE}/scratch
 IOPP_JOB_PFS_RUN_DIR=${IOPP_JOB_SPACE}/job
-export PYTHONPATH=`pegasus-config --python`:$PYTHONPATH
+export IOPP_DFTRACER_LOG_DIR=${IOPP_PROJECT_HOME}/apps/montage_pegasus/dftracer/${IOPP_JOB_NAME}_${IOPP_JOB_NODES}_${IOPP_JOB_PPN}
+export PYTHONPATH=$(pegasus-config --python):$PYTHONPATH
 
-rm -r ${IOPP_JOB_SPACE}
-mkdir -p ${IOPP_JOB_PFS_SCRATCH} ${IOPP_JOB_PFS_RUN_DIR}
+rm -r ${IOPP_JOB_SPACE} ${IOPP_DFTRACER_LOG_DIR} 
+mkdir -p ${IOPP_JOB_PFS_SCRATCH} ${IOPP_JOB_PFS_RUN_DIR} ${IOPP_DFTRACER_LOG_DIR} 
 cp ${SCRIPT_DIR}/sites.yml.corona ${IOPP_JOB_PFS_RUN_DIR}/sites.yml
 sed -i "s|IOPP_JOB_SPACE|$IOPP_JOB_SPACE|" ${IOPP_JOB_PFS_RUN_DIR}/sites.yml
 sed -i  "s|PEGASUS_HOME_INSTALL|$PEGASUS_HOME_INSTALL|" ${IOPP_JOB_PFS_RUN_DIR}/sites.yml
@@ -50,7 +53,7 @@ if [[ "$IOPP_NAME" == "montage-2mass-2deg" ]]; then
     ${IOPP_PROJECT_HOME}/software/montage-workflow-v3/montage-workflow.py --center "15.09552 -0.74559" --degrees 2.0 --band 2mass:j:red --band 2mass:h:green --band 2mass:k:blue
 elif [[ "$IOPP_NAME" == "montage-dss-2deg" ]]; then
     ${IOPP_PROJECT_HOME}/software/montage-workflow-v3/montage-workflow.py --center "56.7 24.00" --degrees 2.0 --band dss:DSS2B:blue --band dss:DSS2R:green --band dss:DSS2IR:red
-elif [[ "$IOPP_NAME" == "montage-dss-6deg" ]]; then
+elif [[ "$IOPP_NAME" == "montage-dss-7deg" ]]; then
     ${IOPP_PROJECT_HOME}/software/montage-workflow-v3/montage-workflow.py --center "15.09552 -0.74559" --degrees 7.0 --band 2mass:j:red --band 2mass:h:green --band 2mass:k:blue
 fi
 du -sh data 
@@ -68,46 +71,60 @@ touch jobstate.log
 
 pegasus-run $PWD
 
+date_echo "Waiting for job to run a bit"
+sleep 30
+
 num_tasks=$(cat 00/00/merge_whole-wf.in | grep TASK | wc -l)
-echo "Total Tasks ${num_tasks}"
-
-touch ${IOPP_JOB_PFS_SCRATCH}/run_dir/merge_whole-wf.in.rescue
+date_echo "Total Tasks ${num_tasks}"
+cat jobstate.log
 tail -n0 -f jobstate.log* | sed '/merge_whole-wf EXECUTE/ q'
-
 current_tasks=$(wc -l ${IOPP_JOB_PFS_SCRATCH}/run_dir/merge_whole-wf.in.rescue | awk {'print $1'})
-previous_ct=""
-while [ "${current_tasks}" != "${num_tasks}" ]; do
+touch ${IOPP_JOB_PFS_SCRATCH}/run_dir/temp.core
+core_files="1"
+previous_ct="0"
+while [ "${current_tasks}" != "${num_tasks}" ] && [ "$core_files" == "1" ]; do
     if [[ "${current_tasks}" != "${previous_ct}" ]]; then
-        echo "Completed $current_tasks of $num_tasks"
+        date_echo "Completed $current_tasks of $num_tasks"
     fi
-    current_tasks=$(wc -l ${IOPP_JOB_PFS_SCRATCH}/run_dir/merge_whole-wf.in.rescue | awk {'print $1'})
     previous_ct=$current_tasks
-    sleep 30
+    sleep 10
+    current_tasks=$(wc -l ${IOPP_JOB_PFS_SCRATCH}/run_dir/merge_whole-wf.in.rescue | awk {'print $1'})
+    core_files=$(ls -l ${IOPP_JOB_PFS_SCRATCH}/run_dir/*.core | grep -v ^1 | wc -l)
 done
 
-echo "Completed $current_tasks of $num_tasks"
+if [[ "${core_files}" != "1" ]]; then
+    condor_rm -all
+    date_echo "Task encountered Error"
+    exit 0
+fi
+
+date_echo "Completed $current_tasks of $num_tasks"
+
 if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
-    echo "Wait for Compression of DFTracer to finish"
-    num_pfw=$(ls ${IOPP_PROJECT_HOME}/apps/montage_pegasus/dftracer/${IOPP_NAME}_${IOPP_JOB_NODES}_${IOPP_JOB_PPN}_* | grep pfw | wc -l)
-    num_gz=$(ls ${IOPP_PROJECT_HOME}/apps/montage_pegasus/dftracer/${IOPP_NAME}_${IOPP_JOB_NODES}_${IOPP_JOB_PPN}_* | grep gz | wc -l)
+    date_echo "Wait for Compression of DFTracer to finish"
+    num_pfw=$(ls ${IOPP_DFTRACER_LOG_DIR}/* | grep pfw | wc -l)
+    num_gz=$(ls ${IOPP_DFTRACER_LOG_DIR}/* | grep gz | wc -l)
     previous_ct=""
     while [ "${num_gz}" != "${num_pfw}" ]; do
+        
         if [[ "${num_gz}" != "${previous_ct}" ]]; then
-            echo "Completed $num_gz of $num_pfw"
+            date_echo "Completed $num_gz of $num_pfw"
         fi
-        num_gz=$(ls ${IOPP_PROJECT_HOME}/apps/montage_pegasus/dftracer/${IOPP_NAME}_${IOPP_JOB_NODES}_${IOPP_JOB_PPN}_* | grep gz | wc -l)
         previous_ct=$num_gz
         sleep 30
+        num_gz=$(ls ${IOPP_DFTRACER_LOG_DIR}/* | grep gz | wc -l)
+        
     done
 fi
 
-echo "Wait for Merge Workflow to finish"
+date_echo "Wait for Merge Workflow to finish"
 tail -n0 -f jobstate.log* | sed '/merge_whole-wf POST_SCRIPT_SUCCESS\|merge_whole-wf POST_SCRIPT_FAILURE/ q'
 
 #unset RECORDER_NO_MPI
 pegasus-status $PWD
-echo "Run worklow - End"
+date_echo "Run worklow - End"
 
+rm -rf ${IOPP_JOB_SPACE}
 
 popd
 popd

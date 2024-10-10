@@ -5,7 +5,7 @@
 	path = software/pegasus
 	url = https://github.com/pegasus-isi/pegasus.git
 [submodule "software/montage-workflow-v3"]
-	path = apps/montage_pegasus/software/montage-workflow-v3
+	path = software/montage-workflow-v3
 	url = https://github.com/pegasus-isi/montage-workflow-v3.git
 [submodule "software/1000genome-workflow"]
 	path = software/1000genome-workflow
@@ -16,3 +16,6 @@
 [submodule "software/scr"]
 	path = software/scr
 	url = https://github.com/LLNL/scr.git
+[submodule "software/scr-dlio"]
+	path = software/scr-dlio
+	url = https://github.com/hariharan-devarajan/scr-dlio.git

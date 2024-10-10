@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/CMakeFiles/HDF5"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/CMakeFiles/HDF5.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/CMakeFiles/HDF5-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/stamp/HDF5-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/stamp/HDF5-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/stamp/HDF5-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/stamp/HDF5-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/stamp/HDF5-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/stamp/HDF5-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hdf5/stamp/HDF5-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"HDF5"
+		],
+		"name" : "HDF5"
+	}
+}

@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/CMakeFiles/cereal"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/CMakeFiles/cereal.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/CMakeFiles/cereal-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cereal/stamp/cereal-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"cereal"
+		],
+		"name" : "cereal"
+	}
+}

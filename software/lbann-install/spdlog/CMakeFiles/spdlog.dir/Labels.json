@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/CMakeFiles/spdlog"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/CMakeFiles/spdlog.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/CMakeFiles/spdlog-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"spdlog"
+		],
+		"name" : "spdlog"
+	}
+}

@@ -1,0 +1,13 @@
+# Target labels
+ spdlog
+# Source files and their labels
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/CMakeFiles/spdlog
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/CMakeFiles/spdlog.rule
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/CMakeFiles/spdlog-complete.rule
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-build.rule
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-configure.rule
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-download.rule
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-install.rule
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-mkdir.rule
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-patch.rule
+/usr/workspace/haridev/iopp/software/lbann-install/spdlog/stamp/spdlog-update.rule

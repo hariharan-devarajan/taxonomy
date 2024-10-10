@@ -32,7 +32,7 @@ date_echo "Loading environment - Done"
 
 
 date_echo "Create worklow directory - Start"
-export IOPP_JOB_SPACE=${IOPP_JOB_PFS}/${IOPP_JOB_NAME}/${IOPP_JOB_ID}
+export IOPP_JOB_SPACE=${IOPP_JOB_PFS}/${IOPP_JOB_NAME}_${IOPP_JOB_NODES}_${IOPP_JOB_PPN}/${IOPP_JOB_ID}
 export IOPP_JOB_PFS_SCRATCH=${IOPP_JOB_SPACE}/scratch
 export IOPP_JOB_PFS_OUTPUT=${IOPP_JOB_SPACE}/output
 export IOPP_JOB_PFS_RUN_DIR=${IOPP_JOB_SPACE}/job
@@ -72,7 +72,7 @@ pegasus-run $PWD
 
 date_echo "Waiting for job to run a bit"
 sleep 30
-
+touch ${IOPP_JOB_PFS_SCRATCH}/run_dir/merge_whole-wf.in.rescue
 num_tasks=$(cat 00/00/merge_whole-wf.in | grep TASK | wc -l)
 date_echo "Total Tasks ${num_tasks}"
 cat jobstate.log
@@ -83,7 +83,7 @@ core_files="1"
 previous_ct="0"
 while [ "${current_tasks}" != "${num_tasks}" ] && [ "$core_files" == "1" ]; do
     if [[ "${current_tasks}" != "${previous_ct}" ]]; then
-        date_echo "Completed $current_tasks of $num_tasks"
+        progress_date_echo "Completed $current_tasks of $num_tasks"
     fi
     previous_ct=$current_tasks
     sleep 10
@@ -107,7 +107,7 @@ if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
     while [ "${num_gz}" != "${num_pfw}" ]; do
         
         if [[ "${num_gz}" != "${previous_ct}" ]]; then
-            date_echo "Completed $num_gz of $num_pfw"
+            progress_date_echo "Completed $num_gz of $num_pfw"
         fi
         previous_ct=$num_gz
         sleep 30

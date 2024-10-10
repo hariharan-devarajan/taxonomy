@@ -1,0 +1,13 @@
+# Target labels
+ protobuf
+# Source files and their labels
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/CMakeFiles/protobuf
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/CMakeFiles/protobuf.rule
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/CMakeFiles/protobuf-complete.rule
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-build.rule
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-configure.rule
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-download.rule
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-install.rule
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-mkdir.rule
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-patch.rule
+/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-update.rule

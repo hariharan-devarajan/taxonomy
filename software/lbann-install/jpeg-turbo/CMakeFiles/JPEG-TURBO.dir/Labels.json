@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/CMakeFiles/JPEG-TURBO"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/CMakeFiles/JPEG-TURBO.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/CMakeFiles/JPEG-TURBO-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/jpeg-turbo/stamp/JPEG-TURBO-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"JPEG-TURBO"
+		],
+		"name" : "JPEG-TURBO"
+	}
+}

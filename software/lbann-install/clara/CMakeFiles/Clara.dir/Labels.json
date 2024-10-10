@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/CMakeFiles/Clara"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/CMakeFiles/Clara.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/CMakeFiles/Clara-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/clara/stamp/Clara-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Clara"
+		],
+		"name" : "Clara"
+	}
+}

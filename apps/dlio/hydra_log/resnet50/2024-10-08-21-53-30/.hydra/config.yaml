@@ -1,0 +1,27 @@
+workload:
+  model: resnet50
+  framework: tensorflow
+  workflow:
+    generate_data: false
+    train: true
+  dataset:
+    num_files_train: 1024
+    num_samples_per_file: 1251
+    record_length: 114660.07
+    record_length_resize: 150528
+    data_folder: /p/lustre3/haridev/resnet50_v100/data
+    format: tfrecord
+  train:
+    computation_time: 0.195
+    epochs: 5
+  reader:
+    data_loader: tensorflow
+    read_threads: 6
+    computation_threads: 8
+    batch_size: 64
+    batch_size_eval: 128
+    dont_use_mmap: true
+  output:
+    folder: /usr/workspace/haridev/iopp/apps/dlio/output/resnet50_v100-2_16_8
+  checkpoint:
+    checkpoint_folder: /p/lustre3/haridev/resnet50_v100/checkpoint

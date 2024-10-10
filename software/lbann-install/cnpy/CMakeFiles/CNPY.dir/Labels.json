@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/CMakeFiles/CNPY"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/CMakeFiles/CNPY.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/CMakeFiles/CNPY-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/stamp/CNPY-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/stamp/CNPY-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/stamp/CNPY-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/stamp/CNPY-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/stamp/CNPY-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/stamp/CNPY-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/cnpy/stamp/CNPY-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"CNPY"
+		],
+		"name" : "CNPY"
+	}
+}

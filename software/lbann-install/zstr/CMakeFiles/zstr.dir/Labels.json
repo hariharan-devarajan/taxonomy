@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/CMakeFiles/zstr"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/CMakeFiles/zstr.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/CMakeFiles/zstr-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/stamp/zstr-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/stamp/zstr-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/stamp/zstr-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/stamp/zstr-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/stamp/zstr-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/stamp/zstr-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/zstr/stamp/zstr-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"zstr"
+		],
+		"name" : "zstr"
+	}
+}

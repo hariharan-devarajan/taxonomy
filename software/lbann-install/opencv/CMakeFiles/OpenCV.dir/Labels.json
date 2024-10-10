@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/CMakeFiles/OpenCV"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/CMakeFiles/OpenCV.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/CMakeFiles/OpenCV-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/stamp/OpenCV-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/stamp/OpenCV-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/stamp/OpenCV-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/stamp/OpenCV-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/stamp/OpenCV-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/stamp/OpenCV-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/opencv/stamp/OpenCV-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"OpenCV"
+		],
+		"name" : "OpenCV"
+	}
+}

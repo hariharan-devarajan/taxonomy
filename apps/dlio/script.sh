@@ -9,7 +9,7 @@ source ../../setup.sh
 
 export IOPP_JOB_ID=${!IOPP_JOB_ENV_ID}
 date_echo "Loading environment"
-source $IOPP_ENV_VENVS/scr_dlio_env/bin/activate
+source $IOPP_ENV_VENVS/dlio_venv/bin/activate
 
 
 date_echo "Setting script variables"
@@ -101,7 +101,6 @@ if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
     pushd $DLIO_LOG_DIR
         gzip *.pfw
         rm *.json
-        rm *.log
     popd
 fi
 date_echo "Finished executing app"

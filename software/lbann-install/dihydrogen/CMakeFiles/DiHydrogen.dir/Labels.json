@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/CMakeFiles/DiHydrogen"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/CMakeFiles/DiHydrogen.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/CMakeFiles/DiHydrogen-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/stamp/DiHydrogen-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/stamp/DiHydrogen-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/stamp/DiHydrogen-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/stamp/DiHydrogen-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/stamp/DiHydrogen-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/stamp/DiHydrogen-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/dihydrogen/stamp/DiHydrogen-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"DiHydrogen"
+		],
+		"name" : "DiHydrogen"
+	}
+}

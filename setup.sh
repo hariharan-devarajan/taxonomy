@@ -23,6 +23,11 @@ date_echo() {
     dt=$(date '+%d/%m/%Y %H:%M:%S');
     echo "$dt  $@"
 }
+progress_date_echo() {
+    dt=$(date '+%d/%m/%Y %H:%M:%S')
+    echo -ne "$dt  $@                              "\\r
+}
+
 # parse_yaml $IOPP_PROJECT_HOME/conf.yaml IOPP_
 eval $(parse_yaml $IOPP_PROJECT_HOME/conf.yaml IOPP_)
 

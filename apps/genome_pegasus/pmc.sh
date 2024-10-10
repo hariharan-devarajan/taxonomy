@@ -24,6 +24,10 @@ ${cmd}
 if [[ "$IOPP_PROFILER_ENABLE" == "1" ]]; then
     echo "Compressing DFTracer Log files in $CM1_DFTRACER_LOG_DIR"
     pushd $CM1_DFTRACER_LOG_DIR
-        gzip *.pfw
+        files=(*.pfw)
+        for file_index in "${!files[@]}"; do
+            file_name=${files[$file_index]}
+            flux submit -n 1 gzip $file_name
+        done
     popd
 fi

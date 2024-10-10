@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/CMakeFiles/LBANN"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/CMakeFiles/LBANN.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/CMakeFiles/LBANN-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"LBANN"
+		],
+		"name" : "LBANN"
+	}
+}

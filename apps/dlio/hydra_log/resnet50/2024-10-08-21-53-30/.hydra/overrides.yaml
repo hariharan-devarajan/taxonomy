@@ -1,0 +1,7 @@
+- workload=resnet50_v100
+- ++workload.output.folder=/usr/workspace/haridev/iopp/apps/dlio/output/resnet50_v100-2_16_8
+- ++workload.dataset.data_folder=/p/lustre3/haridev/resnet50_v100/data
+- ++workload.checkpoint.checkpoint_folder=/p/lustre3/haridev/resnet50_v100/checkpoint
+- ++workload.workflow.generate_data=False
+- ++workload.workflow.train=True
+- ++workload.reader.read_threads=6

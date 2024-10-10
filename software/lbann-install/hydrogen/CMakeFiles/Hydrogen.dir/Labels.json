@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/CMakeFiles/Hydrogen"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/CMakeFiles/Hydrogen.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/CMakeFiles/Hydrogen-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/stamp/Hydrogen-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/stamp/Hydrogen-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/stamp/Hydrogen-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/stamp/Hydrogen-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/stamp/Hydrogen-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/stamp/Hydrogen-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/hydrogen/stamp/Hydrogen-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Hydrogen"
+		],
+		"name" : "Hydrogen"
+	}
+}

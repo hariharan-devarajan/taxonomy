@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/CMakeFiles/protobuf"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/CMakeFiles/protobuf.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/CMakeFiles/protobuf-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/protobuf/stamp/protobuf-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"protobuf"
+		],
+		"name" : "protobuf"
+	}
+}

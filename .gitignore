@@ -154,3 +154,6 @@ venvs/genome_pegasus_py
 venvs/genome_pegasus/spack.lock
 venvs/scr_dlio_env
 apps/montage-mpi/dftracer
+apps/genome_pegasus/dftracer
+venvs/dlio_venv
+venvs/opence-1.9.1-cuda-11.8/

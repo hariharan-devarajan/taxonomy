@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/CMakeFiles/Aluminum"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/CMakeFiles/Aluminum.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/CMakeFiles/Aluminum-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/stamp/Aluminum-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/stamp/Aluminum-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/stamp/Aluminum-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/stamp/Aluminum-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/stamp/Aluminum-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/stamp/Aluminum-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/aluminum/stamp/Aluminum-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Aluminum"
+		],
+		"name" : "Aluminum"
+	}
+}

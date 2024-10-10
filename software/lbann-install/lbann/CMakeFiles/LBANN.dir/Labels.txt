@@ -1,0 +1,13 @@
+# Target labels
+ LBANN
+# Source files and their labels
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/CMakeFiles/LBANN
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/CMakeFiles/LBANN.rule
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/CMakeFiles/LBANN-complete.rule
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-build.rule
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-configure.rule
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-download.rule
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-install.rule
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-mkdir.rule
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-patch.rule
+/usr/workspace/haridev/iopp/software/lbann-install/lbann/stamp/LBANN-update.rule

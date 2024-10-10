@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/CMakeFiles/NCCL"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/CMakeFiles/NCCL.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/CMakeFiles/NCCL-complete.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/stamp/NCCL-build.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/stamp/NCCL-configure.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/stamp/NCCL-download.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/stamp/NCCL-install.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/stamp/NCCL-mkdir.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/stamp/NCCL-patch.rule"
+		},
+		{
+			"file" : "/usr/workspace/haridev/iopp/software/lbann-install/nccl/stamp/NCCL-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"NCCL"
+		],
+		"name" : "NCCL"
+	}
+}
