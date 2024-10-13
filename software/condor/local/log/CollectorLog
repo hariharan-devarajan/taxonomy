@@ -21707,3 +21707,1313 @@
 10/09/24 17:36:26 QueryWorker: forked new high priority worker with id 830389 ( max 4 active 1 pending 0 )
 10/09/24 17:36:26 (Sending 97 ads in response to query)
 10/09/24 17:36:26 Query info: matched=97; skipped=4; query_time=0.001392; send_time=0.008586; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46325>; projection={}; filter_private_attrs=0
+10/09/24 17:37:26 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:37:26 QueryWorker: forked new high priority worker with id 830439 ( max 4 active 1 pending 0 )
+10/09/24 17:37:26 (Sending 96 ads in response to query)
+10/09/24 17:37:26 Query info: matched=96; skipped=0; query_time=0.001858; send_time=0.002020; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46367>; projection={}; filter_private_attrs=0
+10/09/24 17:37:26 QueryWorker: forked new high priority worker with id 830440 ( max 4 active 1 pending 0 )
+10/09/24 17:37:26 (Sending 97 ads in response to query)
+10/09/24 17:37:26 Query info: matched=97; skipped=4; query_time=0.001295; send_time=0.009038; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35043>; projection={}; filter_private_attrs=0
+10/09/24 17:38:26 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:38:26 QueryWorker: forked new high priority worker with id 830585 ( max 4 active 1 pending 0 )
+10/09/24 17:38:26 (Sending 96 ads in response to query)
+10/09/24 17:38:26 Query info: matched=96; skipped=0; query_time=0.001966; send_time=0.002091; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39943>; projection={}; filter_private_attrs=0
+10/09/24 17:38:26 QueryWorker: forked new high priority worker with id 830586 ( max 4 active 1 pending 0 )
+10/09/24 17:38:26 (Sending 97 ads in response to query)
+10/09/24 17:38:26 Query info: matched=97; skipped=4; query_time=0.001337; send_time=0.009365; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34123>; projection={}; filter_private_attrs=0
+10/09/24 17:39:26 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:39:26 QueryWorker: forked new high priority worker with id 830636 ( max 4 active 1 pending 0 )
+10/09/24 17:39:26 (Sending 96 ads in response to query)
+10/09/24 17:39:26 Query info: matched=96; skipped=0; query_time=0.001640; send_time=0.002072; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44697>; projection={}; filter_private_attrs=0
+10/09/24 17:39:26 QueryWorker: forked new high priority worker with id 830637 ( max 4 active 1 pending 0 )
+10/09/24 17:39:26 (Sending 97 ads in response to query)
+10/09/24 17:39:26 Query info: matched=97; skipped=4; query_time=0.001343; send_time=0.008964; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37367>; projection={}; filter_private_attrs=0
+10/09/24 17:40:07 (Sending 1 ads in response to query)
+10/09/24 17:40:07 Query info: matched=1; skipped=0; query_time=0.000144; send_time=0.000127; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36895>; projection={}; filter_private_attrs=1
+10/09/24 17:40:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:40:07 QueryWorker: forked new high priority worker with id 830670 ( max 4 active 1 pending 0 )
+10/09/24 17:40:07 (Sending 96 ads in response to query)
+10/09/24 17:40:07 Query info: matched=96; skipped=0; query_time=0.001649; send_time=0.002035; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36199>; projection={}; filter_private_attrs=0
+10/09/24 17:40:07 QueryWorker: forked new high priority worker with id 830671 ( max 4 active 1 pending 0 )
+10/09/24 17:40:07 (Sending 97 ads in response to query)
+10/09/24 17:40:07 Query info: matched=97; skipped=4; query_time=0.001272; send_time=0.008510; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41927>; projection={}; filter_private_attrs=0
+10/09/24 17:41:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:41:07 QueryWorker: forked new high priority worker with id 830722 ( max 4 active 1 pending 0 )
+10/09/24 17:41:07 (Sending 96 ads in response to query)
+10/09/24 17:41:07 Query info: matched=96; skipped=0; query_time=0.001576; send_time=0.001916; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41553>; projection={}; filter_private_attrs=0
+10/09/24 17:41:07 QueryWorker: forked new high priority worker with id 830723 ( max 4 active 1 pending 0 )
+10/09/24 17:41:07 (Sending 97 ads in response to query)
+10/09/24 17:41:07 Query info: matched=97; skipped=4; query_time=0.001369; send_time=0.007975; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34193>; projection={}; filter_private_attrs=0
+10/09/24 17:42:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:42:07 QueryWorker: forked new high priority worker with id 830772 ( max 4 active 1 pending 0 )
+10/09/24 17:42:07 (Sending 96 ads in response to query)
+10/09/24 17:42:07 Query info: matched=96; skipped=0; query_time=0.001792; send_time=0.002017; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35457>; projection={}; filter_private_attrs=0
+10/09/24 17:42:07 QueryWorker: forked new high priority worker with id 830773 ( max 4 active 1 pending 0 )
+10/09/24 17:42:07 (Sending 97 ads in response to query)
+10/09/24 17:42:07 Query info: matched=97; skipped=4; query_time=0.001564; send_time=0.011301; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40627>; projection={}; filter_private_attrs=0
+10/09/24 17:43:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:43:07 QueryWorker: forked new high priority worker with id 830823 ( max 4 active 1 pending 0 )
+10/09/24 17:43:07 (Sending 96 ads in response to query)
+10/09/24 17:43:07 Query info: matched=96; skipped=0; query_time=0.002144; send_time=0.002374; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33165>; projection={}; filter_private_attrs=0
+10/09/24 17:43:07 QueryWorker: forked new high priority worker with id 830824 ( max 4 active 1 pending 0 )
+10/09/24 17:43:07 (Sending 97 ads in response to query)
+10/09/24 17:43:07 Query info: matched=97; skipped=4; query_time=0.001753; send_time=0.010555; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37037>; projection={}; filter_private_attrs=0
+10/09/24 17:44:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:44:07 QueryWorker: forked new high priority worker with id 830873 ( max 4 active 1 pending 0 )
+10/09/24 17:44:07 (Sending 96 ads in response to query)
+10/09/24 17:44:07 Query info: matched=96; skipped=0; query_time=0.001600; send_time=0.001917; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35591>; projection={}; filter_private_attrs=0
+10/09/24 17:44:07 QueryWorker: forked new high priority worker with id 830874 ( max 4 active 1 pending 0 )
+10/09/24 17:44:07 (Sending 97 ads in response to query)
+10/09/24 17:44:07 Query info: matched=97; skipped=4; query_time=0.001191; send_time=0.008636; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43181>; projection={}; filter_private_attrs=0
+10/09/24 17:45:07 (Sending 1 ads in response to query)
+10/09/24 17:45:07 Query info: matched=1; skipped=0; query_time=0.000140; send_time=0.000116; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34403>; projection={}; filter_private_attrs=1
+10/09/24 17:45:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:45:07 QueryWorker: forked new high priority worker with id 830929 ( max 4 active 1 pending 0 )
+10/09/24 17:45:07 (Sending 96 ads in response to query)
+10/09/24 17:45:07 Query info: matched=96; skipped=0; query_time=0.001708; send_time=0.001850; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33211>; projection={}; filter_private_attrs=0
+10/09/24 17:45:07 QueryWorker: forked new high priority worker with id 830930 ( max 4 active 1 pending 0 )
+10/09/24 17:45:07 (Sending 97 ads in response to query)
+10/09/24 17:45:07 Query info: matched=97; skipped=4; query_time=0.001208; send_time=0.007871; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45817>; projection={}; filter_private_attrs=0
+10/09/24 17:46:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:46:07 QueryWorker: forked new high priority worker with id 830982 ( max 4 active 1 pending 0 )
+10/09/24 17:46:07 (Sending 96 ads in response to query)
+10/09/24 17:46:07 Query info: matched=96; skipped=0; query_time=0.001821; send_time=0.001863; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45703>; projection={}; filter_private_attrs=0
+10/09/24 17:46:07 QueryWorker: forked new high priority worker with id 830983 ( max 4 active 1 pending 0 )
+10/09/24 17:46:07 (Sending 97 ads in response to query)
+10/09/24 17:46:07 Query info: matched=97; skipped=4; query_time=0.001266; send_time=0.008408; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46265>; projection={}; filter_private_attrs=0
+10/09/24 17:47:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:47:07 QueryWorker: forked new high priority worker with id 831051 ( max 4 active 1 pending 0 )
+10/09/24 17:47:07 (Sending 96 ads in response to query)
+10/09/24 17:47:07 Query info: matched=96; skipped=0; query_time=0.002003; send_time=0.002158; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:32809>; projection={}; filter_private_attrs=0
+10/09/24 17:47:07 QueryWorker: forked new high priority worker with id 831052 ( max 4 active 1 pending 0 )
+10/09/24 17:47:07 (Sending 97 ads in response to query)
+10/09/24 17:47:07 Query info: matched=97; skipped=4; query_time=0.001452; send_time=0.009158; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39859>; projection={}; filter_private_attrs=0
+10/09/24 17:48:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:48:07 QueryWorker: forked new high priority worker with id 831179 ( max 4 active 1 pending 0 )
+10/09/24 17:48:07 (Sending 96 ads in response to query)
+10/09/24 17:48:08 Query info: matched=96; skipped=0; query_time=0.001803; send_time=0.002076; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38379>; projection={}; filter_private_attrs=0
+10/09/24 17:48:08 QueryWorker: forked new high priority worker with id 831180 ( max 4 active 1 pending 0 )
+10/09/24 17:48:08 (Sending 97 ads in response to query)
+10/09/24 17:48:08 Query info: matched=97; skipped=4; query_time=0.001402; send_time=0.009233; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43933>; projection={}; filter_private_attrs=0
+10/09/24 17:49:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:49:07 QueryWorker: forked new high priority worker with id 831221 ( max 4 active 1 pending 0 )
+10/09/24 17:49:07 (Sending 96 ads in response to query)
+10/09/24 17:49:07 Query info: matched=96; skipped=0; query_time=0.001709; send_time=0.001901; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39457>; projection={}; filter_private_attrs=0
+10/09/24 17:49:07 QueryWorker: forked new high priority worker with id 831222 ( max 4 active 1 pending 0 )
+10/09/24 17:49:07 (Sending 97 ads in response to query)
+10/09/24 17:49:07 Query info: matched=97; skipped=4; query_time=0.001175; send_time=0.007730; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34957>; projection={}; filter_private_attrs=0
+10/09/24 17:50:07 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:50:07 QueryWorker: forked new high priority worker with id 831273 ( max 4 active 1 pending 0 )
+10/09/24 17:50:07 (Sending 96 ads in response to query)
+10/09/24 17:50:07 Query info: matched=96; skipped=0; query_time=0.001837; send_time=0.002098; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36205>; projection={}; filter_private_attrs=0
+10/09/24 17:50:07 QueryWorker: forked new high priority worker with id 831274 ( max 4 active 1 pending 0 )
+10/09/24 17:50:07 (Sending 97 ads in response to query)
+10/09/24 17:50:07 Query info: matched=97; skipped=4; query_time=0.001162; send_time=0.009233; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40963>; projection={}; filter_private_attrs=0
+10/09/24 17:50:08 (Sending 1 ads in response to query)
+10/09/24 17:50:08 Query info: matched=1; skipped=0; query_time=0.000134; send_time=0.000115; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38681>; projection={}; filter_private_attrs=1
+10/09/24 17:50:27 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:50:27 QueryWorker: forked new high priority worker with id 831291 ( max 4 active 1 pending 0 )
+10/09/24 17:50:27 (Sending 96 ads in response to query)
+10/09/24 17:50:27 Query info: matched=96; skipped=0; query_time=0.001753; send_time=0.002051; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34569>; projection={}; filter_private_attrs=0
+10/09/24 17:50:27 QueryWorker: forked new high priority worker with id 831292 ( max 4 active 1 pending 0 )
+10/09/24 17:50:27 (Sending 97 ads in response to query)
+10/09/24 17:50:27 Query info: matched=97; skipped=4; query_time=0.001403; send_time=0.008619; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34907>; projection={}; filter_private_attrs=0
+10/09/24 17:50:38 Housekeeper:  Ready to clean old ads
+10/09/24 17:50:38 	Cleaning StartdAds ...
+10/09/24 17:50:38 	Cleaning StartdPrivateAds ...
+10/09/24 17:50:38 	Cleaning ScheddAds ...
+10/09/24 17:50:38 	Cleaning SubmittorAds ...
+10/09/24 17:50:38 	Cleaning LicenseAds ...
+10/09/24 17:50:38 	Cleaning MasterAds ...
+10/09/24 17:50:38 	Cleaning CkptServerAds ...
+10/09/24 17:50:38 	Cleaning CollectorAds ...
+10/09/24 17:50:38 	Cleaning StorageAds ...
+10/09/24 17:50:38 	Cleaning AccountingAds ...
+10/09/24 17:50:38 	Cleaning NegotiatorAds ...
+10/09/24 17:50:38 	Cleaning HadAds ...
+10/09/24 17:50:38 	Cleaning GridAds ...
+10/09/24 17:50:38 	Cleaning Generic Ads ...
+10/09/24 17:50:38 Housekeeper:  Done cleaning
+10/09/24 17:51:27 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:51:27 QueryWorker: forked new high priority worker with id 831344 ( max 4 active 1 pending 0 )
+10/09/24 17:51:27 (Sending 96 ads in response to query)
+10/09/24 17:51:27 Query info: matched=96; skipped=0; query_time=0.001879; send_time=0.001904; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43095>; projection={}; filter_private_attrs=0
+10/09/24 17:51:27 QueryWorker: forked new high priority worker with id 831345 ( max 4 active 1 pending 0 )
+10/09/24 17:51:27 (Sending 97 ads in response to query)
+10/09/24 17:51:27 Query info: matched=97; skipped=4; query_time=0.001479; send_time=0.008976; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43093>; projection={}; filter_private_attrs=0
+10/09/24 17:52:27 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:52:27 QueryWorker: forked new high priority worker with id 831395 ( max 4 active 1 pending 0 )
+10/09/24 17:52:27 (Sending 96 ads in response to query)
+10/09/24 17:52:27 Query info: matched=96; skipped=0; query_time=0.001754; send_time=0.002031; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33007>; projection={}; filter_private_attrs=0
+10/09/24 17:52:27 QueryWorker: forked new high priority worker with id 831396 ( max 4 active 1 pending 0 )
+10/09/24 17:52:27 (Sending 97 ads in response to query)
+10/09/24 17:52:27 Query info: matched=97; skipped=4; query_time=0.001410; send_time=0.010273; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38559>; projection={}; filter_private_attrs=0
+10/09/24 17:53:27 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:53:27 QueryWorker: forked new high priority worker with id 831445 ( max 4 active 1 pending 0 )
+10/09/24 17:53:27 (Sending 96 ads in response to query)
+10/09/24 17:53:27 Query info: matched=96; skipped=0; query_time=0.002034; send_time=0.001882; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37395>; projection={}; filter_private_attrs=0
+10/09/24 17:53:27 QueryWorker: forked new high priority worker with id 831446 ( max 4 active 1 pending 0 )
+10/09/24 17:53:27 (Sending 97 ads in response to query)
+10/09/24 17:53:27 Query info: matched=97; skipped=4; query_time=0.001353; send_time=0.008470; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38215>; projection={}; filter_private_attrs=0
+10/09/24 17:54:27 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:54:27 QueryWorker: forked new high priority worker with id 831504 ( max 4 active 1 pending 0 )
+10/09/24 17:54:27 (Sending 96 ads in response to query)
+10/09/24 17:54:27 Query info: matched=96; skipped=0; query_time=0.001773; send_time=0.002040; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43125>; projection={}; filter_private_attrs=0
+10/09/24 17:54:27 QueryWorker: forked new high priority worker with id 831505 ( max 4 active 1 pending 0 )
+10/09/24 17:54:27 (Sending 97 ads in response to query)
+10/09/24 17:54:27 Query info: matched=97; skipped=4; query_time=0.001272; send_time=0.009895; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42411>; projection={}; filter_private_attrs=0
+10/09/24 17:55:08 (Sending 1 ads in response to query)
+10/09/24 17:55:08 Query info: matched=1; skipped=0; query_time=0.000135; send_time=0.000117; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33707>; projection={}; filter_private_attrs=1
+10/09/24 17:55:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:55:08 QueryWorker: forked new high priority worker with id 831548 ( max 4 active 1 pending 0 )
+10/09/24 17:55:08 (Sending 96 ads in response to query)
+10/09/24 17:55:08 Query info: matched=96; skipped=0; query_time=0.001914; send_time=0.002059; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35599>; projection={}; filter_private_attrs=0
+10/09/24 17:55:08 QueryWorker: forked new high priority worker with id 831549 ( max 4 active 1 pending 0 )
+10/09/24 17:55:08 (Sending 97 ads in response to query)
+10/09/24 17:55:08 Query info: matched=97; skipped=4; query_time=0.001421; send_time=0.008784; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42899>; projection={}; filter_private_attrs=0
+10/09/24 17:56:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:56:08 QueryWorker: forked new high priority worker with id 831601 ( max 4 active 1 pending 0 )
+10/09/24 17:56:08 (Sending 96 ads in response to query)
+10/09/24 17:56:08 Query info: matched=96; skipped=0; query_time=0.001632; send_time=0.001917; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46507>; projection={}; filter_private_attrs=0
+10/09/24 17:56:08 QueryWorker: forked new high priority worker with id 831602 ( max 4 active 1 pending 0 )
+10/09/24 17:56:08 (Sending 97 ads in response to query)
+10/09/24 17:56:08 Query info: matched=97; skipped=4; query_time=0.001226; send_time=0.007939; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41151>; projection={}; filter_private_attrs=0
+10/09/24 17:57:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:57:08 QueryWorker: forked new high priority worker with id 831746 ( max 4 active 1 pending 0 )
+10/09/24 17:57:08 (Sending 96 ads in response to query)
+10/09/24 17:57:08 Query info: matched=96; skipped=0; query_time=0.002007; send_time=0.002137; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44265>; projection={}; filter_private_attrs=0
+10/09/24 17:57:08 QueryWorker: forked new high priority worker with id 831747 ( max 4 active 1 pending 0 )
+10/09/24 17:57:08 (Sending 97 ads in response to query)
+10/09/24 17:57:08 Query info: matched=97; skipped=4; query_time=0.001891; send_time=0.014568; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41677>; projection={}; filter_private_attrs=0
+10/09/24 17:58:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:58:08 QueryWorker: forked new high priority worker with id 831798 ( max 4 active 1 pending 0 )
+10/09/24 17:58:08 (Sending 96 ads in response to query)
+10/09/24 17:58:08 Query info: matched=96; skipped=0; query_time=0.002230; send_time=0.002154; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34999>; projection={}; filter_private_attrs=0
+10/09/24 17:58:08 QueryWorker: forked new high priority worker with id 831799 ( max 4 active 1 pending 0 )
+10/09/24 17:58:08 (Sending 97 ads in response to query)
+10/09/24 17:58:08 Query info: matched=97; skipped=4; query_time=0.002445; send_time=0.014532; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42753>; projection={}; filter_private_attrs=0
+10/09/24 17:59:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 17:59:08 QueryWorker: forked new high priority worker with id 831848 ( max 4 active 1 pending 0 )
+10/09/24 17:59:08 (Sending 96 ads in response to query)
+10/09/24 17:59:08 Query info: matched=96; skipped=0; query_time=0.002188; send_time=0.002657; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44137>; projection={}; filter_private_attrs=0
+10/09/24 17:59:08 QueryWorker: forked new high priority worker with id 831849 ( max 4 active 1 pending 0 )
+10/09/24 17:59:08 (Sending 97 ads in response to query)
+10/09/24 17:59:08 Query info: matched=97; skipped=4; query_time=0.001840; send_time=0.010507; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39801>; projection={}; filter_private_attrs=0
+10/09/24 18:00:08 (Sending 1 ads in response to query)
+10/09/24 18:00:08 Query info: matched=1; skipped=0; query_time=0.000148; send_time=0.000124; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41691>; projection={}; filter_private_attrs=1
+10/09/24 18:00:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:00:08 QueryWorker: forked new high priority worker with id 831898 ( max 4 active 1 pending 0 )
+10/09/24 18:00:08 (Sending 96 ads in response to query)
+10/09/24 18:00:08 Query info: matched=96; skipped=0; query_time=0.001597; send_time=0.002216; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42679>; projection={}; filter_private_attrs=0
+10/09/24 18:00:08 QueryWorker: forked new high priority worker with id 831901 ( max 4 active 1 pending 0 )
+10/09/24 18:00:08 (Sending 97 ads in response to query)
+10/09/24 18:00:08 Query info: matched=97; skipped=4; query_time=0.001525; send_time=0.010563; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42607>; projection={}; filter_private_attrs=0
+10/09/24 18:01:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:01:08 QueryWorker: forked new high priority worker with id 831958 ( max 4 active 1 pending 0 )
+10/09/24 18:01:08 (Sending 96 ads in response to query)
+10/09/24 18:01:08 Query info: matched=96; skipped=0; query_time=0.002004; send_time=0.001958; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44063>; projection={}; filter_private_attrs=0
+10/09/24 18:01:08 QueryWorker: forked new high priority worker with id 831959 ( max 4 active 1 pending 0 )
+10/09/24 18:01:08 (Sending 97 ads in response to query)
+10/09/24 18:01:08 Query info: matched=97; skipped=4; query_time=0.001817; send_time=0.013407; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:32911>; projection={}; filter_private_attrs=0
+10/09/24 18:02:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:02:08 QueryWorker: forked new high priority worker with id 832009 ( max 4 active 1 pending 0 )
+10/09/24 18:02:08 (Sending 96 ads in response to query)
+10/09/24 18:02:08 Query info: matched=96; skipped=0; query_time=0.002017; send_time=0.002079; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40349>; projection={}; filter_private_attrs=0
+10/09/24 18:02:08 QueryWorker: forked new high priority worker with id 832010 ( max 4 active 1 pending 0 )
+10/09/24 18:02:08 (Sending 97 ads in response to query)
+10/09/24 18:02:08 Query info: matched=97; skipped=4; query_time=0.001802; send_time=0.011257; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46139>; projection={}; filter_private_attrs=0
+10/09/24 18:03:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:03:08 QueryWorker: forked new high priority worker with id 832059 ( max 4 active 1 pending 0 )
+10/09/24 18:03:08 (Sending 96 ads in response to query)
+10/09/24 18:03:08 Query info: matched=96; skipped=0; query_time=0.002256; send_time=0.002226; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37535>; projection={}; filter_private_attrs=0
+10/09/24 18:03:08 QueryWorker: forked new high priority worker with id 832060 ( max 4 active 1 pending 0 )
+10/09/24 18:03:08 (Sending 97 ads in response to query)
+10/09/24 18:03:09 Query info: matched=97; skipped=4; query_time=0.001380; send_time=0.009600; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38295>; projection={}; filter_private_attrs=0
+10/09/24 18:04:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:04:08 QueryWorker: forked new high priority worker with id 832120 ( max 4 active 1 pending 0 )
+10/09/24 18:04:08 (Sending 96 ads in response to query)
+10/09/24 18:04:08 Query info: matched=96; skipped=0; query_time=0.001880; send_time=0.002137; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38359>; projection={}; filter_private_attrs=0
+10/09/24 18:04:08 QueryWorker: forked new high priority worker with id 832121 ( max 4 active 1 pending 0 )
+10/09/24 18:04:08 (Sending 97 ads in response to query)
+10/09/24 18:04:08 Query info: matched=97; skipped=4; query_time=0.001716; send_time=0.013687; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33961>; projection={}; filter_private_attrs=0
+10/09/24 18:05:08 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:05:08 QueryWorker: forked new high priority worker with id 832173 ( max 4 active 1 pending 0 )
+10/09/24 18:05:08 (Sending 96 ads in response to query)
+10/09/24 18:05:08 Query info: matched=96; skipped=0; query_time=0.001759; send_time=0.002140; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46595>; projection={}; filter_private_attrs=0
+10/09/24 18:05:08 QueryWorker: forked new high priority worker with id 832174 ( max 4 active 1 pending 0 )
+10/09/24 18:05:08 (Sending 97 ads in response to query)
+10/09/24 18:05:08 Query info: matched=97; skipped=4; query_time=0.001611; send_time=0.011555; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37985>; projection={}; filter_private_attrs=0
+10/09/24 18:05:10 (Sending 1 ads in response to query)
+10/09/24 18:05:10 Query info: matched=1; skipped=0; query_time=0.000152; send_time=0.000122; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37249>; projection={}; filter_private_attrs=1
+10/09/24 18:05:28 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:05:28 QueryWorker: forked new high priority worker with id 832193 ( max 4 active 1 pending 0 )
+10/09/24 18:05:28 (Sending 96 ads in response to query)
+10/09/24 18:05:28 Query info: matched=96; skipped=0; query_time=0.001412; send_time=0.002180; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38217>; projection={}; filter_private_attrs=0
+10/09/24 18:05:28 QueryWorker: forked new high priority worker with id 832194 ( max 4 active 1 pending 0 )
+10/09/24 18:05:28 (Sending 97 ads in response to query)
+10/09/24 18:05:28 Query info: matched=97; skipped=4; query_time=0.001285; send_time=0.010085; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36845>; projection={}; filter_private_attrs=0
+10/09/24 18:05:38 Housekeeper:  Ready to clean old ads
+10/09/24 18:05:38 	Cleaning StartdAds ...
+10/09/24 18:05:38 	Cleaning StartdPrivateAds ...
+10/09/24 18:05:38 	Cleaning ScheddAds ...
+10/09/24 18:05:38 	Cleaning SubmittorAds ...
+10/09/24 18:05:38 	Cleaning LicenseAds ...
+10/09/24 18:05:38 	Cleaning MasterAds ...
+10/09/24 18:05:38 	Cleaning CkptServerAds ...
+10/09/24 18:05:38 	Cleaning CollectorAds ...
+10/09/24 18:05:38 	Cleaning StorageAds ...
+10/09/24 18:05:38 	Cleaning AccountingAds ...
+10/09/24 18:05:38 	Cleaning NegotiatorAds ...
+10/09/24 18:05:38 	Cleaning HadAds ...
+10/09/24 18:05:38 	Cleaning GridAds ...
+10/09/24 18:05:38 	Cleaning Generic Ads ...
+10/09/24 18:05:38 Housekeeper:  Done cleaning
+10/09/24 18:06:28 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:06:28 QueryWorker: forked new high priority worker with id 832341 ( max 4 active 1 pending 0 )
+10/09/24 18:06:28 (Sending 96 ads in response to query)
+10/09/24 18:06:28 Query info: matched=96; skipped=0; query_time=0.001793; send_time=0.002043; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36757>; projection={}; filter_private_attrs=0
+10/09/24 18:06:28 QueryWorker: forked new high priority worker with id 832342 ( max 4 active 1 pending 0 )
+10/09/24 18:06:28 (Sending 97 ads in response to query)
+10/09/24 18:06:28 Query info: matched=97; skipped=4; query_time=0.001364; send_time=0.008710; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44207>; projection={}; filter_private_attrs=0
+10/09/24 18:07:28 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:07:28 QueryWorker: forked new high priority worker with id 832400 ( max 4 active 1 pending 0 )
+10/09/24 18:07:28 (Sending 96 ads in response to query)
+10/09/24 18:07:28 Query info: matched=96; skipped=0; query_time=0.001582; send_time=0.001878; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35895>; projection={}; filter_private_attrs=0
+10/09/24 18:07:28 QueryWorker: forked new high priority worker with id 832401 ( max 4 active 1 pending 0 )
+10/09/24 18:07:28 (Sending 97 ads in response to query)
+10/09/24 18:07:28 Query info: matched=97; skipped=4; query_time=0.001196; send_time=0.008036; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43001>; projection={}; filter_private_attrs=0
+10/09/24 18:08:28 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:08:28 QueryWorker: forked new high priority worker with id 832450 ( max 4 active 1 pending 0 )
+10/09/24 18:08:28 (Sending 96 ads in response to query)
+10/09/24 18:08:28 Query info: matched=96; skipped=0; query_time=0.001896; send_time=0.002483; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40141>; projection={}; filter_private_attrs=0
+10/09/24 18:08:28 QueryWorker: forked new high priority worker with id 832451 ( max 4 active 1 pending 0 )
+10/09/24 18:08:28 (Sending 97 ads in response to query)
+10/09/24 18:08:28 Query info: matched=97; skipped=4; query_time=0.001851; send_time=0.013069; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:32845>; projection={}; filter_private_attrs=0
+10/09/24 18:09:28 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:09:28 QueryWorker: forked new high priority worker with id 832500 ( max 4 active 1 pending 0 )
+10/09/24 18:09:28 (Sending 96 ads in response to query)
+10/09/24 18:09:28 Query info: matched=96; skipped=0; query_time=0.001897; send_time=0.002144; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37099>; projection={}; filter_private_attrs=0
+10/09/24 18:09:28 QueryWorker: forked new high priority worker with id 832501 ( max 4 active 1 pending 0 )
+10/09/24 18:09:28 (Sending 97 ads in response to query)
+10/09/24 18:09:28 Query info: matched=97; skipped=4; query_time=0.001942; send_time=0.012470; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39705>; projection={}; filter_private_attrs=0
+10/09/24 18:10:10 (Sending 1 ads in response to query)
+10/09/24 18:10:10 Query info: matched=1; skipped=0; query_time=0.000145; send_time=0.000117; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40435>; projection={}; filter_private_attrs=1
+10/09/24 18:10:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:10:10 QueryWorker: forked new high priority worker with id 832549 ( max 4 active 1 pending 0 )
+10/09/24 18:10:10 (Sending 96 ads in response to query)
+10/09/24 18:10:10 Query info: matched=96; skipped=0; query_time=0.001800; send_time=0.001956; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37215>; projection={}; filter_private_attrs=0
+10/09/24 18:10:10 QueryWorker: forked new high priority worker with id 832550 ( max 4 active 1 pending 0 )
+10/09/24 18:10:10 (Sending 97 ads in response to query)
+10/09/24 18:10:10 Query info: matched=97; skipped=4; query_time=0.001345; send_time=0.008395; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41481>; projection={}; filter_private_attrs=0
+10/09/24 18:11:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:11:10 QueryWorker: forked new high priority worker with id 832602 ( max 4 active 1 pending 0 )
+10/09/24 18:11:10 (Sending 96 ads in response to query)
+10/09/24 18:11:10 Query info: matched=96; skipped=0; query_time=0.001727; send_time=0.002356; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37143>; projection={}; filter_private_attrs=0
+10/09/24 18:11:10 QueryWorker: forked new high priority worker with id 832603 ( max 4 active 1 pending 0 )
+10/09/24 18:11:10 (Sending 97 ads in response to query)
+10/09/24 18:11:10 Query info: matched=97; skipped=4; query_time=0.001867; send_time=0.014340; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37699>; projection={}; filter_private_attrs=0
+10/09/24 18:12:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:12:10 QueryWorker: forked new high priority worker with id 832654 ( max 4 active 1 pending 0 )
+10/09/24 18:12:10 (Sending 96 ads in response to query)
+10/09/24 18:12:10 Query info: matched=96; skipped=0; query_time=0.001881; send_time=0.002079; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36387>; projection={}; filter_private_attrs=0
+10/09/24 18:12:10 QueryWorker: forked new high priority worker with id 832655 ( max 4 active 1 pending 0 )
+10/09/24 18:12:10 (Sending 97 ads in response to query)
+10/09/24 18:12:10 Query info: matched=97; skipped=4; query_time=0.001901; send_time=0.014048; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44407>; projection={}; filter_private_attrs=0
+10/09/24 18:13:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:13:10 QueryWorker: forked new high priority worker with id 832713 ( max 4 active 1 pending 0 )
+10/09/24 18:13:10 (Sending 96 ads in response to query)
+10/09/24 18:13:10 Query info: matched=96; skipped=0; query_time=0.001858; send_time=0.002141; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43961>; projection={}; filter_private_attrs=0
+10/09/24 18:13:10 QueryWorker: forked new high priority worker with id 832714 ( max 4 active 1 pending 0 )
+10/09/24 18:13:10 (Sending 97 ads in response to query)
+10/09/24 18:13:10 Query info: matched=97; skipped=4; query_time=0.001614; send_time=0.010458; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45841>; projection={}; filter_private_attrs=0
+10/09/24 18:14:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:14:10 QueryWorker: forked new high priority worker with id 832767 ( max 4 active 1 pending 0 )
+10/09/24 18:14:10 (Sending 96 ads in response to query)
+10/09/24 18:14:10 Query info: matched=96; skipped=0; query_time=0.001861; send_time=0.002131; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44373>; projection={}; filter_private_attrs=0
+10/09/24 18:14:10 QueryWorker: forked new high priority worker with id 832768 ( max 4 active 1 pending 0 )
+10/09/24 18:14:10 (Sending 97 ads in response to query)
+10/09/24 18:14:10 Query info: matched=97; skipped=4; query_time=0.001614; send_time=0.012416; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43321>; projection={}; filter_private_attrs=0
+10/09/24 18:15:10 (Sending 1 ads in response to query)
+10/09/24 18:15:10 Query info: matched=1; skipped=0; query_time=0.000147; send_time=0.000123; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45793>; projection={}; filter_private_attrs=1
+10/09/24 18:15:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:15:10 QueryWorker: forked new high priority worker with id 832823 ( max 4 active 1 pending 0 )
+10/09/24 18:15:10 (Sending 96 ads in response to query)
+10/09/24 18:15:10 Query info: matched=96; skipped=0; query_time=0.002001; send_time=0.002482; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36839>; projection={}; filter_private_attrs=0
+10/09/24 18:15:10 QueryWorker: forked new high priority worker with id 832824 ( max 4 active 1 pending 0 )
+10/09/24 18:15:10 (Sending 97 ads in response to query)
+10/09/24 18:15:10 Query info: matched=97; skipped=4; query_time=0.001892; send_time=0.011314; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38511>; projection={}; filter_private_attrs=0
+10/09/24 18:16:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:16:10 QueryWorker: forked new high priority worker with id 832957 ( max 4 active 1 pending 0 )
+10/09/24 18:16:10 (Sending 96 ads in response to query)
+10/09/24 18:16:10 Query info: matched=96; skipped=0; query_time=0.001880; send_time=0.002106; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42375>; projection={}; filter_private_attrs=0
+10/09/24 18:16:10 QueryWorker: forked new high priority worker with id 832958 ( max 4 active 1 pending 0 )
+10/09/24 18:16:10 (Sending 97 ads in response to query)
+10/09/24 18:16:10 Query info: matched=97; skipped=4; query_time=0.001773; send_time=0.013315; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44745>; projection={}; filter_private_attrs=0
+10/09/24 18:17:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:17:10 QueryWorker: forked new high priority worker with id 833009 ( max 4 active 1 pending 0 )
+10/09/24 18:17:10 (Sending 96 ads in response to query)
+10/09/24 18:17:10 Query info: matched=96; skipped=0; query_time=0.002029; send_time=0.001933; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41039>; projection={}; filter_private_attrs=0
+10/09/24 18:17:10 QueryWorker: forked new high priority worker with id 833010 ( max 4 active 1 pending 0 )
+10/09/24 18:17:10 (Sending 97 ads in response to query)
+10/09/24 18:17:10 Query info: matched=97; skipped=4; query_time=0.001566; send_time=0.008228; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39189>; projection={}; filter_private_attrs=0
+10/09/24 18:18:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:18:10 QueryWorker: forked new high priority worker with id 833059 ( max 4 active 1 pending 0 )
+10/09/24 18:18:10 (Sending 96 ads in response to query)
+10/09/24 18:18:10 Query info: matched=96; skipped=0; query_time=0.002014; send_time=0.001886; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44517>; projection={}; filter_private_attrs=0
+10/09/24 18:18:10 QueryWorker: forked new high priority worker with id 833060 ( max 4 active 1 pending 0 )
+10/09/24 18:18:10 (Sending 97 ads in response to query)
+10/09/24 18:18:10 Query info: matched=97; skipped=4; query_time=0.001301; send_time=0.007990; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35657>; projection={}; filter_private_attrs=0
+10/09/24 18:19:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:19:10 QueryWorker: forked new high priority worker with id 833114 ( max 4 active 1 pending 0 )
+10/09/24 18:19:10 (Sending 96 ads in response to query)
+10/09/24 18:19:10 Query info: matched=96; skipped=0; query_time=0.001634; send_time=0.001756; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34945>; projection={}; filter_private_attrs=0
+10/09/24 18:19:10 QueryWorker: forked new high priority worker with id 833115 ( max 4 active 1 pending 0 )
+10/09/24 18:19:10 (Sending 97 ads in response to query)
+10/09/24 18:19:10 Query info: matched=97; skipped=4; query_time=0.001846; send_time=0.011466; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36557>; projection={}; filter_private_attrs=0
+10/09/24 18:20:10 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:20:10 QueryWorker: forked new high priority worker with id 833167 ( max 4 active 1 pending 0 )
+10/09/24 18:20:10 (Sending 96 ads in response to query)
+10/09/24 18:20:10 Query info: matched=96; skipped=0; query_time=0.001839; send_time=0.002108; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39645>; projection={}; filter_private_attrs=0
+10/09/24 18:20:10 QueryWorker: forked new high priority worker with id 833168 ( max 4 active 1 pending 0 )
+10/09/24 18:20:10 (Sending 97 ads in response to query)
+10/09/24 18:20:10 Query info: matched=97; skipped=4; query_time=0.001796; send_time=0.012203; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38347>; projection={}; filter_private_attrs=0
+10/09/24 18:20:11 (Sending 1 ads in response to query)
+10/09/24 18:20:11 Query info: matched=1; skipped=0; query_time=0.000143; send_time=0.000121; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46239>; projection={}; filter_private_attrs=1
+10/09/24 18:20:31 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:20:31 QueryWorker: forked new high priority worker with id 833185 ( max 4 active 1 pending 0 )
+10/09/24 18:20:31 (Sending 96 ads in response to query)
+10/09/24 18:20:31 Query info: matched=96; skipped=0; query_time=0.001722; send_time=0.002499; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33019>; projection={}; filter_private_attrs=0
+10/09/24 18:20:31 QueryWorker: forked new high priority worker with id 833186 ( max 4 active 1 pending 0 )
+10/09/24 18:20:31 (Sending 97 ads in response to query)
+10/09/24 18:20:31 Query info: matched=97; skipped=4; query_time=0.001834; send_time=0.010721; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35657>; projection={}; filter_private_attrs=0
+10/09/24 18:20:38 Housekeeper:  Ready to clean old ads
+10/09/24 18:20:38 	Cleaning StartdAds ...
+10/09/24 18:20:38 	Cleaning StartdPrivateAds ...
+10/09/24 18:20:38 	Cleaning ScheddAds ...
+10/09/24 18:20:38 	Cleaning SubmittorAds ...
+10/09/24 18:20:38 	Cleaning LicenseAds ...
+10/09/24 18:20:38 	Cleaning MasterAds ...
+10/09/24 18:20:38 	Cleaning CkptServerAds ...
+10/09/24 18:20:38 	Cleaning CollectorAds ...
+10/09/24 18:20:38 	Cleaning StorageAds ...
+10/09/24 18:20:38 	Cleaning AccountingAds ...
+10/09/24 18:20:38 	Cleaning NegotiatorAds ...
+10/09/24 18:20:38 	Cleaning HadAds ...
+10/09/24 18:20:38 	Cleaning GridAds ...
+10/09/24 18:20:38 	Cleaning Generic Ads ...
+10/09/24 18:20:38 Housekeeper:  Done cleaning
+10/09/24 18:21:31 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:21:31 QueryWorker: forked new high priority worker with id 833237 ( max 4 active 1 pending 0 )
+10/09/24 18:21:31 (Sending 96 ads in response to query)
+10/09/24 18:21:31 Query info: matched=96; skipped=0; query_time=0.001708; send_time=0.001934; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42117>; projection={}; filter_private_attrs=0
+10/09/24 18:21:31 QueryWorker: forked new high priority worker with id 833238 ( max 4 active 1 pending 0 )
+10/09/24 18:21:31 (Sending 97 ads in response to query)
+10/09/24 18:21:31 Query info: matched=97; skipped=4; query_time=0.001893; send_time=0.011749; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34059>; projection={}; filter_private_attrs=0
+10/09/24 18:22:31 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:22:31 QueryWorker: forked new high priority worker with id 833295 ( max 4 active 1 pending 0 )
+10/09/24 18:22:31 (Sending 96 ads in response to query)
+10/09/24 18:22:31 Query info: matched=96; skipped=0; query_time=0.002025; send_time=0.002124; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33607>; projection={}; filter_private_attrs=0
+10/09/24 18:22:31 QueryWorker: forked new high priority worker with id 833296 ( max 4 active 1 pending 0 )
+10/09/24 18:22:31 (Sending 97 ads in response to query)
+10/09/24 18:22:31 Query info: matched=97; skipped=4; query_time=0.002169; send_time=0.010643; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33201>; projection={}; filter_private_attrs=0
+10/09/24 18:23:31 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:23:31 QueryWorker: forked new high priority worker with id 833349 ( max 4 active 1 pending 0 )
+10/09/24 18:23:31 (Sending 96 ads in response to query)
+10/09/24 18:23:31 Query info: matched=96; skipped=0; query_time=0.001804; send_time=0.002277; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:32877>; projection={}; filter_private_attrs=0
+10/09/24 18:23:31 QueryWorker: forked new high priority worker with id 833350 ( max 4 active 1 pending 0 )
+10/09/24 18:23:31 (Sending 97 ads in response to query)
+10/09/24 18:23:31 Query info: matched=97; skipped=4; query_time=0.001798; send_time=0.011011; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38467>; projection={}; filter_private_attrs=0
+10/09/24 18:24:31 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:24:31 QueryWorker: forked new high priority worker with id 833405 ( max 4 active 1 pending 0 )
+10/09/24 18:24:31 (Sending 96 ads in response to query)
+10/09/24 18:24:31 Query info: matched=96; skipped=0; query_time=0.001602; send_time=0.002160; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35799>; projection={}; filter_private_attrs=0
+10/09/24 18:24:31 QueryWorker: forked new high priority worker with id 833406 ( max 4 active 2 pending 0 )
+10/09/24 18:24:31 (Sending 97 ads in response to query)
+10/09/24 18:24:31 Query info: matched=97; skipped=4; query_time=0.001827; send_time=0.014449; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37997>; projection={}; filter_private_attrs=0
+10/09/24 18:25:12 (Sending 1 ads in response to query)
+10/09/24 18:25:12 Query info: matched=1; skipped=0; query_time=0.000121; send_time=0.000125; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34815>; projection={}; filter_private_attrs=1
+10/09/24 18:25:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:25:12 QueryWorker: forked new high priority worker with id 833542 ( max 4 active 1 pending 0 )
+10/09/24 18:25:12 (Sending 96 ads in response to query)
+10/09/24 18:25:12 Query info: matched=96; skipped=0; query_time=0.001839; send_time=0.001960; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35135>; projection={}; filter_private_attrs=0
+10/09/24 18:25:12 QueryWorker: forked new high priority worker with id 833543 ( max 4 active 1 pending 0 )
+10/09/24 18:25:12 (Sending 97 ads in response to query)
+10/09/24 18:25:12 Query info: matched=97; skipped=4; query_time=0.001873; send_time=0.012514; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38685>; projection={}; filter_private_attrs=0
+10/09/24 18:26:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:26:12 QueryWorker: forked new high priority worker with id 833598 ( max 4 active 1 pending 0 )
+10/09/24 18:26:12 (Sending 96 ads in response to query)
+10/09/24 18:26:12 Query info: matched=96; skipped=0; query_time=0.001684; send_time=0.001999; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36065>; projection={}; filter_private_attrs=0
+10/09/24 18:26:12 QueryWorker: forked new high priority worker with id 833599 ( max 4 active 1 pending 0 )
+10/09/24 18:26:12 (Sending 97 ads in response to query)
+10/09/24 18:26:12 Query info: matched=97; skipped=4; query_time=0.001836; send_time=0.012376; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41239>; projection={}; filter_private_attrs=0
+10/09/24 18:27:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:27:12 QueryWorker: forked new high priority worker with id 833649 ( max 4 active 1 pending 0 )
+10/09/24 18:27:12 (Sending 96 ads in response to query)
+10/09/24 18:27:12 Query info: matched=96; skipped=0; query_time=0.002617; send_time=0.001977; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33981>; projection={}; filter_private_attrs=0
+10/09/24 18:27:12 QueryWorker: forked new high priority worker with id 833650 ( max 4 active 1 pending 0 )
+10/09/24 18:27:12 (Sending 97 ads in response to query)
+10/09/24 18:27:12 Query info: matched=97; skipped=4; query_time=0.001928; send_time=0.012914; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36801>; projection={}; filter_private_attrs=0
+10/09/24 18:28:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:28:12 QueryWorker: forked new high priority worker with id 833702 ( max 4 active 1 pending 0 )
+10/09/24 18:28:12 (Sending 96 ads in response to query)
+10/09/24 18:28:12 Query info: matched=96; skipped=0; query_time=0.001834; send_time=0.002513; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46345>; projection={}; filter_private_attrs=0
+10/09/24 18:28:12 QueryWorker: forked new high priority worker with id 833703 ( max 4 active 1 pending 0 )
+10/09/24 18:28:12 (Sending 97 ads in response to query)
+10/09/24 18:28:12 Query info: matched=97; skipped=4; query_time=0.001847; send_time=0.011491; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38383>; projection={}; filter_private_attrs=0
+10/09/24 18:29:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:29:12 QueryWorker: forked new high priority worker with id 833758 ( max 4 active 1 pending 0 )
+10/09/24 18:29:12 (Sending 96 ads in response to query)
+10/09/24 18:29:12 Query info: matched=96; skipped=0; query_time=0.001686; send_time=0.001987; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45361>; projection={}; filter_private_attrs=0
+10/09/24 18:29:12 QueryWorker: forked new high priority worker with id 833759 ( max 4 active 1 pending 0 )
+10/09/24 18:29:12 (Sending 97 ads in response to query)
+10/09/24 18:29:12 Query info: matched=97; skipped=4; query_time=0.001419; send_time=0.008382; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36125>; projection={}; filter_private_attrs=0
+10/09/24 18:30:12 (Sending 1 ads in response to query)
+10/09/24 18:30:12 Query info: matched=1; skipped=0; query_time=0.000132; send_time=0.000134; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46411>; projection={}; filter_private_attrs=1
+10/09/24 18:30:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:30:12 QueryWorker: forked new high priority worker with id 833800 ( max 4 active 1 pending 0 )
+10/09/24 18:30:12 (Sending 96 ads in response to query)
+10/09/24 18:30:12 Query info: matched=96; skipped=0; query_time=0.001946; send_time=0.002053; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34071>; projection={}; filter_private_attrs=0
+10/09/24 18:30:12 QueryWorker: forked new high priority worker with id 833801 ( max 4 active 1 pending 0 )
+10/09/24 18:30:12 (Sending 97 ads in response to query)
+10/09/24 18:30:12 Query info: matched=97; skipped=4; query_time=0.001370; send_time=0.008909; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45919>; projection={}; filter_private_attrs=0
+10/09/24 18:31:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:31:12 QueryWorker: forked new high priority worker with id 833852 ( max 4 active 1 pending 0 )
+10/09/24 18:31:12 (Sending 96 ads in response to query)
+10/09/24 18:31:12 Query info: matched=96; skipped=0; query_time=0.002548; send_time=0.002042; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39859>; projection={}; filter_private_attrs=0
+10/09/24 18:31:12 QueryWorker: forked new high priority worker with id 833853 ( max 4 active 1 pending 0 )
+10/09/24 18:31:12 (Sending 97 ads in response to query)
+10/09/24 18:31:12 Query info: matched=97; skipped=4; query_time=0.002009; send_time=0.012317; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43935>; projection={}; filter_private_attrs=0
+10/09/24 18:32:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:32:12 QueryWorker: forked new high priority worker with id 833914 ( max 4 active 1 pending 0 )
+10/09/24 18:32:12 (Sending 96 ads in response to query)
+10/09/24 18:32:12 Query info: matched=96; skipped=0; query_time=0.002498; send_time=0.002603; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37401>; projection={}; filter_private_attrs=0
+10/09/24 18:32:12 QueryWorker: forked new high priority worker with id 833915 ( max 4 active 1 pending 0 )
+10/09/24 18:32:12 (Sending 97 ads in response to query)
+10/09/24 18:32:12 Query info: matched=97; skipped=4; query_time=0.001275; send_time=0.009439; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45629>; projection={}; filter_private_attrs=0
+10/09/24 18:33:12 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:33:12 QueryWorker: forked new high priority worker with id 833969 ( max 4 active 1 pending 0 )
+10/09/24 18:33:12 (Sending 96 ads in response to query)
+10/09/24 18:33:12 Query info: matched=96; skipped=0; query_time=0.002362; send_time=0.002108; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33939>; projection={}; filter_private_attrs=0
+10/09/24 18:33:12 QueryWorker: forked new high priority worker with id 833970 ( max 4 active 1 pending 0 )
+10/09/24 18:33:12 (Sending 97 ads in response to query)
+10/09/24 18:33:12 Query info: matched=97; skipped=4; query_time=0.001604; send_time=0.008872; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42837>; projection={}; filter_private_attrs=0
+10/09/24 18:34:13 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:34:13 QueryWorker: forked new high priority worker with id 834065 ( max 4 active 1 pending 0 )
+10/09/24 18:34:13 (Sending 96 ads in response to query)
+10/09/24 18:34:13 Query info: matched=96; skipped=0; query_time=0.002327; send_time=0.001949; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34553>; projection={}; filter_private_attrs=0
+10/09/24 18:34:13 QueryWorker: forked new high priority worker with id 834066 ( max 4 active 1 pending 0 )
+10/09/24 18:34:13 (Sending 97 ads in response to query)
+10/09/24 18:34:13 Query info: matched=97; skipped=4; query_time=0.001971; send_time=0.013455; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40439>; projection={}; filter_private_attrs=0
+10/09/24 18:35:13 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:35:13 QueryWorker: forked new high priority worker with id 834166 ( max 4 active 1 pending 0 )
+10/09/24 18:35:13 (Sending 96 ads in response to query)
+10/09/24 18:35:13 Query info: matched=96; skipped=0; query_time=0.002779; send_time=0.002107; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44267>; projection={}; filter_private_attrs=0
+10/09/24 18:35:13 QueryWorker: forked new high priority worker with id 834167 ( max 4 active 1 pending 0 )
+10/09/24 18:35:13 (Sending 97 ads in response to query)
+10/09/24 18:35:13 Query info: matched=97; skipped=4; query_time=0.001870; send_time=0.009919; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46737>; projection={}; filter_private_attrs=0
+10/09/24 18:35:13 (Sending 1 ads in response to query)
+10/09/24 18:35:13 Query info: matched=1; skipped=0; query_time=0.000135; send_time=0.000118; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38063>; projection={}; filter_private_attrs=1
+10/09/24 18:35:33 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:35:33 QueryWorker: forked new high priority worker with id 834193 ( max 4 active 1 pending 0 )
+10/09/24 18:35:33 (Sending 96 ads in response to query)
+10/09/24 18:35:33 Query info: matched=96; skipped=0; query_time=0.001450; send_time=0.002076; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45407>; projection={}; filter_private_attrs=0
+10/09/24 18:35:33 QueryWorker: forked new high priority worker with id 834194 ( max 4 active 1 pending 0 )
+10/09/24 18:35:33 (Sending 97 ads in response to query)
+10/09/24 18:35:34 Query info: matched=97; skipped=4; query_time=0.001923; send_time=0.015243; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41523>; projection={}; filter_private_attrs=0
+10/09/24 18:35:38 Housekeeper:  Ready to clean old ads
+10/09/24 18:35:38 	Cleaning StartdAds ...
+10/09/24 18:35:38 	Cleaning StartdPrivateAds ...
+10/09/24 18:35:38 	Cleaning ScheddAds ...
+10/09/24 18:35:38 	Cleaning SubmittorAds ...
+10/09/24 18:35:38 	Cleaning LicenseAds ...
+10/09/24 18:35:38 	Cleaning MasterAds ...
+10/09/24 18:35:38 	Cleaning CkptServerAds ...
+10/09/24 18:35:38 	Cleaning CollectorAds ...
+10/09/24 18:35:38 	Cleaning StorageAds ...
+10/09/24 18:35:38 	Cleaning AccountingAds ...
+10/09/24 18:35:38 	Cleaning NegotiatorAds ...
+10/09/24 18:35:38 	Cleaning HadAds ...
+10/09/24 18:35:38 	Cleaning GridAds ...
+10/09/24 18:35:38 	Cleaning Generic Ads ...
+10/09/24 18:35:38 Housekeeper:  Done cleaning
+10/09/24 18:36:33 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:36:33 QueryWorker: forked new high priority worker with id 834236 ( max 4 active 1 pending 0 )
+10/09/24 18:36:33 (Sending 96 ads in response to query)
+10/09/24 18:36:33 Query info: matched=96; skipped=0; query_time=0.002776; send_time=0.001929; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35031>; projection={}; filter_private_attrs=0
+10/09/24 18:36:33 QueryWorker: forked new high priority worker with id 834237 ( max 4 active 1 pending 0 )
+10/09/24 18:36:33 (Sending 97 ads in response to query)
+10/09/24 18:36:33 Query info: matched=97; skipped=4; query_time=0.001298; send_time=0.008442; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41199>; projection={}; filter_private_attrs=0
+10/09/24 18:37:33 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:37:33 QueryWorker: forked new high priority worker with id 834289 ( max 4 active 1 pending 0 )
+10/09/24 18:37:33 (Sending 96 ads in response to query)
+10/09/24 18:37:33 Query info: matched=96; skipped=0; query_time=0.002450; send_time=0.002114; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42861>; projection={}; filter_private_attrs=0
+10/09/24 18:37:33 QueryWorker: forked new high priority worker with id 834290 ( max 4 active 1 pending 0 )
+10/09/24 18:37:33 (Sending 97 ads in response to query)
+10/09/24 18:37:33 Query info: matched=97; skipped=4; query_time=0.001389; send_time=0.009475; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42639>; projection={}; filter_private_attrs=0
+10/09/24 18:38:33 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:38:33 QueryWorker: forked new high priority worker with id 834347 ( max 4 active 1 pending 0 )
+10/09/24 18:38:33 (Sending 96 ads in response to query)
+10/09/24 18:38:33 Query info: matched=96; skipped=0; query_time=0.002507; send_time=0.002048; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39783>; projection={}; filter_private_attrs=0
+10/09/24 18:38:33 QueryWorker: forked new high priority worker with id 834348 ( max 4 active 1 pending 0 )
+10/09/24 18:38:33 (Sending 97 ads in response to query)
+10/09/24 18:38:33 Query info: matched=97; skipped=4; query_time=0.001486; send_time=0.009051; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43165>; projection={}; filter_private_attrs=0
+10/09/24 18:39:33 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:39:33 QueryWorker: forked new high priority worker with id 834402 ( max 4 active 1 pending 0 )
+10/09/24 18:39:33 (Sending 96 ads in response to query)
+10/09/24 18:39:33 Query info: matched=96; skipped=0; query_time=0.002308; send_time=0.001922; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43811>; projection={}; filter_private_attrs=0
+10/09/24 18:39:33 QueryWorker: forked new high priority worker with id 834403 ( max 4 active 1 pending 0 )
+10/09/24 18:39:33 (Sending 97 ads in response to query)
+10/09/24 18:39:33 Query info: matched=97; skipped=4; query_time=0.001271; send_time=0.008005; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44649>; projection={}; filter_private_attrs=0
+10/09/24 18:40:14 (Sending 1 ads in response to query)
+10/09/24 18:40:14 Query info: matched=1; skipped=0; query_time=0.000173; send_time=0.000158; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39621>; projection={}; filter_private_attrs=1
+10/09/24 18:40:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:40:14 QueryWorker: forked new high priority worker with id 834445 ( max 4 active 1 pending 0 )
+10/09/24 18:40:14 (Sending 96 ads in response to query)
+10/09/24 18:40:14 Query info: matched=96; skipped=0; query_time=0.001747; send_time=0.001979; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35827>; projection={}; filter_private_attrs=0
+10/09/24 18:40:14 QueryWorker: forked new high priority worker with id 834446 ( max 4 active 1 pending 0 )
+10/09/24 18:40:14 (Sending 97 ads in response to query)
+10/09/24 18:40:14 Query info: matched=97; skipped=4; query_time=0.001329; send_time=0.008837; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46523>; projection={}; filter_private_attrs=0
+10/09/24 18:41:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:41:14 QueryWorker: forked new high priority worker with id 834507 ( max 4 active 1 pending 0 )
+10/09/24 18:41:14 (Sending 96 ads in response to query)
+10/09/24 18:41:14 Query info: matched=96; skipped=0; query_time=0.003316; send_time=0.002133; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:32847>; projection={}; filter_private_attrs=0
+10/09/24 18:41:14 QueryWorker: forked new high priority worker with id 834508 ( max 4 active 1 pending 0 )
+10/09/24 18:41:14 (Sending 97 ads in response to query)
+10/09/24 18:41:14 Query info: matched=97; skipped=4; query_time=0.002205; send_time=0.015677; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34583>; projection={}; filter_private_attrs=0
+10/09/24 18:42:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:42:14 QueryWorker: forked new high priority worker with id 834569 ( max 4 active 1 pending 0 )
+10/09/24 18:42:14 (Sending 96 ads in response to query)
+10/09/24 18:42:14 Query info: matched=96; skipped=0; query_time=0.001953; send_time=0.002697; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39653>; projection={}; filter_private_attrs=0
+10/09/24 18:42:14 QueryWorker: forked new high priority worker with id 834571 ( max 4 active 1 pending 0 )
+10/09/24 18:42:14 (Sending 97 ads in response to query)
+10/09/24 18:42:14 Query info: matched=97; skipped=4; query_time=0.001453; send_time=0.010797; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37209>; projection={}; filter_private_attrs=0
+10/09/24 18:43:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:43:14 QueryWorker: forked new high priority worker with id 834618 ( max 4 active 1 pending 0 )
+10/09/24 18:43:14 (Sending 96 ads in response to query)
+10/09/24 18:43:14 Query info: matched=96; skipped=0; query_time=0.001739; send_time=0.002155; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34859>; projection={}; filter_private_attrs=0
+10/09/24 18:43:14 QueryWorker: forked new high priority worker with id 834619 ( max 4 active 1 pending 0 )
+10/09/24 18:43:14 (Sending 97 ads in response to query)
+10/09/24 18:43:14 Query info: matched=97; skipped=4; query_time=0.001665; send_time=0.013979; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35555>; projection={}; filter_private_attrs=0
+10/09/24 18:44:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:44:14 QueryWorker: forked new high priority worker with id 834756 ( max 4 active 1 pending 0 )
+10/09/24 18:44:14 (Sending 96 ads in response to query)
+10/09/24 18:44:14 Query info: matched=96; skipped=0; query_time=0.001944; send_time=0.002157; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38369>; projection={}; filter_private_attrs=0
+10/09/24 18:44:14 QueryWorker: forked new high priority worker with id 834757 ( max 4 active 1 pending 0 )
+10/09/24 18:44:14 (Sending 97 ads in response to query)
+10/09/24 18:44:14 Query info: matched=97; skipped=4; query_time=0.001432; send_time=0.009332; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36477>; projection={}; filter_private_attrs=0
+10/09/24 18:45:14 (Sending 1 ads in response to query)
+10/09/24 18:45:14 Query info: matched=1; skipped=0; query_time=0.000136; send_time=0.000116; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43001>; projection={}; filter_private_attrs=1
+10/09/24 18:45:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:45:14 QueryWorker: forked new high priority worker with id 834812 ( max 4 active 1 pending 0 )
+10/09/24 18:45:14 (Sending 96 ads in response to query)
+10/09/24 18:45:14 Query info: matched=96; skipped=0; query_time=0.002066; send_time=0.001949; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38857>; projection={}; filter_private_attrs=0
+10/09/24 18:45:14 QueryWorker: forked new high priority worker with id 834813 ( max 4 active 1 pending 0 )
+10/09/24 18:45:14 (Sending 97 ads in response to query)
+10/09/24 18:45:14 Query info: matched=97; skipped=4; query_time=0.001257; send_time=0.008765; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45485>; projection={}; filter_private_attrs=0
+10/09/24 18:46:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:46:14 QueryWorker: forked new high priority worker with id 834863 ( max 4 active 1 pending 0 )
+10/09/24 18:46:14 (Sending 96 ads in response to query)
+10/09/24 18:46:14 Query info: matched=96; skipped=0; query_time=0.001814; send_time=0.002118; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35481>; projection={}; filter_private_attrs=0
+10/09/24 18:46:14 QueryWorker: forked new high priority worker with id 834864 ( max 4 active 1 pending 0 )
+10/09/24 18:46:14 (Sending 97 ads in response to query)
+10/09/24 18:46:14 Query info: matched=97; skipped=4; query_time=0.001444; send_time=0.009968; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:32895>; projection={}; filter_private_attrs=0
+10/09/24 18:47:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:47:14 QueryWorker: forked new high priority worker with id 834917 ( max 4 active 1 pending 0 )
+10/09/24 18:47:14 (Sending 96 ads in response to query)
+10/09/24 18:47:14 Query info: matched=96; skipped=0; query_time=0.001987; send_time=0.002052; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44113>; projection={}; filter_private_attrs=0
+10/09/24 18:47:14 QueryWorker: forked new high priority worker with id 834918 ( max 4 active 1 pending 0 )
+10/09/24 18:47:14 (Sending 97 ads in response to query)
+10/09/24 18:47:14 Query info: matched=97; skipped=4; query_time=0.001280; send_time=0.008766; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46271>; projection={}; filter_private_attrs=0
+10/09/24 18:48:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:48:14 QueryWorker: forked new high priority worker with id 834973 ( max 4 active 1 pending 0 )
+10/09/24 18:48:14 (Sending 96 ads in response to query)
+10/09/24 18:48:14 Query info: matched=96; skipped=0; query_time=0.001882; send_time=0.002052; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33371>; projection={}; filter_private_attrs=0
+10/09/24 18:48:14 QueryWorker: forked new high priority worker with id 834974 ( max 4 active 1 pending 0 )
+10/09/24 18:48:14 (Sending 97 ads in response to query)
+10/09/24 18:48:14 Query info: matched=97; skipped=4; query_time=0.001285; send_time=0.009156; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33715>; projection={}; filter_private_attrs=0
+10/09/24 18:49:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:49:15 QueryWorker: forked new high priority worker with id 835025 ( max 4 active 1 pending 0 )
+10/09/24 18:49:15 (Sending 96 ads in response to query)
+10/09/24 18:49:15 Query info: matched=96; skipped=0; query_time=0.001928; send_time=0.001936; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41573>; projection={}; filter_private_attrs=0
+10/09/24 18:49:15 QueryWorker: forked new high priority worker with id 835026 ( max 4 active 1 pending 0 )
+10/09/24 18:49:15 (Sending 97 ads in response to query)
+10/09/24 18:49:15 Query info: matched=97; skipped=4; query_time=0.001531; send_time=0.009209; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37953>; projection={}; filter_private_attrs=0
+10/09/24 18:50:14 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:50:14 QueryWorker: forked new high priority worker with id 835075 ( max 4 active 1 pending 0 )
+10/09/24 18:50:14 (Sending 96 ads in response to query)
+10/09/24 18:50:14 Query info: matched=96; skipped=0; query_time=0.001789; send_time=0.002155; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35505>; projection={}; filter_private_attrs=0
+10/09/24 18:50:14 QueryWorker: forked new high priority worker with id 835076 ( max 4 active 1 pending 0 )
+10/09/24 18:50:14 (Sending 97 ads in response to query)
+10/09/24 18:50:14 Query info: matched=97; skipped=4; query_time=0.001607; send_time=0.012519; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45273>; projection={}; filter_private_attrs=0
+10/09/24 18:50:15 (Sending 1 ads in response to query)
+10/09/24 18:50:15 Query info: matched=1; skipped=0; query_time=0.000127; send_time=0.000193; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41361>; projection={}; filter_private_attrs=1
+10/09/24 18:50:34 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:50:34 QueryWorker: forked new high priority worker with id 835101 ( max 4 active 1 pending 0 )
+10/09/24 18:50:34 (Sending 96 ads in response to query)
+10/09/24 18:50:34 Query info: matched=96; skipped=0; query_time=0.001606; send_time=0.002993; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34407>; projection={}; filter_private_attrs=0
+10/09/24 18:50:34 QueryWorker: forked new high priority worker with id 835102 ( max 4 active 1 pending 0 )
+10/09/24 18:50:34 (Sending 97 ads in response to query)
+10/09/24 18:50:34 Query info: matched=97; skipped=4; query_time=0.002096; send_time=0.010851; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40411>; projection={}; filter_private_attrs=0
+10/09/24 18:50:38 Housekeeper:  Ready to clean old ads
+10/09/24 18:50:38 	Cleaning StartdAds ...
+10/09/24 18:50:38 	Cleaning StartdPrivateAds ...
+10/09/24 18:50:38 	Cleaning ScheddAds ...
+10/09/24 18:50:38 	Cleaning SubmittorAds ...
+10/09/24 18:50:38 	Cleaning LicenseAds ...
+10/09/24 18:50:38 	Cleaning MasterAds ...
+10/09/24 18:50:38 	Cleaning CkptServerAds ...
+10/09/24 18:50:38 	Cleaning CollectorAds ...
+10/09/24 18:50:38 	Cleaning StorageAds ...
+10/09/24 18:50:38 	Cleaning AccountingAds ...
+10/09/24 18:50:38 	Cleaning NegotiatorAds ...
+10/09/24 18:50:38 	Cleaning HadAds ...
+10/09/24 18:50:38 	Cleaning GridAds ...
+10/09/24 18:50:38 	Cleaning Generic Ads ...
+10/09/24 18:50:38 Housekeeper:  Done cleaning
+10/09/24 18:51:34 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:51:34 QueryWorker: forked new high priority worker with id 835170 ( max 4 active 1 pending 0 )
+10/09/24 18:51:34 (Sending 96 ads in response to query)
+10/09/24 18:51:34 Query info: matched=96; skipped=0; query_time=0.001690; send_time=0.002114; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37701>; projection={}; filter_private_attrs=0
+10/09/24 18:51:34 QueryWorker: forked new high priority worker with id 835171 ( max 4 active 1 pending 0 )
+10/09/24 18:51:34 (Sending 97 ads in response to query)
+10/09/24 18:51:34 Query info: matched=97; skipped=4; query_time=0.001571; send_time=0.008720; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40689>; projection={}; filter_private_attrs=0
+10/09/24 18:52:34 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:52:34 QueryWorker: forked new high priority worker with id 835230 ( max 4 active 1 pending 0 )
+10/09/24 18:52:34 (Sending 96 ads in response to query)
+10/09/24 18:52:34 Query info: matched=96; skipped=0; query_time=0.002077; send_time=0.001963; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41257>; projection={}; filter_private_attrs=0
+10/09/24 18:52:34 QueryWorker: forked new high priority worker with id 835231 ( max 4 active 1 pending 0 )
+10/09/24 18:52:34 (Sending 97 ads in response to query)
+10/09/24 18:52:34 Query info: matched=97; skipped=4; query_time=0.001759; send_time=0.011839; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38883>; projection={}; filter_private_attrs=0
+10/09/24 18:53:34 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:53:34 QueryWorker: forked new high priority worker with id 835368 ( max 4 active 1 pending 0 )
+10/09/24 18:53:34 (Sending 96 ads in response to query)
+10/09/24 18:53:34 Query info: matched=96; skipped=0; query_time=0.001988; send_time=0.002572; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45285>; projection={}; filter_private_attrs=0
+10/09/24 18:53:34 QueryWorker: forked new high priority worker with id 835369 ( max 4 active 1 pending 0 )
+10/09/24 18:53:34 (Sending 97 ads in response to query)
+10/09/24 18:53:34 Query info: matched=97; skipped=4; query_time=0.001856; send_time=0.012646; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39433>; projection={}; filter_private_attrs=0
+10/09/24 18:54:34 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:54:34 QueryWorker: forked new high priority worker with id 835427 ( max 4 active 1 pending 0 )
+10/09/24 18:54:34 (Sending 96 ads in response to query)
+10/09/24 18:54:34 Query info: matched=96; skipped=0; query_time=0.001723; send_time=0.002084; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38539>; projection={}; filter_private_attrs=0
+10/09/24 18:54:34 QueryWorker: forked new high priority worker with id 835428 ( max 4 active 1 pending 0 )
+10/09/24 18:54:34 (Sending 97 ads in response to query)
+10/09/24 18:54:34 Query info: matched=97; skipped=4; query_time=0.001337; send_time=0.009036; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43197>; projection={}; filter_private_attrs=0
+10/09/24 18:55:16 (Sending 1 ads in response to query)
+10/09/24 18:55:16 Query info: matched=1; skipped=0; query_time=0.000124; send_time=0.000123; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39269>; projection={}; filter_private_attrs=1
+10/09/24 18:55:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:55:16 QueryWorker: forked new high priority worker with id 835464 ( max 4 active 1 pending 0 )
+10/09/24 18:55:16 (Sending 96 ads in response to query)
+10/09/24 18:55:16 Query info: matched=96; skipped=0; query_time=0.001716; send_time=0.001907; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40045>; projection={}; filter_private_attrs=0
+10/09/24 18:55:16 QueryWorker: forked new high priority worker with id 835465 ( max 4 active 1 pending 0 )
+10/09/24 18:55:16 (Sending 97 ads in response to query)
+10/09/24 18:55:16 Query info: matched=97; skipped=4; query_time=0.001393; send_time=0.008401; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39627>; projection={}; filter_private_attrs=0
+10/09/24 18:56:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:56:16 QueryWorker: forked new high priority worker with id 835516 ( max 4 active 1 pending 0 )
+10/09/24 18:56:16 (Sending 96 ads in response to query)
+10/09/24 18:56:16 Query info: matched=96; skipped=0; query_time=0.002492; send_time=0.002135; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36655>; projection={}; filter_private_attrs=0
+10/09/24 18:56:16 QueryWorker: forked new high priority worker with id 835517 ( max 4 active 1 pending 0 )
+10/09/24 18:56:16 (Sending 97 ads in response to query)
+10/09/24 18:56:16 Query info: matched=97; skipped=4; query_time=0.002150; send_time=0.012332; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33165>; projection={}; filter_private_attrs=0
+10/09/24 18:57:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:57:16 QueryWorker: forked new high priority worker with id 835567 ( max 4 active 1 pending 0 )
+10/09/24 18:57:16 (Sending 96 ads in response to query)
+10/09/24 18:57:16 Query info: matched=96; skipped=0; query_time=0.002170; send_time=0.002172; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35509>; projection={}; filter_private_attrs=0
+10/09/24 18:57:16 QueryWorker: forked new high priority worker with id 835568 ( max 4 active 1 pending 0 )
+10/09/24 18:57:16 (Sending 97 ads in response to query)
+10/09/24 18:57:16 Query info: matched=97; skipped=4; query_time=0.001568; send_time=0.009861; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35353>; projection={}; filter_private_attrs=0
+10/09/24 18:58:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:58:16 QueryWorker: forked new high priority worker with id 835618 ( max 4 active 1 pending 0 )
+10/09/24 18:58:16 (Sending 96 ads in response to query)
+10/09/24 18:58:16 Query info: matched=96; skipped=0; query_time=0.002109; send_time=0.002026; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40535>; projection={}; filter_private_attrs=0
+10/09/24 18:58:16 QueryWorker: forked new high priority worker with id 835619 ( max 4 active 1 pending 0 )
+10/09/24 18:58:16 (Sending 97 ads in response to query)
+10/09/24 18:58:16 Query info: matched=97; skipped=4; query_time=0.001379; send_time=0.009125; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37163>; projection={}; filter_private_attrs=0
+10/09/24 18:59:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 18:59:16 QueryWorker: forked new high priority worker with id 835669 ( max 4 active 1 pending 0 )
+10/09/24 18:59:16 (Sending 96 ads in response to query)
+10/09/24 18:59:16 Query info: matched=96; skipped=0; query_time=0.001750; send_time=0.001952; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38357>; projection={}; filter_private_attrs=0
+10/09/24 18:59:16 QueryWorker: forked new high priority worker with id 835670 ( max 4 active 1 pending 0 )
+10/09/24 18:59:16 (Sending 97 ads in response to query)
+10/09/24 18:59:16 Query info: matched=97; skipped=4; query_time=0.001323; send_time=0.008402; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40851>; projection={}; filter_private_attrs=0
+10/09/24 19:00:16 (Sending 1 ads in response to query)
+10/09/24 19:00:16 Query info: matched=1; skipped=0; query_time=0.000121; send_time=0.000117; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41735>; projection={}; filter_private_attrs=1
+10/09/24 19:00:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:00:16 QueryWorker: forked new high priority worker with id 835726 ( max 4 active 1 pending 0 )
+10/09/24 19:00:16 (Sending 96 ads in response to query)
+10/09/24 19:00:16 Query info: matched=96; skipped=0; query_time=0.001927; send_time=0.001908; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44787>; projection={}; filter_private_attrs=0
+10/09/24 19:00:16 QueryWorker: forked new high priority worker with id 835727 ( max 4 active 1 pending 0 )
+10/09/24 19:00:16 (Sending 97 ads in response to query)
+10/09/24 19:00:16 Query info: matched=97; skipped=4; query_time=0.001465; send_time=0.008245; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38967>; projection={}; filter_private_attrs=0
+10/09/24 19:01:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:01:16 QueryWorker: forked new high priority worker with id 835799 ( max 4 active 1 pending 0 )
+10/09/24 19:01:16 (Sending 96 ads in response to query)
+10/09/24 19:01:16 Query info: matched=96; skipped=0; query_time=0.001652; send_time=0.001906; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40459>; projection={}; filter_private_attrs=0
+10/09/24 19:01:16 QueryWorker: forked new high priority worker with id 835800 ( max 4 active 1 pending 0 )
+10/09/24 19:01:16 (Sending 97 ads in response to query)
+10/09/24 19:01:16 Query info: matched=97; skipped=4; query_time=0.001657; send_time=0.009163; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34603>; projection={}; filter_private_attrs=0
+10/09/24 19:02:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:02:16 QueryWorker: forked new high priority worker with id 835879 ( max 4 active 1 pending 0 )
+10/09/24 19:02:16 (Sending 96 ads in response to query)
+10/09/24 19:02:16 Query info: matched=96; skipped=0; query_time=0.001561; send_time=0.002006; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43321>; projection={}; filter_private_attrs=0
+10/09/24 19:02:16 QueryWorker: forked new high priority worker with id 835880 ( max 4 active 1 pending 0 )
+10/09/24 19:02:16 (Sending 97 ads in response to query)
+10/09/24 19:02:16 Query info: matched=97; skipped=4; query_time=0.001294; send_time=0.008063; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42247>; projection={}; filter_private_attrs=0
+10/09/24 19:03:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:03:16 QueryWorker: forked new high priority worker with id 835955 ( max 4 active 1 pending 0 )
+10/09/24 19:03:16 (Sending 96 ads in response to query)
+10/09/24 19:03:16 Query info: matched=96; skipped=0; query_time=0.002202; send_time=0.001920; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36715>; projection={}; filter_private_attrs=0
+10/09/24 19:03:16 QueryWorker: forked new high priority worker with id 835956 ( max 4 active 1 pending 0 )
+10/09/24 19:03:16 (Sending 97 ads in response to query)
+10/09/24 19:03:16 Query info: matched=97; skipped=4; query_time=0.001438; send_time=0.009693; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34669>; projection={}; filter_private_attrs=0
+10/09/24 19:04:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:04:16 QueryWorker: forked new high priority worker with id 836016 ( max 4 active 1 pending 0 )
+10/09/24 19:04:16 (Sending 96 ads in response to query)
+10/09/24 19:04:16 Query info: matched=96; skipped=0; query_time=0.002191; send_time=0.002192; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36291>; projection={}; filter_private_attrs=0
+10/09/24 19:04:16 QueryWorker: forked new high priority worker with id 836017 ( max 4 active 1 pending 0 )
+10/09/24 19:04:16 (Sending 97 ads in response to query)
+10/09/24 19:04:17 Query info: matched=97; skipped=4; query_time=0.001882; send_time=0.010563; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38195>; projection={}; filter_private_attrs=0
+10/09/24 19:05:16 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:05:16 QueryWorker: forked new high priority worker with id 836076 ( max 4 active 1 pending 0 )
+10/09/24 19:05:16 (Sending 96 ads in response to query)
+10/09/24 19:05:16 Query info: matched=96; skipped=0; query_time=0.001792; send_time=0.002014; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39555>; projection={}; filter_private_attrs=0
+10/09/24 19:05:16 QueryWorker: forked new high priority worker with id 836077 ( max 4 active 1 pending 0 )
+10/09/24 19:05:16 (Sending 97 ads in response to query)
+10/09/24 19:05:16 Query info: matched=97; skipped=4; query_time=0.001789; send_time=0.010273; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44917>; projection={}; filter_private_attrs=0
+10/09/24 19:05:17 (Sending 1 ads in response to query)
+10/09/24 19:05:17 Query info: matched=1; skipped=0; query_time=0.000134; send_time=0.000128; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35955>; projection={}; filter_private_attrs=1
+10/09/24 19:05:36 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:05:36 QueryWorker: forked new high priority worker with id 836095 ( max 4 active 1 pending 0 )
+10/09/24 19:05:36 (Sending 96 ads in response to query)
+10/09/24 19:05:36 Query info: matched=96; skipped=0; query_time=0.001692; send_time=0.002198; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40951>; projection={}; filter_private_attrs=0
+10/09/24 19:05:36 QueryWorker: forked new high priority worker with id 836096 ( max 4 active 1 pending 0 )
+10/09/24 19:05:36 (Sending 97 ads in response to query)
+10/09/24 19:05:36 Query info: matched=97; skipped=4; query_time=0.001852; send_time=0.011121; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39503>; projection={}; filter_private_attrs=0
+10/09/24 19:05:38 Housekeeper:  Ready to clean old ads
+10/09/24 19:05:38 	Cleaning StartdAds ...
+10/09/24 19:05:38 	Cleaning StartdPrivateAds ...
+10/09/24 19:05:38 	Cleaning ScheddAds ...
+10/09/24 19:05:38 	Cleaning SubmittorAds ...
+10/09/24 19:05:38 	Cleaning LicenseAds ...
+10/09/24 19:05:38 	Cleaning MasterAds ...
+10/09/24 19:05:38 	Cleaning CkptServerAds ...
+10/09/24 19:05:38 	Cleaning CollectorAds ...
+10/09/24 19:05:38 	Cleaning StorageAds ...
+10/09/24 19:05:38 	Cleaning AccountingAds ...
+10/09/24 19:05:38 	Cleaning NegotiatorAds ...
+10/09/24 19:05:38 	Cleaning HadAds ...
+10/09/24 19:05:38 	Cleaning GridAds ...
+10/09/24 19:05:38 	Cleaning Generic Ads ...
+10/09/24 19:05:38 Housekeeper:  Done cleaning
+10/09/24 19:06:36 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:06:36 QueryWorker: forked new high priority worker with id 836150 ( max 4 active 1 pending 0 )
+10/09/24 19:06:36 (Sending 96 ads in response to query)
+10/09/24 19:06:36 QueryWorker: forked new high priority worker with id 836151 ( max 4 active 2 pending 0 )
+10/09/24 19:06:36 Query info: matched=96; skipped=0; query_time=0.066244; send_time=0.002078; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34553>; projection={}; filter_private_attrs=0
+10/09/24 19:06:36 (Sending 97 ads in response to query)
+10/09/24 19:06:36 Query info: matched=97; skipped=4; query_time=0.034492; send_time=0.012996; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34519>; projection={}; filter_private_attrs=0
+10/09/24 19:07:36 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:07:36 QueryWorker: forked new high priority worker with id 836204 ( max 4 active 1 pending 0 )
+10/09/24 19:07:36 (Sending 96 ads in response to query)
+10/09/24 19:07:36 Query info: matched=96; skipped=0; query_time=0.002224; send_time=0.002324; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45351>; projection={}; filter_private_attrs=0
+10/09/24 19:07:36 QueryWorker: forked new high priority worker with id 836205 ( max 4 active 1 pending 0 )
+10/09/24 19:07:36 (Sending 97 ads in response to query)
+10/09/24 19:07:36 Query info: matched=97; skipped=4; query_time=0.001435; send_time=0.011590; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45103>; projection={}; filter_private_attrs=0
+10/09/24 19:08:36 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:08:36 QueryWorker: forked new high priority worker with id 836255 ( max 4 active 1 pending 0 )
+10/09/24 19:08:36 (Sending 96 ads in response to query)
+10/09/24 19:08:36 Query info: matched=96; skipped=0; query_time=0.002132; send_time=0.002190; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41987>; projection={}; filter_private_attrs=0
+10/09/24 19:08:36 QueryWorker: forked new high priority worker with id 836256 ( max 4 active 1 pending 0 )
+10/09/24 19:08:36 (Sending 97 ads in response to query)
+10/09/24 19:08:36 Query info: matched=97; skipped=4; query_time=0.001336; send_time=0.011302; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40477>; projection={}; filter_private_attrs=0
+10/09/24 19:09:36 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:09:36 QueryWorker: forked new high priority worker with id 836307 ( max 4 active 1 pending 0 )
+10/09/24 19:09:36 (Sending 96 ads in response to query)
+10/09/24 19:09:36 Query info: matched=96; skipped=0; query_time=0.002196; send_time=0.002279; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36585>; projection={}; filter_private_attrs=0
+10/09/24 19:09:36 QueryWorker: forked new high priority worker with id 836308 ( max 4 active 1 pending 0 )
+10/09/24 19:09:36 (Sending 97 ads in response to query)
+10/09/24 19:09:36 Query info: matched=97; skipped=4; query_time=0.001715; send_time=0.012729; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40095>; projection={}; filter_private_attrs=0
+10/09/24 19:10:18 (Sending 1 ads in response to query)
+10/09/24 19:10:18 Query info: matched=1; skipped=0; query_time=0.000161; send_time=0.000195; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43485>; projection={}; filter_private_attrs=1
+10/09/24 19:10:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:10:18 QueryWorker: forked new high priority worker with id 836345 ( max 4 active 1 pending 0 )
+10/09/24 19:10:18 (Sending 96 ads in response to query)
+10/09/24 19:10:18 Query info: matched=96; skipped=0; query_time=0.001971; send_time=0.002034; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33101>; projection={}; filter_private_attrs=0
+10/09/24 19:10:18 QueryWorker: forked new high priority worker with id 836346 ( max 4 active 1 pending 0 )
+10/09/24 19:10:18 (Sending 97 ads in response to query)
+10/09/24 19:10:18 Query info: matched=97; skipped=4; query_time=0.001546; send_time=0.010977; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33617>; projection={}; filter_private_attrs=0
+10/09/24 19:11:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:11:18 QueryWorker: forked new high priority worker with id 836404 ( max 4 active 1 pending 0 )
+10/09/24 19:11:18 (Sending 96 ads in response to query)
+10/09/24 19:11:18 Query info: matched=96; skipped=0; query_time=0.001622; send_time=0.002080; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39563>; projection={}; filter_private_attrs=0
+10/09/24 19:11:18 QueryWorker: forked new high priority worker with id 836405 ( max 4 active 1 pending 0 )
+10/09/24 19:11:18 (Sending 97 ads in response to query)
+10/09/24 19:11:18 Query info: matched=97; skipped=4; query_time=0.001670; send_time=0.010615; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40599>; projection={}; filter_private_attrs=0
+10/09/24 19:12:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:12:18 QueryWorker: forked new high priority worker with id 836456 ( max 4 active 1 pending 0 )
+10/09/24 19:12:18 (Sending 96 ads in response to query)
+10/09/24 19:12:18 Query info: matched=96; skipped=0; query_time=0.001758; send_time=0.002093; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42953>; projection={}; filter_private_attrs=0
+10/09/24 19:12:18 QueryWorker: forked new high priority worker with id 836457 ( max 4 active 1 pending 0 )
+10/09/24 19:12:18 (Sending 97 ads in response to query)
+10/09/24 19:12:18 Query info: matched=97; skipped=4; query_time=0.001586; send_time=0.009117; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33755>; projection={}; filter_private_attrs=0
+10/09/24 19:13:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:13:18 QueryWorker: forked new high priority worker with id 836524 ( max 4 active 1 pending 0 )
+10/09/24 19:13:18 (Sending 96 ads in response to query)
+10/09/24 19:13:18 Query info: matched=96; skipped=0; query_time=0.001820; send_time=0.001973; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41427>; projection={}; filter_private_attrs=0
+10/09/24 19:13:18 QueryWorker: forked new high priority worker with id 836525 ( max 4 active 1 pending 0 )
+10/09/24 19:13:18 (Sending 97 ads in response to query)
+10/09/24 19:13:18 Query info: matched=97; skipped=4; query_time=0.001775; send_time=0.010646; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36411>; projection={}; filter_private_attrs=0
+10/09/24 19:14:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:14:18 QueryWorker: forked new high priority worker with id 836589 ( max 4 active 1 pending 0 )
+10/09/24 19:14:18 (Sending 96 ads in response to query)
+10/09/24 19:14:18 Query info: matched=96; skipped=0; query_time=0.001853; send_time=0.002253; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41423>; projection={}; filter_private_attrs=0
+10/09/24 19:14:18 QueryWorker: forked new high priority worker with id 836590 ( max 4 active 1 pending 0 )
+10/09/24 19:14:18 (Sending 97 ads in response to query)
+10/09/24 19:14:18 Query info: matched=97; skipped=4; query_time=0.001664; send_time=0.011775; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33161>; projection={}; filter_private_attrs=0
+10/09/24 19:15:18 (Sending 1 ads in response to query)
+10/09/24 19:15:18 Query info: matched=1; skipped=0; query_time=0.000112; send_time=0.000127; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40729>; projection={}; filter_private_attrs=1
+10/09/24 19:15:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:15:18 QueryWorker: forked new high priority worker with id 836644 ( max 4 active 1 pending 0 )
+10/09/24 19:15:18 (Sending 96 ads in response to query)
+10/09/24 19:15:18 Query info: matched=96; skipped=0; query_time=0.001874; send_time=0.002335; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36157>; projection={}; filter_private_attrs=0
+10/09/24 19:15:18 QueryWorker: forked new high priority worker with id 836645 ( max 4 active 1 pending 0 )
+10/09/24 19:15:18 (Sending 97 ads in response to query)
+10/09/24 19:15:18 Query info: matched=97; skipped=4; query_time=0.001683; send_time=0.011940; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35057>; projection={}; filter_private_attrs=0
+10/09/24 19:16:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:16:18 QueryWorker: forked new high priority worker with id 836697 ( max 4 active 1 pending 0 )
+10/09/24 19:16:18 (Sending 96 ads in response to query)
+10/09/24 19:16:18 Query info: matched=96; skipped=0; query_time=0.001813; send_time=0.002252; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33131>; projection={}; filter_private_attrs=0
+10/09/24 19:16:18 QueryWorker: forked new high priority worker with id 836698 ( max 4 active 1 pending 0 )
+10/09/24 19:16:18 (Sending 97 ads in response to query)
+10/09/24 19:16:18 Query info: matched=97; skipped=4; query_time=0.001725; send_time=0.009969; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37195>; projection={}; filter_private_attrs=0
+10/09/24 19:17:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:17:18 QueryWorker: forked new high priority worker with id 836748 ( max 4 active 1 pending 0 )
+10/09/24 19:17:18 (Sending 96 ads in response to query)
+10/09/24 19:17:18 Query info: matched=96; skipped=0; query_time=0.001730; send_time=0.002161; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45475>; projection={}; filter_private_attrs=0
+10/09/24 19:17:18 QueryWorker: forked new high priority worker with id 836749 ( max 4 active 1 pending 0 )
+10/09/24 19:17:18 (Sending 97 ads in response to query)
+10/09/24 19:17:18 Query info: matched=97; skipped=4; query_time=0.001734; send_time=0.011096; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37215>; projection={}; filter_private_attrs=0
+10/09/24 19:18:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:18:18 QueryWorker: forked new high priority worker with id 836801 ( max 4 active 1 pending 0 )
+10/09/24 19:18:18 (Sending 96 ads in response to query)
+10/09/24 19:18:18 Query info: matched=96; skipped=0; query_time=0.001968; send_time=0.002181; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40853>; projection={}; filter_private_attrs=0
+10/09/24 19:18:18 QueryWorker: forked new high priority worker with id 836802 ( max 4 active 1 pending 0 )
+10/09/24 19:18:18 (Sending 97 ads in response to query)
+10/09/24 19:18:18 Query info: matched=97; skipped=4; query_time=0.001838; send_time=0.010613; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36983>; projection={}; filter_private_attrs=0
+10/09/24 19:19:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:19:18 QueryWorker: forked new high priority worker with id 836853 ( max 4 active 1 pending 0 )
+10/09/24 19:19:18 (Sending 96 ads in response to query)
+10/09/24 19:19:18 Query info: matched=96; skipped=0; query_time=0.001845; send_time=0.002260; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39925>; projection={}; filter_private_attrs=0
+10/09/24 19:19:18 QueryWorker: forked new high priority worker with id 836854 ( max 4 active 1 pending 0 )
+10/09/24 19:19:18 (Sending 97 ads in response to query)
+10/09/24 19:19:18 Query info: matched=97; skipped=4; query_time=0.001663; send_time=0.011336; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33911>; projection={}; filter_private_attrs=0
+10/09/24 19:20:18 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:20:18 QueryWorker: forked new high priority worker with id 836903 ( max 4 active 1 pending 0 )
+10/09/24 19:20:18 (Sending 96 ads in response to query)
+10/09/24 19:20:18 Query info: matched=96; skipped=0; query_time=0.003157; send_time=0.002311; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37231>; projection={}; filter_private_attrs=0
+10/09/24 19:20:18 QueryWorker: forked new high priority worker with id 836904 ( max 4 active 1 pending 0 )
+10/09/24 19:20:18 (Sending 97 ads in response to query)
+10/09/24 19:20:18 Query info: matched=97; skipped=4; query_time=0.001796; send_time=0.012049; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33011>; projection={}; filter_private_attrs=0
+10/09/24 19:20:19 (Sending 1 ads in response to query)
+10/09/24 19:20:19 Query info: matched=1; skipped=0; query_time=0.000113; send_time=0.000123; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44849>; projection={}; filter_private_attrs=1
+10/09/24 19:20:38 Housekeeper:  Ready to clean old ads
+10/09/24 19:20:38 	Cleaning StartdAds ...
+10/09/24 19:20:38 	Cleaning StartdPrivateAds ...
+10/09/24 19:20:38 	Cleaning ScheddAds ...
+10/09/24 19:20:38 	Cleaning SubmittorAds ...
+10/09/24 19:20:38 	Cleaning LicenseAds ...
+10/09/24 19:20:38 	Cleaning MasterAds ...
+10/09/24 19:20:38 	Cleaning CkptServerAds ...
+10/09/24 19:20:38 	Cleaning CollectorAds ...
+10/09/24 19:20:38 	Cleaning StorageAds ...
+10/09/24 19:20:38 	Cleaning AccountingAds ...
+10/09/24 19:20:38 	Cleaning NegotiatorAds ...
+10/09/24 19:20:38 	Cleaning HadAds ...
+10/09/24 19:20:38 	Cleaning GridAds ...
+10/09/24 19:20:38 	Cleaning Generic Ads ...
+10/09/24 19:20:38 Housekeeper:  Done cleaning
+10/09/24 19:20:38 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:20:38 QueryWorker: forked new high priority worker with id 836921 ( max 4 active 1 pending 0 )
+10/09/24 19:20:38 (Sending 96 ads in response to query)
+10/09/24 19:20:38 Query info: matched=96; skipped=0; query_time=0.001696; send_time=0.002141; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38443>; projection={}; filter_private_attrs=0
+10/09/24 19:20:38 QueryWorker: forked new high priority worker with id 836922 ( max 4 active 1 pending 0 )
+10/09/24 19:20:38 (Sending 97 ads in response to query)
+10/09/24 19:20:38 Query info: matched=97; skipped=4; query_time=0.001510; send_time=0.010562; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43301>; projection={}; filter_private_attrs=0
+10/09/24 19:21:39 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:21:39 QueryWorker: forked new high priority worker with id 836973 ( max 4 active 1 pending 0 )
+10/09/24 19:21:39 (Sending 96 ads in response to query)
+10/09/24 19:21:39 Query info: matched=96; skipped=0; query_time=0.001646; send_time=0.002131; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46799>; projection={}; filter_private_attrs=0
+10/09/24 19:21:39 QueryWorker: forked new high priority worker with id 836974 ( max 4 active 1 pending 0 )
+10/09/24 19:21:39 (Sending 97 ads in response to query)
+10/09/24 19:21:39 Query info: matched=97; skipped=4; query_time=0.001742; send_time=0.010241; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45239>; projection={}; filter_private_attrs=0
+10/09/24 19:22:39 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:22:39 QueryWorker: forked new high priority worker with id 837044 ( max 4 active 1 pending 0 )
+10/09/24 19:22:39 (Sending 96 ads in response to query)
+10/09/24 19:22:39 Query info: matched=96; skipped=0; query_time=0.001753; send_time=0.001953; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42191>; projection={}; filter_private_attrs=0
+10/09/24 19:22:39 QueryWorker: forked new high priority worker with id 837045 ( max 4 active 1 pending 0 )
+10/09/24 19:22:39 (Sending 97 ads in response to query)
+10/09/24 19:22:39 Query info: matched=97; skipped=4; query_time=0.001728; send_time=0.009981; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40659>; projection={}; filter_private_attrs=0
+10/09/24 19:23:39 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:23:39 QueryWorker: forked new high priority worker with id 837100 ( max 4 active 1 pending 0 )
+10/09/24 19:23:39 (Sending 96 ads in response to query)
+10/09/24 19:23:39 Query info: matched=96; skipped=0; query_time=0.002361; send_time=0.001974; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39489>; projection={}; filter_private_attrs=0
+10/09/24 19:23:39 QueryWorker: forked new high priority worker with id 837101 ( max 4 active 1 pending 0 )
+10/09/24 19:23:39 (Sending 97 ads in response to query)
+10/09/24 19:23:39 Query info: matched=97; skipped=4; query_time=0.001661; send_time=0.009900; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46005>; projection={}; filter_private_attrs=0
+10/09/24 19:24:39 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:24:39 QueryWorker: forked new high priority worker with id 837155 ( max 4 active 1 pending 0 )
+10/09/24 19:24:39 (Sending 96 ads in response to query)
+10/09/24 19:24:39 Query info: matched=96; skipped=0; query_time=0.001664; send_time=0.002050; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46343>; projection={}; filter_private_attrs=0
+10/09/24 19:24:39 QueryWorker: forked new high priority worker with id 837156 ( max 4 active 1 pending 0 )
+10/09/24 19:24:39 (Sending 97 ads in response to query)
+10/09/24 19:24:39 Query info: matched=97; skipped=4; query_time=0.001528; send_time=0.010239; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38433>; projection={}; filter_private_attrs=0
+10/09/24 19:25:20 (Sending 1 ads in response to query)
+10/09/24 19:25:20 Query info: matched=1; skipped=0; query_time=0.000105; send_time=0.000114; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36879>; projection={}; filter_private_attrs=1
+10/09/24 19:25:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:25:20 QueryWorker: forked new high priority worker with id 837190 ( max 4 active 1 pending 0 )
+10/09/24 19:25:20 (Sending 96 ads in response to query)
+10/09/24 19:25:20 Query info: matched=96; skipped=0; query_time=0.001307; send_time=0.001951; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42195>; projection={}; filter_private_attrs=0
+10/09/24 19:25:20 QueryWorker: forked new high priority worker with id 837191 ( max 4 active 1 pending 0 )
+10/09/24 19:25:20 (Sending 97 ads in response to query)
+10/09/24 19:25:20 Query info: matched=97; skipped=4; query_time=0.001599; send_time=0.009975; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39391>; projection={}; filter_private_attrs=0
+10/09/24 19:26:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:26:20 QueryWorker: forked new high priority worker with id 837245 ( max 4 active 1 pending 0 )
+10/09/24 19:26:20 (Sending 96 ads in response to query)
+10/09/24 19:26:20 Query info: matched=96; skipped=0; query_time=0.001758; send_time=0.002066; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40437>; projection={}; filter_private_attrs=0
+10/09/24 19:26:20 QueryWorker: forked new high priority worker with id 837246 ( max 4 active 1 pending 0 )
+10/09/24 19:26:20 (Sending 97 ads in response to query)
+10/09/24 19:26:20 Query info: matched=97; skipped=4; query_time=0.001544; send_time=0.009709; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43371>; projection={}; filter_private_attrs=0
+10/09/24 19:27:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:27:20 QueryWorker: forked new high priority worker with id 837295 ( max 4 active 1 pending 0 )
+10/09/24 19:27:20 (Sending 96 ads in response to query)
+10/09/24 19:27:20 Query info: matched=96; skipped=0; query_time=0.001575; send_time=0.002001; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40979>; projection={}; filter_private_attrs=0
+10/09/24 19:27:20 QueryWorker: forked new high priority worker with id 837296 ( max 4 active 1 pending 0 )
+10/09/24 19:27:20 (Sending 97 ads in response to query)
+10/09/24 19:27:20 Query info: matched=97; skipped=4; query_time=0.001673; send_time=0.010153; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36723>; projection={}; filter_private_attrs=0
+10/09/24 19:28:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:28:20 QueryWorker: forked new high priority worker with id 837345 ( max 4 active 1 pending 0 )
+10/09/24 19:28:20 (Sending 96 ads in response to query)
+10/09/24 19:28:20 Query info: matched=96; skipped=0; query_time=0.001626; send_time=0.002077; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38687>; projection={}; filter_private_attrs=0
+10/09/24 19:28:20 QueryWorker: forked new high priority worker with id 837346 ( max 4 active 1 pending 0 )
+10/09/24 19:28:20 (Sending 97 ads in response to query)
+10/09/24 19:28:20 Query info: matched=97; skipped=4; query_time=0.001545; send_time=0.008984; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37559>; projection={}; filter_private_attrs=0
+10/09/24 19:29:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:29:20 QueryWorker: forked new high priority worker with id 837396 ( max 4 active 1 pending 0 )
+10/09/24 19:29:20 (Sending 96 ads in response to query)
+10/09/24 19:29:20 Query info: matched=96; skipped=0; query_time=0.001562; send_time=0.001986; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40641>; projection={}; filter_private_attrs=0
+10/09/24 19:29:20 QueryWorker: forked new high priority worker with id 837397 ( max 4 active 1 pending 0 )
+10/09/24 19:29:20 (Sending 97 ads in response to query)
+10/09/24 19:29:20 Query info: matched=97; skipped=4; query_time=0.001706; send_time=0.010296; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44849>; projection={}; filter_private_attrs=0
+10/09/24 19:30:20 (Sending 1 ads in response to query)
+10/09/24 19:30:20 Query info: matched=1; skipped=0; query_time=0.000097; send_time=0.000110; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36669>; projection={}; filter_private_attrs=1
+10/09/24 19:30:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:30:20 QueryWorker: forked new high priority worker with id 837447 ( max 4 active 1 pending 0 )
+10/09/24 19:30:20 (Sending 96 ads in response to query)
+10/09/24 19:30:20 Query info: matched=96; skipped=0; query_time=0.001824; send_time=0.002004; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41421>; projection={}; filter_private_attrs=0
+10/09/24 19:30:20 QueryWorker: forked new high priority worker with id 837448 ( max 4 active 1 pending 0 )
+10/09/24 19:30:20 (Sending 97 ads in response to query)
+10/09/24 19:30:20 Query info: matched=97; skipped=4; query_time=0.001467; send_time=0.009120; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44817>; projection={}; filter_private_attrs=0
+10/09/24 19:31:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:31:20 QueryWorker: forked new high priority worker with id 837498 ( max 4 active 1 pending 0 )
+10/09/24 19:31:20 (Sending 96 ads in response to query)
+10/09/24 19:31:20 Query info: matched=96; skipped=0; query_time=0.001589; send_time=0.002046; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37007>; projection={}; filter_private_attrs=0
+10/09/24 19:31:20 QueryWorker: forked new high priority worker with id 837499 ( max 4 active 1 pending 0 )
+10/09/24 19:31:20 (Sending 97 ads in response to query)
+10/09/24 19:31:20 Query info: matched=97; skipped=4; query_time=0.001647; send_time=0.009873; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45155>; projection={}; filter_private_attrs=0
+10/09/24 19:32:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:32:20 QueryWorker: forked new high priority worker with id 837548 ( max 4 active 1 pending 0 )
+10/09/24 19:32:20 (Sending 96 ads in response to query)
+10/09/24 19:32:20 Query info: matched=96; skipped=0; query_time=0.001691; send_time=0.001998; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36927>; projection={}; filter_private_attrs=0
+10/09/24 19:32:20 QueryWorker: forked new high priority worker with id 837549 ( max 4 active 1 pending 0 )
+10/09/24 19:32:20 (Sending 97 ads in response to query)
+10/09/24 19:32:20 Query info: matched=97; skipped=4; query_time=0.001667; send_time=0.009031; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42703>; projection={}; filter_private_attrs=0
+10/09/24 19:33:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:33:20 QueryWorker: forked new high priority worker with id 837598 ( max 4 active 1 pending 0 )
+10/09/24 19:33:20 (Sending 96 ads in response to query)
+10/09/24 19:33:20 Query info: matched=96; skipped=0; query_time=0.001638; send_time=0.002039; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45335>; projection={}; filter_private_attrs=0
+10/09/24 19:33:20 QueryWorker: forked new high priority worker with id 837599 ( max 4 active 1 pending 0 )
+10/09/24 19:33:20 (Sending 97 ads in response to query)
+10/09/24 19:33:20 Query info: matched=97; skipped=4; query_time=0.001692; send_time=0.010003; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33401>; projection={}; filter_private_attrs=0
+10/09/24 19:34:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:34:20 QueryWorker: forked new high priority worker with id 837649 ( max 4 active 1 pending 0 )
+10/09/24 19:34:20 (Sending 96 ads in response to query)
+10/09/24 19:34:20 Query info: matched=96; skipped=0; query_time=0.001825; send_time=0.001980; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35489>; projection={}; filter_private_attrs=0
+10/09/24 19:34:20 QueryWorker: forked new high priority worker with id 837650 ( max 4 active 1 pending 0 )
+10/09/24 19:34:20 (Sending 97 ads in response to query)
+10/09/24 19:34:20 Query info: matched=97; skipped=4; query_time=0.001605; send_time=0.009068; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45433>; projection={}; filter_private_attrs=0
+10/09/24 19:35:20 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:35:20 QueryWorker: forked new high priority worker with id 837699 ( max 4 active 1 pending 0 )
+10/09/24 19:35:20 (Sending 96 ads in response to query)
+10/09/24 19:35:20 Query info: matched=96; skipped=0; query_time=0.001691; send_time=0.002032; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37909>; projection={}; filter_private_attrs=0
+10/09/24 19:35:20 QueryWorker: forked new high priority worker with id 837700 ( max 4 active 1 pending 0 )
+10/09/24 19:35:20 (Sending 97 ads in response to query)
+10/09/24 19:35:20 Query info: matched=97; skipped=4; query_time=0.001415; send_time=0.009321; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45529>; projection={}; filter_private_attrs=0
+10/09/24 19:35:21 (Sending 1 ads in response to query)
+10/09/24 19:35:21 Query info: matched=1; skipped=0; query_time=0.000103; send_time=0.000102; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35331>; projection={}; filter_private_attrs=1
+10/09/24 19:35:38 Housekeeper:  Ready to clean old ads
+10/09/24 19:35:38 	Cleaning StartdAds ...
+10/09/24 19:35:38 	Cleaning StartdPrivateAds ...
+10/09/24 19:35:38 	Cleaning ScheddAds ...
+10/09/24 19:35:38 	Cleaning SubmittorAds ...
+10/09/24 19:35:38 	Cleaning LicenseAds ...
+10/09/24 19:35:38 	Cleaning MasterAds ...
+10/09/24 19:35:38 	Cleaning CkptServerAds ...
+10/09/24 19:35:38 	Cleaning CollectorAds ...
+10/09/24 19:35:38 	Cleaning StorageAds ...
+10/09/24 19:35:38 	Cleaning AccountingAds ...
+10/09/24 19:35:38 	Cleaning NegotiatorAds ...
+10/09/24 19:35:38 	Cleaning HadAds ...
+10/09/24 19:35:38 	Cleaning GridAds ...
+10/09/24 19:35:38 	Cleaning Generic Ads ...
+10/09/24 19:35:38 Housekeeper:  Done cleaning
+10/09/24 19:35:40 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:35:40 QueryWorker: forked new high priority worker with id 837717 ( max 4 active 1 pending 0 )
+10/09/24 19:35:40 (Sending 96 ads in response to query)
+10/09/24 19:35:40 Query info: matched=96; skipped=0; query_time=0.001783; send_time=0.002003; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42369>; projection={}; filter_private_attrs=0
+10/09/24 19:35:40 QueryWorker: forked new high priority worker with id 837718 ( max 4 active 1 pending 0 )
+10/09/24 19:35:40 (Sending 97 ads in response to query)
+10/09/24 19:35:40 Query info: matched=97; skipped=4; query_time=0.001619; send_time=0.009104; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41569>; projection={}; filter_private_attrs=0
+10/09/24 19:36:40 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:36:40 QueryWorker: forked new high priority worker with id 837769 ( max 4 active 1 pending 0 )
+10/09/24 19:36:40 (Sending 96 ads in response to query)
+10/09/24 19:36:40 Query info: matched=96; skipped=0; query_time=0.001719; send_time=0.002031; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39621>; projection={}; filter_private_attrs=0
+10/09/24 19:36:40 QueryWorker: forked new high priority worker with id 837770 ( max 4 active 1 pending 0 )
+10/09/24 19:36:40 (Sending 97 ads in response to query)
+10/09/24 19:36:40 Query info: matched=97; skipped=4; query_time=0.001603; send_time=0.010717; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44195>; projection={}; filter_private_attrs=0
+10/09/24 19:37:40 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:37:40 QueryWorker: forked new high priority worker with id 837826 ( max 4 active 1 pending 0 )
+10/09/24 19:37:40 (Sending 96 ads in response to query)
+10/09/24 19:37:40 Query info: matched=96; skipped=0; query_time=0.002020; send_time=0.002466; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38669>; projection={}; filter_private_attrs=0
+10/09/24 19:37:40 QueryWorker: forked new high priority worker with id 837827 ( max 4 active 1 pending 0 )
+10/09/24 19:37:40 (Sending 97 ads in response to query)
+10/09/24 19:37:40 Query info: matched=97; skipped=4; query_time=0.001716; send_time=0.012261; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41485>; projection={}; filter_private_attrs=0
+10/09/24 19:38:40 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:38:40 QueryWorker: forked new high priority worker with id 837887 ( max 4 active 1 pending 0 )
+10/09/24 19:38:40 (Sending 96 ads in response to query)
+10/09/24 19:38:40 Query info: matched=96; skipped=0; query_time=0.001832; send_time=0.002267; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37921>; projection={}; filter_private_attrs=0
+10/09/24 19:38:40 QueryWorker: forked new high priority worker with id 837888 ( max 4 active 1 pending 0 )
+10/09/24 19:38:40 (Sending 97 ads in response to query)
+10/09/24 19:38:40 Query info: matched=97; skipped=4; query_time=0.001723; send_time=0.012344; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38723>; projection={}; filter_private_attrs=0
+10/09/24 19:39:40 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:39:40 QueryWorker: forked new high priority worker with id 837941 ( max 4 active 1 pending 0 )
+10/09/24 19:39:40 (Sending 96 ads in response to query)
+10/09/24 19:39:40 Query info: matched=96; skipped=0; query_time=0.002058; send_time=0.002324; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35281>; projection={}; filter_private_attrs=0
+10/09/24 19:39:40 QueryWorker: forked new high priority worker with id 837942 ( max 4 active 1 pending 0 )
+10/09/24 19:39:40 (Sending 97 ads in response to query)
+10/09/24 19:39:40 Query info: matched=97; skipped=4; query_time=0.001873; send_time=0.012025; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44055>; projection={}; filter_private_attrs=0
+10/09/24 19:40:22 (Sending 1 ads in response to query)
+10/09/24 19:40:22 Query info: matched=1; skipped=0; query_time=0.000103; send_time=0.000120; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37481>; projection={}; filter_private_attrs=1
+10/09/24 19:40:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:40:22 QueryWorker: forked new high priority worker with id 837975 ( max 4 active 1 pending 0 )
+10/09/24 19:40:22 (Sending 96 ads in response to query)
+10/09/24 19:40:22 Query info: matched=96; skipped=0; query_time=0.001630; send_time=0.002114; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39057>; projection={}; filter_private_attrs=0
+10/09/24 19:40:22 QueryWorker: forked new high priority worker with id 837976 ( max 4 active 1 pending 0 )
+10/09/24 19:40:22 (Sending 97 ads in response to query)
+10/09/24 19:40:22 Query info: matched=97; skipped=4; query_time=0.001745; send_time=0.010867; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40865>; projection={}; filter_private_attrs=0
+10/09/24 19:41:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:41:22 QueryWorker: forked new high priority worker with id 838030 ( max 4 active 1 pending 0 )
+10/09/24 19:41:22 (Sending 96 ads in response to query)
+10/09/24 19:41:22 Query info: matched=96; skipped=0; query_time=0.001967; send_time=0.002162; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35129>; projection={}; filter_private_attrs=0
+10/09/24 19:41:22 QueryWorker: forked new high priority worker with id 838031 ( max 4 active 1 pending 0 )
+10/09/24 19:41:22 (Sending 97 ads in response to query)
+10/09/24 19:41:22 Query info: matched=97; skipped=4; query_time=0.001913; send_time=0.011101; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41033>; projection={}; filter_private_attrs=0
+10/09/24 19:42:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:42:22 QueryWorker: forked new high priority worker with id 838081 ( max 4 active 1 pending 0 )
+10/09/24 19:42:22 (Sending 96 ads in response to query)
+10/09/24 19:42:22 Query info: matched=96; skipped=0; query_time=0.001755; send_time=0.002000; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44695>; projection={}; filter_private_attrs=0
+10/09/24 19:42:22 QueryWorker: forked new high priority worker with id 838082 ( max 4 active 1 pending 0 )
+10/09/24 19:42:22 (Sending 97 ads in response to query)
+10/09/24 19:42:22 Query info: matched=97; skipped=4; query_time=0.001618; send_time=0.009206; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43047>; projection={}; filter_private_attrs=0
+10/09/24 19:43:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:43:22 QueryWorker: forked new high priority worker with id 838131 ( max 4 active 1 pending 0 )
+10/09/24 19:43:22 (Sending 96 ads in response to query)
+10/09/24 19:43:22 Query info: matched=96; skipped=0; query_time=0.001756; send_time=0.002012; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36809>; projection={}; filter_private_attrs=0
+10/09/24 19:43:22 QueryWorker: forked new high priority worker with id 838132 ( max 4 active 1 pending 0 )
+10/09/24 19:43:22 (Sending 97 ads in response to query)
+10/09/24 19:43:22 Query info: matched=97; skipped=4; query_time=0.001701; send_time=0.010415; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35331>; projection={}; filter_private_attrs=0
+10/09/24 19:44:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:44:22 QueryWorker: forked new high priority worker with id 838181 ( max 4 active 1 pending 0 )
+10/09/24 19:44:22 (Sending 96 ads in response to query)
+10/09/24 19:44:22 Query info: matched=96; skipped=0; query_time=0.001809; send_time=0.002033; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36637>; projection={}; filter_private_attrs=0
+10/09/24 19:44:22 QueryWorker: forked new high priority worker with id 838182 ( max 4 active 1 pending 0 )
+10/09/24 19:44:22 (Sending 97 ads in response to query)
+10/09/24 19:44:22 Query info: matched=97; skipped=4; query_time=0.001665; send_time=0.009188; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37571>; projection={}; filter_private_attrs=0
+10/09/24 19:45:22 (Sending 1 ads in response to query)
+10/09/24 19:45:22 Query info: matched=1; skipped=0; query_time=0.000107; send_time=0.000109; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36461>; projection={}; filter_private_attrs=1
+10/09/24 19:45:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:45:22 QueryWorker: forked new high priority worker with id 838231 ( max 4 active 1 pending 0 )
+10/09/24 19:45:22 (Sending 96 ads in response to query)
+10/09/24 19:45:22 Query info: matched=96; skipped=0; query_time=0.001772; send_time=0.002073; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46661>; projection={}; filter_private_attrs=0
+10/09/24 19:45:22 QueryWorker: forked new high priority worker with id 838232 ( max 4 active 1 pending 0 )
+10/09/24 19:45:22 (Sending 97 ads in response to query)
+10/09/24 19:45:22 Query info: matched=97; skipped=4; query_time=0.001591; send_time=0.009043; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46213>; projection={}; filter_private_attrs=0
+10/09/24 19:46:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:46:22 QueryWorker: forked new high priority worker with id 838281 ( max 4 active 1 pending 0 )
+10/09/24 19:46:22 (Sending 96 ads in response to query)
+10/09/24 19:46:22 Query info: matched=96; skipped=0; query_time=0.001572; send_time=0.002068; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42559>; projection={}; filter_private_attrs=0
+10/09/24 19:46:22 QueryWorker: forked new high priority worker with id 838282 ( max 4 active 1 pending 0 )
+10/09/24 19:46:22 (Sending 97 ads in response to query)
+10/09/24 19:46:22 Query info: matched=97; skipped=4; query_time=0.001595; send_time=0.010592; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45813>; projection={}; filter_private_attrs=0
+10/09/24 19:47:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:47:22 QueryWorker: forked new high priority worker with id 838336 ( max 4 active 1 pending 0 )
+10/09/24 19:47:22 (Sending 96 ads in response to query)
+10/09/24 19:47:22 Query info: matched=96; skipped=0; query_time=0.001659; send_time=0.002000; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43871>; projection={}; filter_private_attrs=0
+10/09/24 19:47:22 QueryWorker: forked new high priority worker with id 838337 ( max 4 active 1 pending 0 )
+10/09/24 19:47:22 (Sending 97 ads in response to query)
+10/09/24 19:47:22 Query info: matched=97; skipped=4; query_time=0.001796; send_time=0.013303; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40769>; projection={}; filter_private_attrs=0
+10/09/24 19:48:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:48:22 QueryWorker: forked new high priority worker with id 838403 ( max 4 active 1 pending 0 )
+10/09/24 19:48:22 (Sending 96 ads in response to query)
+10/09/24 19:48:22 Query info: matched=96; skipped=0; query_time=0.001927; send_time=0.002319; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36445>; projection={}; filter_private_attrs=0
+10/09/24 19:48:22 QueryWorker: forked new high priority worker with id 838404 ( max 4 active 1 pending 0 )
+10/09/24 19:48:22 (Sending 97 ads in response to query)
+10/09/24 19:48:22 Query info: matched=97; skipped=4; query_time=0.001742; send_time=0.011986; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36483>; projection={}; filter_private_attrs=0
+10/09/24 19:49:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:49:22 QueryWorker: forked new high priority worker with id 838459 ( max 4 active 1 pending 0 )
+10/09/24 19:49:22 (Sending 96 ads in response to query)
+10/09/24 19:49:22 Query info: matched=96; skipped=0; query_time=0.001865; send_time=0.002343; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46615>; projection={}; filter_private_attrs=0
+10/09/24 19:49:22 QueryWorker: forked new high priority worker with id 838460 ( max 4 active 1 pending 0 )
+10/09/24 19:49:22 (Sending 97 ads in response to query)
+10/09/24 19:49:22 Query info: matched=97; skipped=4; query_time=0.001780; send_time=0.010506; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37397>; projection={}; filter_private_attrs=0
+10/09/24 19:50:22 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:50:22 QueryWorker: forked new high priority worker with id 838510 ( max 4 active 1 pending 0 )
+10/09/24 19:50:22 (Sending 96 ads in response to query)
+10/09/24 19:50:22 Query info: matched=96; skipped=0; query_time=0.001761; send_time=0.002274; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44191>; projection={}; filter_private_attrs=0
+10/09/24 19:50:22 QueryWorker: forked new high priority worker with id 838511 ( max 4 active 1 pending 0 )
+10/09/24 19:50:22 (Sending 97 ads in response to query)
+10/09/24 19:50:22 Query info: matched=97; skipped=4; query_time=0.001715; send_time=0.011984; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34841>; projection={}; filter_private_attrs=0
+10/09/24 19:50:23 (Sending 1 ads in response to query)
+10/09/24 19:50:23 Query info: matched=1; skipped=0; query_time=0.000105; send_time=0.000115; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:40231>; projection={}; filter_private_attrs=1
+10/09/24 19:50:38 Housekeeper:  Ready to clean old ads
+10/09/24 19:50:38 	Cleaning StartdAds ...
+10/09/24 19:50:38 	Cleaning StartdPrivateAds ...
+10/09/24 19:50:38 	Cleaning ScheddAds ...
+10/09/24 19:50:38 	Cleaning SubmittorAds ...
+10/09/24 19:50:38 	Cleaning LicenseAds ...
+10/09/24 19:50:38 	Cleaning MasterAds ...
+10/09/24 19:50:38 	Cleaning CkptServerAds ...
+10/09/24 19:50:38 	Cleaning CollectorAds ...
+10/09/24 19:50:38 	Cleaning StorageAds ...
+10/09/24 19:50:38 	Cleaning AccountingAds ...
+10/09/24 19:50:38 	Cleaning NegotiatorAds ...
+10/09/24 19:50:38 	Cleaning HadAds ...
+10/09/24 19:50:38 	Cleaning GridAds ...
+10/09/24 19:50:38 	Cleaning Generic Ads ...
+10/09/24 19:50:38 Housekeeper:  Done cleaning
+10/09/24 19:50:42 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:50:42 QueryWorker: forked new high priority worker with id 838528 ( max 4 active 1 pending 0 )
+10/09/24 19:50:42 (Sending 96 ads in response to query)
+10/09/24 19:50:42 Query info: matched=96; skipped=0; query_time=0.001735; send_time=0.002136; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:44905>; projection={}; filter_private_attrs=0
+10/09/24 19:50:42 QueryWorker: forked new high priority worker with id 838529 ( max 4 active 1 pending 0 )
+10/09/24 19:50:42 (Sending 97 ads in response to query)
+10/09/24 19:50:42 Query info: matched=97; skipped=4; query_time=0.001706; send_time=0.010713; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39157>; projection={}; filter_private_attrs=0
+10/09/24 19:51:42 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:51:42 QueryWorker: forked new high priority worker with id 838581 ( max 4 active 1 pending 0 )
+10/09/24 19:51:42 (Sending 96 ads in response to query)
+10/09/24 19:51:42 Query info: matched=96; skipped=0; query_time=0.001576; send_time=0.002167; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38303>; projection={}; filter_private_attrs=0
+10/09/24 19:51:42 QueryWorker: forked new high priority worker with id 838582 ( max 4 active 1 pending 0 )
+10/09/24 19:51:42 (Sending 97 ads in response to query)
+10/09/24 19:51:42 Query info: matched=97; skipped=4; query_time=0.001475; send_time=0.009255; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41215>; projection={}; filter_private_attrs=0
+10/09/24 19:52:42 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:52:42 QueryWorker: forked new high priority worker with id 838637 ( max 4 active 1 pending 0 )
+10/09/24 19:52:42 (Sending 96 ads in response to query)
+10/09/24 19:52:42 Query info: matched=96; skipped=0; query_time=0.001691; send_time=0.002127; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36901>; projection={}; filter_private_attrs=0
+10/09/24 19:52:42 QueryWorker: forked new high priority worker with id 838638 ( max 4 active 1 pending 0 )
+10/09/24 19:52:42 (Sending 97 ads in response to query)
+10/09/24 19:52:42 Query info: matched=97; skipped=4; query_time=0.001638; send_time=0.010846; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41261>; projection={}; filter_private_attrs=0
+10/09/24 19:53:42 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:53:42 QueryWorker: forked new high priority worker with id 838690 ( max 4 active 1 pending 0 )
+10/09/24 19:53:42 (Sending 96 ads in response to query)
+10/09/24 19:53:42 Query info: matched=96; skipped=0; query_time=0.002055; send_time=0.002016; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38635>; projection={}; filter_private_attrs=0
+10/09/24 19:53:42 QueryWorker: forked new high priority worker with id 838691 ( max 4 active 1 pending 0 )
+10/09/24 19:53:42 (Sending 97 ads in response to query)
+10/09/24 19:53:42 Query info: matched=97; skipped=4; query_time=0.001626; send_time=0.009213; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:45153>; projection={}; filter_private_attrs=0
+10/09/24 19:54:42 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:54:42 QueryWorker: forked new high priority worker with id 838744 ( max 4 active 1 pending 0 )
+10/09/24 19:54:42 (Sending 96 ads in response to query)
+10/09/24 19:54:42 Query info: matched=96; skipped=0; query_time=0.001788; send_time=0.001956; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:39479>; projection={}; filter_private_attrs=0
+10/09/24 19:54:42 QueryWorker: forked new high priority worker with id 838745 ( max 4 active 1 pending 0 )
+10/09/24 19:54:42 (Sending 97 ads in response to query)
+10/09/24 19:54:42 Query info: matched=97; skipped=4; query_time=0.001729; send_time=0.009881; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33795>; projection={}; filter_private_attrs=0
+10/09/24 19:55:24 (Sending 1 ads in response to query)
+10/09/24 19:55:24 Query info: matched=1; skipped=0; query_time=0.000104; send_time=0.000100; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42987>; projection={}; filter_private_attrs=1
+10/09/24 19:55:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:55:24 QueryWorker: forked new high priority worker with id 838751 ( max 4 active 1 pending 0 )
+10/09/24 19:55:24 (Sending 96 ads in response to query)
+10/09/24 19:55:24 Query info: matched=96; skipped=0; query_time=0.001499; send_time=0.001972; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:34541>; projection={}; filter_private_attrs=0
+10/09/24 19:55:24 QueryWorker: forked new high priority worker with id 838752 ( max 4 active 1 pending 0 )
+10/09/24 19:55:24 (Sending 97 ads in response to query)
+10/09/24 19:55:24 Query info: matched=97; skipped=4; query_time=0.001530; send_time=0.010012; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33745>; projection={}; filter_private_attrs=0
+10/09/24 19:56:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:56:24 QueryWorker: forked new high priority worker with id 838763 ( max 4 active 1 pending 0 )
+10/09/24 19:56:24 (Sending 96 ads in response to query)
+10/09/24 19:56:24 Query info: matched=96; skipped=0; query_time=0.001716; send_time=0.002069; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41739>; projection={}; filter_private_attrs=0
+10/09/24 19:56:24 QueryWorker: forked new high priority worker with id 838764 ( max 4 active 1 pending 0 )
+10/09/24 19:56:24 (Sending 97 ads in response to query)
+10/09/24 19:56:24 Query info: matched=97; skipped=4; query_time=0.001593; send_time=0.009182; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38743>; projection={}; filter_private_attrs=0
+10/09/24 19:57:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:57:24 QueryWorker: forked new high priority worker with id 838775 ( max 4 active 1 pending 0 )
+10/09/24 19:57:24 (Sending 96 ads in response to query)
+10/09/24 19:57:24 Query info: matched=96; skipped=0; query_time=0.001718; send_time=0.002006; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43907>; projection={}; filter_private_attrs=0
+10/09/24 19:57:24 QueryWorker: forked new high priority worker with id 838776 ( max 4 active 1 pending 0 )
+10/09/24 19:57:24 (Sending 97 ads in response to query)
+10/09/24 19:57:24 Query info: matched=97; skipped=4; query_time=0.001661; send_time=0.009381; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46771>; projection={}; filter_private_attrs=0
+10/09/24 19:58:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:58:24 QueryWorker: forked new high priority worker with id 838794 ( max 4 active 1 pending 0 )
+10/09/24 19:58:24 (Sending 96 ads in response to query)
+10/09/24 19:58:24 Query info: matched=96; skipped=0; query_time=0.001660; send_time=0.002000; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38611>; projection={}; filter_private_attrs=0
+10/09/24 19:58:24 QueryWorker: forked new high priority worker with id 838795 ( max 4 active 1 pending 0 )
+10/09/24 19:58:24 (Sending 97 ads in response to query)
+10/09/24 19:58:24 Query info: matched=97; skipped=4; query_time=0.001543; send_time=0.008846; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35501>; projection={}; filter_private_attrs=0
+10/09/24 19:59:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 19:59:24 QueryWorker: forked new high priority worker with id 838806 ( max 4 active 1 pending 0 )
+10/09/24 19:59:24 (Sending 96 ads in response to query)
+10/09/24 19:59:24 QueryWorker: forked new high priority worker with id 838807 ( max 4 active 2 pending 0 )
+10/09/24 19:59:24 Query info: matched=96; skipped=0; query_time=0.011407; send_time=0.002020; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37193>; projection={}; filter_private_attrs=0
+10/09/24 19:59:24 (Sending 97 ads in response to query)
+10/09/24 19:59:24 Query info: matched=97; skipped=4; query_time=0.004608; send_time=0.010137; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46299>; projection={}; filter_private_attrs=0
+10/09/24 20:00:24 (Sending 1 ads in response to query)
+10/09/24 20:00:24 Query info: matched=1; skipped=0; query_time=0.000100; send_time=0.000101; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43823>; projection={}; filter_private_attrs=1
+10/09/24 20:00:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 20:00:24 QueryWorker: forked new high priority worker with id 838818 ( max 4 active 1 pending 0 )
+10/09/24 20:00:24 (Sending 96 ads in response to query)
+10/09/24 20:00:24 Query info: matched=96; skipped=0; query_time=0.001901; send_time=0.002014; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33343>; projection={}; filter_private_attrs=0
+10/09/24 20:00:24 QueryWorker: forked new high priority worker with id 838819 ( max 4 active 1 pending 0 )
+10/09/24 20:00:24 (Sending 97 ads in response to query)
+10/09/24 20:00:24 Query info: matched=97; skipped=4; query_time=0.001689; send_time=0.008901; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:37741>; projection={}; filter_private_attrs=0
+10/09/24 20:01:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 20:01:24 QueryWorker: forked new high priority worker with id 838843 ( max 4 active 1 pending 0 )
+10/09/24 20:01:24 (Sending 96 ads in response to query)
+10/09/24 20:01:24 Query info: matched=96; skipped=0; query_time=0.001824; send_time=0.002050; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:41607>; projection={}; filter_private_attrs=0
+10/09/24 20:01:24 QueryWorker: forked new high priority worker with id 838844 ( max 4 active 1 pending 0 )
+10/09/24 20:01:24 (Sending 97 ads in response to query)
+10/09/24 20:01:24 Query info: matched=97; skipped=4; query_time=0.001674; send_time=0.008985; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43695>; projection={}; filter_private_attrs=0
+10/09/24 20:02:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 20:02:24 QueryWorker: forked new high priority worker with id 838855 ( max 4 active 1 pending 0 )
+10/09/24 20:02:24 (Sending 96 ads in response to query)
+10/09/24 20:02:24 Query info: matched=96; skipped=0; query_time=0.001643; send_time=0.001985; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46555>; projection={}; filter_private_attrs=0
+10/09/24 20:02:24 QueryWorker: forked new high priority worker with id 838856 ( max 4 active 1 pending 0 )
+10/09/24 20:02:24 (Sending 97 ads in response to query)
+10/09/24 20:02:24 Query info: matched=97; skipped=4; query_time=0.001738; send_time=0.008752; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:43299>; projection={}; filter_private_attrs=0
+10/09/24 20:03:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 20:03:24 QueryWorker: forked new high priority worker with id 838867 ( max 4 active 1 pending 0 )
+10/09/24 20:03:24 (Sending 96 ads in response to query)
+10/09/24 20:03:24 Query info: matched=96; skipped=0; query_time=0.001520; send_time=0.001989; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:42365>; projection={}; filter_private_attrs=0
+10/09/24 20:03:24 QueryWorker: forked new high priority worker with id 838868 ( max 4 active 1 pending 0 )
+10/09/24 20:03:24 (Sending 97 ads in response to query)
+10/09/24 20:03:24 Query info: matched=97; skipped=4; query_time=0.001625; send_time=0.009045; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:46393>; projection={}; filter_private_attrs=0
+10/09/24 20:04:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 20:04:24 QueryWorker: forked new high priority worker with id 838879 ( max 4 active 1 pending 0 )
+10/09/24 20:04:24 (Sending 96 ads in response to query)
+10/09/24 20:04:24 Query info: matched=96; skipped=0; query_time=0.001640; send_time=0.002025; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38789>; projection={}; filter_private_attrs=0
+10/09/24 20:04:24 QueryWorker: forked new high priority worker with id 838880 ( max 4 active 1 pending 0 )
+10/09/24 20:04:24 (Sending 97 ads in response to query)
+10/09/24 20:04:24 Query info: matched=97; skipped=4; query_time=0.001540; send_time=0.009380; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:35653>; projection={}; filter_private_attrs=0
+10/09/24 20:05:24 Got QUERY_STARTD_PVT_ADS
+10/09/24 20:05:24 QueryWorker: forked new high priority worker with id 838908 ( max 4 active 1 pending 0 )
+10/09/24 20:05:24 (Sending 96 ads in response to query)
+10/09/24 20:05:24 Query info: matched=96; skipped=0; query_time=0.001547; send_time=0.001966; type=MachinePrivate; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:36035>; projection={}; filter_private_attrs=0
+10/09/24 20:05:24 QueryWorker: forked new high priority worker with id 838909 ( max 4 active 1 pending 0 )
+10/09/24 20:05:24 (Sending 97 ads in response to query)
+10/09/24 20:05:24 Query info: matched=97; skipped=4; query_time=0.001631; send_time=0.008797; type=Any; requirements={(((MyType == "Submitter")) || ((MyType == "Machine")))}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:33479>; projection={}; filter_private_attrs=0
+10/09/24 20:05:25 (Sending 1 ads in response to query)
+10/09/24 20:05:25 Query info: matched=1; skipped=0; query_time=0.000101; send_time=0.000102; type=Negotiator; requirements={true}; locate=0; limit=0; from=COLLECTOR; peer=<192.168.65.1:38139>; projection={}; filter_private_attrs=1

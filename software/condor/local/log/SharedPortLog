@@ -4158,3 +4158,293 @@ RequestsPendingCurrent = 0
 RequestsPendingPeak = 2
 RequestsSucceeded = 178
 SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 17:40:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 191
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 17:45:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 204
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 17:50:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 223
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 17:55:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 238
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:00:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 251
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:05:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 266
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:10:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 283
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:15:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 297
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:20:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 312
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:25:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 325
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:30:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 342
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:35:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 358
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:40:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 371
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:45:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 384
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:50:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 403
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 18:55:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 417
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:00:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 430
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:05:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 445
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:10:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 462
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:15:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 476
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:20:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 489
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:25:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 504
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:30:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 521
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:35:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 535
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:40:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 550
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:45:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 563
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:50:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 580
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 19:55:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 596
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"
+10/09/24 20:00:38 About to update statistics in shared_port daemon ad file at /tmp/condor-lock-OtBAxu/shared_port_ad :
+ForkedChildrenCurrent = 0
+ForkedChildrenPeak = 0
+MyAddress = "<192.168.65.1:45223?addrs=192.168.65.1-45223&alias=corona257.llnl.gov&noUDP>"
+RequestsBlocked = 0
+RequestsFailed = 0
+RequestsPendingCurrent = 0
+RequestsPendingPeak = 2
+RequestsSucceeded = 609
+SharedPortCommandSinfuls = "<192.168.65.1:45223?alias=corona257.llnl.gov>"

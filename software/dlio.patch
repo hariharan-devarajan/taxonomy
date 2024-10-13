@@ -1,18 +1,70 @@
+diff --git a/dlio_benchmark/data_loader/tf_data_loader.py b/dlio_benchmark/data_loader/tf_data_loader.py
+index 695c452..07b71fe 100644
+--- a/dlio_benchmark/data_loader/tf_data_loader.py
++++ b/dlio_benchmark/data_loader/tf_data_loader.py
+@@ -96,6 +96,8 @@ class TFDataLoader(BaseDataLoader):
+                                           dataset_type=self.dataset_type,
+                                           thread_index=-1,
+                                           epoch_number=self.epoch_number).next()
++            if self._args.prefetch_size > 0:
++                self._dataset = self._dataset.prefetch(buffer_size=self._args.prefetch_size)
+ 
+     @dlp.log
+     def next(self):
+diff --git a/dlio_benchmark/reader/tf_reader.py b/dlio_benchmark/reader/tf_reader.py
+index 26a12a5..437c273 100644
+--- a/dlio_benchmark/reader/tf_reader.py
++++ b/dlio_benchmark/reader/tf_reader.py
+@@ -109,7 +109,7 @@ class TFReader(FormatReader):
+ 
+         self._dataset = self._dataset.repeat()
+         total = math.floor(len(self._file_list)/self._args.comm_size / self.batch_size * self._args.num_samples_per_file)
+-        return self._dataset.take(total*self._args.epochs).prefetch(buffer_size=self._args.prefetch_size)
++        return self._dataset.take(total*self._args.epochs)
+     @dlp.log
+     def read_index(self, image_idx, step):
+         return super().read_index(image_idx, step)
 diff --git a/dlio_benchmark/utils/config.py b/dlio_benchmark/utils/config.py
-index 13265f4..70ab7cb 100644
+index 13265f4..7a1ca23 100644
 --- a/dlio_benchmark/utils/config.py
 +++ b/dlio_benchmark/utils/config.py
-@@ -191,11 +191,8 @@ class ConfigArguments:
+@@ -183,19 +183,16 @@ class ConfigArguments:
+ 
+     def configure_dftracer(self, is_child=False, use_pid=False):
+         # with "multiprocessing_context=fork" the profiler file remains open in the child process
+-        if is_child and self.multiprocessing_context == "fork":
+-            return
++        # if is_child and self.multiprocessing_context == "fork":
++        #     return
+         # Configure the profiler
+         if DFTRACER_ENABLE:
+-            dlp_trace = get_trace_name(self.output_folder, use_pid)
++            dlp_trace = get_trace_name(self.output_folder, True)
              if DLIOMPI.get_instance().rank() == 0:
                  logging.info(f"{utcnow()} Profiling DLIO {dlp_trace}")
-             return PerfTrace.initialize_log(logfile=dlp_trace,
+-            return PerfTrace.initialize_log(logfile=dlp_trace,
 -                                                   data_dir=f"{os.path.abspath(self.data_folder)}:"
 -                                                            f"{self.data_folder}:./{self.data_folder}:"
 -                                                            f"{self.checkpoint_folder}:./{self.checkpoint_folder}:"
 -                                                            f"{os.path.abspath(self.checkpoint_folder)}",
 -                                                   process_id=self.my_rank)
-+                                                   data_dir="all",
++            return PerfTrace.initialize_log(logfile=None,
++                                                   data_dir=None,
 +                                                   process_id=-1)
          return None
  
      def finalize_dftracer(self, dlp_logger):
+diff --git a/dlio_benchmark/utils/statscounter.py b/dlio_benchmark/utils/statscounter.py
+index 5d2c882..06052ca 100644
+--- a/dlio_benchmark/utils/statscounter.py
++++ b/dlio_benchmark/utils/statscounter.py
+@@ -322,7 +322,8 @@ class StatsCounter(object):
+         else:
+             self.output[epoch]['proc'] = [duration]
+             self.output[epoch]['compute']=[computation_time]
+-        logging.info(f"{utcnow()} Rank {self.my_rank} step {step} processed {self.batch_size} samples in {duration} s")
++        if self.my_rank == 0 and step % 100 == 0:
++            logging.info(f"{utcnow()} Rank {self.my_rank} step {step} processed {self.batch_size} samples in {duration} s")
+ 
+     def compute_metrics_train(self, epoch, block):
+         key = f"block{block}"
