@@ -1,0 +1,13 @@
+diff --git a/src/axl_pthread.c b/src/axl_pthread.c
+index 34ef676..634761f 100644
+--- a/src/axl_pthread.c
++++ b/src/axl_pthread.c
+@@ -23,7 +23,7 @@
+  *  - The number of files being transferred */
+ 
+ /* We don't see much scaling past 16 threads */
+-#define MAX_THREADS 16
++#define MAX_THREADS 1
+ 
+ struct axl_work
+ {

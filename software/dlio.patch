@@ -25,29 +25,25 @@ index 26a12a5..437c273 100644
      def read_index(self, image_idx, step):
          return super().read_index(image_idx, step)
 diff --git a/dlio_benchmark/utils/config.py b/dlio_benchmark/utils/config.py
-index 13265f4..7a1ca23 100644
+index 13265f4..58332e3 100644
 --- a/dlio_benchmark/utils/config.py
 +++ b/dlio_benchmark/utils/config.py
-@@ -183,19 +183,16 @@ class ConfigArguments:
- 
-     def configure_dftracer(self, is_child=False, use_pid=False):
-         # with "multiprocessing_context=fork" the profiler file remains open in the child process
--        if is_child and self.multiprocessing_context == "fork":
--            return
-+        # if is_child and self.multiprocessing_context == "fork":
-+        #     return
+@@ -187,15 +187,12 @@ class ConfigArguments:
+             return
          # Configure the profiler
          if DFTRACER_ENABLE:
 -            dlp_trace = get_trace_name(self.output_folder, use_pid)
-+            dlp_trace = get_trace_name(self.output_folder, True)
-             if DLIOMPI.get_instance().rank() == 0:
-                 logging.info(f"{utcnow()} Profiling DLIO {dlp_trace}")
+-            if DLIOMPI.get_instance().rank() == 0:
+-                logging.info(f"{utcnow()} Profiling DLIO {dlp_trace}")
 -            return PerfTrace.initialize_log(logfile=dlp_trace,
 -                                                   data_dir=f"{os.path.abspath(self.data_folder)}:"
 -                                                            f"{self.data_folder}:./{self.data_folder}:"
 -                                                            f"{self.checkpoint_folder}:./{self.checkpoint_folder}:"
 -                                                            f"{os.path.abspath(self.checkpoint_folder)}",
 -                                                   process_id=self.my_rank)
++            # dlp_trace = get_trace_name(self.output_folder, True)
++            # if DLIOMPI.get_instance().rank() == 0:
++            #     logging.info(f"{utcnow()} Profiling DLIO {dlp_trace}")
 +            return PerfTrace.initialize_log(logfile=None,
 +                                                   data_dir=None,
 +                                                   process_id=-1)

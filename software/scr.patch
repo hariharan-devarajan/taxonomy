@@ -1,0 +1,13 @@
+diff --git a/bootstrap.sh b/bootstrap.sh
+index ebd7d709..605fb7ec 100755
+--- a/bootstrap.sh
++++ b/bootstrap.sh
+@@ -53,7 +53,7 @@ while [ $# -ge 1 ]; do
+ done
+ 
+ ROOT="$(pwd)"
+-INSTALL_DIR=$ROOT/install
++INSTALL_DIR=${IOPP_PROJECT_HOME}/venvs/scr_dlio_env
+ 
+ # whether to build optimized or "-g -O0" debug
+ buildtype="Release"
